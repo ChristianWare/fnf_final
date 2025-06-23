@@ -95,9 +95,9 @@ p,
 input,
 textarea {
   hyphens: auto;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.3;
-  font-family: var(--SuisseIntlMedium);
+  font-family: var(--inter);
   text-transform: none;
 }
 

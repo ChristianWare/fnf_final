@@ -11,10 +11,10 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  padding: 1.3rem 4rem;
-  font-family: var(--SuisseIntlMedium);
-  font-size: 1.4rem;
-  text-transform: capitalize;
+  padding: 1.5rem 4rem;
+  font-family: var(--inter);
+  font-size: 1.6rem;
+  text-transform: uppercase;
   letter-spacing: 0.5px;
   white-space: nowrap;
   border-radius: 50px;
@@ -22,63 +22,13 @@
   transition: all 0.2s ease-in-out;
 }
 
-.primary {
-  background-color: var(--yellow);
+.white {
+  background-color: var(--white);
   color: var(--black);
   border: 1px solid var(--black);
 }
 
-.primary:hover {
+.white:hover {
   background-color: var(--yellow2);
 }
 
-.btn.primary:active {
-  transform: scale(0.95);
-}
-
-.black {
-  background-color: var(--black);
-  color: var(--tan);
-  border: 1px solid var(--black);
-  z-index: 999;
-}
-
-.black:hover {
-  background-color: transparent;
-  color: var(--black);
-}
-
-.btn.black .label {
-  visibility: visible;
-}
-
-.normal {
-  color: var(--black);
-  background-color: transparent;
-  border: none;
-  font-family: var(--SuisseIntlMedium);
-  padding-left: 0rem;
-  padding-right: 0rem;
-}
-
-.outline {
-  background-color: transparent;
-  color: var(--black);
-  border: 1px solid var(--taniii);
-}
-
-.outline:hover {
-  background-color: var(--black);
-  color: var(--yellow);
-}
-
-.tanOutline {
-  background-color: transparent;
-  color: var(--tan);
-  border: 1px solid var(--tan);
-}
-
-.tanOutline:hover {
-  background-color: var(--yellow);
-  color: var(--black);
-}
