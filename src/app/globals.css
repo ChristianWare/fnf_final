@@ -162,12 +162,12 @@ textarea:focus {
 }
 
 @media screen and (max-width: 768px) {
-  /* h1 {
-    font-size: 14vw;
-  } */
+  h1 {
+    font-size: 5.4rem;
+  }
 }
 
-@media screen and (max-width: 568px) {
+/* @media screen and (max-width: 568px) {
   html {
     font-size: 50%;
   }
@@ -177,7 +177,7 @@ textarea:focus {
     letter-spacing: -1.4px;
     font-size: 13vw;
   }
-}
+} */
 
 /* .toastFont {
 } */

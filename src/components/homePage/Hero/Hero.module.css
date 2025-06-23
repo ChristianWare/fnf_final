@@ -5,23 +5,45 @@
 }
 
 .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+}
+
+.left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .heading {
   color: var(--white);
-  width: 50%;
 }
 
 .span {
   color: var(--blue);
+  white-space: nowrap;
 }
 
 .copy {
   color: var(--white);
-  width: 30%;
+  width: 400px;
+}
+
+@media screen and (max-width: 1268px) {
+  .content {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  /* .copy {
+    width: 70%;
+  } */
+}
+
+@media screen and (max-width: 1068px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

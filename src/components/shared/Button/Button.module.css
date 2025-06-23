@@ -13,9 +13,9 @@
   gap: 3rem;
   padding: 1.5rem 4rem;
   font-family: var(--inter);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.5px;
   white-space: nowrap;
   border-radius: 50px;
   width: 100%;
@@ -29,6 +29,5 @@
 }
 
 .white:hover {
-  background-color: var(--yellow2);
+  background-color: var(--gray);
 }
-

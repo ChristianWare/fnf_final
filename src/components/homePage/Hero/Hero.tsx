@@ -7,17 +7,20 @@ export default function Hero() {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.content}>
-          <h1 className={styles.heading}>
-            We build <br /> <span className={styles.span}> blazing fast</span>{" "}
-            <br /> online stores
-          </h1>
-          <p className={styles.copy}>
-            Fonts & Footers builds lightning-fast, revenue-driven online stores
-            for small and medium-sized brands.
-          </p>
-          <div className={styles.btnContainer}>
-            <Button href="/" btnType="white" text="Submit a request" />
+          <div className={styles.left}>
+            <h1 className={styles.heading}>
+              We build <span className={styles.span}>blazing fast</span> <br /> online
+              stores
+            </h1>
+            <p className={styles.copy}>
+              Fonts & Footers builds lightning-fast, revenue-driven online
+              stores for small and medium-sized brands.
+            </p>
+            <div className={styles.btnContainer}>
+              <Button href='/' btnType='white' text='Submit a request' />
+            </div>
           </div>
+          <div className={styles.right}>Right Stuff here</div>
         </div>
       </LayoutWrapper>
     </section>
