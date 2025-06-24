@@ -21,6 +21,12 @@
   line-height: 1.2;
 }
 
+.span {
+  color: var(--blue);
+  white-space: nowrap;
+}
+
+
 @media screen and (max-width: 1268px) {
   .heading {
     width: 80%;
@@ -30,5 +36,12 @@
 @media screen and (max-width: 1068px) {
   .heading {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .container {
+   
+    padding: 7rem 0rem;
   }
 }

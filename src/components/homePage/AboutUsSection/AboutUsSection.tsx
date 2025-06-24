@@ -8,13 +8,16 @@ export default function AboutUsSection() {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.sectionHeadingContainer}>
-            <SectionIntro title='Web Development Agency' dotColor='blueDot' />
+            <SectionIntro title='About Fonts & Footers' dotColor='blueDot' />
           </div>
           <h2 className={styles.heading}>
-            Fonts & Footers exists exclusively for small to mid-sized businesses
+            Fonts & Footers exists exclusively for{" "}
+            <span className={styles.span}>small to mid-sized</span> businesses
             that sell physical products online. Whether you move five SKUs or
-            five thousand, we concentrate on headless Shopify and custom Next.js
-            storefronts that scale with you.
+            five thousand, we concentrate on headless{" "}
+            <span className={styles.span}>Shopify</span> and custom
+            <span className={styles.span}> Next.js</span> storefronts that scale
+            with you.
           </h2>
         </div>
       </LayoutWrapper>
