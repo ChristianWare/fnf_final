@@ -10,8 +10,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
-  padding: 1.5rem 4rem;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
   font-family: var(--inter);
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -29,5 +29,32 @@
 }
 
 .white:hover {
-  background-color: var(--gray);
+  scale: 1.05;
+}
+
+.noBackgroundWhiteText {
+  background-color: transparent;
+  color: var(--white);
+}
+
+.arrow {
+  transform: rotate(90deg);
+  font-size: 1.4rem;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  top: 2px;
+}
+
+/* .noBackgroundWhiteText:hover .arrow {
+  transform: rotate(90deg) translateY(-5px);
+} */
+
+@media (hover: hover) and (pointer: fine) {
+  .white:hover {
+    transform: scale(1.05);
+  }
+
+  .container:hover .arrow {
+    transform: rotate(90deg) translateY(-5px);
+  }
 }

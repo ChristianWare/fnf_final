@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Link from "next/link";
 import styles from "./Button.module.css";
+import Arrow from "@/components/icons/Arrow/Arrow";
 
 interface Props {
   href: string;
@@ -9,6 +10,7 @@ interface Props {
   target?: string;
   disabled?: boolean;
   children?: ReactNode;
+  arrow?: boolean;
 }
 
 export default function Button({
@@ -18,6 +20,7 @@ export default function Button({
   target = "",
   disabled,
   children,
+  arrow,
 }: Props) {
   const content = text || children;
 
@@ -29,6 +32,7 @@ export default function Button({
         target={target}
       >
         {content}
+        {arrow && <Arrow className={styles.arrow} />}
       </Link>
     </button>
   );

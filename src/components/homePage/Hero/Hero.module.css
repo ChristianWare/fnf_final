@@ -32,18 +32,77 @@
   width: 400px;
 }
 
-@media screen and (max-width: 1268px) {
-  .content {
-    grid-template-columns: 2fr 1fr;
-  }
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
 
-  /* .copy {
-    width: 70%;
-  } */
+.lottieBox {
+  width: 100%;
+  height: 500px;
+}
+
+.lottie {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1268px) {
+  .lottieBox {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 1068px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0rem;
+  }
+
+  .left {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heading,
+  .copy {
+    text-align: center;
+  }
+
+  .lottieBox {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .top {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .heading,
+  .copy {
+    width: 100%;
+    text-align: left;
+  }
+
+  .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+
+  .lottieBox {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .span {
+    white-space: inherit;
   }
 }
