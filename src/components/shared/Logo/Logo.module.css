@@ -1,0 +1,92 @@
+.logo {
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: var(--PPNeueMontrealMedium);
+  z-index: 999;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--tan);
+  padding: 2rem 3rem;
+  padding-left: 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 15px;
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+}
+
+.logo:after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  top: 0px;
+  right: -40px;
+  border-top-left-radius: 15px;
+  box-shadow: -1em -1rem var(--tan);
+}
+
+.logo::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  bottom: -40px;
+  left: 0px;
+  background-color: transparent;
+  border-top-left-radius: 15px;
+  box-shadow: -1em -1rem var(--tan);
+}
+
+.large {
+  font-size: 7rem;
+}
+
+.footerLarge {
+  font-size: inherit;
+}
+
+.tan {
+  color: var(--tan);
+}
+
+.blackii {
+  color: var(--blackii);
+}
+
+.icon {
+  color: var(--yellow);
+  width: 5rem;
+  height: 5rem;
+}
+
+.backgroundColorWhite {
+  background-color: var(--white);
+}
+
+.logo.backgroundColorWhite::after {
+  box-shadow: -1em -1rem var(--white);
+}
+
+.logo.backgroundColorWhite::before {
+  box-shadow: -1em -1rem var(--white);
+}
+
+.backgroundColorBlack {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.logo.backgroundColorBlack::after {
+  box-shadow: -1em -1rem var(--black);
+}
+
+.logo.backgroundColorBlack::before {
+  box-shadow: -1em -1rem var(--black);
+}

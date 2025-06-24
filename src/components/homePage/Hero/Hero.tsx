@@ -5,16 +5,21 @@ import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import Button from "@/components/shared/Button/Button";
 import animationData from "../../../../public/lottie/hero.json";
 import Lottie from "lottie-react";
+import Nav from "@/components/shared/Nav/Nav";
 
 export default function Hero() {
   return (
     <section className={styles.container}>
+      <div className={styles.navContainer}>
+        <Nav />
+      </div>
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
             <h1 className={styles.heading}>
               We build <br />
-              <span className={styles.span}>interactive & immersive </span> <br />
+              <span className={styles.span}>interactive & immersive </span>{" "}
+              <br />
               e-commerce websites
             </h1>
             <p className={styles.copy}>
