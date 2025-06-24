@@ -60,6 +60,7 @@
     width: 90%;
     justify-content: space-between;
     border-color: var(--yellow);
+    display: none;
   }
 
   .navItemsMobile {
@@ -86,6 +87,7 @@
 @media screen and (max-width: 568px) {
   .navItems {
     bottom: -89vh;
+    display: none;
   }
 
   .btnContainer {
