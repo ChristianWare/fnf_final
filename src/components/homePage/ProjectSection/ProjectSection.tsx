@@ -1,6 +1,8 @@
-import LayoutWrapper from '@/components/shared/LayoutWrapper'
-import styles from './ProjectSection.module.css'
-import SectionIntro from '@/components/shared/SectionIntro/SectionIntro';
+import LayoutWrapper from "@/components/shared/LayoutWrapper";
+import styles from "./ProjectSection.module.css";
+import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
+import { projects } from "../../../../src/lib/data";
+import Button from "@/components/shared/Button/Button";
 
 export default function ProjectSection() {
   return (
@@ -9,19 +11,36 @@ export default function ProjectSection() {
         <div className={styles.content}>
           <div className={styles.top}>
             <div className={styles.sectionHeadingContainer}>
-              <SectionIntro title='About Fonts & Footers' dotColor='blueDot' />
+              <SectionIntro title='our works' dotColor='blueDot' />
             </div>
             <h2 className={styles.heading}>
-              Fonts & Footers exists exclusively for{" "}
-              <span className={styles.span}>small to mid-sized</span> businesses
-              that sell physical products online. Whether you move five SKUs or
-              five thousand, we concentrate on headless{" "}
-              <span className={styles.span}>Shopify</span> and custom
-              <span className={styles.span}> Next.js</span> storefronts that
-              scale with you.
+              Check out our{" "}
+              <span className={styles.span}>successful projeccts</span> and case
+              studies
             </h2>
           </div>
-          <div className={styles.bottom}></div>
+          <div className={styles.bottom}>
+            {projects.map((x) => (
+              <div className={styles.card} key={x.title}>
+                <div className={styles.cardTop}>
+                  <h3 className={styles.title}>{x.title}</h3>
+                  <span className={styles.category}>{x.category}</span>
+                  <p className={styles.desc}>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloribus corporis veritatis ullam ipsa sequi delectus.
+                  </p>
+                </div>
+                <div className={styles.cardBottom}>
+                  <div className={styles.btnContanier}>
+                    <Button href='/' btnType='white' text='Live Site' arrow />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className={styles.btnContanierii}>
+            <Button href='/' btnType='blue' text='See all projects' />
+          </div>
         </div>
       </LayoutWrapper>
     </section>

@@ -25,11 +25,19 @@
 .white {
   background-color: var(--white);
   color: var(--black);
-  border: 1px solid var(--black);
 }
 
 .white:hover {
-  scale: 1.05;
+  background-color: var(--gray);
+}
+
+.blue {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.blue:hover {
+  background-color: var(--lightBlue);
 }
 
 .noBackgroundWhiteText {
@@ -45,15 +53,7 @@
   top: 2px;
 }
 
-/* .noBackgroundWhiteText:hover .arrow {
-  transform: rotate(90deg) translateY(-5px);
-} */
-
 @media (hover: hover) and (pointer: fine) {
-  .white:hover {
-    transform: scale(1.05);
-  }
-
   .container:hover .arrow {
     transform: rotate(90deg) translateY(-5px);
   }

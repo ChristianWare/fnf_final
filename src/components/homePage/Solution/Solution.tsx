@@ -95,23 +95,13 @@ const data = [
     ],
   },
 ];
-  
 
 export default function Solution() {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.content}>
-          <div className={styles.top}>
-            <div className={styles.imgContainer}>
-              <Image
-                src={SolutionImage}
-                fill
-                alt=''
-                title=''
-                className={styles.img}
-              />
-            </div>
+          <div className={styles.left}>
             <div className={styles.sectionHeadingContainer}>
               <SectionIntro title='Our Solutions' dotColor='blueDot' />
             </div>
@@ -121,8 +111,17 @@ export default function Solution() {
               <span className={styles.span}> solutions</span> for your ecommerce
               store:
             </h2>
+            <div className={styles.imgContainer}>
+              <Image
+                src={SolutionImage}
+                fill
+                alt=''
+                title=''
+                className={styles.img}
+              />
+            </div>
           </div>
-          <div className={styles.bottom}>
+          <div className={styles.right}>
             {data.map((x) => (
               <div className={styles.card} key={x.id}>
                 <div className={styles.titleContainer}>
