@@ -3,6 +3,7 @@ import styles from "./OurTeam.module.css";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import Image from "next/image";
 import ChrisImg from "../../../../public/images/chris.png";
+import Button from "@/components/shared/Button/Button";
 
 export default function OurTeam() {
   return (
@@ -20,8 +21,10 @@ export default function OurTeam() {
               of hands-on experience crafting high-performance Shopify and
               Next.js storefronts, I work as an extension of your team to
               deliver clean, conversion-focused sites.
-             
             </h2>
+            <div className={styles.btnContainer}>
+              <Button href='/' btnType='blue' text='Find me on linkedIn' />
+            </div>
           </div>
           <div className={styles.bottom}>
             <div className={styles.circleContainer}>
