@@ -3,7 +3,7 @@
 import Link from "next/link";
 import styles from "./Nav.module.css";
 import Logo from "../Logo/Logo";
-import FalseButton from "../FalseButton/FalseButton";
+import Button from "../Button/Button";
 
 const navItems = [
   { text: "About", href: "/#aboutus" },
@@ -23,6 +23,7 @@ export default function Nav() {
             <Logo
               title='Fonts & Footers'
               backgroundColor='backgroundColorWhite'
+              direction='center'
             />
           </div>
 
@@ -35,7 +36,12 @@ export default function Nav() {
           </div>
 
           <div className={styles.btnContainer}>
-            <FalseButton text='Get Started' btnType='tanOutline' />
+            <Button
+              href='/'
+              text='Get Started'
+              btnType='noBackgroundWhiteText'
+              arrow
+            />
           </div>
         </nav>
       </header>

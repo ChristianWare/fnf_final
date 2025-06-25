@@ -8,7 +8,7 @@
 .navbar {
   /* max-width: 1400px;           */
   margin: 0 auto;
-  padding-right: 3rem;
+  padding: 2rem 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,8 +16,13 @@
 }
 
 .logoContainer {
-  display: flex;
-  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  pointer-events: auto;
+  width: auto;
 }
 
 .navItems {

@@ -13,9 +13,10 @@
   gap: 2rem;
   padding: 1.5rem 2rem;
   font-family: var(--inter);
+  font-weight: 600;
   font-size: 1.4rem;
   text-transform: uppercase;
-  letter-spacing: -0.5px;
+  /* letter-spacing: -0.5px; */
   white-space: nowrap;
   border-radius: 50px;
   width: 100%;
