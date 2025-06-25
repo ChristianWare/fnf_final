@@ -45,12 +45,21 @@
   color: var(--white);
 }
 
+.noBackgroundBlueText {
+  background-color: transparent;
+  color: var(--blue);
+}
+
 .arrow {
   transform: rotate(90deg);
   font-size: 1.4rem;
   transition: all 0.2s ease-in-out;
   position: relative;
   top: 2px;
+}
+
+.noBackgroundBlueText .arrow {
+  color: var(--blue);
 }
 
 @media (hover: hover) and (pointer: fine) {

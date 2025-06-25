@@ -1,6 +1,8 @@
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./AboutUsSection.module.css";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
+import Image from "next/image";
+import PuzzleImage from "../../../../public/images/puzzle.png";
 
 export default function AboutUsSection() {
   return (
@@ -19,6 +21,15 @@ export default function AboutUsSection() {
             <span className={styles.span}> Next.js</span> storefronts that scale
             with you.
           </h2>
+          <div className={styles.imgContainer}>
+            <Image
+              src={PuzzleImage}
+              fill
+              alt=''
+              title=''
+              className={styles.img}
+            />
+          </div>
         </div>
       </LayoutWrapper>
     </section>

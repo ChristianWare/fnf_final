@@ -33,7 +33,7 @@ export default function Benefits() {
   return (
     <section className={styles.container}>
       <div className={styles.sectionHeadingContainer}>
-        <SectionIntro title='Benefits' dotColor='blueDot' />
+        <SectionIntro title='Benefits of working with us' dotColor='blueDot' />
       </div>
       <div className={styles.content}>
         {data.map((x) => (

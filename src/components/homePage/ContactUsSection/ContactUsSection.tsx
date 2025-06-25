@@ -7,6 +7,7 @@ import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import ContactForm from "@/components/shared/ContactForm/ContactForm";
 import animationData from "../../../../public/lottie/email.json";
 import Lottie from "lottie-react";
+import Footer from "@/components/shared/Footer/Footer";
 
 export default function ContactUsSection() {
   return (
@@ -49,6 +50,7 @@ export default function ContactUsSection() {
           </div>
         </div>
       </section>
+      <Footer />
     </LayoutWrapper>
   );
 }

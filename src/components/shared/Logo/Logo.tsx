@@ -6,6 +6,7 @@ interface Props {
   color?: string;
   backgroundColor?: string;
   title: string;
+  direction?: string;
 }
 
 const Logo = ({
@@ -13,21 +14,14 @@ const Logo = ({
   color = "",
   title,
   backgroundColor = "",
+  direction = "",
 }: Props) => {
   return (
     <Link
       href='/'
-      className={`${styles.logo} ${styles[size]} ${styles[color]} ${styles[backgroundColor]}`}
+      className={`${styles.logo} ${styles[size]} ${styles[color]} ${styles[backgroundColor]} ${styles[direction]}`}
     >
-      <div className={styles.svgContainer}>
-        <svg
-          viewBox='0 0 16 16'
-          preserveAspectRatio='none'
-          className={styles.svgNotch}
-        >
-          <use href='#svg-815591482_180' />
-        </svg>
-      </div>
+      
       {title}
     </Link>
   );

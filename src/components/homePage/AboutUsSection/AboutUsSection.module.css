@@ -11,6 +11,19 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  position: relative;
+}
+
+.imgContainer {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+
+.img {
+  object-fit: contain;
 }
 
 .heading {
