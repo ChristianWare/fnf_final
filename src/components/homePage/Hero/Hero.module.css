@@ -41,6 +41,7 @@
 .copy {
   color: var(--white);
   width: 400px;
+  font-size: 1.6rem;
 }
 
 .btnContainer {
@@ -95,16 +96,15 @@
     justify-content: flex-start;
   }
 
-  .heading,
+  .left .heading,
   .copy {
     width: 100%;
     text-align: left;
   }
 
-  .btnContainer {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
+  .left {
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .lottieBox {
