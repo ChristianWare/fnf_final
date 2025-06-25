@@ -40,12 +40,12 @@ const data = [
 
 export default function ProblemSection() {
   return (
-    <section className={styles.container}>
-      <div className={styles.cornerContainer}>
-        <Corner />
-      </div>
-      <LayoutWrapper>
-        
+    <LayoutWrapper>
+      <section className={styles.container}>
+        <div className={styles.cornerContainer}>
+          <Corner />
+        </div>
+
         <div className={styles.sectionTop}>
           <div className={styles.sectionHeadingContainer}>
             <SectionIntro
@@ -90,7 +90,7 @@ export default function ProblemSection() {
             ))}
           </div>
         </div>
-      </LayoutWrapper>
-    </section>
+      </section>
+    </LayoutWrapper>
   );
 }

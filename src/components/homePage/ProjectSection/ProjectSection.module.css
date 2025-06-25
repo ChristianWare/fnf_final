@@ -1,0 +1,18 @@
+.heading {
+  font-size: 3.2rem;
+  letter-spacing: 0px;
+  text-align: center;
+  width: 60%;
+  line-height: 1.2;
+}
+
+.span {
+  color: var(--blue);
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 380px) {
+  .span {
+    white-space: inherit;
+  }
+}

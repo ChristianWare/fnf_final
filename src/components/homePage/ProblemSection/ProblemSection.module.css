@@ -3,6 +3,8 @@
   border-radius: 25px;
   margin: 1rem;
   position: relative;
+  padding: 3rem;
+  padding-top: 10rem;
 }
 
 .cornerContainer {
@@ -15,7 +17,7 @@
 }
 
 .sectionTop {
-  margin-top: 7rem;
+  /* margin-top: 7rem; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -24,7 +26,7 @@
 }
 
 .heading {
-  color: var(--white);
+  color: var(--tan);
   width: 50%;
 }
 
@@ -35,7 +37,7 @@
 
 .leftCopy {
   width: 40%;
-  color: var(--white);
+  color: var(--tan);
 }
 
 .bottom {
@@ -66,7 +68,7 @@
   justify-content: space-between;
   gap: 4rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid var(--blackii);
 }
 
 .indexInfo {
@@ -78,19 +80,19 @@
 
 .title {
   margin-bottom: 2rem;
-  color: var(--white);
-  font-weight: 400;
-  font-family: var(--PPNeueMontrealMediumThick);
-  font-size: 3.2rem;
+  color: var(--tan);
+  font-weight: 700;
+  font-family: var(--inter);
+  font-size: 1.4rem;
 }
 
 .description {
-  color: var(--white);
+  color: var(--gray);
 }
 
 .icon {
   color: var(--blue);
-  font-size: 5rem;
+  font-size: 6rem;
   /* opacity: 0.6; */
 }
 
@@ -143,6 +145,12 @@
 }
 
 @media screen and (max-width: 568px) {
+  .container {
+    padding: 2rem;
+    padding-top: 10rem;
+
+  }
+  
   .sectionTop {
     margin-bottom: 2rem;
     align-items: flex-start;
