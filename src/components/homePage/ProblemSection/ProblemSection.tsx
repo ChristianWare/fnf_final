@@ -85,7 +85,7 @@ export default function ProblemSection() {
                   <h4 className={styles.title}>{x.title}</h4>
                   <p className={styles.description}>{x.description}</p>
                 </div>
-                {x.icon}
+                <div className={styles.iconBox}>{x.icon}</div>
               </div>
             ))}
           </div>
