@@ -36,7 +36,7 @@ export const pricingData = [
   /* ––––– EXISTING ITEMS ––––– */
   {
     id: 1,
-    service: "E-commerce Shop",
+    service: "E-commerce Online Store",
     headline: "Building robust, scalable online stores",
     desc: "Custom built website, with up to 25 live SKUs, single language, single currency, Stripe or Shopify Payments. Timeline: four weeks.",
     price: "$5,900",
@@ -97,7 +97,7 @@ export const pricingData = [
   },
   {
     id: 2,
-    service: "Booking Platform",
+    service: "Appointment/Booking Platform",
     headline: "Fast, friction-free scheduling & reservations",
     desc: "Custom-built booking platform with real-time calendar sync, single/multiple locations, and secure Stripe deposit or full-payment checkout. Timeline: four weeks.",
     price: "$4,500",
