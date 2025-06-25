@@ -1,4 +1,5 @@
 import AboutUsSection from "@/components/homePage/AboutUsSection/AboutUsSection";
+import ContactUsSection from "@/components/homePage/ContactUsSection/ContactUsSection";
 import Hero from "@/components/homePage/Hero/Hero";
 import How from "@/components/homePage/How/How";
 import ProblemSection from "@/components/homePage/ProblemSection/ProblemSection";
@@ -20,6 +21,7 @@ export default function Home() {
       <ProjectSection />
       <How />
       <ServicesSection />
+      <ContactUsSection />
       {/* Contact Us */}
       {/* Final CTA */}
       {/* Footer */}

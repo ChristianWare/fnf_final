@@ -22,117 +22,39 @@
   transition: all 0.2s ease-in-out;
 }
 
-.primary {
-  background-color: var(--yellow);
-  color: var(--black);
-  border: 1px solid var(--blackii);
-}
-
-.primary:hover {
-  background-color: var(--yellow2);
-}
-
-.btn.primary:active {
-  transform: scale(0.95);
-}
-
-.black {
-  background-color: var(--black);
-  color: var(--yellow) !important;
-  border: 1px solid var(--gray);
-  z-index: 999;
-}
-
-.black:hover {
-  background-color: transparent;
-  color: var(--black);
-}
-
-.btn.black .label {
-  visibility: visible;
-}
-
-.normal {
-  color: var(--black);
-  background-color: transparent;
-  border: none;
-  font-family: var(--SuisseIntlMedium);
-  padding-left: 0rem;
-  padding-right: 0rem;
-}
-
-.outline {
-  background-color: transparent;
-  color: var(--black);
-  border: 1px solid var(--gray);
-}
-
-.outline:hover {
-  background-color: var(--black);
-  color: var(--yellow);
-}
-
-.tanOutline {
-  background-color: transparent;
-  color: var(--tan);
-  border: 1px solid var(--tan);
-}
-
-.tanOutline:hover {
-  background-color: var(--yellow);
-  color: var(--black);
-}
-
-.yellowOutline {
-  border: 1px solid var(--yellow);
-  color: var(--yellow)
-}
-
-.sectionIntroWhite {
-  white-space: nowrap;
-  cursor: pointer;
-  text-transform: uppercase;
-  z-index: 999;
-  /* user-select: none; */
-  font-family: var(--DoumbarPlateMedium);
-  font-weight: 700;
-  font-size: 2.5rem;
-  letter-spacing: -.5px;
-  color: var(--black);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+.white {
   background-color: var(--white);
-  padding: 2rem 3rem;
-  padding-left: 1rem;
-  border-top-left-radius: 12px;
-  border-bottom-right-radius: 15px;
+  color: var(--black);
+}
+
+.white:hover {
+  background-color: var(--gray);
+}
+
+.blue {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.blue:hover {
+  background-color: var(--lightBlue);
+}
+
+.noBackgroundWhiteText {
+  background-color: transparent;
+  color: var(--white);
+}
+
+.arrow {
+  transform: rotate(90deg);
+  font-size: 1.4rem;
+  transition: all 0.2s ease-in-out;
   position: relative;
-  /* left: -2px; */
-  z-index: 1;
+  top: 2px;
 }
 
-.sectionIntroWhite:after {
-  position: absolute;
-  content: "";
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  top: 0px;
-  right: -40px;
-  border-top-left-radius: 15px;
-  box-shadow: -1em -1rem var(--white);
-}
-
-.sectionIntroWhite::before {
-  position: absolute;
-  content: "";
-  width: 40px;
-  height: 40px;
-  bottom: -40px;
-  left: 0px;
-  background-color: transparent;
-  border-top-left-radius: 15px;
-  box-shadow: -1em -1rem var(--white);
+@media (hover: hover) and (pointer: fine) {
+  .container:hover .arrow {
+    transform: rotate(90deg) translateY(-5px);
+  }
 }
