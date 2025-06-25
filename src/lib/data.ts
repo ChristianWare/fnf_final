@@ -97,7 +97,7 @@ export const pricingData = [
   },
   {
     id: 2,
-    service: "Appointment/Booking Platform",
+    service: "Appointment & Booking Platform",
     headline: "Fast, friction-free scheduling & reservations",
     desc: "Custom-built booking platform with real-time calendar sync, single/multiple locations, and secure Stripe deposit or full-payment checkout. Timeline: four weeks.",
     price: "$4,500",

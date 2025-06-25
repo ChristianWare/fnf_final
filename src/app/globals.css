@@ -172,7 +172,7 @@ textarea:focus {
   }
 
   h2 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     
   }
 }
@@ -183,7 +183,7 @@ textarea:focus {
   }
 
   h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -192,10 +192,10 @@ textarea:focus {
 
 /* Only use in production */
 @media screen and (max-width: 400px) {
-  h1 {
+  /* h1 {
     letter-spacing: -1px;
     font-size: 9vw;
-  }
+  } */
   /* h2 {
     letter-spacing: -2px;
     line-height: 110%;

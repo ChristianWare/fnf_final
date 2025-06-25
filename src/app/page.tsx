@@ -11,6 +11,7 @@ import WorkProcess from "@/components/homePage/WorkProcess/WorkProcess";
 export default function Home() {
   return (
     <main>
+      {/* Nav Fixes */}
       <Hero />
       <AboutUsSection />
       <WorkProcess />
@@ -19,6 +20,9 @@ export default function Home() {
       <ProjectSection />
       <How />
       <ServicesSection />
+      {/* Contact Us */}
+      {/* Final CTA */}
+      {/* Footer */}
     </main>
   );
 }
