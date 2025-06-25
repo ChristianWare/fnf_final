@@ -1,7 +1,4 @@
 .container {
-  background-color: var(--tan);
-  border-radius: 25px;
-  margin: 1rem;
   padding: 10rem 0rem;
 }
 
@@ -24,6 +21,10 @@
 .span {
   color: var(--blue);
   white-space: nowrap;
+}
+
+.circleContainer {
+    margin-top: 5rem;
 }
 
 @media screen and (max-width: 1268px) {

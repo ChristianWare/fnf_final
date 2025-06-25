@@ -1,5 +1,6 @@
 :root {
   --black: #2c2c2c;
+  --blackii: #4e4c4c;
   --yellow: #fbe74e;
   --blue: #4e94ec;
   --lightBlue: #86b9fa;
@@ -174,7 +175,6 @@ textarea:focus {
 
   h1 {
     font-size: 4.5rem;
-    
   }
 }
 
