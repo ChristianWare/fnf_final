@@ -1,6 +1,7 @@
 import Arrow from "@/components/icons/Arrow/Arrow";
 import styles from "./Footer.module.css";
 import Logo from "../Logo/Logo";
+import LayoutWrapper from "../LayoutWrapper";
 
 const data = [
   {
@@ -97,48 +98,53 @@ const data2 = [
 export default function Footer() {
   return (
     <footer className={styles.container}>
-      <div className={styles.logoContainer}>
-        <Logo title='Fonts & Footers' direction='center' backgroundColor='backgroundColorBlue' />
-      </div>
-      <div className={styles.top}>
-        <div className={styles.left}>
-          <h3 className={styles.subscribeHeading}>
-            Subscribe to the newsletter and get marketing optimization tips!
-          </h3>
-          <div className={styles.emailBox}>
-            <div className={styles.ebLeft}>Email</div>
-            <div className={styles.ebRight}>
-              <Arrow className={styles.arrow} />
+      <LayoutWrapper>
+        <div className={styles.logoContainer}>
+          <Logo
+            title='Fonts & Footers'
+            direction='center'
+            backgroundColor='backgroundColorBlue'
+          />
+        </div>
+        <div className={styles.top}>
+          <div className={styles.left}>
+            <h3 className={styles.subscribeHeading}>
+              Subscribe to the newsletter and get marketing optimization tips!
+            </h3>
+            <div className={styles.emailBox}>
+              <div className={styles.ebLeft}>Email</div>
+              <div className={styles.ebRight}>
+                <Arrow className={styles.arrow} />
+              </div>
             </div>
           </div>
-        </div>
-        <div className={styles.right}>
-          {data.map((x) => (
-            <div className={styles.optionSection} key={x.id}>
-              <div className={styles.title}>{x.title}</div>
-              <ul className={styles.optionList}>
-                {x.options.map((y) => (
-                  <li key={y.id} className={styles.option}>
-                    {y.option}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className={styles.bottom}>
-        <div className={styles.b1}></div>
-        <div className={styles.b2}>
-          <div className={styles.data2Container}>
-            {data2.map((x) => (
-              <p key={x.id} className={styles.option}>
-                {x.title}
-              </p>
+          <div className={styles.right}>
+            {data.map((x) => (
+              <div className={styles.optionSection} key={x.id}>
+                <div className={styles.title}>{x.title}</div>
+                <ul className={styles.optionList}>
+                  {x.options.map((y) => (
+                    <li key={y.id} className={styles.option}>
+                      {y.option}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
         </div>
-      </div>
+        <div className={styles.bottom}>
+          <div className={styles.b2}>
+            <div className={styles.data2Container}>
+              {data2.map((x) => (
+                <p key={x.id} className={styles.option}>
+                  {x.title}
+                </p>
+              ))}
+            </div>
+          </div>
+        </div>
+      </LayoutWrapper>
     </footer>
   );
 }

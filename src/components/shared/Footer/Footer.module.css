@@ -2,9 +2,13 @@
   border-radius: 25px;
   background-color: var(--blue);
   padding: 3rem;
+  margin: 1rem;
   padding-top: 10rem;
   position: relative;
   margin-top: 20rem;
+  border-bottom: 1rem solid var(--white);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .logoContainer {
@@ -29,20 +33,23 @@
   justify-content: flex-start;
   gap: 2rem;
   width: 100%;
+  background-color: var(--lightBlue);
+  padding: 2rem;
+  border-radius: 15px;
 }
 
 .subscribeHeading {
-  color: var(--white);
+  color: var(--black);
   font-family: var(--PPNeueMontrealMediumThick);
   font-weight: 500;
 }
 
 .emailBox {
   font-size: 1.6rem;
-  color: var(--white);
-  border-bottom: 1px solid var(--white);
+  color: var(--black);
+  border-bottom: 1px solid var(--black);
   padding-bottom: 1rem;
-  width: 60%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,6 +59,7 @@
 .arrow {
   transform: rotate(90deg);
   font-size: 2rem;
+  color: var(--black);
 }
 
 .right {
@@ -135,7 +143,7 @@
     padding-top: 7rem;
     padding-bottom: 2rem;
   }
-  
+
   .right {
     grid-template-columns: repeat(2, 1fr);
   }
