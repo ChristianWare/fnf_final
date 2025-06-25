@@ -50,11 +50,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1.6rem;
   border-bottom: 1px solid var(--white);
   color: var(--lightBlue);
   font-weight: 600;
-  font-size: 2rem;
   padding: 1rem 0rem;
   width: 100%;
 }
