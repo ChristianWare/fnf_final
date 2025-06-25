@@ -3,6 +3,7 @@ import Hero from "@/components/homePage/Hero/Hero";
 import How from "@/components/homePage/How/How";
 import ProblemSection from "@/components/homePage/ProblemSection/ProblemSection";
 import ProjectSection from "@/components/homePage/ProjectSection/ProjectSection";
+import ServicesSection from "@/components/homePage/ServicesSection/ServicesSection";
 import Solution from "@/components/homePage/Solution/Solution";
 // import ProjectSection from "@/components/homePage/ProjectSection/ProjectSection";
 import WorkProcess from "@/components/homePage/WorkProcess/WorkProcess";
@@ -17,6 +18,7 @@ export default function Home() {
       <Solution />
       <ProjectSection />
       <How />
+      <ServicesSection />
     </main>
   );
 }
