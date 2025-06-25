@@ -93,6 +93,7 @@
   border-radius: 50%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
 }
 
 .quad1,
@@ -108,6 +109,7 @@
   cursor: pointer;
   overflow: hidden;
   transition: all 0.2s ease-in;
+  border-radius: 5px;
 }
 
 .quad1:hover,
@@ -119,7 +121,7 @@
 
 .quad1 {
   border: 2px solid var(--gray);
-  border-right: none;
+  /* border-right: none; */
   border-top-left-radius: 100%;
 }
 
@@ -130,14 +132,14 @@
 
 .quad3 {
   border: 2px solid var(--gray);
-  border-right: none;
-  border-top: none;
+  /* border-right: none; */
+  /* border-top: none; */
   border-bottom-left-radius: 100%;
 }
 
 .quad4 {
   border: 2px solid var(--gray);
-  border-top: none;
+  /* border-top: none; */
   border-bottom-right-radius: 100%;
 }
 

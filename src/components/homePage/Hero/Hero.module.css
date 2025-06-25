@@ -110,6 +110,11 @@
   .lottieBox {
     height: 300px;
   }
+
+  .btnContainer {
+    flex-wrap: wrap;
+  }
+
 }
 
 @media screen and (max-width: 380px) {
