@@ -27,6 +27,10 @@
     margin-top: 5rem;
 }
 
+.benefitsContainer {
+  margin-top: 7rem;
+}
+
 @media screen and (max-width: 1268px) {
   .heading {
     width: 80%;

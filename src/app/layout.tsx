@@ -15,6 +15,12 @@ const PPNeueMontrealMedium = localFont({
   display: "swap",
 });
 
+const PPNeueMontrealMediumThick = localFont({
+  src: "../../public/fonts/PPNeueMontrealMedium.woff2",
+  variable: "--PPNeueMontrealMediumThick",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Fonts & Footers",
   description:
@@ -28,7 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${inter.variable} ${PPNeueMontrealMedium.variable}`}>
+      <body
+        className={`${inter.variable} ${PPNeueMontrealMedium.variable} ${PPNeueMontrealMediumThick.variable}`}
+      >
         {children}
       </body>
     </html>

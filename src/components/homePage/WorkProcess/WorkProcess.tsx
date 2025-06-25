@@ -2,6 +2,7 @@ import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./WorkProcess.module.css";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import Circle from "../Circle/Circle";
+import Benefits from "../Benefits/Benefits";
 
 export default function WorkProcess() {
   return (
@@ -22,6 +23,9 @@ export default function WorkProcess() {
         </div>
         <div className={styles.circleContainer}>
           <Circle />
+        </div>
+        <div className={styles.benefitsContainer}>
+          <Benefits />
         </div>
       </LayoutWrapper>
     </section>
