@@ -1,5 +1,6 @@
 import AboutUsSection from "@/components/homePage/AboutUsSection/AboutUsSection";
 import Hero from "@/components/homePage/Hero/Hero";
+import How from "@/components/homePage/How/How";
 import ProblemSection from "@/components/homePage/ProblemSection/ProblemSection";
 import ProjectSection from "@/components/homePage/ProjectSection/ProjectSection";
 import Solution from "@/components/homePage/Solution/Solution";
@@ -15,6 +16,7 @@ export default function Home() {
       <ProblemSection />
       <Solution />
       <ProjectSection />
+      <How />
     </main>
   );
 }

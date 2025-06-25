@@ -170,6 +170,11 @@ textarea:focus {
   h1 {
     font-size: 5.4rem;
   }
+
+  h2 {
+    font-size: 4.5rem;
+    
+  }
 }
 
 @media screen and (max-width: 568px) {
