@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "./Nav.module.css";
 import Logo from "../Logo/Logo";
 import Button from "../Button/Button";
+import { useState } from "react";
 
 const navItems = [
   { text: "About", href: "/#aboutus" },
@@ -14,9 +15,14 @@ const navItems = [
 ];
 
 export default function Nav() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <>
-      {/*  centred, scrolls away with the hero  */}
+
       <header className={styles.header}>
         <nav className={styles.navbar}>
           <div className={styles.logoContainer}>
@@ -27,7 +33,14 @@ export default function Nav() {
             />
           </div>
 
-          <div className={styles.navItems}>
+          <div
+            className={
+              isOpen === false
+                ? styles.navItems
+                : `${styles.navItems} ${styles.active}`
+            }
+            onClick={openMenu}
+          >
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} className={styles.navItem}>
                 {item.text}
@@ -43,8 +56,19 @@ export default function Nav() {
               arrow
             />
           </div>
+          <span
+            className={
+              isOpen === false
+                ? styles.hamburger
+                : `${styles.hamburger} ${styles.active}`
+            }
+            onClick={openMenu}
+          >
+            <span className={styles.whiteBar}></span>
+            <span className={styles.whiteBar}></span>
+            <span className={styles.whiteBar}></span>
+          </span>
         </nav>
       </header>
-    </>
   );
 }
