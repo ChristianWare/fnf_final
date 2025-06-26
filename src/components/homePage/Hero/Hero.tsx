@@ -17,7 +17,7 @@ export default function Hero() {
         <div className={styles.content}>
           <div className={styles.left}>
             <h1 className={styles.heading}>
-              We build <br />
+              We build{" "}
               <span className={styles.span}>interactive & immersive </span>{" "}
               <br />
               e-commerce websites

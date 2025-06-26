@@ -10,7 +10,6 @@ import Edit from "@/components/icons/Edit/Edit";
 import Clock from "@/components/icons/Clock/Clock";
 import Listing from "@/components/icons/Listing/Listing";
 import Payment from "@/components/icons/Payment/Payment";
-import Corner from "@/components/shared/Corner/Corner";
 import ReviewSection from "../ReviewSection/ReviewSection";
 
 const ecommerceFeatures = [
@@ -113,20 +112,17 @@ export default function Features() {
   return (
     <LayoutWrapper>
       <section className={styles.container} id='features'>
-      <div className={styles.top}>
-        <h2 className={styles.heading}>
-          Features of our <br /> E-commerce Websites: <br />
-        </h2>
-        <span className={styles.span}>
-          Everything you need to launch, scale, and succeed online
-        </span>{" "}
-        <p className={styles.copy}>
-          We offer a comprehensive e-commerce development service designed to
-          cover every aspect of building and managing an online store:
-        </p>
-      </div>
-        <div className={styles.cornerContainer}>
-          <Corner />
+        <div className={styles.top}>
+          <h2 className={styles.heading}>
+            Features of our <br /> E-commerce Websites: <br />
+          </h2>
+          <span className={styles.span}>
+            Everything you need to launch, scale, and succeed online
+          </span>{" "}
+          <p className={styles.copy}>
+            We offer a comprehensive e-commerce development service designed to
+            cover every aspect of building and managing an online store:
+          </p>
         </div>
         <div className={styles.parent}>
           <div className={styles.dataContainer}>
@@ -142,7 +138,7 @@ export default function Features() {
             ))}
           </div>
         </div>
-      <ReviewSection />
+        <ReviewSection />
       </section>
     </LayoutWrapper>
   );

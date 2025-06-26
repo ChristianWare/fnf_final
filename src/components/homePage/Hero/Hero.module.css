@@ -3,6 +3,7 @@
   border-radius: 25px;
   margin: 1rem;
   position: relative;
+  min-height: 97vh;
 }
 
 .content {
@@ -39,7 +40,7 @@
 }
 
 .copy {
-  color: var(--white);
+  color: var(--textii);
   width: 400px;
   font-size: 1.6rem;
 }
@@ -53,7 +54,7 @@
 
 .lottieBox {
   width: 100%;
-  height: 500px;
+  height: 400px;
 }
 
 .lottie {
@@ -72,7 +73,7 @@
 @media screen and (max-width: 1068px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 0rem;
+    /* grid-gap: 0rem; */
   }
 
   .left {
@@ -87,7 +88,7 @@
 
   .lottieBox {
     width: 100%;
-    height: 500px;
+    height: 350px;
   }
 }
 

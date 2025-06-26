@@ -13,7 +13,7 @@ export default function AboutUsSection() {
             <SectionIntro title='About Fonts & Footers' dotColor='blueDot' />
           </div>
           <h2 className={styles.heading}>
-            Fonts & Footers exists exclusively for{" "}
+            We exists exclusively for{" "}
             <span className={styles.span}>small to mid-sized</span> businesses
             that sell physical products online. Whether you move five SKUs or
             five thousand, we concentrate on headless{" "}

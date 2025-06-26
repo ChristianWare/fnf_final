@@ -30,13 +30,15 @@
   font-size: 3.2rem;
   letter-spacing: 0px;
   text-align: center;
-  width: 60%;
+  width: 65%;
   line-height: 1.2;
 }
 
 .span {
   color: var(--blue);
   white-space: nowrap;
+  font-family: var(--PPNeueMontrealMediumThick);
+
 }
 
 @media screen and (max-width: 1268px) {
