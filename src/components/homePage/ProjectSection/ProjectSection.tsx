@@ -24,10 +24,16 @@ export default function ProjectSection() {
             {projects.map((x) => (
               <div className={styles.card} key={x.title}>
                 <div className={styles.cardTop}>
-                  <h3 className={styles.title}>{x.title}</h3>
                   <div className={styles.imgContainer}>
-                    <Image src={x.src} fill alt='' title='' className={styles.img} />
+                    <Image
+                      src={x.src}
+                      fill
+                      alt=''
+                      title=''
+                      className={styles.img}
+                    />
                   </div>
+                  <h3 className={styles.title}>{x.title}</h3>
                   <span className={styles.category}>{x.category}</span>
                   <p className={styles.desc}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.

@@ -187,7 +187,7 @@
 }
 
 .arrowBox:hover .icon {
-  color: var(--yellow);
+  color: var(--blue);
 }
 
 .indicators {
@@ -230,7 +230,7 @@
 
 .indicator {
   fill: none;
-  stroke: var(--yellow);
+  stroke: var(--blue);
   stroke-width: 2px;
   stroke-linecap: round;
   stroke-dasharray: 306;
@@ -265,7 +265,7 @@
 }
 
 .activeIndicator {
-  background-color: var(--yellow);
+  background-color: var(--blue);
   border: 1px solid var(--black);
 }
 
