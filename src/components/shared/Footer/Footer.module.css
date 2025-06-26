@@ -1,14 +1,14 @@
 .container {
   border-radius: 25px;
   background-color: var(--blue);
-  padding: 3rem;
   margin: 1rem;
   padding-top: 10rem;
   position: relative;
-  margin-top: 20rem;
+  /* margin-top: 20rem; */
   border-bottom: 1rem solid var(--white);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  z-index: 1;
 }
 
 .logoContainer {
@@ -102,7 +102,6 @@
 
 .headingOne {
   font-size: 8vw;
-  /* text-align: center; */
   color: var(--white);
   margin-bottom: 3rem;
   font-weight: 500;
@@ -139,7 +138,6 @@
 
 @media screen and (max-width: 568px) {
   .container {
-    padding: 1rem;
     padding-top: 7rem;
     padding-bottom: 2rem;
   }

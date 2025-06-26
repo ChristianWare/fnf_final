@@ -7,6 +7,7 @@ import ProjectSection from "@/components/homePage/ProjectSection/ProjectSection"
 import ServicesSection from "@/components/homePage/ServicesSection/ServicesSection";
 import Solution from "@/components/homePage/Solution/Solution";
 import WorkProcess from "@/components/homePage/WorkProcess/WorkProcess";
+import FinalCTA from "@/components/shared/FinalCTA/FinalCTA";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <How />
       <ServicesSection />
       <ContactUsSection />
+      <FinalCTA />
     </main>
   );
 }
