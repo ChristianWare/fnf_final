@@ -41,53 +41,58 @@
 
 .right {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
+  grid-template-areas:
+    "one one one"
+    "two two two"
+    "three four five"
+    "six six six";
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+}
+
+/* Specific cards can be targeted if needed */
+.card:nth-child(1) {
+  grid-area: one;
+}
+.card:nth-child(2) {
+  grid-area: two;
+  /* background-color: var(--green3); */
+  /* border: 1px solid var(--lightBlack); */
+}
+.card:nth-child(3) {
+  grid-area: three;
+}
+.card:nth-child(4) {
+  grid-area: four;
+}
+.card:nth-child(5) {
+  grid-area: five;
+}
+.card:nth-child(6) {
+  grid-area: six;
 }
 
 .card {
+  padding: 2rem;
   background-color: var(--tan);
-  padding: 2rem 3rem;
-  border-radius: 15px;
+  border-radius: 10px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.2s ease-in;
-}
-
-.card:hover {
-  background-color: var(--gray);
-}
-
-.titleContainer {
-  display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-start;
+  height: 100%;
+  gap: 2rem;
+  height: 100%;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.4rem;
+  width: 100%;
+  text-transform: capitalize;
   font-family: var(--inter);
   font-weight: 600;
-}
 
-.arrowContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
-  margin-left: auto;
-}
-
-.arrow {
-  font-size: 2.5rem;
-  color: var(--black);
-  transform: rotate(45deg);
 }
 
 @media screen and (max-width: 1068px) {
@@ -119,6 +124,18 @@
   .heading {
     text-align: left;
     width: 100%;
+  }
+
+  .right {
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six";
+    grid-template-columns: repeat(1, 1fr);
+    overflow-x: hidden;
   }
 }
 
