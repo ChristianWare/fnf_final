@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/shared/Footer/Footer";
+import FinalCTA from "@/components/shared/FinalCTA/FinalCTA";
 
 const inter = Inter({
   variable: "--inter",
@@ -39,6 +40,7 @@ export default function RootLayout({
         className={`${inter.variable} ${PPNeueMontrealMedium.variable} ${PPNeueMontrealMediumThick.variable}`}
       >
         {children}
+        <FinalCTA />
         <Footer />
       </body>
     </html>
