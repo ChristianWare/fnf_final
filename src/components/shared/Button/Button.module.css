@@ -48,7 +48,9 @@
 
 .noBackgroundBlueText {
   background-color: transparent;
-  color: var(--blue);
+  color: var(--white);
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
 }
 
 .arrow {
@@ -60,7 +62,7 @@
 }
 
 .noBackgroundBlueText .arrow {
-  color: var(--blue);
+  color: var(--white);
 }
 
 @media (hover: hover) and (pointer: fine) {

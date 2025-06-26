@@ -14,7 +14,12 @@ const navItems = [
   { text: "Contact", href: "/contact" },
 ];
 
-export default function Nav() {
+interface Props {
+  color?: string;
+  hamburgerColor?: string;
+}
+
+export default function Nav({ color = "", hamburgerColor = "" }: Props) {
   const [isOpen, setIsOpen] = useState(false);
 
   const openMenu = () => {
@@ -41,7 +46,11 @@ export default function Nav() {
           onClick={openMenu}
         >
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className={styles.navItem}>
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`${styles.navItem} ${styles[color]}`}
+            >
               {item.text}
             </Link>
           ))}
@@ -51,7 +60,7 @@ export default function Nav() {
           <Button
             href='/'
             text='Get Started'
-            btnType='noBackgroundWhiteText'
+            btnType='noBackgroundBlueText'
             arrow
           />
         </div>
@@ -63,9 +72,15 @@ export default function Nav() {
           }
           onClick={openMenu}
         >
-          <span className={styles.whiteBar}></span>
-          <span className={styles.whiteBar}></span>
-          <span className={styles.whiteBar}></span>
+          <span
+            className={`${styles.whiteBar} ${styles[hamburgerColor]}`}
+          ></span>
+          <span
+            className={`${styles.whiteBar} ${styles[hamburgerColor]}`}
+          ></span>
+          <span
+            className={`${styles.whiteBar} ${styles[hamburgerColor]}`}
+          ></span>
         </span>
       </nav>
     </header>
