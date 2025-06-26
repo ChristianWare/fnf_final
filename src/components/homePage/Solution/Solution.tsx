@@ -3,6 +3,7 @@ import styles from "./Solution.module.css";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import Image from "next/image";
 import SolutionImage from "../../../../public/images/solution.png";
+import Arrow from "@/components/icons/Arrow/Arrow";
 
 // const data = [
 //   {
@@ -159,7 +160,11 @@ export default function Solution() {
           <div className={styles.right}>
             {data.map((item) => (
               <div key={item.id} className={styles.card}>
-                <h3 className={styles.title}>{item.title}</h3>
+                <h3
+                  className={styles.title}
+                >
+                  {item.title}
+                </h3>
                 <p className={styles.desc}>{item.desc}</p>
               </div>
             ))}

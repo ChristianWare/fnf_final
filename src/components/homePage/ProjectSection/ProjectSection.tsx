@@ -3,6 +3,7 @@ import styles from "./ProjectSection.module.css";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import { projects } from "../../../../src/lib/data";
 import Button from "@/components/shared/Button/Button";
+import Image from "next/image";
 
 export default function ProjectSection() {
   return (
@@ -24,6 +25,9 @@ export default function ProjectSection() {
               <div className={styles.card} key={x.title}>
                 <div className={styles.cardTop}>
                   <h3 className={styles.title}>{x.title}</h3>
+                  <div className={styles.imgContainer}>
+                    <Image src={x.src} fill alt='' title='' className={styles.img} />
+                  </div>
                   <span className={styles.category}>{x.category}</span>
                   <p className={styles.desc}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
