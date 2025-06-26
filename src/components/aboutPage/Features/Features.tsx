@@ -11,6 +11,7 @@ import Clock from "@/components/icons/Clock/Clock";
 import Listing from "@/components/icons/Listing/Listing";
 import Payment from "@/components/icons/Payment/Payment";
 import Corner from "@/components/shared/Corner/Corner";
+import ReviewSection from "../ReviewSection/ReviewSection";
 
 const ecommerceFeatures = [
   {
@@ -111,6 +112,7 @@ const ecommerceFeatures = [
 export default function Features() {
   return (
     <LayoutWrapper>
+      <section className={styles.container} id='features'>
       <div className={styles.top}>
         <h2 className={styles.heading}>
           Features of our <br /> E-commerce Websites: <br />
@@ -123,7 +125,6 @@ export default function Features() {
           cover every aspect of building and managing an online store:
         </p>
       </div>
-      <section className={styles.container} id='features'>
         <div className={styles.cornerContainer}>
           <Corner />
         </div>
@@ -141,6 +142,7 @@ export default function Features() {
             ))}
           </div>
         </div>
+      <ReviewSection />
       </section>
     </LayoutWrapper>
   );
