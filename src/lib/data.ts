@@ -41,7 +41,6 @@ export const projects = [
 ] as const;
 
 export const pricingData = [
-  /* ––––– EXISTING ITEMS ––––– */
   {
     id: 1,
     service: "E-commerce Online Store",
