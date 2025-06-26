@@ -11,8 +11,7 @@ export default function ServicesHero() {
       <LayoutWrapper>
         <div className={styles.content}>
           <h1 className={styles.heading}>
-            E-Commerce <span className={styles.span}>Services</span> <br />{" "}
-            Built for Growth
+            E-Commerce Services <br /> Built for Growth
           </h1>
         </div>
       </LayoutWrapper>
