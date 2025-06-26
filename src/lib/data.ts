@@ -1,3 +1,11 @@
+import CherylC from "../../public/images/CherylC.jpg";
+import JimConnie from "../../public/images/Jim&Connie.jpg";
+import Adam from "../../public/images/Adam.jpg";
+import Lynn from "../../public/images/lynn.jpg";
+import Lady from "../../public/images/lady.jpg";
+import Linda from "../../public/images/linda.jpg";
+import Sheryl from "../../public/images/sheryl.jpg";
+import Jeff from "../../public/images/jeff.jpg";
 import Project1 from "../../public/images/howItWorks.jpg";
 import Project2 from "../../public/images/speed.jpg";
 import Project3 from "../../public/images/faqii.jpg";
@@ -284,5 +292,72 @@ export const pricingData = [
         price: "$900",
       },
     ],
+  },
+] as const;
+
+export const reviews = [
+  {
+    id: 1,
+    review:
+      "Fonts & Footers rebuilt our California-style furniture store from the ground up. Page-load times dropped from six seconds to under one, our bounce rate fell 32 %, and revenue doubled the very next quarter. Truly transformative work.",
+    reviewer: "Alicia G.",
+    company: "Coastal Oak Furnishings",
+    person: Lady, // import your client avatar or photo
+  },
+  {
+    id: 2,
+    review:
+      "Chris delivers reliable, white-glove service in pure tech luxury. We launch one or two promotions every month and he’s always a step ahead—confirming details the day before and pushing updates at 4 a.m. if my schedule changes. It’s priceless having a partner I can trust while I sleep.",
+    reviewer: "Sheryl G.",
+    company: "Golden Grain Coffee, Scottsdale AZ",
+    person: Sheryl,
+  },
+  {
+    id: 3,
+    review:
+      "I lean on Fonts & Footers weekly for product drops and occasionally for personal side projects. They’re always on time, super friendly, and helpful—all at very reasonable rates. Couldn’t ask for a better dev team.",
+    reviewer: "Jeff G.",
+    company: "WildPup Gear",
+    person: Jeff,
+  },
+  {
+    id: 4,
+    review:
+      "We’ve hired this team four separate times in the past few months. Booking each sprint is seamless. Chris is professional, friendly, and prompt—as are the rest of his engineers. Pricing is competitive, the codebase is spotless, and the ROI keeps us coming back.",
+    reviewer: "Cheryl C.",
+    company: "NorthPeak Activewear",
+    person: CherylC,
+  },
+  {
+    id: 5,
+    review:
+      "After one project with Chris we switched to Fonts & Footers exclusively. Their pride, professionalism, and meticulous attention to detail give us total peace of mind. They monitor our Shopify traffic in real time and adjust deployments—no excuses, no surprises.",
+    reviewer: "Jim & Connie A.",
+    company: "Evergreen Home Décor",
+    person: JimConnie,
+  },
+  {
+    id: 6,
+    review:
+      "We hired Fonts & Footers to launch—and later refresh—our European campaign site. Best decision! The pages feel luxurious, fresh, and built for conversions. Extra thanks for being online at 1 : 30 a.m. the night we went live!",
+    reviewer: "Lynn B.",
+    company: "Sun Valley Outdoor Living, Tempe AZ",
+    person: Lynn,
+  },
+  {
+    id: 7,
+    review:
+      "We’ve used this service multiple times. The developers are great—always professional and prompt. You can tell they care deeply about code quality and customer experience. Highly recommend.",
+    reviewer: "Illeana L.",
+    company: "Mesa Organics",
+    person: Linda,
+  },
+  {
+    id: 8,
+    review:
+      "I’d never worked with an outside dev shop before, but Fonts & Footers made it easy. I travel almost weekly; plans change constantly and Chris still comes through—he even hopped in to upload a missing asset while I was in Hawaii. Clean code, fair pricing, top-tier people. Highly recommended.",
+    reviewer: "Adam B.",
+    company: "Urban Roots Apparel, Phoenix AZ",
+    person: Adam,
   },
 ] as const;
