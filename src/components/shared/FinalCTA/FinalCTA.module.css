@@ -47,10 +47,11 @@
   }
 
   .lottieBox {
-    height: 300px;
+    height: 200px;
   }
 
   .heading {
-    font-size: 10vw;
+    font-size: 7vw;
+    line-height: 1.2;
   }
 }
