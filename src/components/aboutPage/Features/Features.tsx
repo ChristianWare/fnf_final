@@ -10,7 +10,7 @@ import Edit from "@/components/icons/Edit/Edit";
 import Clock from "@/components/icons/Clock/Clock";
 import Listing from "@/components/icons/Listing/Listing";
 import Payment from "@/components/icons/Payment/Payment";
-import ReviewSection from "../ReviewSection/ReviewSection";
+// import ReviewSection from "../ReviewSection/ReviewSection";
 
 const ecommerceFeatures = [
   {
@@ -138,7 +138,7 @@ export default function Features() {
             ))}
           </div>
         </div>
-        <ReviewSection />
+        {/* <ReviewSection /> */}
       </section>
     </LayoutWrapper>
   );

@@ -1,0 +1,172 @@
+.container {
+  background-color: var(--tan);
+  border-radius: 25px;
+  position: relative;
+  padding: 5rem;
+  padding-top: 10rem;
+}
+
+.cornerContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10rem;
+}
+
+.left {
+  padding: 2rem 0rem;
+  align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+.heading {
+  color: var(--black);
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  margin-top: 5rem;
+}
+
+.img {
+  object-fit: contain;
+  padding: 5rem;
+}
+
+.right {
+  padding-top: 2rem;
+}
+
+.mapDataBox {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: relative;
+  background-color: var(--yellow);
+  border-radius: 15px;
+    align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
+}
+
+.card:nth-child(1) {
+  background-color: var(--blue);
+}
+
+.card:nth-child(3) {
+  background-color: var(--purple);
+}
+
+.card:nth-child(4) {
+  background-color: var(--green);
+}
+
+.blackDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--black);
+  display: block;
+  margin-left: auto;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.cardLeft {
+  border-right: 1px solid var(--black);
+  padding: 2rem;
+}
+
+.id {
+  font-size: 2.4rem;
+  line-height: 1.1;
+}
+
+.cardRight {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5rem;
+}
+
+.desc {
+  text-transform: none;
+  width: 80%;
+  color: var(--black);
+}
+
+.projectsBox {
+  margin-top: 10rem;
+}
+
+@media screen and (max-width: 1268px) {
+  .container {
+    padding: 3rem;
+  }
+
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .imgContainer {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .imgContainer {
+    height: 350px;
+  }
+
+  .heading {
+    width: 100%;
+  }
+
+  .card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cardLeft {
+    border-right: none;
+  }
+
+  .id {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .desc {
+    width: 100%;
+  }
+}

@@ -47,10 +47,13 @@
 }
 
 .noBackgroundBlueText {
-  background-color: transparent;
   color: var(--white);
   background-color: var(--blue);
-  border: 1px solid var(--blue);
+}
+
+.noBackgroundBlackText {
+  background-color: transparent;
+  color: var(--white);
 }
 
 .arrow {
@@ -59,6 +62,10 @@
   transition: all 0.2s ease-in-out;
   position: relative;
   top: 2px;
+}
+
+.noBackgroundBlackText .arrow {
+  color: var(--white);
 }
 
 .noBackgroundBlueText .arrow {
