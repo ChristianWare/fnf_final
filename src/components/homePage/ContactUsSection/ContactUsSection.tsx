@@ -1,12 +1,12 @@
-"use client";
+// "use client";
 
-import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./ContactUsSection.module.css";
+import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import Corner from "@/components/shared/Corner/Corner";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import ContactForm from "@/components/shared/ContactForm/ContactForm";
-import animationData from "../../../../public/lottie/email.json";
-import Lottie from "lottie-react";
+import Image from "next/image";
+import Img1 from "../../../../public/images/contact.png";
 
 export default function ContactUsSection() {
   return (
@@ -36,11 +36,8 @@ export default function ContactUsSection() {
           </div>
           <div className={styles.bottom}>
             <div className={styles.left}>
-              <div className={styles.lottieBox}>
-                <Lottie
-                  animationData={animationData}
-                  className={styles.lottie}
-                />
+              <div className={styles.imgContainer}>
+                <Image src={Img1} fill alt='' className={styles.img} />
               </div>
             </div>
             <div className={styles.right}>
