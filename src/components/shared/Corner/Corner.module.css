@@ -89,6 +89,19 @@
   box-shadow: -1em -1rem var(--black);
 }
 
+.backgroundColorTan {
+  background-color: var(--tan);
+  color: var(--white);
+}
+
+.container.backgroundColorTan::after {
+  box-shadow: -1em -1rem var(--tan);
+}
+
+.container.backgroundColorTan::before {
+  box-shadow: -1em -1rem var(--tan);
+}
+
 @media screen and (max-width: 768px) {
   .container {
     width: 25%;
