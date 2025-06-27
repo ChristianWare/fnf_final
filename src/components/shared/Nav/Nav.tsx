@@ -7,10 +7,10 @@ import Button from "../Button/Button";
 import { useState } from "react";
 
 const navItems = [
+  { text: "Home", href: "/" },
   { text: "About", href: "/about" },
   { text: "Work", href: "/work" },
   { text: "Services", href: "/services" },
-  { text: "faq", href: "/faq" },
   { text: "Contact", href: "/contact" },
 ];
 
