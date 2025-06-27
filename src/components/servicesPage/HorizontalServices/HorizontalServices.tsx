@@ -2,7 +2,7 @@ import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./HorizontalServices.module.css";
 import { pricingData } from "@/lib/data";
 import Button from "@/components/shared/Button/Button";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function HorizontalServices() {
   return (
@@ -15,9 +15,6 @@ export default function HorizontalServices() {
                 <span className={styles.index}>0{index + 1}.</span>
                 <h3 className={styles.title}>{x.service}</h3>
                 <span className={styles.headline}>{x.desc}</span>
-                <div className={styles.imgContainer}>
-                  <Image src={x.src} fill alt='' title='' className={styles.img} />
-                </div>
               </div>
               <div className={styles.servicesCard}>
                 <div className={styles.servicesCardTop}>
@@ -40,14 +37,14 @@ export default function HorizontalServices() {
                     </p>
                   ))}
                 </div>
-              </div>
-              <div className={styles.btnContainer}>
-                <Button
-                  href='/'
-                  btnType='blackOutline'
-                  text='More Details'
-                  arrow
-                />
+                <div className={styles.btnContainer}>
+                  <Button
+                    href='/'
+                    btnType='blackOutline'
+                    text='More Details'
+                    arrow
+                  />
+                </div>
               </div>
             </div>
           ))}
