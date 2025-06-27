@@ -9,6 +9,10 @@ import Jeff from "../../public/images/jeff.jpg";
 import Project1 from "../../public/images/howItWorks.jpg";
 import Project2 from "../../public/images/speed.jpg";
 import Project3 from "../../public/images/faqii.jpg";
+import Booking from "../../public/images/booking.jpg";
+import Ecomm from "../../public/images/ecomm.jpeg";
+import Marketing from "../../public/images/marketing.jpg";
+import Subscription from "../../public/images/subscription.jpg";
 
 export const projects = [
   {
@@ -46,6 +50,7 @@ export const pricingData = [
     service: "E-commerce Online Store",
     headline: "Building robust, scalable online stores",
     desc: "Custom built website, with up to 25 live SKUs, single language, single currency, Stripe or Shopify Payments. Timeline: four weeks.",
+    src: Ecomm,
     price: "$5,900",
     servicesInclude: [
       {
@@ -108,6 +113,7 @@ export const pricingData = [
     headline: "Fast, friction-free scheduling & reservations",
     desc: "Custom-built booking platform with real-time calendar sync, single/multiple locations, and secure Stripe deposit or full-payment checkout. Timeline: four weeks.",
     price: "$4,500",
+    src: Booking,
     servicesInclude: [
       {
         id: 4.1,
@@ -165,13 +171,12 @@ export const pricingData = [
       },
     ],
   },
-
-  /* ––––– NEW ITEM 3 ––––– */
   {
     id: 3,
     service: "Marketing & Brand Website",
     headline: "Lightning-fast pages that turn visitors into leads",
     desc: "Conversion-optimised brochure site (up to 10 pages) built on a headless CMS, with on-page SEO and interactive animations. Timeline: three weeks.",
+    src: Marketing,
     price: "$3,900",
     servicesInclude: [
       {
@@ -229,13 +234,12 @@ export const pricingData = [
       },
     ],
   },
-
-  /* ––––– NEW ITEM 4 ––––– */
   {
     id: 4,
     service: "Subscription & Membership Platform",
     headline: "Recurring revenue on autopilot",
     desc: "Custom subscription engine with Stripe recurring billing, self-service customer portal, and automated churn control. Timeline: four weeks.",
+    src: Subscription,
     price: "$5,200",
     servicesInclude: [
       {
