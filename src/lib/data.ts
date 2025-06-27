@@ -50,25 +50,25 @@ export const pricingData = [
     servicesInclude: [
       {
         id: 3.1,
-        serviceName: "Custom e-commerce development",
+        serviceName: "Custom Store",
         description:
           "We build tailored e-commerce solutions that address your unique business requirements and customer needs.",
       },
       {
         id: 3.2,
-        serviceName: "Platform migration (Shopify, WooCommerce, etc.)",
+        serviceName: "Platform Migration",
         description:
           "We seamlessly transition your existing store to a new platform while preserving your data, SEO, and customer experience.",
       },
       {
         id: 3.3,
-        serviceName: "Payment gateway integration",
+        serviceName: "Payment Gateway",
         description:
           "We implement secure, reliable payment processing options that support your customers' preferred payment methods.",
       },
       {
         id: 3.4,
-        serviceName: "Shipping and tax configuration",
+        serviceName: "Shipping/Tax config",
         description:
           "We set up accurate shipping calculations and tax applications to prevent checkout surprises and abandoned carts.",
       },
@@ -111,25 +111,25 @@ export const pricingData = [
     servicesInclude: [
       {
         id: 4.1,
-        serviceName: "Custom booking-flow design",
+        serviceName: "Custom booking",
         description:
           "We map and code a user journey that matches your service logic—single appointments, multi-step rentals, or group sessions—so guests book in under 60 seconds.",
       },
       {
         id: 4.2,
-        serviceName: "Real-time calendar & resource sync",
+        serviceName: "Calendar Sync",
         description:
           "Your online availability pulls live data from Google Calendar, Microsoft 365, or PMS APIs, eliminating double-bookings.",
       },
       {
         id: 4.3,
-        serviceName: "Integrated payments & deposits",
+        serviceName: "Integrated Payments",
         description:
           "Stripe and Square gateways handle deposits, full charges, or split payments while keeping you PCI compliant.",
       },
       {
         id: 4.4,
-        serviceName: "Automated reminders & no-show protection",
+        serviceName: "Automated Reminders",
         description:
           "SMS and email reminders reduce no-shows by up to 40 %. Optional card-on-file or late-cancel fees protect revenue.",
       },
@@ -176,25 +176,25 @@ export const pricingData = [
     servicesInclude: [
       {
         id: 5.1,
-        serviceName: "Headless CMS setup (Sanity, Contentful, etc.)",
+        serviceName: "CMS Setup",
         description:
           "Edit copy, images, and landing pages on-the-fly without touching code.",
       },
       {
         id: 5.2,
-        serviceName: "Performance & technical SEO hardening",
+        serviceName: "SEO",
         description:
           "Core Web Vitals, schema markup, and best-practice meta structure baked in from day one.",
       },
       {
         id: 5.3,
-        serviceName: "Interactive UI & micro-animations",
+        serviceName: "Interactive UI",
         description:
           "GSAP / Framer Motion effects that showcase your brand story and increase dwell time.",
       },
       {
         id: 5.4,
-        serviceName: "Lead-capture & CRM automation",
+        serviceName: "Lead-capture",
         description:
           "Forms pipe directly into HubSpot, Mailchimp, or your preferred CRM for instant follow-up.",
       },
@@ -240,25 +240,25 @@ export const pricingData = [
     servicesInclude: [
       {
         id: 6.1,
-        serviceName: "Plan & product configuration",
+        serviceName: "Product Config",
         description:
           "Set up free trials, tiered pricing, discounts, and add-ons without dev tickets.",
       },
       {
         id: 6.2,
-        serviceName: "Secure member portal",
+        serviceName: "Member portal",
         description:
           "Customers manage plans, upgrades, and billing details from any device.",
       },
       {
         id: 6.3,
-        serviceName: "Automated billing & dunning",
+        serviceName: "Automated Billing",
         description:
           "Failed-payment retries, smart reminders, and re-activation flows that recover up to 15 % of at-risk MRR.",
       },
       {
         id: 6.4,
-        serviceName: "Analytics & cohort dashboards",
+        serviceName: "Analytics",
         description:
           "Instant insights into churn, LTV, and retention so you can pivot marketing spend fast.",
       },

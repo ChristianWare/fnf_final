@@ -53,7 +53,13 @@
 
 .noBackgroundBlackText {
   background-color: transparent;
-  color: var(--white);
+  color: var(--black);
+}
+
+.blackOutline {
+  background-color: transparent;
+  color: var(--black);
+  border: 1px solid var(--black);
 }
 
 .arrow {
@@ -65,7 +71,7 @@
 }
 
 .noBackgroundBlackText .arrow {
-  color: var(--white);
+  color: var(--black);
 }
 
 .noBackgroundBlueText .arrow {

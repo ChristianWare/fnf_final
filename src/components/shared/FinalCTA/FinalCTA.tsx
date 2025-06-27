@@ -26,7 +26,7 @@ export default function FinalCTA() {
             <Button href='/contact' btnType='blue' text='Book a Call' />
             <Button
               href='/contact'
-              btnType='noBackgroundBlueText'
+              btnType='noBackgroundBlackText'
               text='Send an Email'
               arrow
             />
