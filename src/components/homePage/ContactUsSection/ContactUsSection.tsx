@@ -2,7 +2,6 @@
 
 import styles from "./ContactUsSection.module.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
-import Corner from "@/components/shared/Corner/Corner";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import ContactForm from "@/components/shared/ContactForm/ContactForm";
 import Image from "next/image";
@@ -13,9 +12,7 @@ export default function ContactUsSection() {
     <LayoutWrapper>
       <section className={styles.container}>
         <div className={styles.content}>
-          <div className={styles.cornerContainer}>
-            <Corner />
-          </div>
+          
 
           <div className={styles.sectionTop}>
             <div className={styles.sectionHeadingContainer}>

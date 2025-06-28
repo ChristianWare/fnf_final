@@ -5,6 +5,7 @@ import toast from "react-hot-toast";
 import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import FalseButton from "../FalseButton/FalseButton";
+import Corner from "../Corner/Corner";
 
 interface Inputs {
   firstName: string;
@@ -75,6 +76,9 @@ export default function ContactForm() {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+      <div className={styles.cornerContainer}>
+        <Corner />
+      </div>
       <div className={styles.namesContainer}>
         <div className={styles.labelInputBox}>
           <label htmlFor='firstName'>
