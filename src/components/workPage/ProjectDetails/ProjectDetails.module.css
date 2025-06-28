@@ -5,7 +5,7 @@
   background-color: var(--white);
   border-radius: 25px;
   position: relative;
-  padding: 5rem ;
+  padding: 5rem;
   padding-top: 10rem;
 }
 
@@ -51,6 +51,8 @@
   font-size: 1.6rem;
   display: block;
   margin-bottom: 0.5rem;
+  font-family: var(--inter);
+  font-weight: 700;
 }
 
 .isLeft {
@@ -103,10 +105,11 @@
 }
 
 .heading {
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-transform: none;
-  font-family: var(--SuisseIntlMedium);
-  width: 70%;
+  font-family: var(--inter);
+  font-weight: 400;
+  /* width: 70%; */
   color: var(--text);
 }
 
@@ -142,13 +145,9 @@
     padding: 3rem;
     padding-top: 10rem;
   }
-  
+
   .title {
     margin-bottom: 2rem;
-  }
-
-  .heading {
-    text-align: center;
   }
 
   .introSection {

@@ -1,4 +1,3 @@
-// Stats.tsx
 import styles from "./Stats.module.css";
 
 export interface StatItem {
