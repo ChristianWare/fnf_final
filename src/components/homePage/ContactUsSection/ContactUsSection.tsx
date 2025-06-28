@@ -21,8 +21,6 @@ export default function ContactUsSection() {
             <div className={styles.sectionHeadingContainer}>
               <SectionIntro
                 title='Contact us'
-                color='white'
-                dotColor='pinkDot'
               />
             </div>
             <h2 className={styles.heading}>

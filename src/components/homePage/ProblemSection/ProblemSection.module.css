@@ -62,9 +62,6 @@
 }
 
 .card {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
   display: grid;
   grid-template-columns: 5fr 1fr;
   gap: 4rem;
@@ -118,7 +115,7 @@
   .container {
     padding: 3rem 5rem;
   }
-  
+
   .sectionTop {
     align-items: center;
     justify-content: center;
@@ -178,7 +175,7 @@
   }
 
   .imgContainer {
-    width: 100%;
+    width: 275px;
     height: 275px;
   }
 
@@ -188,15 +185,12 @@
 
   .right {
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 6rem;
   }
 
   .card {
     grid-template-columns: repeat(1, 1fr);
-    padding: 2rem;
-    background-color: var(--blackii);
-    border-radius: 10px;
     gap: 4rem;
-    border-bottom: none;
   }
 
   .iconBox {

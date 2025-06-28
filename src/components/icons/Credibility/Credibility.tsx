@@ -4,7 +4,7 @@ import { SVGProps } from "react";
 export default function Credibility(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      viewBox='0 0 20 20'
+      viewBox='0 0 24 24'
       width='1em'
       height='1em'
       fill='none'

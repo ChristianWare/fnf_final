@@ -23,7 +23,7 @@ export default function OurTeam() {
               deliver clean, conversion-focused sites.
             </h2>
             <div className={styles.btnContainer}>
-              <Button href='/' btnType='blue' text='Find me on linkedIn' />
+              <Button href='/' btnType='blue' text='Find me on linkedIn' arrow />
             </div>
           </div>
           <div className={styles.bottom}>

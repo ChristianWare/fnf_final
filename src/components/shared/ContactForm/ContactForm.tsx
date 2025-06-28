@@ -75,7 +75,6 @@ export default function ContactForm() {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-      <h2 className={styles.formHeading}>Contact US</h2>
       <div className={styles.namesContainer}>
         <div className={styles.labelInputBox}>
           <label htmlFor='firstName'>
@@ -119,7 +118,7 @@ export default function ContactForm() {
                 message: "Entered value does not match email format",
               },
             })}
-            placeholder='So we can respond. I won&#39;t send you spam.'
+            placeholder='So we can respond. We won&#39;t send you spam.'
             maxLength={500}
           />
           {errors.email && (
@@ -146,7 +145,7 @@ export default function ContactForm() {
             id='projectDescription'
             maxLength={5000}
             {...register("projectDescription", { required: true })}
-            placeholder='Tell me about your project needs.'
+            placeholder='Tell us about your project needs.'
           />
           {errors.projectDescription && (
             <span className={styles.error}>
