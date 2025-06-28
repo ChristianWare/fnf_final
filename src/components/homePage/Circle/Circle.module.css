@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  max-width:375px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -145,6 +145,11 @@
 
 .option {
   font-size: clamp(1rem, 2vw, 1.4rem);
+}
+
+.icon {
+  font-size: 3rem;
+  color: var(--blackii);
 }
 
 .quad2 .option {

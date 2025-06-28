@@ -5,27 +5,35 @@
 import { useState } from "react";
 import styles from "./Circle.module.css";
 import Modal from "@/components/shared/Modal/Modal";
+import Analytics from "@/components/icons/Analytics/Analytics";
+import Clock from "@/components/icons/Clock/Clock";
+import CloudPrez from "@/components/icons/CloudPrez/CloudPrez";
+import Multiple from "@/components/icons/Multiple/Multiple";
 
 const data = [
   {
     id: 1,
     feature: "Discovery & Goal Mapping",
     desc: "A quick strategy call and analytics review to pin down revenue targets, customer pain points, and brand voice before any design work begins.",
+    icon: <Analytics className={styles.icon} />,
   },
   {
     id: 2,
     feature: "Strategic Blueprint",
     desc: "You receive a detailed project roadmap—site architecture, milestones, and fixed pricing—so you know exactly what’s coming and when.",
+    icon: <Clock className={styles.icon} />,
   },
   {
     id: 3,
     feature: "Build & Integrate",
     desc: "Our developers turn the prototype into a high-performance storefront, integrating payment gateways, inventory systems, and marketing tools.",
+    icon: <CloudPrez className={styles.icon} />,
   },
   {
     id: 4,
     feature: "Launch & Growth Tune-Ups",
     desc: "After go-live we monitor performance, run quick-win A/B tests, and provide 30 days of complimentary support to ensure the site hits your KPIs.",
+    icon: <Multiple className={styles.icon} />,
   },
 ];
 
@@ -82,7 +90,8 @@ export default function Circle() {
               className={(styles as any)[`quad${index + 1}`]}
               onClick={() => openModal(item)}
             >
-              0{item.id}
+              {/* 0{item.id} */}
+              {item.icon}
             </div>
           ))}
         </div>
