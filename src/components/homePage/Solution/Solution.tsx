@@ -3,7 +3,6 @@ import styles from "./Solution.module.css";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import Image from "next/image";
 import SolutionImage from "../../../../public/images/solution.png";
-import Arrow from "@/components/icons/Arrow/Arrow";
 
 // const data = [
 //   {

@@ -1,12 +1,12 @@
 import styles from "./ProjectDetails.module.css";
-import Button from "@/components/Button/Button";
-import LayoutWrapper from "@/components/LayoutWrapper";
+import Button from "../shared/Button/Button";
+import LayoutWrapper from "../shared/LayoutWrapper";
 import { StaticImageData } from "next/image";
-import Stats from "../Stats/Stats";
-import Description from "../Description/Description";
-import VideoSection from "../VideoSection/VideoSection";
-import Results from "../Results/Results";
-import Challenge from "../Challenge/Challenge";
+import Stats from "./Stats/Stats";
+import Description from "./Description/Description";
+import VideoSection from "./VideoSection/VideoSection";
+import Results from "./Results/Results";
+import Challenge from "./Challenge/Challenge";
 import { ComponentType, SVGProps } from "react";
 
 interface TagItem {

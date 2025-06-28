@@ -34,7 +34,7 @@ export default function ProjectSection() {
                     />
                   </div>
                   <h3 className={styles.title}>{x.title}</h3>
-                  <span className={styles.category}>{x.category}</span>
+                  <span className={styles.category}>Ecommerce</span>
                   <p className={styles.desc}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Doloribus corporis veritatis ullam ipsa sequi delectus.
