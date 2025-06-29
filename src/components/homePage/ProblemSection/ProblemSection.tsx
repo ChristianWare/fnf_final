@@ -13,30 +13,31 @@ import Update from "@/components/icons/Update/Update";
 
 const data = [
   {
-    icon: <Outdated className={styles.icon} />,
-    title: "Outdated Design",
+    icon: <Outdated className={styles.icon} />, // swap icons if you have booking-specific svgs
+    title: "DM Chaos",
     description:
-      "Your website looks outdated or unprofessional, which doesn’t reflect the quality of your business.",
+      "You spend hours each day confirming times in Instagram or Facebook messages instead of serving clients.",
   },
   {
     icon: <CloudPrez className={styles.icon} />,
-    title: "Missed Online Presence",
+    title: "No-Show Drain",
     description:
-      "You’re missing out on reaching potential customers because they can’t find you online.",
+      "Last-minute cancellations and no-shows eat 15-20 % of your revenue—but guests still expect flexibility.",
   },
   {
     icon: <Credibility className={styles.icon} />,
-    title: "Losing Credibility",
+    title: "Double-Booking Risk",
     description:
-      "Not having a website can make your business appear less credible or outdated compared to competitors who have an online presence.",
+      "Google, iCal, and handwritten schedules fall out of sync, leading to awkward refunds and bad reviews.",
   },
   {
     icon: <Update className={styles.icon} />,
-    title: "Hard to Update or Manage",
+    title: "Marketplace Fees",
     description:
-      "Every small update requires technical assistance, and it’s holding back your business growth.",
+      "Third-party platforms keep up to 15 % of every booking and block you from building your own customer list.",
   },
 ];
+
 
 export default function ProblemSection() {
   return (
@@ -55,15 +56,14 @@ export default function ProblemSection() {
             />
           </div>
           <h2 className={styles.heading}>
-            Are you <span className={styles.span}> unhappy</span> with your
-            current online store, or do you{" "}
-            <span className={styles.span}>not have one at all?</span>
+            Are you <span className={styles.span}>tired</span> of chasing DMs or <br />{" "}
+            <span className={styles.span}>losing money</span> to no-shows?
           </h2>
           <p className={styles.leftCopy}>
-            This means solving strategic challenges like how to re-platform a
-            technology stack, get data-driven insights from business
-            intelligence or build a seamless digital experience across online
-            and offline channels.{" "}
+            A custom booking platform fixes those leaks by syncing calendars in
+            real time, charging deposits automatically, and giving guests a
+            60-second checkout—no coding on your part, no monthly marketplace
+            tax.
           </p>
         </div>
         <div className={styles.bottom}>

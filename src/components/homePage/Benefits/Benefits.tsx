@@ -5,29 +5,30 @@ import Arrow from "@/components/icons/Arrow/Arrow";
 const data = [
   {
     id: 1,
-    title: "Tailored Design",
-    desc: "Every pixel is crafted around your brand and products, not crammed into a generic theme, so shoppers feel they’re on a store made just for them.",
+    title: "One-Tap Rebooking",
+    desc: "Returning guests confirm a new appointment in under ten seconds, turning happy customers into reliable repeat revenue.",
     bgColor: "blue",
   },
   {
     id: 2,
-    title: "Smooth Interactions",
-    desc: "Subtle animations and intuitive transitions guide visitors naturally from discovery to checkout, boosting engagement and sales.",
+    title: "Real-Time Availability",
+    desc: "Google, iCal, and on-site calendars stay perfectly in sync, so clients see only open slots and double-bookings disappear.",
     bgColor: "yellow",
   },
   {
     id: 3,
-    title: "Future-Proof Flexibility",
-    desc: "A clean, modular architecture lets you add features or integrations later without costly rebuilds or platform limitations.",
+    title: "Smart Deposit Rules",
+    desc: "Card-on-file deposits and late-cancel fees protect your income and cut no-shows by up to 40 %.",
     bgColor: "purple",
   },
   {
-    id: 5,
-    title: "Lightning-Fast Performance",
-    desc: "Hand-written code removes unnecessary bloat, letting pages load in under a second and keeping potential buyers from bouncing away.",
+    id: 4,
+    title: "Lightning-Fast Experience",
+    desc: "Optimised Next.js pages load in well under a second on mobile, keeping busy clients from bouncing before they book.",
     bgColor: "green",
   },
 ];
+
 
 export default function Benefits() {
   return (

@@ -18,16 +18,20 @@ export default function FinalCTA() {
           <SectionIntro title='FONTS & FOOTERS' color='tan' dotColor='tanDot' />
 
           <h2 className={styles.heading}>
-            Have a project in mind? <br /> Let&lsquo;s chat, no strings
-            attached.
+            Ready to stop chasing DMs <br /> and start filling your calendar?
           </h2>
 
           <div className={styles.btnContainer}>
-            <Button href='/contact' btnType='blue' text='Book a Call' />
+            <Button
+              href='/contact'
+              btnType='blue'
+              text='Book a 15-minute call'
+              arrow
+            />
             <Button
               href='/contact'
               btnType='noBackgroundBlackText'
-              text='Send an Email'
+              text='Prefer email?'
               arrow
             />
           </div>

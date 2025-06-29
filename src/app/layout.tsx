@@ -24,10 +24,11 @@ const PPNeueMontrealMediumThick = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Fonts & Footers",
+  title: "Fonts & Footers | Custom Booking Websites",
   description:
-    "Fonts & Footers empowers business owners with e-commerce stores, business websites, and direct booking platforms. Elevate your online presence with our web development and design expertise!",
+    "Fonts & Footers builds lightning-fast, mobile-first booking platforms that sync calendars in real time, cut no-shows, and automate deposits for salons, spas, rentals, and service brands.",
 };
+
 
 export default function RootLayout({
   children,

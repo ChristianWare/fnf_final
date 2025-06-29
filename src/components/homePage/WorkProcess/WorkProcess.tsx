@@ -17,7 +17,7 @@ export default function WorkProcess() {
             to map your goals, pain points, and prototype every page before
             writing a line of code. Then we{" "}
             <span className={styles.span}>build, launch, and support</span> your
-            storefront with hands-on training and 30 days of complimentary
+            booking website with hands-on training and 30 days of complimentary
             post-launch care.
           </h2>
         </div>
