@@ -154,3 +154,9 @@
     background-color: var(--tan);
   }
 }
+
+@media screen and (max-width: 380px) {
+  .navbar {
+    padding: 2rem 1.5rem;
+  }
+}
