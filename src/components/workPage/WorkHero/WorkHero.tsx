@@ -6,7 +6,7 @@ export default function WorkHero() {
   return (
     <section className={styles.container}>
       <div className={styles.navContainer}>
-        <Nav color='black' hamburgerColor='hamburgerBlack' />
+        <Nav />
       </div>
       <LayoutWrapper>
         <div className={styles.content}>

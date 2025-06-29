@@ -17,21 +17,24 @@ export default function Hero() {
         <div className={styles.content}>
           <div className={styles.left}>
             <h1 className={styles.heading}>
-              We build{" "}
-              <span className={styles.span}>interactive & immersive </span>{" "}
-              <br />
-              e-commerce websites
+              We build <br />{" "}
+              <span className={styles.span}> booking websites </span> <br />
+              that fill calendars, not inboxes.
             </h1>
             <p className={styles.copy}>
-              Fonts & Footers builds lightning-fast, revenue-driven online
-              stores for small and medium-sized brands.
+              Fonts & Footers turns slow DM scheduling into one-click
+              confirmations for salons, spas, rentals, and service brands.
             </p>
             <div className={styles.btnContainer}>
-              <Button href='/' btnType='white' text='Submit a request' />
+              <Button
+                href='/'
+                btnType='white'
+                text='Get a free 90-second audit'
+              />
               <Button
                 href='/'
                 btnType='noBackgroundWhiteText'
-                text='See how it works'
+                text='See pricing'
                 arrow
               />
             </div>

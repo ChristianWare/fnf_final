@@ -182,7 +182,7 @@ textarea:focus {
   }
 
   h1 {
-    font-size: 4.1rem;
+    font-size: 7vw;
     line-height: 1.2;
   }
 }
@@ -191,16 +191,16 @@ textarea:focus {
 } */
 
 /* Only use in production */
-@media screen and (max-width: 400px) {
-  /* h1 {
+/* @media screen and (max-width: 400px) {
+  h1 {
     letter-spacing: -1px;
     font-size: 9vw;
-  } */
-  /* h2 {
+  }
+  h2 {
     letter-spacing: -2px;
     line-height: 110%;
-  } */
-}
+  }
+} */
 
 ::view-transition-old(root),
 ::view-transition-new(root) {
