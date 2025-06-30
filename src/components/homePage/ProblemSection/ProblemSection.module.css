@@ -24,9 +24,23 @@
   margin-top: 5rem;
 }
 
+.bottom {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  grid-gap: 5rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
 .heading {
   color: var(--tan);
-  width: 50%;
+  width: 80%;
 }
 
 .span {
@@ -35,14 +49,8 @@
 }
 
 .leftCopy {
-  width: 40%;
   color: var(--tan);
-}
-
-.bottom {
-  display: grid;
-  grid-template-columns: 2fr 1.5fr;
-  grid-gap: 5rem;
+  width: 80%;
 }
 
 .imgContainer {
@@ -77,9 +85,9 @@
 }
 
 .title {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: var(--tan);
-  font-weight: 700;
+  font-weight: 700 !important;
   font-family: var(--inter);
   font-size: 1.4rem;
 }
@@ -103,6 +111,7 @@
 @media screen and (max-width: 1268px) {
   .container {
     padding: 3rem 8rem;
+    padding-top: 10rem;
   }
 
   .bottom {
@@ -114,6 +123,7 @@
 @media screen and (max-width: 1068px) {
   .container {
     padding: 3rem 5rem;
+    padding-top: 8rem;
   }
 
   .sectionTop {
@@ -122,7 +132,7 @@
   }
 
   .heading {
-    width: 80%;
+    width: 60%;
     text-align: center;
   }
 
@@ -200,8 +210,3 @@
   }
 }
 
-@media screen and (max-width: 380px) {
-  .span {
-    white-space: inherit;
-  }
-}

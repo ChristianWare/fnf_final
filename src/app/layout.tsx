@@ -8,7 +8,7 @@ import FinalCTA from "@/components/shared/FinalCTA/FinalCTA";
 const inter = Inter({
   variable: "--inter",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
 const PPNeueMontrealMedium = localFont({
@@ -28,7 +28,6 @@ export const metadata: Metadata = {
   description:
     "Fonts & Footers builds lightning-fast, mobile-first booking platforms that sync calendars in real time, cut no-shows, and automate deposits for salons, spas, rentals, and service brands.",
 };
-
 
 export default function RootLayout({
   children,

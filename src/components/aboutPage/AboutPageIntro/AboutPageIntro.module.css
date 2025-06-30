@@ -3,7 +3,6 @@
   border-radius: 25px;
   margin: 1rem;
   position: relative;
-
 }
 
 .content {
@@ -34,7 +33,6 @@
 
 .span {
   color: var(--blue);
-  white-space: nowrap;
 }
 
 .copy {

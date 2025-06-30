@@ -1,4 +1,3 @@
-"use client";
 
 import ContentPadding from "../ContentPadding/ContentPadding";
 import styles from "./LayoutWrapper.module.css";

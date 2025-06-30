@@ -14,23 +14,10 @@
   position: relative;
 }
 
-.imgContainer {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  margin-right: auto;
-  margin-top: 5rem;
-}
-
-.img {
-  object-fit: contain;
-}
-
 .heading {
-  font-size: 3.2rem;
   letter-spacing: 0px;
   text-align: center;
-  width: 70%;
+  width: 60%;
   line-height: 1.2;
 }
 

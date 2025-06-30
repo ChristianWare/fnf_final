@@ -47,27 +47,29 @@ export default function ProblemSection() {
           <Corner />
         </div>
 
-        <div className={styles.sectionTop}>
-          <div className={styles.sectionHeadingContainer}>
-            <SectionIntro
-              title='Common Issues'
-              color='white'
-              dotColor='pinkDot'
-            />
-          </div>
-          <h2 className={styles.heading}>
-            Are you <span className={styles.span}>tired</span> of chasing DMs or <br />{" "}
-            <span className={styles.span}>losing money</span> to no-shows?
-          </h2>
-          <p className={styles.leftCopy}>
-            A custom booking platform fixes those leaks by syncing calendars in
-            real time, charging deposits automatically, and giving guests a
-            60-second checkout—no coding on your part, no monthly marketplace
-            tax.
-          </p>
-        </div>
+        {/* <div className={styles.sectionTop}>
+          
+        </div> */}
         <div className={styles.bottom}>
           <div className={styles.left}>
+            <div className={styles.sectionHeadingContainer}>
+              <SectionIntro
+                title='Common Issues'
+                color='white'
+                dotColor='pinkDot'
+              />
+            </div>
+            <h2 className={styles.heading}>
+              Are you <span className={styles.span}>tired</span> of chasing DMs
+              or <span className={styles.span}>losing money</span> to
+              no-shows?
+            </h2>
+            <p className={styles.leftCopy}>
+              A custom booking platform fixes those leaks by syncing calendars
+              in real time, charging deposits automatically, and giving guests a
+              60-second checkout—no coding on your part, no monthly marketplace
+              tax.
+            </p>
             <div className={styles.imgContainer}>
               <Image
                 src={ProblemImage}
