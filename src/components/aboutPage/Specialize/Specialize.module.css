@@ -85,6 +85,18 @@
   background-color: var(--green);
 }
 
+.card:nth-child(5) {
+  background-color: var(--pink);
+}
+
+.card:nth-child(6) {
+  background-color: var(--text);
+}
+
+.card:nth-child(7) {
+  background-color: var(--white);
+}
+
 .blackDot {
   width: 10px;
   height: 10px;
@@ -97,6 +109,10 @@
   right: 20px;
 }
 
+.card:nth-child(6) .blackDot {
+  background-color: var(--tan);
+}
+
 .cardLeft {
   border-right: 1px solid var(--black);
   padding: 2rem;
@@ -105,6 +121,13 @@
 .id {
   font-size: 2.4rem;
   line-height: 1.1;
+  font-family: var(--inter);
+  font-weight: 700;
+}
+
+.feature {
+  font-family: var(--inter);
+  font-weight: 700;
 }
 
 .cardRight {
@@ -120,6 +143,12 @@
   text-transform: none;
   width: 80%;
   color: var(--black);
+}
+
+.card:nth-child(6) .feature,
+.card:nth-child(6) .desc,
+.card:nth-child(6) .id {
+  color: var(--tan);
 }
 
 .projectsBox {
@@ -149,7 +178,6 @@
   .container {
     padding: 2rem;
     padding-top: 9rem;
-
   }
 
   .imgContainer {

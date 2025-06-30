@@ -26,9 +26,10 @@ export default function AboutPageIntro() {
               About <br /> <span className={styles.span}>Fonts & Footers</span>
             </h1>
             <p className={styles.copy}>
-              Fonts & Footers is an e-commerce web development agency.
-              We&lsquo;re experts at blending the latest technology with
-              creative ideas for top-notch results.
+              Fonts & Footers is a booking-platform studio. We turn clunky DM
+              scheduling and marketplace fees into one-tap reservations,
+              automated deposits, and real-time calendar sync—built with
+              Next.js, Prisma, and Stripe.
             </p>
             <ul className={styles.servicesContainer}>
               {services.map((x) => (

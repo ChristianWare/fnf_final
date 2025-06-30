@@ -10,12 +10,12 @@ const data = [
   {
     icon: <Payment width={75} height={75} className={styles.icon} />,
     feature: "Transparent Pricing",
-    desc: "No hidden fees or surprises—just straightforward pricing so you know exactly what you’re paying for.",
+    desc: "Flat build fee plus clearly tiered add-ons; no licence surprises",
   },
   {
     icon: <Clock width={75} height={75} className={styles.icon} />,
-    feature: "On-Time Delivery",
-    desc: "We guarantee timely delivery of your e-commerce store, so you can launch and start selling without delays.",
+    feature: "Four-week launch guarantee",
+    desc: "Go live fast and start recapturing lost bookings",
   },
   {
     icon: <Support width={75} height={75} className={styles.icon} />,

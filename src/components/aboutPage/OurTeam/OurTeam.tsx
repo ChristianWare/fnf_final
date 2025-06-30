@@ -18,12 +18,18 @@ export default function OurTeam() {
               At its core, <span className={styles.span}>Fonts & Footers</span>{" "}
               is just me <span className={styles.span}> — Chris — </span>your
               dedicated full-stack developer and founder. With over eight years
-              of hands-on experience crafting high-performance Shopify and
-              Next.js storefronts, I work as an extension of your team to
+              of hands-on experience crafting high-performance e-commerce stores
+              and booking platforms, I work as an{" "}
+              <span className={styles.span}>extension of your team</span> to
               deliver clean, conversion-focused sites.
             </h2>
             <div className={styles.btnContainer}>
-              <Button href='/' btnType='blue' text='Find me on linkedIn' arrow />
+              <Button
+                href='/'
+                btnType='blue'
+                text='Find me on linkedIn'
+                arrow
+              />
             </div>
           </div>
           <div className={styles.bottom}>

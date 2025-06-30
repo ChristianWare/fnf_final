@@ -11,11 +11,10 @@ export default function MissionandValues() {
             <SectionIntro title='Mission and Values' dotColor='blueDot' />
           </div>
           <h2 className={styles.heading}>
-            Empower ambitious{" "}
-            <span className={styles.span}>small-to-mid-size</span> product
-            brands with enterprise-grade,{" "}
-            <span className={styles.span}>conversion-focused</span>{" "}
-            storefronts—without enterprise-level overhead.
+            <span className={styles.span}>Our mission</span> is to give
+            owner-operated service brands{" "}
+            <span className={styles.span}>enterprise-grade booking tech</span>
+            —without enterprise overhead.
           </h2>
         </div>
       </LayoutWrapper>

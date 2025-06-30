@@ -521,37 +521,38 @@ export const reviews = [
 export const specialties = [
   {
     id: 1,
-    feature: "B2C storefronts",
-    desc: "→ Direct-to-consumer online shops ideal for retail brands, specialty goods, and independent artisans looking to sell products directly to end consumers.",
+    feature: "Salon & Wellness Booking",
+    desc: "→ Perfect for hair studios, barbers, spas, and massage therapists who need staff-level calendars, service add-ons, and tip capture.",
   },
   {
     id: 2,
-    feature: "B2B portals",
-    desc: "→ Business-focused platforms perfect for wholesalers, manufacturers, industrial suppliers, and service providers who primarily sell to other businesses rather than consumers.",
+    feature: "Luxury Transport Scheduling",
+    desc: "→ Custom flows for black-car fleets, limo services, and executive shuttles—with live vehicle availability, distance pricing, and damage-hold deposits.",
   },
   {
     id: 3,
-    feature: "Digital product delivery",
-    desc: "→ Platforms for selling and distributing non-physical goods, perfect for educational content creators, software developers, digital artists, and e-book publishers.",
+    feature: "Vacation-Rental Portfolios",
+    desc: "→ Multi-property engines that sync with PMS calendars, support dynamic nightly rates, and offer guest portals for upsells like late checkout or grocery packs.",
   },
   {
     id: 4,
-    feature: "Subscription services",
-    desc: "→ Recurring billing platforms ideal for software companies (SaaS), content creators, box subscription services, and membership organizations requiring regular payment processing.",
+    feature: "Equipment & Experience Rentals",
+    desc: "→ Ideal for kayak fleets, camera-gear shops, and adventure tours that need inventory tracking, QR check-in/out, and overtime fee automation.",
   },
   {
     id: 5,
-    feature: "Service booking platforms",
-    desc: "→ Appointment and reservation systems ideal for consultants, healthcare providers, beauty professionals, fitness instructors, and event venues needing to manage client scheduling.",
+    feature: "Medical & Clinic Appointments",
+    desc: "→ HIPAA-ready scheduling for dentists, physiotherapists, and aesthetic clinics, featuring intake forms, insurance fields, and room/resource allocation.",
   },
   {
     id: 6,
-    feature: "Multi-vendor marketplaces",
-    desc: "→ Platforms hosting multiple sellers, perfect for community marketplaces, industry-specific exchanges, and businesses looking to create their own Amazon or Etsy-like ecosystem.",
+    feature: "Multi-Location Chains",
+    desc: "→ One backend for franchises or studio chains, allowing location switchers, per-branch pricing, and centralised analytics.",
   },
   {
     id: 7,
-    feature: "Rental platforms",
-    desc: "→ Temporary-use item booking systems ideal for equipment rental businesses, property managers, vehicle rentals, and peer-to-peer sharing economy ventures.",
+    feature: "Membership & Recurring Services",
+    desc: "→ Platforms that bundle recurring bookings with subscription billing—perfect for personal-training packages, co-working desks, or wellness clubs.",
   },
 ] as const;
+

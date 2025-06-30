@@ -30,9 +30,9 @@ const ecommerceFeatures = [
   },
   {
     icon: <Integration className={styles.icon} />,
-    title: "Platform Selection & Consultation",
+    title: "Real-Time Calendar Sync",
     description:
-      "We integrate with leading e-commerce platforms like Shopify, WooCommerce, and Magento, ensuring your online store has the functionality and flexibility required to succeed in a competitive market.",
+      "Two-way link with Google, iCal, or Microsoft 365 keeps every slot updated and double-bookings impossible.",
   },
   {
     icon: "",
@@ -46,15 +46,15 @@ const ecommerceFeatures = [
   },
   {
     icon: <Design className={styles.icon} />,
-    title: "Custom UI/UX Design",
+    title: "Mobile-First Booking Screen",
     description:
-      "We offer bespoke design services that reflect your brand’s identity and provide an engaging user experience.",
+      "Date, service, and payment in one scroll so guests finish in under 60 seconds, even on 4-inch phones.",
   },
   {
     icon: <Seo className={styles.icon} />,
-    title: "Search Engine Optimization (SEO)",
+    title: "Dynamic Pricing Rules",
     description:
-      "Our websites are built with SEO best practices to ensure that your business ranks well in search engine results.",
+      "Automated yield management raises or lowers prices based on demand and seasonality.",
   },
   {
     icon: "",
@@ -63,31 +63,28 @@ const ecommerceFeatures = [
   },
   {
     icon: <Analytics className={styles.icon} />,
-    title: "Performance Optimization & Security",
+    title: "Live Utilisation Dashboard",
     description:
-      "We provide comprehensive analytics and reporting to help you understand your e-commerce performance.",
+      "See booking-conversion rate, repeat-guest % and revenue per slot in real time.",
   },
   {
     icon: <Multiple className={styles.icon} />,
-    title: "Store Setup & Product Management",
+    title: "Multi-Staff & Resource Management",
     description:
-      "Our e-commerce platforms enable efficient management of multiple products.",
+      "Colour-coded calendars for teams up to 15; staff can set their own hours and services.",
   },
-
   {
     icon: <Payment className={styles.icon} />,
-    title: "Payment Gateway & Third-Party Integrations",
+    title: "Deposits & Split Payments",
     description:
-      "Integrating Stripe as your payment gateway ensures secure transactions and supports multiple payment methods.",
+      "Stripe gateway stores cards on file, charges non-refundable deposits, and auto-retries failed payments.",
   },
-
   {
     icon: <Hosting className={styles.icon} />,
-    title: "Hosting",
+    title: "Multi-Location Ready",
     description:
-      "We use CDN's, or content delivery networks, to speed up the delivery of web content by bringing it closer to where users are.",
+      "Branch selector, per-location pricing, and local tax settings—managed from a single backend.",
   },
-
   {
     icon: <Edit className={styles.icon} />,
     title: "Unlimited Edits",
@@ -96,15 +93,15 @@ const ecommerceFeatures = [
   },
   {
     icon: <Clock className={styles.icon} />,
-    title: "Ongoing Maintenance & Support",
+    title: "Automated Reminders",
     description:
-      "If you ever need to reach out to us for any reason, call us! We're here and ready to help.",
+      "SMS and email nudges 24 h and 2 h before service cut no-shows by up to 40 %.",
   },
   {
     icon: <Listing className={styles.icon} />,
-    title: "Citations & Listings",
+    title: "No-Show Protection",
     description:
-      "A listing on Google appears when potential customers are searching for your business name or a service you offer. We set this up for you.",
+      "Late-cancel windows and automatic fee capture guard revenue while staying transparent to guests.",
   },
 ];
 
@@ -114,16 +111,19 @@ export default function Features() {
       <section className={styles.container} id='features'>
         <div className={styles.top}>
           <h2 className={styles.heading}>
-            Features of our <br /> E-commerce Websites: <br />
+            Features of our <br /> Booking Platforms:
           </h2>
           <span className={styles.span}>
-            Everything you need to launch, scale, and succeed online
-          </span>{" "}
+            Everything you need to fill calendars and cut no-shows
+          </span>
           <p className={styles.copy}>
-            We offer a comprehensive e-commerce development service designed to
-            cover every aspect of building and managing an online store:
+            Fonts&nbsp;&amp;&nbsp;Footers delivers a fully custom booking
+            solution—handling scheduling, deposits, reminders, and real-time
+            calendar sync—so you can focus on service, not back-and-forth
+            messages.
           </p>
         </div>
+
         <div className={styles.parent}>
           <div className={styles.dataContainer}>
             {ecommerceFeatures.map((x, index) => (

@@ -184,6 +184,8 @@ textarea:focus {
   h1 {
     font-size: 6.5vw;
     line-height: 1.2;
+    font-family: var(--PPNeueMontrealMediumThick);
+
   }
 }
 

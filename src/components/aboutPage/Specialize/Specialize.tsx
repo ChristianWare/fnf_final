@@ -22,14 +22,14 @@ export default function Specialize() {
               />
             </div>
             <h2 className={styles.heading}>
-              Whether you&apos;re selling directly to consumers, building a B2B
-              portal, or creating a multi-vendor marketplace, we have the
-              expertise to build the perfect solution for your business model:
+              Whether you run a one-chair salon, manage a fleet of luxury cars,
+              or oversee a portfolio of vacation rentals, we build booking
+              platforms tailored to your exact service model and growth stage.
             </h2>
           </div>
           <div className={styles.right}>
             <div className={styles.mapDataBox}>
-              {specialties.slice(0, 4).map((x) => (
+              {specialties.map((x) => (
                 <div className={styles.card} key={x.id}>
                   <span className={styles.blackDot} />
                   <div className={styles.cardLeft}>
