@@ -78,7 +78,7 @@ export default function EveryPlan() {
             <h2 className={styles.heading}>
               <span className={styles.span}>Every Fonts & Footers build</span> —
               be it a salon scheduler, a luxury-car reservation system, or a
-              multi-property rental hub -{" "}
+              multi-property rental hub —{" "}
               <span className={styles.span}>
                 ships with this same quality baseline.
               </span>{" "}

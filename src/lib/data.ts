@@ -250,13 +250,13 @@ export const projects = [
 ] as const;
 
 export const pricingData = [
-  /* ────────────────────────────────────────────── 1 */
+  /* ────────────────────────────── 1 — Solo Starter Booking */
   {
     id: 1,
     service: "Solo Starter Booking",
     headline: "One-person calendar, zero double-bookings",
-    desc: "Perfect for solo stylists, consultants, and single-property hosts who need a simple booking flow with card-on-file deposits. Go live in two weeks.",
-    price: "$2,900",
+    desc: "Perfect for solo stylists, consultants, and single-property hosts who need a simple booking flow with card-on-file payments. Go live in two weeks.",
+    price: "$2,900", // unchanged
     servicesInclude: [
       {
         id: 1.1,
@@ -272,7 +272,7 @@ export const pricingData = [
       {
         id: 1.3,
         serviceName: "SMS / email reminders",
-        description: "24 h and 2 h nudges cut no-shows fast.",
+        description: "24 h and 2 h nudges reduce no-shows fast.",
       },
       {
         id: 1.4,
@@ -282,27 +282,27 @@ export const pricingData = [
     ],
     addonSectionData: [
       {
-        id: 1,
-        expansionblock: "Extra reminder tier",
-        details: "Add a 7-day ‘are you still coming?’ SMS",
+        id: 1.01,
+        expansionblock: "Extra Reminder Tier",
+        details: "Add a 7-day “Are you still coming?” SMS",
         price: "$100",
       },
       {
-        id: 2,
-        expansionblock: "Gift-card module",
+        id: 1.02,
+        expansionblock: "Gift-Card Module",
         details: "Sell digital gift cards from the same checkout",
         price: "$200",
       },
     ],
   },
 
-  /* ────────────────────────────────────────────── 2 */
+  /* ────────────────────────────── 2 — Team Booking Platform */
   {
     id: 2,
     service: "Team Booking Platform",
     headline: "Up to 15 stylists, trainers, or practitioners—one dashboard",
     desc: "Built for salons, fitness studios, and clinics where clients choose a staff member and pay a deposit. Launch timeline: four weeks.",
-    price: "$4,500",
+    price: "$5,500", // ↑ from 4 500
     servicesInclude: [
       {
         id: 2.1,
@@ -329,33 +329,33 @@ export const pricingData = [
     ],
     addonSectionData: [
       {
-        id: 1,
+        id: 2.01,
         expansionblock: "Resource Tier",
         details: "Each additional 5 staff calendars beyond 15",
         price: "$600",
       },
       {
-        id: 2,
-        expansionblock: "Membership module",
+        id: 2.02,
+        expansionblock: "Membership Module",
         details: "Auto-bill recurring packages with usage tracking",
         price: "$1,200",
       },
       {
-        id: 3,
-        expansionblock: "CRM link",
+        id: 2.03,
+        expansionblock: "CRM Link",
         details: "Push booking data to HubSpot or Klaviyo",
         price: "$800",
       },
     ],
   },
 
-  /* ────────────────────────────────────────────── 3 */
+  /* ────────────────────────────── 3 — Multi-Location Booking */
   {
     id: 3,
     service: "Multi-Location Booking",
     headline: "One backend, many branches or villas",
     desc: "Ideal for spa chains, franchise gyms, or vacation-rental portfolios with 2-10 locations. Launch timeline: six weeks.",
-    price: "$6,800",
+    price: "$7,900", // ↑ from 6 800
     servicesInclude: [
       {
         id: 3.1,
@@ -381,13 +381,13 @@ export const pricingData = [
     ],
     addonSectionData: [
       {
-        id: 1,
+        id: 3.01,
         expansionblock: "Location Tier",
-        details: "Each extra branch beyond 10",
+        details: "Each extra branch or property beyond the first 10",
         price: "$800",
       },
       {
-        id: 2,
+        id: 3.02,
         expansionblock: "Accounting API",
         details: "Sync payouts to Xero or QuickBooks",
         price: "$1,800",
@@ -395,13 +395,13 @@ export const pricingData = [
     ],
   },
 
-  /* ────────────────────────────────────────────── 4 */
+  /* ────────────────────────────── 4 — Rental Fleet & Inventory Booking */
   {
     id: 4,
     service: "Rental Fleet & Inventory Booking",
     headline: "Real-time stock, deposits, and damage-hold authorisations",
     desc: "For car-hire companies, equipment rental shops, or kayak fleets that rent assets by time or day. Launch timeline: five weeks.",
-    price: "$5,400",
+    price: "$6,900", // ↑ from 5 400
     servicesInclude: [
       {
         id: 4.1,
@@ -429,19 +429,19 @@ export const pricingData = [
     ],
     addonSectionData: [
       {
-        id: 1,
+        id: 4.01,
         expansionblock: "Insurance API",
         details: "Real-time policy issuance at checkout",
         price: "$1,500",
       },
       {
-        id: 2,
+        id: 4.02,
         expansionblock: "Fleet Size Tier",
-        details: "Every additional block of 25 rental units beyond first 50",
+        details: "Every additional block of 25 rental units beyond 50",
         price: "$700",
       },
       {
-        id: 3,
+        id: 4.03,
         expansionblock: "Analytics Tier",
         details: "Custom Power BI or Looker Studio dashboards",
         price: "$900",

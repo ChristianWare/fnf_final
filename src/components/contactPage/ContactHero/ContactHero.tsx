@@ -20,10 +20,9 @@ export default function ContactHero() {
               <span className={styles.span}>Fonts & Footers</span>
             </h1>
             <p className={styles.copy}>
-              Ready to finally see how work, should work? We have the business
-              apps you depend on, the support you need, and the AI you’ve been
-              waiting for—all in one solution. Be one of the first to experience
-              our product and gain a competitive edge.
+              Have a question, need a quote, or just curious whether a custom
+              booking platform is right for you? Drop a line below—no strings
+              attached. We reply within one business day.
             </p>
           </div>
           <div className={styles.right}>
