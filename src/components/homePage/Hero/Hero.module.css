@@ -91,14 +91,10 @@
 
 @media screen and (max-width: 568px) {
   .container {
-    min-height: 97vh;
+    /* min-height: 97vh; */
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .content {
-    margin-top: 0rem;
   }
 
   .top {
