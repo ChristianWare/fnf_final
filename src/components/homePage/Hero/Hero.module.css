@@ -90,9 +90,15 @@
 }
 
 @media screen and (max-width: 568px) {
+  .container {
+    min-height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .content {
-    grid-gap: 0rem;
-    margin-top: 5rem;
+    margin-top: 0rem;
   }
 
   .top {
@@ -112,6 +118,7 @@
 
   .btnContainer {
     flex-wrap: wrap;
+    gap: 0rem;
   }
 }
 
