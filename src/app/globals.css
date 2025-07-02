@@ -19,10 +19,8 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  /* line-height: 90%; */
-  /* scroll-behavior: smooth;
-  scroll-margin-top: 40px;
-  */
+  scroll-behavior: smooth;
+  scroll-margin-top: 10px;
   -webkit-tap-highlight-color: transparent;
   font-family: var(--inter);
   overscroll-behavior: none;
