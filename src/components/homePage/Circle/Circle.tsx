@@ -5,37 +5,38 @@
 import { useState } from "react";
 import styles from "./Circle.module.css";
 import Modal from "@/components/shared/Modal/Modal";
-import Analytics from "@/components/icons/Analytics/Analytics";
-import Clock from "@/components/icons/Clock/Clock";
-import CloudPrez from "@/components/icons/CloudPrez/CloudPrez";
-import Multiple from "@/components/icons/Multiple/Multiple";
+import Analytics from "@/components/icons/Calendar/Calendar";
+import Clock from "@/components/icons/Listing/Listing";
+import CloudPrez from "@/components/icons/Integration/Integration";
+import Multiple from "@/components/icons/Analytics/Analytics";
 
 const data = [
   {
     id: 1,
-    feature: "Discovery & Goal Mapping",
-    desc: "A quick strategy call and analytics review to pin down revenue targets, customer pain points, and brand voice before any design work begins.",
+    feature: "Booking Audit & Goal Mapping",
+    desc: "We start with a 30-minute strategy call and a quick audit of your current booking flow to pinpoint no-show rate, calendar pain points, and revenue targets before any code is written.",
     icon: <Analytics className={styles.icon} />,
   },
   {
     id: 2,
-    feature: "Strategic Blueprint",
-    desc: "You receive a detailed project roadmap—site architecture, milestones, and fixed pricing—so you know exactly what’s coming and when.",
+    feature: "Prototype & Road-map",
+    desc: "You receive an interactive prototype of the booking screen plus a milestone timeline and fixed pricing, so you know exactly what we’ll ship and when.",
     icon: <Clock className={styles.icon} />,
   },
   {
     id: 3,
-    feature: "Build & Integrate",
-    desc: "Our developers turn the prototype into a high-performance storefront, integrating payment gateways, inventory systems, and marketing tools.",
+    feature: "Custom Build & Integrations",
+    desc: "We turn the prototype into a production-ready platform—Next.js front end, Stripe deposits, and live Google / 365 calendar sync—all tested for speed and security.",
     icon: <CloudPrez className={styles.icon} />,
   },
   {
     id: 4,
-    feature: "Launch & Growth Tune-Ups",
-    desc: "After go-live we monitor performance, run quick-win A/B tests, and provide 30 days of complimentary support to ensure the site hits your KPIs.",
+    feature: "Launch & No-Show Optimisation",
+    desc: "Post-launch we monitor booking-conversion and no-show %, tweak reminders, and include 30 days of complimentary support to ensure the numbers move up and to the right.",
     icon: <Multiple className={styles.icon} />,
   },
 ];
+
 
 export default function Circle() {
   const [selected, setSelected] = useState<(typeof data)[0] | null>(null);
@@ -102,7 +103,8 @@ export default function Circle() {
       {selected && (
         <Modal isOpen={true} onClose={closeModal}>
           <div className={styles.modalContent}>
-            <span className={styles.index}>{selected.id}</span>
+            {/* <span className={styles.index}>{selected.id}</span> */}
+            <span className={styles.index}>{selected.icon}</span>
             <h2 className={styles.modalHeading}>{selected.feature}</h2>
             <p className={styles.modalCopy}>{selected.desc}</p>
           </div>
