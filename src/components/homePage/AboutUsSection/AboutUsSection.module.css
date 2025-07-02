@@ -24,7 +24,6 @@
 .span {
   color: var(--blue);
   font-family: var(--PPNeueMontrealMediumThick);
-
 }
 
 @media screen and (max-width: 1268px) {
@@ -42,20 +41,5 @@
 @media screen and (max-width: 568px) {
   .container {
     padding: 7rem 0rem;
-  }
-
-  .content {
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-
-  .heading {
-    text-align: left;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .span {
-    white-space: inherit;
   }
 }
