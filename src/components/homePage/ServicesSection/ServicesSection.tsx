@@ -12,14 +12,11 @@ export default function ServicesSection() {
           <div className={styles.content}>
             <div className={styles.top}>
               <div className={styles.sectionHeadingContainer}>
-                <SectionIntro
-                  title='Services'
-                  dotColor='blueDot'
-                />
+                <SectionIntro title='Services' dotColor='blueDot' />
               </div>
             </div>
             <div className={styles.bottom}>
-              {pricingData.map((x) => (
+              {pricingData.slice(0, 4).map((x) => (
                 <div className={styles.card} key={x.id}>
                   <h3 className={styles.title}>{x.service}</h3>
                   <span className={styles.headline}>{x.headline}</span>
@@ -31,10 +28,18 @@ export default function ServicesSection() {
                     ))}
                   </ul>
                   <div className={styles.btnContainer}>
-                    <Button href='/' btnType='white' text='More Details' arrow />
+                    <Button
+                      href='/'
+                      btnType='white'
+                      text='More Details'
+                      arrow
+                    />
                   </div>
                 </div>
               ))}
+            </div>
+            <div className={styles.btnContainerii}>
+              <Button href='/services' btnType='blue' text='See all Services' />
             </div>
           </div>
         </div>

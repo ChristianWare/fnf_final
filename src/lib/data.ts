@@ -295,8 +295,6 @@ export const pricingData = [
       },
     ],
   },
-
-  /* ────────────────────────────── 2 — Team Booking Platform */
   {
     id: 2,
     service: "Team Booking Platform",
@@ -348,8 +346,6 @@ export const pricingData = [
       },
     ],
   },
-
-  /* ────────────────────────────── 3 — Multi-Location Booking */
   {
     id: 3,
     service: "Multi-Location Booking",
@@ -394,14 +390,12 @@ export const pricingData = [
       },
     ],
   },
-
-  /* ────────────────────────────── 4 — Rental Fleet & Inventory Booking */
   {
     id: 4,
     service: "Rental Fleet & Inventory Booking",
     headline: "Real-time stock, deposits, and damage-hold authorisations",
     desc: "For car-hire companies, equipment rental shops, or kayak fleets that rent assets by time or day. Launch timeline: five weeks.",
-    price: "$6,900", // ↑ from 5 400
+    price: "$6,900",
     servicesInclude: [
       {
         id: 4.1,
@@ -448,6 +442,53 @@ export const pricingData = [
       },
     ],
   },
+  {
+    id: 5,
+    service: "Custom Enterprise Booking",
+    headline: "Bespoke architecture for unique booking models",
+    desc: "For enterprise chains or complex use-cases—think 50+ locations, hybrid rentals, or regulated medical workflows—where off-the-shelf logic won’t cut it. Timeline and cost are scoped after a technical discovery sprint.",
+    price: "$Custom Quote",
+    servicesInclude: [
+      {
+        id: 5.1,
+        serviceName: "Discovery sprint",
+        description:
+          "Two-week deep dive into API landscape, compliance needs, and workflow mapping.",
+      },
+      {
+        id: 5.2,
+        serviceName: "Bespoke feature engineering",
+        description:
+          "Custom modules such as insurance underwriting, multi-tenant role layers, or HIPAA-secure intake forms.",
+      },
+      {
+        id: 5.3,
+        serviceName: "Dedicated SLA & hosting",
+        description:
+          "24-7 monitoring, 99.9 % uptime, and priority support response under 2 hours.",
+      },
+      {
+        id: 5.4,
+        serviceName: "Enterprise integrations",
+        description:
+          "Real-time data bridges to ERP, CRM, PMS, or proprietary internal systems.",
+      },
+    ],
+    addonSectionData: [
+      {
+        id: 5.01,
+        expansionblock: "Compliance Tier",
+        details: "SOC 2, HIPAA, or GDPR audit package",
+        price: "POA",
+      },
+      {
+        id: 5.02,
+        expansionblock: "Scalability Tier",
+        details: "Horizontal scaling for 1 000+ concurrent bookings",
+        price: "POA",
+      },
+    ],
+  },
 ] as const;
 
 
@@ -458,7 +499,7 @@ export const reviews = [
       "Fonts & Footers rebuilt our California-style furniture store from the ground up. Page-load times dropped from six seconds to under one, our bounce rate fell 32 %, and revenue doubled the very next quarter. Truly transformative work.",
     reviewer: "Alicia G.",
     company: "Coastal Oak Furnishings",
-    person: Lady, // import your client avatar or photo
+    person: Lady, 
   },
   {
     id: 2,

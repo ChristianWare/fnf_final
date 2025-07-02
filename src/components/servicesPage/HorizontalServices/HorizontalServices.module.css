@@ -30,7 +30,10 @@
   background-color: var(--green);
 }
 .card:nth-child(4) {
-  background-color: var(--purple);
+  background-color: var(--lightBlue);
+}
+.card:nth-child(5) {
+  background-color: var(--tan);
 }
 
 .index {
@@ -131,8 +134,6 @@
 
 .addonsHeading {
   font-size: 3rem;
-  /* text-transform: none; */
-  /* font-family: var(--SuisseIntlMedium); */
 }
 
 .addonSectionBottom {
