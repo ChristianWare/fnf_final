@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./Nav.module.css";
 import Logo from "../Logo/Logo";
 import Button from "../Button/Button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const navItems = [
   { text: "Home", href: "/" },
@@ -21,6 +21,19 @@ interface Props {
 
 export default function Nav({ color = "", hamburgerColor = "" }: Props) {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const body = document.body;
+    body.style.overflow =
+      window.innerWidth <= 910 && isOpen ? "hidden" : "auto";
+
+    const handleResize = () => setIsOpen(false);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      body.style.overflow = "auto";
+    };
+  }, [isOpen]);
 
   const openMenu = () => {
     setIsOpen(!isOpen);
