@@ -90,12 +90,7 @@
 }
 
 @media screen and (max-width: 568px) {
-  .container {
-    /* min-height: 97vh; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  
 
   .top {
     align-items: flex-start;
@@ -105,7 +100,6 @@
   .left .heading,
   .copy {
     width: 100%;
-    /* text-align: left; */
   }
 
   .lottieBox {

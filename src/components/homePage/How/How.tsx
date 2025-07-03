@@ -1,3 +1,5 @@
+"use client";
+
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./How.module.css";
 import Image from "next/image";

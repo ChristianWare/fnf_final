@@ -18,7 +18,8 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 2;
+  z-index: 9999;
+
   pointer-events: auto;
   width: auto;
 }
@@ -90,41 +91,32 @@
   .navItems {
     position: fixed;
     right: -100%;
-    top: 0px;
+    top: 1rem;
+    width: calc(100% - 2rem);
+    height: calc(100vh - 2rem);
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 3rem;
-    width: 100%;
-    height: 100vh;
-    transition: 0.3s all ease-in;
-    z-index: 1000;
     padding: 2rem;
     padding-top: 15rem;
-    transform-origin: top;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease-in;
-    backdrop-filter: blur(5px);
-    border: 1px solid var(--tan);
-    border-radius: 10px;
+    background: var(--black);
+    border-radius: 25px;
+    transition: right 0.3s ease-in;
+    z-index: 1000;
   }
 
   .navItems.active {
-    right: 0%;
+    right: 1rem;
   }
 
   .navItem {
-    color: var(--black);
+    color: var(--tan);
     font-size: 5vw;
     font-family: var(--PPNeueMontrealMediumThick);
     line-height: 1;
-    text-transform: uppercase;
-    letter-spacing: -0.2px;
-    background-color: var(--tan);
-    border-radius: 15px;
     width: 100%;
     padding: 2rem;
-    /* padding-bottom: 1rem; */
   }
 
   .btnContainer {
