@@ -27,12 +27,12 @@ export default function Hero() {
             </p>
             <div className={styles.btnContainer}>
               <Button
-                href='/'
+                href='/contact'
                 btnType='white'
                 text='Get a free 90-second audit'
               />
               <Button
-                href='/'
+                href='/services'
                 btnType='noBackgroundWhiteText'
                 text='See pricing'
                 arrow

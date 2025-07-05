@@ -71,7 +71,7 @@ export default function Nav({ color = "", hamburgerColor = "" }: Props) {
 
         <div className={styles.btnContainer}>
           <Button
-            href='/'
+            href='/contact'
             text='Get Started'
             btnType='noBackgroundBlueText'
             arrow
