@@ -16,7 +16,10 @@
   border-bottom-right-radius: 15px;
   position: relative;
   z-index: 1;
-  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .logo:after {
@@ -44,7 +47,7 @@
 }
 
 .center {
-  background-color: red;
+  /* background-color: red; */
   position: relative;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 15px;
@@ -116,7 +119,7 @@
 
 .backgroundColorBlue {
   background-color: var(--white);
-  color: var(--blue);
+  color: var(--black);
 }
 
 .logo.backgroundColorBlue::after {
@@ -133,4 +136,20 @@
 
 .logo.backgroundColorBlack::before {
   box-shadow: -1em -1rem var(--black);
+}
+
+.imgContainer {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.img {
+  object-fit: contain;
+}
+
+@media screen and (max-width: 568px) {
+  .titleContainer {
+    display: none;
+  }
 }

@@ -91,19 +91,19 @@ export default function Circle() {
               className={(styles as any)[`quad${index + 1}`]}
               onClick={() => openModal(item)}
             >
-              {/* 0{item.id} */}
-              {item.icon}
+              0{item.id}
+              {/* {item.icon} */}
             </div>
           ))}
         </div>
 
-        <div className={styles.centerCircle} />
+        {/* <div className={styles.centerCircle} /> */}
       </div>
 
       {selected && (
         <Modal isOpen={true} onClose={closeModal}>
           <div className={styles.modalContent}>
-            {/* <span className={styles.index}>{selected.id}</span> */}
+            <span className={styles.index}>{selected.id}</span>
             <span className={styles.index}>{selected.icon}</span>
             <h2 className={styles.modalHeading}>{selected.feature}</h2>
             <p className={styles.modalCopy}>{selected.desc}</p>
