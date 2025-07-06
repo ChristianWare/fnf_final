@@ -15,7 +15,7 @@ export default function WorkHero() {
             itself
           </h1>
           <p className={styles.copy}>
-            Explore our portfolio of successful e-commerce projects across
+            Explore our portfolio of successful booking projects across
             various industries and business models.
           </p>
         </div>
