@@ -7,10 +7,10 @@ import Lottie from "lottie-react";
 import Nav from "@/components/shared/Nav/Nav";
 
 const services = [
-  { id: 1, name: "Full-Build Storefronts" },
-  { id: 2, name: "Performance Rescue" },
-  { id: 3, name: "Conversion Optimization & A/B Testing" },
-  { id: 4, name: "Maintenance & Growth Partnership" },
+  { id: 1, name: "Solo Starter Booking" },
+  { id: 2, name: "Team Booking Platform" },
+  { id: 3, name: "Multi-Location Booking" },
+  { id: 4, name: "Rental Fleet & Inventory Booking" },
 ];
 
 export default function AboutPageIntro() {
@@ -29,7 +29,7 @@ export default function AboutPageIntro() {
               Fonts & Footers is a booking-platform studio. We turn clunky DM
               scheduling and marketplace fees into one-tap reservations,
               automated deposits, and real-time calendar sync—built with
-              Next.js, Prisma, and Stripe.
+              Next.js, Prisma, and Stripe. We specialize in: 
             </p>
             <ul className={styles.servicesContainer}>
               {services.map((x) => (

@@ -50,7 +50,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 1.6rem;
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid var(--textii);
   color: var(--lightBlue);
   font-weight: 600;
   padding: 1rem 0rem;
@@ -58,7 +58,7 @@
 }
 
 .service:nth-child(1) {
-  border-top: 1px solid var(--white);
+  border-top: 1px solid var(--textii);
 }
 
 .blackDot {

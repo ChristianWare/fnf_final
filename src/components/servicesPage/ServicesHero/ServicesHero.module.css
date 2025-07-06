@@ -7,10 +7,11 @@
 
 .content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
-  margin-top: 10rem;
+  /* gap: 3rem; */
+  margin-top: 3rem;
 }
 
 .navContainer {
@@ -27,14 +28,14 @@
   text-align: center;
 }
 
-.span {
-  color: var(--blue);
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 300px;
 }
 
-.copy {
-  color: var(--textii);
-  width: 400px;
-  font-size: 1.6rem;
+.img {
+  object-fit: contain;
 }
 
 @media screen and (max-width: 1068px) {
@@ -47,15 +48,10 @@
 }
 
 @media screen and (max-width: 568px) {
-  .heading,
-  .copy {
+  .heading {
     width: 100%;
     text-align: left;
   }
 }
 
-@media screen and (max-width: 380px) {
-  .span {
-    white-space: inherit;
-  }
-}
+

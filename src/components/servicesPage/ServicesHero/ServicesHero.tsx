@@ -1,6 +1,8 @@
 import styles from "./ServicesHero.module.css";
 import Nav from "@/components/shared/Nav/Nav";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
+import Image from "next/image";
+import Img1 from "../../../../public/images/bookingii.png";
 
 export default function ServicesHero() {
   return (
@@ -10,8 +12,11 @@ export default function ServicesHero() {
       </div>
       <LayoutWrapper>
         <div className={styles.content}>
+          <div className={styles.imgContainer}>
+            <Image src={Img1} alt='' title='' fill className={styles.img} />
+          </div>
           <h1 className={styles.heading}>
-            E-Commerce Services <br /> Built for Growth
+            Booking platforms <br /> built to fill your calendar
           </h1>
         </div>
       </LayoutWrapper>
