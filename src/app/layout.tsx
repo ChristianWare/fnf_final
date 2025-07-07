@@ -24,7 +24,11 @@ const PPNeueMontrealMediumThick = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Fonts & Footers | Custom Booking Websites",
+  // title: "Fonts & Footers | Custom Booking Websites",
+  title: {
+    default: "Fonts & Footers | Custom Booking Websites",
+    template: "%s - Fonts & Footers | Custom Booking Websites",
+  },
   description:
     "Fonts & Footers builds lightning-fast, mobile-first booking platforms that sync calendars in real time, cut no-shows, and automate deposits for salons, spas, rentals, and service brands.",
 };
