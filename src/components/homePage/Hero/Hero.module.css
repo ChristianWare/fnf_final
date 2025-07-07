@@ -35,6 +35,7 @@
 
 .span {
   color: var(--blue);
+  font-family: inherit;
 }
 
 .copy {
