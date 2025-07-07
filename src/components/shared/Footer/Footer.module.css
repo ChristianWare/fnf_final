@@ -144,6 +144,11 @@
     padding-bottom: 2rem;
   }
 
+  .logoContainer {
+    left: 0%;
+    transform: translateX(0%);
+  }
+
   .right {
     grid-template-columns: repeat(2, 1fr);
   }

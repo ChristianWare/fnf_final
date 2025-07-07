@@ -101,7 +101,6 @@ export default function Footer() {
       <LayoutWrapper>
         <div className={styles.logoContainer}>
           <Logo
-            title='Fonts & Footers'
             direction='center'
             backgroundColor='backgroundColorBlue'
           />

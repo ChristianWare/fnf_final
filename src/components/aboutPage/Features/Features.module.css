@@ -28,7 +28,7 @@
 .span {
   color: var(--blue);
   font-family: var(--inter);
-  letter-spacing: -1px;
+  letter-spacing: -.5px;
   font-weight: 700;
   font-size: 1.6rem;
 }
