@@ -12,23 +12,18 @@ interface Inputs {
   lastName: string;
   email: string;
   company: string;
+  siteUrl?: string;
   projectDescription: string;
   services: string[];
 }
 
 const serviceOptions = [
-  "UI & UX Design",
-  "Shopify",
-  "WooCommerce",
-  "Wix",
-  "Custom Development",
-  "Booking/Reservation System",
-  "Membership Site",
-  "Marketplace",
-  "E-commerce",
-  "Online Store",
-  "Portfolio",
-  "Blog/Content Site",
+  "Free booking audit (I already have a site)",
+  "Solo Starter Booking",
+  "Team Booking Platform",
+  "Multi-Location Booking",
+  "Rental Fleet & Inventory",
+  "Custom enterprise solution",
 ];
 
 export default function ContactForm() {
@@ -140,6 +135,16 @@ export default function ContactForm() {
             maxLength={500}
           />
         </div>
+        <div className={styles.labelInputBox}>
+          <label htmlFor='siteUrl'>Current booking URL</label>
+          <input
+            id='siteUrl'
+            type='url'
+            {...register("siteUrl")}
+            placeholder='https://example.com/book'
+            maxLength={500}
+          />
+        </div>
 
         <div className={styles.labelInputBox}>
           <label htmlFor='projectDescription'>
@@ -149,7 +154,7 @@ export default function ContactForm() {
             id='projectDescription'
             maxLength={5000}
             {...register("projectDescription", { required: true })}
-            placeholder='Tell us about your project needs.'
+            placeholder='Tell us about your booking challenges or goals.'
           />
           {errors.projectDescription && (
             <span className={styles.error}>
@@ -159,7 +164,7 @@ export default function ContactForm() {
         </div>
         <div className={styles.servicesSection}>
           <label className={styles.servicesLabel}>
-            What services are you interested in?
+            What can we help you with?
           </label>
 
           <div className={styles.serviceButtons}>
@@ -170,7 +175,7 @@ export default function ContactForm() {
                 <label
                   key={service}
                   className={`
-            ${styles.serviceOption}      /* NEW wrapper */
+            ${styles.serviceOption}    
             ${checked ? styles.selected : ""}
           `}
                 >

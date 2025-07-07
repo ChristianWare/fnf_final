@@ -10,13 +10,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
-  padding: 1.3rem 4rem;
-  font-family: var(--SuisseIntlMedium);
+  gap: 2rem;
+  padding: 1rem 2rem;
+  font-family: var(--inter);
+  font-weight: 600;
   font-size: 1.4rem;
-  text-transform: capitalize;
-  letter-spacing: 0.5px;
-
+  text-transform: uppercase;
   border-radius: 50px;
   width: 100%;
   transition: all 0.2s ease-in-out;
@@ -45,12 +44,36 @@
   color: var(--white);
 }
 
+.noBackgroundBlueText {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.noBackgroundBlackText {
+  background-color: transparent;
+  color: var(--black);
+}
+
+.blackOutline {
+  background-color: transparent;
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
 .arrow {
   transform: rotate(90deg);
   font-size: 1.4rem;
   transition: all 0.2s ease-in-out;
   position: relative;
   top: 2px;
+}
+
+.noBackgroundBlackText .arrow {
+  color: var(--black);
+}
+
+.noBackgroundBlueText .arrow {
+  color: var(--white);
 }
 
 @media (hover: hover) and (pointer: fine) {

@@ -6,8 +6,14 @@ import Button from "@/components/shared/Button/Button";
 import animationData from "../../../../public/lottie/hero.json";
 import Lottie from "lottie-react";
 import Nav from "@/components/shared/Nav/Nav";
+import FalseButton from "@/components/shared/FalseButton/FalseButton";
+import Modal from "@/components/shared/Modal/Modal";
+import ContactForm from "@/components/shared/ContactForm/ContactForm";
+import { useState } from "react";
 
 export default function Hero() {
+  const [open, setOpen] = useState(false);
+
   return (
     <section className={styles.container}>
       <div className={styles.navContainer}>
@@ -26,10 +32,10 @@ export default function Hero() {
               confirmations for salons, spas, rentals, and service brands.
             </p>
             <div className={styles.btnContainer}>
-              <Button
-                href='/contact'
+              <FalseButton
                 btnType='white'
                 text='Request free booking audit'
+                onClick={() => setOpen(true)}
               />
               <Button
                 href='/services'
@@ -46,6 +52,9 @@ export default function Hero() {
           </div>
         </div>
       </LayoutWrapper>
+      <Modal isOpen={open} onClose={() => setOpen(false)}>
+        <ContactForm />
+      </Modal>
     </section>
   );
 }
