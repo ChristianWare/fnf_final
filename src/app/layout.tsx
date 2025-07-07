@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Bebas_Neue } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/shared/Footer/Footer";
@@ -9,6 +9,12 @@ const inter = Inter({
   variable: "--inter",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
+});
+
+const bebasNeue = Bebas_Neue({
+  variable: "--bebasNeue",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 const PPNeueMontrealMedium = localFont({
@@ -24,7 +30,6 @@ const PPNeueMontrealMediumThick = localFont({
 });
 
 export const metadata: Metadata = {
-  // title: "Fonts & Footers | Custom Booking Websites",
   title: {
     default: "Fonts & Footers | Custom Booking Websites",
     template: "%s - Fonts & Footers | Custom Booking Websites",
@@ -41,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.variable} ${PPNeueMontrealMedium.variable} ${PPNeueMontrealMediumThick.variable}`}
+        className={`${inter.variable} ${PPNeueMontrealMedium.variable} ${PPNeueMontrealMediumThick.variable} ${bebasNeue.variable}`}
       >
         {children}
         <FinalCTA />
