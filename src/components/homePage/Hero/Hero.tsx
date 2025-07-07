@@ -34,7 +34,7 @@ export default function Hero() {
               <Button
                 href='/services'
                 btnType='noBackgroundWhiteText'
-                text='See pricing'
+                text='View plans & pricing'
                 arrow
               />
             </div>
