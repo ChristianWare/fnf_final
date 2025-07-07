@@ -38,9 +38,10 @@ export default function Hero() {
                 onClick={() => setOpen(true)}
               />
               <Button
-                href='/services'
+                href='/contact'
                 btnType='noBackgroundWhiteText'
                 text='Free Strategy Call'
+                target='_blank'
                 arrow
               />
             </div>
