@@ -29,12 +29,12 @@ export default function Hero() {
               <Button
                 href='/contact'
                 btnType='white'
-                text='Get a free 90-second audit'
+                text='Request free booking audit'
               />
               <Button
                 href='/services'
                 btnType='noBackgroundWhiteText'
-                text='View plans & pricing'
+                text='Free Strategy Call'
                 arrow
               />
             </div>

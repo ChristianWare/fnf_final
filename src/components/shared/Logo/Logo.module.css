@@ -12,6 +12,7 @@
   justify-content: flex-end;
   background-color: var(--tan);
   padding: 1.6rem 3rem;
+  padding-bottom: 1.8rem;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   position: relative;
@@ -142,11 +143,11 @@
   width: 142px;
   height: 25px;
   position: relative;
-  top: -4px;
+  /* top: -4px; */
 }
 
 .img {
-  object-fit: contain;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 568px) {
