@@ -68,9 +68,9 @@ export default function Nav({ color = "", hamburgerColor = "" }: Props) {
         <div className={styles.btnContainer}>
           <Button
             href='/contact'
-            text='Get Started'
+            text='Book a call with Chris'
             btnType='noBackgroundBlueText'
-            arrow
+            image
           />
         </div>
         <span
