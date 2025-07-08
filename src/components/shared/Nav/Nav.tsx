@@ -63,6 +63,14 @@ export default function Nav({ color = "", hamburgerColor = "" }: Props) {
               {item.text}
             </Link>
           ))}
+          <div className={styles.btnContainerii}>
+            <Button
+              href='/contact'
+              text='Book a call with Chris'
+              btnType='noBackgroundBlueText'
+              image
+            />
+          </div>
         </div>
 
         <div className={styles.btnContainer}>
@@ -73,6 +81,7 @@ export default function Nav({ color = "", hamburgerColor = "" }: Props) {
             image
           />
         </div>
+
         <span
           className={
             isOpen === false

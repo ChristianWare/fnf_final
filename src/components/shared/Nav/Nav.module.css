@@ -81,6 +81,10 @@
   background-color: var(--black);
 }
 
+.btnContainerii {
+  display: none;
+}
+
 @media screen and (max-width: 868px) {
   .navbar {
     align-items: center;
@@ -126,6 +130,10 @@
     display: block;
     cursor: pointer;
     z-index: 9999;
+  }
+
+  .btnContainerii {
+    display: block;
   }
 
   @media screen and (max-width: 568px) {

@@ -60,8 +60,8 @@
 .noBackgroundBlueText {
   color: var(--white);
   background-color: var(--blue);
-  padding: 1rem 2rem;
-  padding-left: 1.5rem;
+  padding: 0.5rem 0.8rem;
+  padding-right: 1.4rem;
 }
 
 .noBackgroundBlackText {
@@ -94,5 +94,11 @@
 @media (hover: hover) and (pointer: fine) {
   .container:hover .arrow {
     transform: rotate(90deg) translateY(-5px);
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .noBackgroundBlueText {
+    border: 1px solid var(--lightBlue);
   }
 }

@@ -10,6 +10,7 @@ import FalseButton from "@/components/shared/FalseButton/FalseButton";
 import Modal from "@/components/shared/Modal/Modal";
 import ContactForm from "@/components/shared/ContactForm/ContactForm";
 import { useState } from "react";
+import SectionIntroii from "@/components/shared/SectionIntroii/SectionIntroii";
 
 export default function Hero() {
   const [open, setOpen] = useState(false);
@@ -22,6 +23,7 @@ export default function Hero() {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
+            <SectionIntroii />
             <h1 className={styles.heading}>
               We build <br />{" "}
               <span className={styles.span}> booking websites </span> <br />
