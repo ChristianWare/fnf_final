@@ -23,16 +23,10 @@ export default function Faq() {
       <LayoutWrapper>
         <div className={styles.top}>
           <div className={styles.sectionHeadingContainer}>
-            <SectionIntro title='How we work' dotColor='blueDot' />
+            <SectionIntro title='FAQ' dotColor='blueDot' />
           </div>
           <h2 className={styles.heading}>
-            We put <span className={styles.span}> transparency</span> and
-            openness at the heart of all our processes. Our clients{" "}
-            <span className={styles.span}>
-              get full access to detailed reports,
-            </span>{" "}
-            which allows them to track every step of the work and understand how
-            projects are progressing.
+            <span className={styles.span}>Questions?</span> Answers.
           </h2>
         </div>
         <div className={styles.bottom}>
