@@ -49,9 +49,13 @@ export default function Faq() {
                   </h3>
                 </div>
                 {selected === i ? (
-                  <Arrow className={styles.iconFlip} />
+                  <div className={styles.arrowContainer}>
+                    <Arrow className={styles.iconFlip} />
+                  </div>
                 ) : (
-                  <Arrow className={styles.icon} />
+                  <div className={styles.arrowContainer}>
+                    <Arrow className={styles.icon} />
+                  </div>
                 )}
               </div>
               <div

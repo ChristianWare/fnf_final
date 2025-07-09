@@ -1,3 +1,4 @@
+import Faq from "@/components/shared/Faq/Faq";
 import ProjectPreview from "@/components/workPage/ProjectPreview/ProjectPreview";
 import WorkHero from "@/components/workPage/WorkHero/WorkHero";
 import { Metadata } from "next";
@@ -14,6 +15,7 @@ export default function WorkPage() {
     <main>
       <WorkHero />
       <ProjectPreview />
+      <Faq />
     </main>
   );
 }

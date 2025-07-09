@@ -1,5 +1,6 @@
 import ContactHero from "@/components/contactPage/ContactHero/ContactHero";
 import ContactUsSection from "@/components/homePage/ContactUsSection/ContactUsSection";
+import Faq from "@/components/shared/Faq/Faq";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,6 +15,7 @@ export default function ContactPage() {
     <main>
       <ContactHero />
       <ContactUsSection />
+      <Faq />
     </main>
   );
 }

@@ -4,6 +4,7 @@ import MissionandValues from "@/components/aboutPage/MissionandValues/Missionand
 import OurTeam from "@/components/aboutPage/OurTeam/OurTeam";
 import Peace from "@/components/aboutPage/Peace/Peace";
 import Specialize from "@/components/aboutPage/Specialize/Specialize";
+import Faq from "@/components/shared/Faq/Faq";
 import { Metadata } from "next";
 // import ReviewSection from "@/components/aboutPage/ReviewSection/ReviewSection";
 
@@ -22,6 +23,7 @@ export default function AboutPage() {
       <OurTeam />
       <Features />
       <Specialize />
+      <Faq />
       <Peace />
     </main>
   );
