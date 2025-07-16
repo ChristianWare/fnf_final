@@ -1,4 +1,4 @@
-import styles from "./FormFields.module.css";
+import styles from "./FormField.module.css";
 import { FieldErrors, Path, UseFormRegister } from "react-hook-form";
 
 interface LoginValues {
@@ -17,7 +17,7 @@ interface FormFildProps {
   errors: FieldErrors;
 }
 
-export default function FormFields({
+export default function FormField({
   id,
   type,
   disabled,
