@@ -1,12 +1,13 @@
-import { ReactNode, MouseEventHandler } from "react";
+import { ReactNode } from "react";
 import styles from "./FalseButton.module.css";
 
 interface FalseButtonProps {
   text?: string;
   btnType?: "primary" | "secondary" | string;
   children?: ReactNode;
-  onClick?: MouseEventHandler<HTMLButtonElement>;
-  marquee?: boolean; // optional flag you’re already passing
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  type: "submit" | "reset" | "button" | undefined;
+  disabled?: boolean;
 }
 
 export default function FalseButton({
@@ -14,6 +15,8 @@ export default function FalseButton({
   btnType = "primary",
   children,
   onClick,
+  type,
+  disabled,
 }: FalseButtonProps) {
   const content = text ?? children;
 
@@ -21,7 +24,8 @@ export default function FalseButton({
     <button
       className={styles.container}
       onClick={onClick}
-      type='button'
+      type={type}
+      disabled={disabled}
     >
       <div className={`${styles.btn} ${styles[btnType]}`}>{content}</div>
     </button>
