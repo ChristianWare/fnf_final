@@ -6,7 +6,7 @@ interface FalseButtonProps {
   btnType?: "primary" | "secondary" | string;
   children?: ReactNode;
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  type: "submit" | "reset" | "button" | undefined;
+  type?: "submit" | "reset" | "button" | undefined;
   disabled?: boolean;
 }
 
