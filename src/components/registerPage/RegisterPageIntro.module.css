@@ -8,7 +8,7 @@
 
 .content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   margin-top: 7rem;
 }
 
@@ -57,7 +57,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 1268px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0rem;
