@@ -10,6 +10,7 @@ import Link from "next/link";
 import { RegisterSchema, RegisterSchemaType } from "@/schemas/RegisterSchema";
 import { signUp } from "../../../../actions/auth/register";
 import { useTransition, useState } from "react";
+import Alert from "@/components/shared/Alert/Alert";
 
 export default function RegisterForm() {
   const [isPending, startTransition] = useTransition();
@@ -71,8 +72,8 @@ export default function RegisterForm() {
           label='Confirm Password'
           disabled={isPending}
         />
-        {error}
-        {success}
+        {error && <Alert message={error} error />}
+        {success && <Alert message={success} success />}
         <div className={styles.btnContainer}>
           <FalseButton
             text={isPending ? "Submitting..." : "Register"}
@@ -84,7 +85,7 @@ export default function RegisterForm() {
       </form>
       <footer className={styles.cardFooter}>
         <p className={styles.footerText}>
-          Don’t have an account?{" "}
+          Already have an account?{" "}
           <Link href='/login' className={styles.link}>
             Sign up
           </Link>
