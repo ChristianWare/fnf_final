@@ -87,7 +87,7 @@ export default function RegisterForm() {
         <p className={styles.footerText}>
           Already have an account?{" "}
           <Link href='/login' className={styles.link}>
-            Sign up
+            Sign in
           </Link>
         </p>
       </footer>

@@ -8,6 +8,9 @@ import FormField from "../FormField/FormField";
 import FalseButton from "@/components/shared/FalseButton/FalseButton";
 import GoogleButton from "../GoogleButton/GoogleButton";
 import Link from "next/link";
+import { useState, useTransition } from "react";
+import { login } from "../../../../actions/auth/login";
+import Alert from "@/components/shared/Alert/Alert";
 
 export default function LoginForm() {
   const {
@@ -16,8 +19,18 @@ export default function LoginForm() {
     formState: { errors },
   } = useForm<LoginSchemaType>({ resolver: zodResolver(LoginSchema) });
 
+  const [isPending, startTransition] = useTransition();
+  const [error, setError] = useState<string | undefined>("");
+
   const onSubmit: SubmitHandler<LoginSchemaType> = (data) => {
-    console.log("data>>>", data);
+    setError("");
+    startTransition(() => {
+      login(data).then((res) => {
+        if (res?.error) {
+          setError(res.error);
+        }
+      });
+    });
   };
 
   return (
@@ -31,6 +44,7 @@ export default function LoginForm() {
           errors={errors}
           placeholder='email'
           label='email'
+          disabled={isPending}
         />
         <FormField
           id='password'
@@ -39,9 +53,18 @@ export default function LoginForm() {
           placeholder='password'
           type='password'
           label='password'
+          disabled={isPending}
         />
+        {error && <Alert message={error} error />}
+
         <div className={styles.btnContainer}>
-          <FalseButton text='Sign In' type='submit' btnType='blue' />
+          <FalseButton
+            // text='Sign In'
+            text={isPending ? "Submitting..." : "Sign In"}
+            type='submit'
+            btnType='blue'
+            disabled={isPending}
+          />
         </div>
       </form>
       <footer className={styles.cardFooter}>
