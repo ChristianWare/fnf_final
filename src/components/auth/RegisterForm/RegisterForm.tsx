@@ -8,8 +8,14 @@ import FalseButton from "@/components/shared/FalseButton/FalseButton";
 import GoogleButton from "../GoogleButton/GoogleButton";
 import Link from "next/link";
 import { RegisterSchema, RegisterSchemaType } from "@/schemas/RegisterSchema";
+import { signUp } from "../../../../actions/auth/register";
+import { useTransition, useState } from "react";
 
 export default function RegisterForm() {
+  const [isPending, startTransition] = useTransition();
+  const [error, setError] = useState<string | undefined>("");
+  const [success, setSuccess] = useState<string | undefined>("");
+
   const {
     register,
     handleSubmit,
@@ -17,7 +23,14 @@ export default function RegisterForm() {
   } = useForm<RegisterSchemaType>({ resolver: zodResolver(RegisterSchema) });
 
   const onSubmit: SubmitHandler<RegisterSchemaType> = (data) => {
-    console.log("data>>>", data);
+    setSuccess("");
+    setError("");
+    startTransition(() => {
+      signUp(data).then((res) => {
+        setError(res.error);
+        setSuccess(res.success);
+      });
+    });
   };
   return (
     <div className={styles.container}>
@@ -30,6 +43,7 @@ export default function RegisterForm() {
           errors={errors}
           placeholder='name'
           label='name'
+          disabled={isPending}
         />
         <FormField
           id='email'
@@ -37,6 +51,7 @@ export default function RegisterForm() {
           errors={errors}
           placeholder='email'
           label='email'
+          disabled={isPending}
         />
         <FormField
           id='password'
@@ -45,6 +60,7 @@ export default function RegisterForm() {
           placeholder='password'
           type='password'
           label='password'
+          disabled={isPending}
         />
         <FormField
           id='confirmPassword'
@@ -53,9 +69,17 @@ export default function RegisterForm() {
           placeholder='Conform Password'
           type='password'
           label='Confirm Password'
+          disabled={isPending}
         />
+        {error}
+        {success}
         <div className={styles.btnContainer}>
-          <FalseButton text='Register' type='submit' btnType='blue' />
+          <FalseButton
+            text={isPending ? "Submitting..." : "Register"}
+            type='submit'
+            btnType='blue'
+            disabled={isPending}
+          />
         </div>
       </form>
       <footer className={styles.cardFooter}>

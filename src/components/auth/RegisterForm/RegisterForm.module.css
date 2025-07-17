@@ -45,6 +45,7 @@
 
 .footerText {
   color: var(--tan);
+  text-align: center;
 }
 
 .link {

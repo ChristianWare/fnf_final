@@ -5,7 +5,7 @@ import { getUserByEmail } from "@/lib/user";
 import { RegisterSchema, RegisterSchemaType } from "@/schemas/RegisterSchema";
 import bcrypt from "bcryptjs";
 
-export const aignUp = async (values: RegisterSchemaType) => {
+export const signUp = async (values: RegisterSchemaType) => {
   const validateFields = RegisterSchema.safeParse(values);
 
   if (!validateFields.success) {
@@ -29,4 +29,6 @@ export const aignUp = async (values: RegisterSchemaType) => {
       password: hashedPassword,
     },
   });
+
+  return { success: "User created!" };
 };
