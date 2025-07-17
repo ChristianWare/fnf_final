@@ -1,23 +1,28 @@
 import styles from "./FormField.module.css";
-import { FieldErrors, Path, UseFormRegister } from "react-hook-form";
+import {
+  FieldErrors,
+  Path,
+  UseFormRegister,
+  FieldValues,
+} from "react-hook-form";
 
-interface LoginValues {
-  email: string;
-  password: string;
-}
+// interface LoginValues {
+//   email: string;
+//   password: string;
+// }
 
-interface FormFildProps {
+interface FormFieldProps<T extends FieldValues> {
   id: string;
   type?: string;
   disabled?: boolean;
   placeholder: string;
   label?: string;
   //   inputClassNames?: string;
-  register: UseFormRegister<LoginValues>;
+  register: UseFormRegister<T>;
   errors: FieldErrors;
 }
 
-export default function FormField({
+export default function FormField <T extends FieldValues> ({
   id,
   type,
   disabled,
@@ -26,7 +31,7 @@ export default function FormField({
   //   inputClassNames,
   register,
   errors,
-}: FormFildProps) {
+}: FormFieldProps<T>) {
   const message = errors[id] && (errors[id]?.message as string);
 
   return (
@@ -41,7 +46,7 @@ export default function FormField({
         disabled={disabled}
         placeholder={placeholder}
         type={type}
-        {...register(id as Path<LoginValues>)}
+        {...register(id as Path<T>)}
         className={styles.input}
       />
       {message && <span className={styles.error}>{message}</span>}

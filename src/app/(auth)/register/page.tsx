@@ -1,5 +1,9 @@
+import RegisterPageIntro from "@/components/registerPage/RegisterPageIntro";
+
 export default function RegisterPage() {
   return (
-    <div>RegisterPage</div>
+    <main>
+      <RegisterPageIntro />
+    </main>
   )
 }
