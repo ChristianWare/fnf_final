@@ -11,6 +11,8 @@ import Link from "next/link";
 import { useState, useTransition } from "react";
 import { login } from "../../../../actions/auth/login";
 import Alert from "@/components/shared/Alert/Alert";
+import { useRouter } from "next/navigation";
+import { LOGIN_REDIRECT } from "../../../../routes";
 
 export default function LoginForm() {
   const {
@@ -22,12 +24,18 @@ export default function LoginForm() {
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState<string | undefined>("");
 
+  const router = useRouter();
+
   const onSubmit: SubmitHandler<LoginSchemaType> = (data) => {
     setError("");
     startTransition(() => {
       login(data).then((res) => {
         if (res?.error) {
           setError(res.error);
+        }
+
+        if (!res?.error) {
+          router.push(LOGIN_REDIRECT);
         }
       });
     });
