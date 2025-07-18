@@ -4,6 +4,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/shared/Footer/Footer";
 import FinalCTA from "@/components/shared/FinalCTA/FinalCTA";
+import { auth } from "../../auth";
+import { SessionProvider } from "next-auth/react";
 
 const inter = Inter({
   variable: "--inter",
@@ -38,20 +40,24 @@ export const metadata: Metadata = {
     "Fonts & Footers builds lightning-fast, mobile-first booking platforms that sync calendars in real time, cut no-shows, and automate deposits for salons, spas, rentals, and service brands.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const session = await auth();
+
   return (
-    <html lang='en'>
-      <body
-        className={`${inter.variable} ${PPNeueMontrealMedium.variable} ${PPNeueMontrealMediumThick.variable} ${bebasNeue.variable}`}
-      >
-        {children}
-        <FinalCTA />
-        <Footer />
-      </body>
-    </html>
+    <SessionProvider session={session}>
+      <html lang='en'>
+        <body
+          className={`${inter.variable} ${PPNeueMontrealMedium.variable} ${PPNeueMontrealMediumThick.variable} ${bebasNeue.variable}`}
+        >
+          {children}
+          <FinalCTA />
+          <Footer />
+        </body>
+      </html>
+    </SessionProvider>
   );
 }

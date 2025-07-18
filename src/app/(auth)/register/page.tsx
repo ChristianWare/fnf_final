@@ -1,12 +1,10 @@
+import { auth } from "../../../../auth";
+import { redirect } from "next/navigation";
 import RegisterPageIntro from "@/components/registerPage/RegisterPageIntro";
-import { db } from "@/lib/db";
+// import { db } from "@/lib/db";
 
 export default async function RegisterPage() {
-  await db.user;
-
-  return (
-    <main>
-      <RegisterPageIntro />
-    </main>
-  );
+  const session = await auth();
+  if (session) redirect("/dashboard");
+  return <RegisterPageIntro />;
 }
