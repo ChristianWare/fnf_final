@@ -156,6 +156,13 @@ textarea:focus {
   p {
     font-size: 113.7%;
   }
+
+  input,
+  textarea,
+  select,
+  button {
+    font-size: initial;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -165,6 +172,13 @@ textarea:focus {
 
   h2 {
     font-size: 2.9rem;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    font-size: initial;
   }
 }
 
@@ -176,6 +190,13 @@ textarea:focus {
   h1 {
     font-size: 6.5vw;
     line-height: 1.2;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    font-size: initial;
   }
 }
 
