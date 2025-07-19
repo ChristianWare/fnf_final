@@ -17,7 +17,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 200000000;
   pointer-events: auto;
 }
 
@@ -91,7 +91,9 @@
 }
 
 @media screen and (max-width: 568px) {
-  
+  .content {
+    margin-top: 12rem;
+  }
 
   .top {
     align-items: flex-start;
