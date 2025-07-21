@@ -29,6 +29,7 @@
 html {
   font-size: 62.5%;
   height: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -111,6 +112,14 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
+}
+
+input,
+textarea,
+select,
+button {
+  font-size: 16px; /* ≥16px stops Safari zoom */
+  line-height: 1.4; /* optional, for better readability */
 }
 
 /* .toastFont {
