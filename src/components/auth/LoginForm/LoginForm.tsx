@@ -62,12 +62,12 @@ export default function LoginForm() {
           type='password'
           label='password'
           disabled={isPending}
+          eye
         />
         {error && <Alert message={error} error />}
 
         <div className={styles.btnContainer}>
           <FalseButton
-            // text='Sign In'
             text={isPending ? "Submitting..." : "Sign In"}
             type='submit'
             btnType='blue'

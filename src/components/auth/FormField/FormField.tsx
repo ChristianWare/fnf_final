@@ -1,4 +1,7 @@
+"use client";
+
 import styles from "./FormField.module.css";
+import { useState } from "react";
 import {
   FieldErrors,
   Path,
@@ -6,10 +9,8 @@ import {
   FieldValues,
 } from "react-hook-form";
 
-// interface LoginValues {
-//   email: string;
-//   password: string;
-// }
+import EyeOff from "@/components/icons/EyeOff/EyeOff";
+import EyeOn from "@/components/icons/EyeOn/EyeOn";
 
 interface FormFieldProps<T extends FieldValues> {
   id: string;
@@ -20,9 +21,10 @@ interface FormFieldProps<T extends FieldValues> {
   //   inputClassNames?: string;
   register: UseFormRegister<T>;
   errors: FieldErrors;
+  eye?: boolean;
 }
 
-export default function FormField <T extends FieldValues> ({
+export default function FormField<T extends FieldValues>({
   id,
   type,
   disabled,
@@ -31,8 +33,12 @@ export default function FormField <T extends FieldValues> ({
   //   inputClassNames,
   register,
   errors,
+  eye = false,
 }: FormFieldProps<T>) {
-  const message = errors[id] && (errors[id]?.message as string);
+  const [show, setShow] = useState(false);
+  const message = errors[id]?.message as string | undefined;
+  const inputType =
+    eye && type === "password" ? (show ? "text" : "password") : type;
 
   return (
     <div className={styles.formGroup}>
@@ -41,14 +47,30 @@ export default function FormField <T extends FieldValues> ({
           {label}
         </label>
       )}
-      <input
-        id={id}
-        disabled={disabled}
-        placeholder={placeholder}
-        type={type}
-        {...register(id as Path<T>)}
-        className={styles.input}
-      />
+      <div className={styles.inputWrapper}>
+        <input
+          id={id}
+          disabled={disabled}
+          placeholder={placeholder}
+          type={inputType}
+          {...register(id as Path<T>)}
+          className={styles.input}
+        />
+        {eye && (
+          <button
+            type='button'
+            onClick={() => setShow((v) => !v)}
+            className={styles.eyeButton}
+            aria-label={show ? "Hide password" : "Show password"}
+          >
+            {show ? (
+              <EyeOn className={styles.icon} />
+            ) : (
+              <EyeOff className={styles.icon} />
+            )}
+          </button>
+        )}
+      </div>
       {message && <span className={styles.error}>{message}</span>}
     </div>
   );
