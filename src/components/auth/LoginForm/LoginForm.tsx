@@ -11,7 +11,7 @@ import Link from "next/link";
 import { useState, useTransition } from "react";
 import { login } from "../../../../actions/auth/login";
 import Alert from "@/components/shared/Alert/Alert";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { LOGIN_REDIRECT } from "../../../../routes";
 
 export default function LoginForm() {
@@ -24,13 +24,20 @@ export default function LoginForm() {
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState<string | undefined>("");
 
+  const searchParams = useSearchParams();
   const router = useRouter();
+
+  const urlError =
+    searchParams.get("error") === "OAuthAccountNotLinked"
+      ? "Email in use with different provider!"
+      : "";
 
   const onSubmit: SubmitHandler<LoginSchemaType> = (data) => {
     setError("");
     startTransition(() => {
       login(data).then((res) => {
         if (res?.error) {
+          router.replace("/login");
           setError(res.error);
         }
 
@@ -65,6 +72,7 @@ export default function LoginForm() {
           eye
         />
         {error && <Alert message={error} error />}
+        {urlError && <Alert message={urlError} error />}
 
         <div className={styles.btnContainer}>
           <FalseButton
