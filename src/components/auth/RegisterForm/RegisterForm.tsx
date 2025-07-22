@@ -62,6 +62,7 @@ export default function RegisterForm() {
           type='password'
           label='password'
           disabled={isPending}
+          eye
         />
         <FormField
           id='confirmPassword'
@@ -71,6 +72,7 @@ export default function RegisterForm() {
           type='password'
           label='Confirm Password'
           disabled={isPending}
+          eye
         />
         {error && <Alert message={error} error />}
         {success && <Alert message={success} success />}
