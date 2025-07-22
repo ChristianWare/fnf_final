@@ -12,7 +12,7 @@ import { useState, useTransition } from "react";
 import { login } from "../../../../actions/auth/login";
 import Alert from "@/components/shared/Alert/Alert";
 import { useRouter, useSearchParams } from "next/navigation";
-import { LOGIN_REDIRECT } from "../../../../routes";
+// import { LOGIN_REDIRECT } from "../../../../routes";
 
 export default function LoginForm() {
   const {
@@ -23,6 +23,7 @@ export default function LoginForm() {
 
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState<string | undefined>("");
+  const [success, setSuccess] = useState<string | undefined>("");
 
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -41,8 +42,12 @@ export default function LoginForm() {
           setError(res.error);
         }
 
-        if (!res?.error) {
-          router.push(LOGIN_REDIRECT);
+        // if (!res?.error) {
+        //   router.push(LOGIN_REDIRECT);
+        // }
+
+        if (res?.success) {
+          setSuccess(res.success);
         }
       });
     });
@@ -73,6 +78,7 @@ export default function LoginForm() {
         />
         {error && <Alert message={error} error />}
         {urlError && <Alert message={urlError} error />}
+        {success && <Alert message={success} success />}
 
         <div className={styles.btnContainer}>
           <FalseButton
