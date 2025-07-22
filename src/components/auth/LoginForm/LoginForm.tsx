@@ -12,7 +12,7 @@ import { useState, useTransition } from "react";
 import { login } from "../../../../actions/auth/login";
 import Alert from "@/components/shared/Alert/Alert";
 import { useRouter, useSearchParams } from "next/navigation";
-// import { LOGIN_REDIRECT } from "../../../../routes";
+import { LOGIN_REDIRECT } from "../../../../routes";
 
 export default function LoginForm() {
   const {
@@ -42,12 +42,13 @@ export default function LoginForm() {
           setError(res.error);
         }
 
-        // if (!res?.error) {
-        //   router.push(LOGIN_REDIRECT);
-        // }
+        if (!res?.error) {
+          router.push(LOGIN_REDIRECT);
+        }
 
         if (res?.success) {
           setSuccess(res.success);
+          router.push(LOGIN_REDIRECT);
         }
       });
     });
