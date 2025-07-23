@@ -98,6 +98,14 @@ export default function LoginForm() {
           </Link>
         </p>
       </footer>
+      <footer className={styles.cardFooter}>
+        <p className={styles.footerText}>
+          Don’t have an account?{" "}
+          <Link href='/password-email-form' className={styles.link}>
+            Forgot Password?
+          </Link>
+        </p>
+      </footer>
     </div>
   );
 }

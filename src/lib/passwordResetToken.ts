@@ -27,14 +27,14 @@ export const getPasswordResetTokenByEmail = async (email: string) => {
   }
 };
 
-export const getPasswordResetToken = async (email: string) => {
+export const generatePasswordResetToken = async (email: string) => {
   const token = uuidv4();
   const expires = new Date(new Date().getTime() + 3600 * 1000);
 
   const existingToken = await getPasswordResetTokenByEmail(email);
 
   if (existingToken) {
-    await db.emailVerificationToken.delete({
+    await db.passwordResetToken.delete({
       where: { id: existingToken.id },
     });
   }
@@ -53,7 +53,7 @@ export const sendPasswordResetEmail = async (email: string, token: string) => {
   const res = await resend.emails.send({
     from: "onboarding@resend.dev",
     to: email,
-    subject: "Reset your password",
+    subject: "Password reset Link",
     html: `<p>Click <a href="${resetLink}">here</a> to reset your password</p>`,
   });
 
