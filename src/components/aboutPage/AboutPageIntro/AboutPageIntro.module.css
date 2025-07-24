@@ -37,7 +37,7 @@
 
 .copy {
   color: var(--textii);
-  width: 400px;
+  width: 70%;
   font-size: 1.6rem;
 }
 
@@ -55,10 +55,6 @@
   font-weight: 600;
   padding: 1rem 0rem;
   width: 100%;
-}
-
-.service:nth-child(1) {
-  border-top: 1px solid var(--textii);
 }
 
 .blackDot {
