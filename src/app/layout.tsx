@@ -31,6 +31,12 @@ const PPNeueMontrealMediumThick = localFont({
   display: "swap",
 });
 
+const JetBrainsMonoRegular = localFont({
+  src: "../../public/fonts/JetBrainsMonoRegular.woff2",
+  variable: "--JetBrainsMonoRegular",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: {
     default: "Fonts & Footers | Custom Booking Websites",
@@ -60,7 +66,7 @@ export default async function RootLayout({
     <SessionProvider session={session}>
       <html lang='en'>
         <body
-          className={`${inter.variable} ${PPNeueMontrealMedium.variable} ${PPNeueMontrealMediumThick.variable} ${bebasNeue.variable}`}
+          className={`${inter.variable} ${PPNeueMontrealMedium.variable} ${PPNeueMontrealMediumThick.variable} ${bebasNeue.variable} ${JetBrainsMonoRegular.variable}`}
         >
           {children}
           <FinalCTA />

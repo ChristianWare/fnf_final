@@ -100,9 +100,9 @@ export default function LoginForm() {
       </footer>
       <footer className={styles.cardFooter}>
         <p className={styles.footerText}>
-          Don’t have an account?{" "}
+          Forgot password?{" "}
           <Link href='/password-email-form' className={styles.link}>
-            Forgot Password?
+            Click here
           </Link>
         </p>
       </footer>

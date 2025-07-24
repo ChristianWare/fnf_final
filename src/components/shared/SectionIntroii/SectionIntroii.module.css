@@ -12,8 +12,7 @@
   }
   
   .text {
-    font-family: var(--inter);
-    font-weight: 400;
+    font-family: var(--JetBrainsMonoRegular);
     color: var(--gray);
     font-size: 1.4rem;
   }

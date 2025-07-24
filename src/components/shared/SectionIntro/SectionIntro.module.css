@@ -47,8 +47,8 @@
 
 .span {
   text-align: center;
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-family: var(--JetBrainsMonoRegular);
   letter-spacing: 0.5px;
   text-transform: uppercase;
   user-select: none;

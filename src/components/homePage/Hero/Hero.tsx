@@ -42,7 +42,7 @@ export default function Hero() {
               <Button
                 href='/contact'
                 btnType='noBackgroundWhiteText'
-                text='Free Strategy Call'
+                text='Free strategy call'
                 target='_blank'
                 arrow
               />
