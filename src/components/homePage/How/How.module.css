@@ -37,7 +37,7 @@
 
 @media screen and (max-width: 1268px) {
   .top {
-    width: 80%;
+    width: 100%;
   }
 
   .heading,
@@ -62,7 +62,6 @@
 
 @media screen and (max-width: 568px) {
   .top {
-    width: 100%;
     padding: 10rem 5rem;
     padding-bottom: 12rem;
   }

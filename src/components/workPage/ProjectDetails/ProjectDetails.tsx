@@ -1,9 +1,9 @@
 import styles from "./ProjectDetails.module.css";
 import Button from "@/components/shared/Button/Button";
 import { StaticImageData } from "next/image";
+import VideoSection from "../VideoSection/VideoSection";
 // import Stats from "../Stats/Stats";
-// import VideoSection from "../VideoSection/VideoSection";
-import Corner from "@/components/shared/Corner/Corner";
+// import Corner from "@/components/shared/Corner/Corner";
 
 interface TagItem {
   id: number;
@@ -57,15 +57,15 @@ export default function ProjectDetails({ project }: Props) {
   return (
     // <LayoutWrapper>
     <section className={styles.container} id={project.slug}>
-      <div className={styles.cornerContainer}>
+      {/* <div className={styles.cornerContainer}>
         <Corner backgroundColor='backgroundColorTan' />
-      </div>
+      </div> */}
       <div className={styles.top}>
         <h2 className={styles.title}>{project.title}</h2>
       </div>
       <div className={styles.content}>
         <div className={styles.introSection}>
-          <div className={styles.isLeft}>
+          {/* <div className={styles.isLeft}>
             <div className={styles.isLeftTop}>
               <div className={styles.isl1}>
                 <div>
@@ -99,23 +99,30 @@ export default function ProjectDetails({ project }: Props) {
                 />
               </div>
             </div>
-          </div>
-          <div className={styles.isRight}>
-            <p className={styles.heading}>{project.description}</p>
-            <div className={styles.tagContainer}>
-              {project.tags?.map((x) => (
-                <span className={styles.tag} key={x.id}>
-                  {x.tag}
-                </span>
-              ))}
-            </div>
+          </div> */}
+          <p className={styles.heading}>{project.description}</p>
+          <div className={styles.tagContainer}>
+            {project.tags?.map((x) => (
+              <span className={styles.tag} key={x.id}>
+                {x.tag}
+              </span>
+            ))}
           </div>
         </div>
       </div>
       {/* {project.stats && project.stats.length > 0 && (
         <Stats stats={project.stats} />
-      )} */}
-      {/* {project.video && <VideoSection video={project.video} />} */}
+        )} */}
+      {project.video && <VideoSection video={project.video} />}
+      <div className={styles.btnContainer}>
+        <Button
+          href={project.href}
+          btnType='blue'
+          text='Visit Website'
+          target='_blank'
+          arrow
+        />
+      </div>
     </section>
   );
 }
