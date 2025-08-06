@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 4rem;
+  padding: 20rem 0rem;
 }
 
 .sectionHeadingContainer {
@@ -19,6 +20,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
+  margin-top: 5rem;
 }
 
 .card {

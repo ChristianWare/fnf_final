@@ -1,6 +1,6 @@
 .container {
-  background-color: var(--tan);
-  border-radius: 25px;
+  /* background-color: var(--tan); */
+  /* border-radius: 25px; */
   position: relative;
   padding: 5rem;
   padding-top: 10rem;
@@ -36,6 +36,7 @@
 
 .heading {
   color: var(--black);
+  font-size: 3rem;
 }
 
 .imgContainer {
@@ -94,7 +95,7 @@
 }
 
 .card:nth-child(7) {
-  background-color: var(--white);
+  background-color: var(--tan);
 }
 
 .blackDot {

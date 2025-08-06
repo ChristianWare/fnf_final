@@ -4,6 +4,7 @@ import Rebooking from "@/components/icons/Rebooking/Rebooking";
 import Clock from "@/components/icons/Clock/Clock";
 import Deposit from "@/components/icons/Deposit/Deposit";
 import Lightning from "@/components/icons/Lightning/Lightning";
+import LayoutWrapper from "@/components/shared/LayoutWrapper";
 
 const data = [
   {
@@ -39,23 +40,25 @@ const data = [
 export default function Benefits() {
   return (
     <section className={styles.container}>
-      <div className={styles.sectionHeadingContainer}>
-        <SectionIntro title='Benefits of working with us' dotColor='blueDot' />
-      </div>
-      <div className={styles.content}>
-        {data.map((x) => (
-          <div
-            className={`${styles.card} ${styles[x.bgColor]}`}
-            key={x.id}
-          >
-            <div className={styles.cardTop}>
-              <h3 className={styles.title}>{x.title}</h3>
-              <p className={styles.desc}>{x.desc}</p>
+      <LayoutWrapper>
+        <div className={styles.sectionHeadingContainer}>
+          <SectionIntro
+            title='Benefits of working with us'
+            dotColor='blueDot'
+          />
+        </div>
+        <div className={styles.content}>
+          {data.map((x) => (
+            <div className={`${styles.card} ${styles[x.bgColor]}`} key={x.id}>
+              <div className={styles.cardTop}>
+                <h3 className={styles.title}>{x.title}</h3>
+                <p className={styles.desc}>{x.desc}</p>
+              </div>
+              <div className={styles.cardBottom}>{x.icon}</div>
             </div>
-            <div className={styles.cardBottom}>{x.icon}</div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </LayoutWrapper>
     </section>
   );
 }

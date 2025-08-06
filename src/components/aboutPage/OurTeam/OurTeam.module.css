@@ -1,5 +1,6 @@
 .container {
   padding: 5rem 0rem;
+  padding-top: 15rem;
 }
 
 .content {
@@ -20,6 +21,7 @@
 .heading {
   text-align: center;
   width: 60%;
+  font-size: 3rem;
 }
 
 .span {

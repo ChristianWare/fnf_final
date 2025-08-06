@@ -4,9 +4,14 @@ import Link from "next/link";
 import styles from "./Nav.module.css";
 import Logo from "../Logo/Logo";
 import Button from "../Button/Button";
-import { MouseEvent, useEffect, useState } from "react";
-import { useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
+// import { MouseEvent, useEffect, useState } from "react";
+import {
+  //  MouseEvent,
+  useEffect,
+  useState,
+} from "react";
+// import { useSession } from "next-auth/react";
+// import { useRouter } from "next/navigation";
 
 const navItems = [
   { text: "Home", href: "/" },
@@ -23,7 +28,7 @@ interface Props {
 
 export default function Nav({ color = "", hamburgerColor = "" }: Props) {
   const [isOpen, setIsOpen] = useState(false);
-  const { data: session, status } = useSession();
+  // const { data: session, status } = useSession();
 
   useEffect(() => {
     const body = document.body;
@@ -42,14 +47,14 @@ export default function Nav({ color = "", hamburgerColor = "" }: Props) {
     setIsOpen(!isOpen);
   };
 
-  const router = useRouter();
+  // const router = useRouter();
 
-  const handleAccountClick = (e: MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    setIsOpen(false);
-    if (status === "loading") return; // optional: ignore until known
-    router.push(session ? "/dashboard" : "/login");
-  };
+  // const handleAccountClick = (e: MouseEvent<HTMLAnchorElement>) => {
+  //   e.preventDefault();
+  //   setIsOpen(false);
+  //   if (status === "loading") return; // optional: ignore until known
+  //   router.push(session ? "/dashboard" : "/login");
+  // };
 
   return (
     <header className={styles.header}>
@@ -76,14 +81,14 @@ export default function Nav({ color = "", hamburgerColor = "" }: Props) {
             </Link>
           ))}
 
-          <Link
+          {/* <Link
             href={session ? "/dashboard" : "/login"}
             onClick={handleAccountClick}
             className={`${styles.navItem} ${styles[color]}`}
-            prefetch={false} // avoid preloading /dashboard HTML when logged out
+            prefetch={false}
           >
             My Account
-          </Link>
+          </Link> */}
           <div className={styles.btnContainerii}>
             <Button
               href='/contact'

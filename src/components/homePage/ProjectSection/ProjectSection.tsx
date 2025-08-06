@@ -2,7 +2,6 @@ import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./ProjectSection.module.css";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import { projects } from "@/lib/data";
-import Button from "@/components/shared/Button/Button";
 import ProjectDetails from "@/components/workPage/ProjectDetails/ProjectDetails";
 
 export default function ProjectSection() {
@@ -21,13 +20,11 @@ export default function ProjectSection() {
             </h2>
           </div>
           <div className={styles.bottom}>
-            {projects.slice(0, 1).map((project) => (
+            {projects.slice(0, 2).map((project) => (
               <ProjectDetails key={project.id} project={project} />
             ))}
           </div>
-          <div className={styles.btnContanierii}>
-            <Button href='/work' btnType='blue' text='See all projects' />
-          </div>
+         
         </div>
       </LayoutWrapper>
     </section>
