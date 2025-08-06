@@ -117,10 +117,10 @@ export default function Features() {
             Everything you need to fill calendars and cut no-shows
           </span>
           <p className={styles.copy}>
-            Fonts&nbsp;&amp;&nbsp;Footers delivers a fully custom booking
+            {/* Fonts&nbsp;&amp;&nbsp;Footers delivers a fully custom booking
             solution—handling scheduling, deposits, reminders, and real-time
             calendar sync—so you can focus on service, not back-and-forth
-            messages.
+            messages. */}
           </p>
         </div>
 

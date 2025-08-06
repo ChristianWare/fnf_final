@@ -62,10 +62,10 @@ export default function ProblemSection() {
               or <span className={styles.span}>losing money</span> to no-shows?
             </h2>
             <p className={styles.leftCopy}>
-              A custom booking platform fixes those leaks by syncing calendars
+              {/* A custom booking platform fixes those leaks by syncing calendars
               in real time, charging deposits automatically, and giving guests a
               60-second checkout—no coding on your part, no monthly marketplace
-              tax.
+              tax. */}
             </p>
             {/* <div className={styles.imgContainer}>
               <Image

@@ -73,7 +73,7 @@
 .icon {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--black);
 }
 
@@ -81,7 +81,7 @@
   transform: rotate(180deg);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--black);
 }
 
