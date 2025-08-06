@@ -40,7 +40,7 @@ const data = [
 export default function ProblemSection() {
   return (
     <LayoutWrapper>
-      <section className={`${styles.container} clipPath7`}>
+      <section className={styles.container}>
         {/* <div className={styles.cornerContainer}>
           <Corner />
         </div> */}
