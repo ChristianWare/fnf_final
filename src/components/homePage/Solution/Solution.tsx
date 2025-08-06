@@ -4,7 +4,6 @@ import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 // import Image from "next/image";
 // import SolutionImage from "../../../../public/images/solution.png";
 
-
 const data = [
   {
     id: 1,
@@ -45,7 +44,11 @@ export default function Solution() {
         <div className={styles.content}>
           <div className={styles.left}>
             <div className={styles.sectionHeadingContainer}>
-              <SectionIntro title='Our Solutions' dotColor='blueDot' />
+              <SectionIntro
+                title='Our Solutions'
+                dotColor='whiteDot'
+                color='white'
+              />
             </div>
             <h2 className={styles.heading}>
               Work with <span className={styles.span}>Fonts & Footers</span> and
@@ -66,11 +69,7 @@ export default function Solution() {
           <div className={styles.right}>
             {data.map((item) => (
               <div key={item.id} className={styles.card}>
-                <h3
-                  className={styles.title}
-                >
-                  {item.title}
-                </h3>
+                <h3 className={styles.title}>{item.title}</h3>
                 <p className={styles.desc}>{item.desc}</p>
               </div>
             ))}

@@ -5,6 +5,7 @@
 .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
 }
 
 .left {
@@ -15,13 +16,17 @@
   gap: 3rem;
   height: 100%;
   background-color: var(--blue);
+  width: 60%;
+  padding: 3rem;
+  clip-path: var(--clip-path-1);
 }
 
 .heading {
   font-size: 3.2rem;
   letter-spacing: 0px;
   line-height: 1.2;
-  width: 75%;
+  /* width: 75%; */
+  color: var(--tan);
 }
 
 .span {
@@ -53,14 +58,11 @@
   height: 100%;
 }
 
-/* Specific cards can be targeted if needed */
 .card:nth-child(1) {
   grid-area: one;
 }
 .card:nth-child(2) {
   grid-area: two;
-  /* background-color: var(--green3); */
-  /* border: 1px solid var(--lightBlack); */
 }
 .card:nth-child(3) {
   grid-area: three;
@@ -96,9 +98,18 @@
   font-weight: 700;
 }
 
+@media screen and (max-width: 1268px) {
+  .left {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 1068px) {
   .content {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .left {
@@ -111,15 +122,22 @@
     width: 80%;
   }
 
-  .imgContainer {
-    width: 100%;
+  .card {
+    padding: 3rem;
+    gap: 2rem;
   }
 }
 
 @media screen and (max-width: 568px) {
+  .content {
+    grid-gap: 2rem;
+  }
+  
   .left {
     align-items: flex-start;
     justify-content: flex-start;
+    width: 100%;
+    padding: 4rem 5rem;
   }
 
   .heading {
@@ -136,7 +154,15 @@
       "five"
       "six";
     grid-template-columns: repeat(1, 1fr);
-    overflow-x: hidden;
+    grid-gap: 2rem;
+  }
+
+  .card {
+    border: 1px solid var(--blue);
+    align-self: flex-start;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90px;
   }
 }
 
