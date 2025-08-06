@@ -18,7 +18,7 @@ export default function Hero() {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className={`${styles.container} clipPath1`}>
+    <section className={styles.container}>
       <div className={styles.navContainer}>
         <Nav />
       </div>

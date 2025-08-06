@@ -3,6 +3,8 @@
   border-radius: 25px;
   margin: 1rem;
   position: relative;
+  clip-path: var(--clip-path-1); 
+
 }
 
 .content {

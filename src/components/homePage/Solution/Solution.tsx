@@ -1,8 +1,8 @@
-import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./Solution.module.css";
+import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
-import Image from "next/image";
-import SolutionImage from "../../../../public/images/solution.png";
+// import Image from "next/image";
+// import SolutionImage from "../../../../public/images/solution.png";
 
 
 const data = [
@@ -53,7 +53,7 @@ export default function Solution() {
               <span className={styles.span}> solutions</span> for your ecommerce
               store:
             </h2>
-            <div className={styles.imgContainer}>
+            {/* <div className={styles.imgContainer}>
               <Image
                 src={SolutionImage}
                 fill
@@ -61,7 +61,7 @@ export default function Solution() {
                 title=''
                 className={styles.img}
               />
-            </div>
+            </div> */}
           </div>
           <div className={styles.right}>
             {data.map((item) => (

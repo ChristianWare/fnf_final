@@ -13,15 +13,16 @@
 .heading {
   letter-spacing: 0px;
   text-align: center;
-  width: 60%;
   line-height: 1.2;
 }
 
 .span {
+  color: inherit;
+  font-family: var(--PerfectlyNinetiesItalic);
+  font-weight: 500;
   color: var(--blue);
-
-  font-family: var(--PPNeueMontrealMediumThick);
 }
+
 
 .circleContainer {
   margin-top: 5rem;
