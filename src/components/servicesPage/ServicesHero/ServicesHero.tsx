@@ -1,5 +1,4 @@
 import styles from "./ServicesHero.module.css";
-import Nav from "@/components/shared/Nav/Nav";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import Image from "next/image";
 import Img1 from "../../../../public/images/bookingii.png";
@@ -7,9 +6,6 @@ import Img1 from "../../../../public/images/bookingii.png";
 export default function ServicesHero() {
   return (
     <section className={styles.container}>
-      <div className={styles.navContainer}>
-        <Nav />
-      </div>
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.imgContainer}>
