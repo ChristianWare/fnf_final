@@ -1,8 +1,8 @@
 import styles from "./ProjectDetails.module.css";
 import Button from "@/components/shared/Button/Button";
 import { StaticImageData } from "next/image";
-import Stats from "../Stats/Stats";
-import VideoSection from "../VideoSection/VideoSection";
+// import Stats from "../Stats/Stats";
+// import VideoSection from "../VideoSection/VideoSection";
 import Corner from "@/components/shared/Corner/Corner";
 
 interface TagItem {
@@ -112,10 +112,10 @@ export default function ProjectDetails({ project }: Props) {
           </div>
         </div>
       </div>
-      {project.stats && project.stats.length > 0 && (
+      {/* {project.stats && project.stats.length > 0 && (
         <Stats stats={project.stats} />
-      )}
-      {project.video && <VideoSection video={project.video} />}
+      )} */}
+      {/* {project.video && <VideoSection video={project.video} />} */}
     </section>
   );
 }

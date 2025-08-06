@@ -1,16 +1,16 @@
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./AboutUsSection.module.css";
-// import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
-import Button from "@/components/shared/Button/Button";
+import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
+// import Button from "@/components/shared/Button/Button";
 
 export default function AboutUsSection() {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.content}>
-          {/* <div className={styles.sectionHeadingContainer}>
+          <div className={styles.sectionHeadingContainer}>
             <SectionIntro title='About Us' dotColor='blueDot' />
-          </div> */}
+          </div>
           <h2 className={styles.heading}>
             Fonts & Footers exists for{" "}
             <span className={styles.span}>owner-operated service brands</span>{" "}
@@ -22,9 +22,9 @@ export default function AboutUsSection() {
               no third-party licence fees, ever.
             </span>
           </h2>
-          <div className={styles.btnContanierii}>
+          {/* <div className={styles.btnContanierii}>
             <Button href='/about' btnType='blue' text='More About Us' />
-          </div>
+          </div> */}
         </div>
       </LayoutWrapper>
     </section>

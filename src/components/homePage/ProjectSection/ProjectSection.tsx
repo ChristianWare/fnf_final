@@ -3,15 +3,17 @@ import styles from "./ProjectSection.module.css";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import { projects } from "@/lib/data";
 import ProjectDetails from "@/components/workPage/ProjectDetails/ProjectDetails";
+import WorkHero from "@/components/workPage/WorkHero/WorkHero";
 
 export default function ProjectSection() {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
+        <WorkHero />
         <div className={styles.content}>
           <div className={styles.top}>
             <div className={styles.sectionHeadingContainer}>
-              <SectionIntro title='Featured Project' dotColor='blueDot' />
+              <SectionIntro title='Featured Projects' dotColor='blueDot' />
             </div>
             <h2 className={styles.heading}>
               Check out our{" "}

@@ -16,6 +16,7 @@
 .heading {
   color: var(--black);
   width: 80%;
+  font-size: 3rem;
 }
 
 .span {

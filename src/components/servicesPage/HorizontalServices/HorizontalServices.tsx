@@ -7,6 +7,7 @@ export default function HorizontalServices() {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
+          <h2 className={styles.heading}>Our Services + Pricing</h2>
         <div className={styles.content}>
           {pricingData.map((x) => (
             <div className={styles.card} key={x.id} id={x.service.toLowerCase().replace(/\s+/g, "-")}>

@@ -1,25 +1,30 @@
-import Nav from "@/components/shared/Nav/Nav";
+// import Nav from "@/components/shared/Nav/Nav";
+import ProjectSection from "@/components/homePage/ProjectSection/ProjectSection";
 import styles from "./WorkHero.module.css";
-import LayoutWrapper from "@/components/shared/LayoutWrapper";
+// import LayoutWrapper from "@/components/shared/LayoutWrapper";
+import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 
 export default function WorkHero() {
   return (
     <section className={styles.container}>
-      <div className={styles.navContainer}>
-        <Nav />
-      </div>
-      <LayoutWrapper>
+      {/* <LayoutWrapper> */}
         <div className={styles.content}>
-          <h1 className={styles.heading}>
+          <SectionIntro
+            title='Featured Projects'
+            dotColor='blueDot'
+            color='white'
+          />
+          <h2 className={styles.heading}>
             <span className={styles.span}>Our Work</span> <br /> speaks for
             itself
-          </h1>
+          </h2>
           <p className={styles.copy}>
-            Explore our portfolio of successful booking projects across
-            various industries and business models.
+            Explore our portfolio of successful booking projects across various
+            industries and business models.
           </p>
         </div>
-      </LayoutWrapper>
+        <ProjectSection />
+      {/* </LayoutWrapper> */}
     </section>
   );
 }

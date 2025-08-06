@@ -338,12 +338,12 @@ export const pricingData = [
         details: "Auto-bill recurring packages with usage tracking",
         price: "$1,200",
       },
-      {
-        id: 2.03,
-        expansionblock: "CRM Link",
-        details: "Push booking data to HubSpot or Klaviyo",
-        price: "$800",
-      },
+      // {
+      //   id: 2.03,
+      //   expansionblock: "CRM Link",
+      //   details: "Push booking data to HubSpot or Klaviyo",
+      //   price: "$800",
+      // },
     ],
   },
   {
@@ -434,12 +434,12 @@ export const pricingData = [
         details: "Every additional block of 25 rental units beyond 50",
         price: "$700",
       },
-      {
-        id: 4.03,
-        expansionblock: "Analytics Tier",
-        details: "Custom Power BI or Looker Studio dashboards",
-        price: "$900",
-      },
+      // {
+      //   id: 4.03,
+      //   expansionblock: "Analytics Tier",
+      //   details: "Custom Power BI or Looker Studio dashboards",
+      //   price: "$900",
+      // },
     ],
   },
   {

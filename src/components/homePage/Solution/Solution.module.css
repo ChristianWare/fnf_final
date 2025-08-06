@@ -5,7 +5,10 @@
 .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3rem;
+  grid-gap: 2rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .left {
@@ -16,7 +19,7 @@
   gap: 3rem;
   height: 100%;
   background-color: var(--blue);
-  width: 60%;
+  /* width: 60%; */
   padding: 3rem;
   clip-path: var(--clip-path-1);
 }
@@ -48,7 +51,7 @@
 
 .right {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   grid-template-areas:
     "one one one"
     "two two two"
@@ -99,8 +102,8 @@
 }
 
 @media screen and (max-width: 1268px) {
-  .left {
-    width: 80%;
+  .content {
+    width: 90%;
   }
 }
 
@@ -110,6 +113,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
 
   .left {
