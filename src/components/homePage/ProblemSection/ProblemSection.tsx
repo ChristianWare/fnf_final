@@ -1,11 +1,10 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./ProblemSection.module.css";
-import Image from "next/image";
-import ProblemImage from "../../../../public/images/problem.png";
+// import Image from "next/image";
+// import Img1 from "../../../../public/images/sad.png";
 
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
-import Corner from "@/components/shared/Corner/Corner";
+// import Corner from "@/components/shared/Corner/Corner";
 import Outdated from "@/components/icons/Outdated/Outdated";
 import CloudPrez from "@/components/icons/CloudPrez/CloudPrez";
 import Credibility from "@/components/icons/Credibility/Credibility";
@@ -13,7 +12,7 @@ import Update from "@/components/icons/Update/Update";
 
 const data = [
   {
-    icon: <Outdated className={styles.icon} />, // swap icons if you have booking-specific svgs
+    icon: <Outdated className={styles.icon} />,
     title: "DM Chaos",
     description:
       "You spend hours each day confirming times in Instagram or Facebook messages instead of serving clients.",
@@ -38,14 +37,13 @@ const data = [
   },
 ];
 
-
 export default function ProblemSection() {
   return (
     <LayoutWrapper>
-      <section className={styles.container}>
-        <div className={styles.cornerContainer}>
+      <section className={`${styles.container} clipPath7`}>
+        {/* <div className={styles.cornerContainer}>
           <Corner />
-        </div>
+        </div> */}
 
         {/* <div className={styles.sectionTop}>
           
@@ -61,8 +59,7 @@ export default function ProblemSection() {
             </div>
             <h2 className={styles.heading}>
               Are you <span className={styles.span}>tired</span> of chasing DMs
-              or <span className={styles.span}>losing money</span> to
-              no-shows?
+              or <span className={styles.span}>losing money</span> to no-shows?
             </h2>
             <p className={styles.leftCopy}>
               A custom booking platform fixes those leaks by syncing calendars
@@ -70,18 +67,18 @@ export default function ProblemSection() {
               60-second checkout—no coding on your part, no monthly marketplace
               tax.
             </p>
-            <div className={styles.imgContainer}>
+            {/* <div className={styles.imgContainer}>
               <Image
-                src={ProblemImage}
-                alt=''
-                layout='fill'
-                objectFit='cover'
+                src={Img1}
+                alt='Hero image'
+                width={654}
+                height={381}
                 className={styles.img}
-              />
-            </div>
+              />{" "}
+            </div> */}
           </div>
           <div className={styles.right}>
-            {data.map((x: any, index) => (
+            {data.map((x, index) => (
               <div key={index} className={styles.card}>
                 <div>
                   <h4 className={styles.title}>{x.title}</h4>

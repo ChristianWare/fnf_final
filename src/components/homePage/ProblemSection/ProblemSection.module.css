@@ -2,8 +2,7 @@
   background-color: var(--black);
   border-radius: 25px;
   position: relative;
-  padding: 5rem 10rem;
-  padding-top: 10rem;
+  padding: 10rem;
 }
 
 .cornerContainer {
@@ -54,15 +53,21 @@
 }
 
 .imgContainer {
-  position: relative;
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  max-width: 612px;
+  border-radius: 15px;
+  background-color: var(--tan);
+  padding: 2rem;
+  margin-top: 3rem;
 }
 
 .img {
+  display: block;
+  width: 100%;
+  height: auto;
   object-fit: contain;
+  border-radius: 15px;
 }
-
 .right {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -111,7 +116,6 @@
 @media screen and (max-width: 1268px) {
   .container {
     padding: 3rem 8rem;
-    padding-top: 10rem;
   }
 
   .bottom {
@@ -124,6 +128,7 @@
   .container {
     padding: 3rem 5rem;
     padding-top: 8rem;
+    padding-bottom: 10rem;
   }
 
   .sectionTop {
@@ -145,7 +150,6 @@
 
   .bottom {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 0rem;
   }
 
   .left {
@@ -169,7 +173,8 @@
 @media screen and (max-width: 568px) {
   .container {
     padding: 2rem;
-    padding-top: 8rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
   }
 
   .sectionTop {
@@ -182,15 +187,6 @@
   .leftCopy {
     width: 100%;
     text-align: left;
-  }
-
-  .imgContainer {
-    width: 275px;
-    height: 275px;
-  }
-
-  .bottom {
-    grid-gap: 3rem;
   }
 
   .right {
@@ -209,4 +205,3 @@
     justify-content: flex-start;
   }
 }
-

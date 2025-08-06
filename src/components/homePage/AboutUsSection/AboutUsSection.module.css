@@ -23,7 +23,8 @@
 
 .span {
   color: var(--blue);
-  font-family: var(--PPNeueMontrealMediumThick);
+   font-family: var(--PerfectlyNinetiesItalic);
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1268px) {

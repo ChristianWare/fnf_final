@@ -37,6 +37,12 @@ const JetBrainsMonoRegular = localFont({
   display: "swap",
 });
 
+const PerfectlyNinetiesItalic = localFont({
+  src: "../../public/fonts/PerfectlyNinetiesItalic.otf",
+  variable: "--PerfectlyNinetiesItalic",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: {
     default: "Fonts & Footers | Custom Booking Websites",
@@ -66,7 +72,8 @@ export default async function RootLayout({
     <SessionProvider session={session}>
       <html lang='en'>
         <body
-          className={`${inter.variable} ${PPNeueMontrealMedium.variable} ${PPNeueMontrealMediumThick.variable} ${bebasNeue.variable} ${JetBrainsMonoRegular.variable}`}
+          className={`${inter.variable} ${PPNeueMontrealMedium.variable} ${PPNeueMontrealMediumThick.variable} ${bebasNeue.variable} ${JetBrainsMonoRegular.variable}
+            ${PerfectlyNinetiesItalic.variable}`}
         >
           {children}
           <FinalCTA />

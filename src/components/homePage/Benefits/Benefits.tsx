@@ -44,7 +44,10 @@ export default function Benefits() {
       </div>
       <div className={styles.content}>
         {data.map((x) => (
-          <div className={`${styles.card} ${styles[x.bgColor]}`} key={x.id}>
+          <div
+            className={`${styles.card} ${styles[x.bgColor]} clipPath1`}
+            key={x.id}
+          >
             <div className={styles.cardTop}>
               <h3 className={styles.title}>{x.title}</h3>
               <p className={styles.desc}>{x.desc}</p>

@@ -23,8 +23,7 @@ interface Props {
 
 export default function Nav({ color = "", hamburgerColor = "" }: Props) {
   const [isOpen, setIsOpen] = useState(false);
-    const { data: session, status } = useSession();
-
+  const { data: session, status } = useSession();
 
   useEffect(() => {
     const body = document.body;
