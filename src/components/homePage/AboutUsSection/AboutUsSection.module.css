@@ -8,22 +8,21 @@
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 3rem;
   position: relative;
 }
 
 .heading {
-  letter-spacing: 0px;
-  text-align: center;
-  width: 60%;
   line-height: 1.2;
+  text-indent: 4em;
+  color: var(--black);
 }
 
 .span {
-  color: var(--blue);
-   font-family: var(--PerfectlyNinetiesItalic);
+  color: inherit;
+  font-family: var(--PerfectlyNinetiesItalic);
   font-weight: 500;
 }
 
