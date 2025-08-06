@@ -3,7 +3,7 @@ import { Inter, Bebas_Neue } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/shared/Footer/Footer";
-import FinalCTA from "@/components/shared/FinalCTA/FinalCTA";
+// import FinalCTA from "@/components/shared/FinalCTA/FinalCTA";
 import { auth } from "../../auth";
 import { SessionProvider } from "next-auth/react";
 
@@ -76,7 +76,7 @@ export default async function RootLayout({
             ${PerfectlyNinetiesItalic.variable}`}
         >
           {children}
-          <FinalCTA />
+          {/* <FinalCTA /> */}
           <Footer />
         </body>
       </html>

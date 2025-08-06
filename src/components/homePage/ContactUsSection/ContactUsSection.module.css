@@ -1,5 +1,7 @@
 .container {
   position: relative;
+  padding: 20rem 0rem;
+  padding-top: 0rem;
 }
 
 .cornerContainer {
@@ -24,6 +26,7 @@
 .bottom {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
 }
 
 .left {
@@ -53,7 +56,7 @@
 
 @media screen and (max-width: 1068px) {
   .container {
-    padding: 3rem;
+  padding: 20rem 0rem;
   }
 
   .bottom {
@@ -77,11 +80,6 @@
   }
 }
 
-@media screen and (max-width: 568px) {
-  .container {
-    padding: 2rem;
-  }
-}
 
 @media screen and (max-width: 380px) {
   .span {

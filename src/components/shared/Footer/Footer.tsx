@@ -1,4 +1,3 @@
-import Arrow from "@/components/icons/Arrow/Arrow";
 import styles from "./Footer.module.css";
 import Logo from "../Logo/Logo";
 import LayoutWrapper from "../LayoutWrapper";
@@ -120,61 +119,62 @@ const data3 = [
 
 export default function Footer() {
   return (
-    <footer className={styles.container}>
-      <LayoutWrapper>
-        <div className={styles.logoContainer}>
-          <Logo direction='center' backgroundColor='backgroundColorBlue' />
-        </div>
-        <div className={styles.top}>
-          <div className={styles.left}>
-            <h3 className={styles.subscribeHeading}>
-              Subscribe to the newsletter and get marketing optimization tips!
-            </h3>
-            <div className={styles.emailBox}>
-              <div className={styles.ebLeft}>Email</div>
-              <div className={styles.ebRight}>
-                <Arrow className={styles.arrow} />
-              </div>
+    <>
+      <footer className={styles.container}>
+        <LayoutWrapper>
+          <div className={styles.logoContainer}>
+            <Logo direction='center' backgroundColor='backgroundColorBlue' />
+          </div>
+          <div className={styles.top}>
+            <div className={styles.left}>
+              <h2 className={styles.heading}>
+                We build <br />
+                <span className={styles.span}> booking websites </span> <br />
+                that fill calendars
+              </h2>
             </div>
-          </div>
-          <div className={styles.right}>
-            {data.map((x) => (
-              <div className={styles.optionSection} key={x.id}>
-                <div className={styles.title}>{x.title}</div>
-                <ul className={styles.optionList}>
-                  {x.options.map((y) => (
-                    <li key={y.id} className={styles.option}>
-                      {y.option}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className={styles.bottom}>
-          <div className={styles.b1}>
-            <Arizona className={styles.icon} />
-            <p className={styles.iconText}>Based in Phoenix, AZ</p>
-          </div>
-          <div className={styles.b2}>
-            <div className={styles.data2Container}>
-              {data2.map((x) => (
-                <p key={x.id} className={styles.optionii}>
-                  {x.title}
-                </p>
+            <div className={styles.right}>
+              {data.map((x) => (
+                <div className={styles.optionSection} key={x.id}>
+                  <div className={styles.title}>{x.title}</div>
+                  <ul className={styles.optionList}>
+                    {x.options.map((y) => (
+                      <li key={y.id} className={styles.option}>
+                        {y.option}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
             </div>
           </div>
-          <div className={styles.b3}>
-            {data3.map((x) => (
-              <div key={x.id} className={styles.socialIconContainer}>
-                <Link href={x.href} target="_blank">{x.icon}</Link>
+          <div className={styles.bottom}>
+            <div className={styles.b1}>
+              <Arizona className={styles.icon} />
+              <p className={styles.iconText}>Based in Phoenix, AZ</p>
+            </div>
+            <div className={styles.b2}>
+              <div className={styles.data2Container}>
+                {data2.map((x) => (
+                  <p key={x.id} className={styles.optionii}>
+                    {x.title}
+                  </p>
+                ))}
               </div>
-            ))}
+            </div>
+            <div className={styles.b3}>
+              {data3.map((x) => (
+                <div key={x.id} className={styles.socialIconContainer}>
+                  <Link href={x.href} target='_blank'>
+                    {x.icon}
+                  </Link>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </LayoutWrapper>
-    </footer>
+        </LayoutWrapper>
+      </footer>
+      <br className={styles.br} />
+    </>
   );
 }

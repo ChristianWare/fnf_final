@@ -30,6 +30,9 @@
   align-items: flex-start;
   padding: 2rem;
   gap: 1rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .qaContainer {
@@ -152,4 +155,16 @@
 
 .card4 .cardInner .titleHeading {
   color: var(--gray);
+}
+
+@media screen and (max-width: 1268px) {
+  .bottom {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bottom {
+    width: 100%;
+  }
 }

@@ -17,13 +17,14 @@
 
 .card {
   border-radius: 15px;
-  padding: 2rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   height: 100%;
   gap: 1rem;
+  clip-path: var(--clip-path-1);
 }
 
 .card:nth-child(1) {
@@ -101,5 +102,9 @@
 @media screen and (max-width: 568px) {
   .bottom {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    padding-right: 5rem;
   }
 }
