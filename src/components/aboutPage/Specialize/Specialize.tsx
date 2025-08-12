@@ -3,6 +3,9 @@ import styles from "./Specialize.module.css";
 import { specialties } from "@/lib/data";
 import Corner from "@/components/shared/Corner/Corner";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
+import Image from "next/image";
+import Img1 from "../../../../public/images/specialize.png";
+
 
 export default function Specialize() {
   return (
@@ -26,6 +29,16 @@ export default function Specialize() {
               or oversee a portfolio of vacation rentals, we build booking
               platforms tailored to your exact service model and growth stage.
             </h2>
+            <div className={styles.imgContainer}>
+              <Image
+                src={Img1}
+                alt='Hero image'
+                className={styles.img}
+                fill
+                priority
+                quality={100}
+              />{" "}
+            </div>
           </div>
           <div className={styles.right}>
             <div className={styles.mapDataBox}>

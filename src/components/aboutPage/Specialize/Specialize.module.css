@@ -49,7 +49,6 @@
 
 .img {
   object-fit: contain;
-  padding: 5rem;
 }
 
 .right {
@@ -187,6 +186,10 @@
 
   .heading {
     width: 100%;
+  }
+
+    .imgContainer {
+    height: 300px;
   }
 
   .card {
