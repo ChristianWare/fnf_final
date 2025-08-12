@@ -1,4 +1,4 @@
-import Features from "@/components/aboutPage/Features/Features";
+// import Features from "@/components/aboutPage/Features/Features";
 import OurTeam from "@/components/aboutPage/OurTeam/OurTeam";
 import Specialize from "@/components/aboutPage/Specialize/Specialize";
 import AboutUsSection from "@/components/homePage/AboutUsSection/AboutUsSection";
@@ -20,7 +20,7 @@ export default function Home() {
       <Hero />
       <AboutUsSection />
       <Specialize />
-      <Features />
+      {/* <Features /> */}
       {/* <Benefits /> */}
       <ProblemSection />
       <Solution />

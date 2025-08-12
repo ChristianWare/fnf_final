@@ -1,10 +1,10 @@
-import CherylC from "../../public/images/CherylC.jpg";
+// import CherylC from "../../public/images/CherylC.jpg";
 import JimConnie from "../../public/images/Jim&Connie.jpg";
-import Adam from "../../public/images/Adam.jpg";
+// import Adam from "../../public/images/Adam.jpg";
 import Lynn from "../../public/images/lynn.jpg";
 import Lady from "../../public/images/lady.jpg";
 import Linda from "../../public/images/linda.jpg";
-import Sheryl from "../../public/images/sheryl.jpg";
+// import Sheryl from "../../public/images/sheryl.jpg";
 import Jeff from "../../public/images/jeff.jpg";
 import Project1 from "../../public/images/howItWorks.jpg";
 import Project2 from "../../public/images/speed.jpg";
@@ -507,7 +507,7 @@ export const reviews = [
       "Chris delivers reliable, white-glove service in pure tech luxury. We launch one or two promotions every month and he’s always a step ahead—confirming details the day before and pushing updates at 4 a.m. if my schedule changes. It’s priceless having a partner I can trust while I sleep.",
     reviewer: "Sheryl G.",
     company: "Golden Grain Coffee, Scottsdale AZ",
-    person: Sheryl,
+    person: Linda,
   },
   {
     id: 3,
@@ -523,7 +523,7 @@ export const reviews = [
       "We’ve hired this team four separate times in the past few months. Booking each sprint is seamless. Chris is professional, friendly, and prompt—as are the rest of his engineers. Pricing is competitive, the codebase is spotless, and the ROI keeps us coming back.",
     reviewer: "Cheryl C.",
     company: "NorthPeak Activewear",
-    person: CherylC,
+    person: Linda,
   },
   {
     id: 5,
@@ -555,7 +555,7 @@ export const reviews = [
       "I’d never worked with an outside dev shop before, but Fonts & Footers made it easy. I travel almost weekly; plans change constantly and Chris still comes through—he even hopped in to upload a missing asset while I was in Hawaii. Clean code, fair pricing, top-tier people. Highly recommended.",
     reviewer: "Adam B.",
     company: "Urban Roots Apparel, Phoenix AZ",
-    person: Adam,
+    person: Linda,
   },
 ] as const;
 

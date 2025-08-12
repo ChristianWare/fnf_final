@@ -1,10 +1,9 @@
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./ProblemSection.module.css";
-// import Image from "next/image";
-// import Img1 from "../../../../public/images/sad.png";
+import Image from "next/image";
+import Img1 from "../../../../public/images/sadii.png";
 
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
-// import Corner from "@/components/shared/Corner/Corner";
 import Outdated from "@/components/icons/Outdated/Outdated";
 import CloudPrez from "@/components/icons/CloudPrez/CloudPrez";
 import Credibility from "@/components/icons/Credibility/Credibility";
@@ -13,27 +12,23 @@ import Update from "@/components/icons/Update/Update";
 const data = [
   {
     icon: <Outdated className={styles.icon} />,
-    title: "DM Chaos",
-    description:
-      "You spend hours each day confirming times in Instagram or Facebook messages instead of serving clients.",
+    title: "One-screen booking",
+    description: "Pick service, pro, date, pay—done in under 60 seconds.",
   },
   {
     icon: <CloudPrez className={styles.icon} />,
-    title: "No-Show Drain",
-    description:
-      "Last-minute cancellations and no-shows eat 15-20 % of your revenue—but guests still expect flexibility.",
+    title: "No-show defense",
+    description: "Deposit + SMS/email reminders + easy reschedule.",
   },
   {
     icon: <Credibility className={styles.icon} />,
-    title: "Double-Booking Risk",
-    description:
-      "Google, iCal, and handwritten schedules fall out of sync, leading to awkward refunds and bad reviews.",
+    title: "Multi-location ready",
+    description: "Pools staff and inventory across locations in real time.",
   },
   {
     icon: <Update className={styles.icon} />,
-    title: "Marketplace Fees",
-    description:
-      "Third-party platforms keep up to 15 % of every booking and block you from building your own customer list.",
+    title: "Own your traffic",
+    description: "SEO + speed + schema = you control demand, not marketplaces.",
   },
 ];
 
@@ -41,41 +36,36 @@ export default function ProblemSection() {
   return (
     <LayoutWrapper>
       <section className={styles.container}>
-        {/* <div className={styles.cornerContainer}>
-          <Corner />
-        </div> */}
-
-        {/* <div className={styles.sectionTop}>
-          
-        </div> */}
         <div className={styles.bottom}>
           <div className={styles.left}>
             <div className={styles.sectionHeadingContainer}>
               <SectionIntro
                 title='Common Issues'
                 color='white'
-                dotColor='pinkDot'
+                borderColor='borderColorWhite'
               />
             </div>
             <h2 className={styles.heading}>
-              Are you <span className={styles.span}>tired</span> of chasing DMs
-              or <span className={styles.span}>losing money</span> to no-shows?
+              {/* Are you <span className={styles.span}>tired</span> of chasing DMs
+              or <span className={styles.span}>losing money</span> to no-shows? */}
+              Stop losing bookings to DMs and dead forms.
             </h2>
             <p className={styles.leftCopy}>
-              {/* A custom booking platform fixes those leaks by syncing calendars
-              in real time, charging deposits automatically, and giving guests a
-              60-second checkout—no coding on your part, no monthly marketplace
-              tax. */}
+              If your calendar isn’t full, it’s not your services—it’s the
+              friction. Fonts & Footers removes it with clear offers, one-screen
+              booking, automated reminders, and payment on file so no-shows
+              disappear.
             </p>
-            {/* <div className={styles.imgContainer}>
+            <div className={styles.imgContainer}>
               <Image
                 src={Img1}
                 alt='Hero image'
-                width={654}
-                height={381}
                 className={styles.img}
+                fill
+                priority
+                quality={100}
               />{" "}
-            </div> */}
+            </div>
           </div>
           <div className={styles.right}>
             {data.map((x, index) => (

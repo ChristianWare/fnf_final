@@ -40,7 +40,9 @@ export default function AboutUsSection() {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.sectionHeadingContainer}>
-            <SectionIntro title='About Fonts & Footers' />
+            <SectionIntro title='About Fonts & Footers' 
+            // color="blue" borderColor="borderColorBlue" 
+            />
           </div>
           <h2 className={styles.heading}>
             {/* Fonts & Footers exists for{" "}
