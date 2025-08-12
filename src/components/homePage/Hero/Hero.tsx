@@ -31,8 +31,9 @@ export default function Hero() {
               {/* , not inboxes. */}
             </h1>
             <p className={styles.copy}>
-              Fonts & Footers turns slow DM scheduling into one-click
-              confirmations for salons, spas, rentals, and service brands.
+              We design and build fast, branded booking sites that convert
+              visitors into confirmed appointments. Payments, reminders,
+              reviews—done.
             </p>
             <div className={styles.btnContainer}>
               <FalseButton

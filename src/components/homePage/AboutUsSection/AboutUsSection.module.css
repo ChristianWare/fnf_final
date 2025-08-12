@@ -23,8 +23,12 @@
 
 .heading {
   line-height: 1.2;
-  text-indent: 4em;
+  /* text-indent: 4em; */
   color: var(--black);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .span {
@@ -151,7 +155,7 @@
 }
 
 @media screen and (max-width: 1068px) {
-  .bottom {
+  .heading, .bottom {
     width: 100%;
   }
 }
@@ -163,6 +167,8 @@
 
   .heading {
     text-indent: 0em;
+    width: 100%;
+    text-align: left;
   }
 
   .bottom {

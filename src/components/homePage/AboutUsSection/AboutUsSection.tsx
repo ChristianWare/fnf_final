@@ -43,7 +43,7 @@ export default function AboutUsSection() {
             <SectionIntro title='About Fonts & Footers' />
           </div>
           <h2 className={styles.heading}>
-            Fonts & Footers exists for{" "}
+            {/* Fonts & Footers exists for{" "}
             <span className={styles.span}>owner-operated service brands</span>{" "}
             that live and die by bookings. Whether you run three chairs or
             thirty rentals, we build{" "}
@@ -51,6 +51,15 @@ export default function AboutUsSection() {
             charge deposits, sync calendars, and slash no-shows—
             <span className={styles.span}>
               no third-party licence fees, ever.
+            </span> */}
+            Fonts & Footers is a specialist studio focused on one thing:{" "}
+            <span className={styles.span}>
+              turning visitors into booked appointments.
+            </span>{" "}
+            We bring fresh ideas and a proven approach to building custom
+            booking platforms for salons, clinics, rentals, and transport —{" "}
+            <span className={styles.span}>
+              designed to launch quickly and convert reliably.
             </span>
           </h2>
           <div className={styles.bottom}>
