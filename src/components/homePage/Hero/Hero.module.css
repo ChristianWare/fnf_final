@@ -10,7 +10,7 @@
   inset: 0;
   background-color: var(--black);
   border-radius: 25px;
-  clip-path: var(--clip-path-1);
+  /* clip-path: var(--clip-path-1); */
   z-index: 0;
 }
 
@@ -42,20 +42,18 @@
 
 .heading {
   color: var(--white);
-  /* text-align: center; */
 }
 
 .span {
   color: var(--blue);
-  font-family: var(--PerfectlyNinetiesItalic);
-  font-weight: 500;
+  /* font-family: var(--PerfectlyNinetiesItalic); */
+  /* font-weight: 500; */
 }
 
 .copy {
   color: var(--textii);
   max-width: 500px;
   font-size: 1.6rem;
-  /* text-align: center; */
 }
 
 .btnContainer {
@@ -68,31 +66,20 @@
 .right {
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
+  width: 100%;
 }
 
 .imgContainer {
+  position: relative;
   width: 100%;
-  max-width: 400px;
-  border-radius: 15px;
-  /* background-color: var(--tan); */
-    /* clip-path: var(--clip-path-1); */
-
+  height: 450px;
 }
 
 .img {
-  display: block;
-  width: 100%;
-  height: auto;
   object-fit: contain;
   border-radius: 15px;
 }
-/* @media screen and (max-width: 1268px) {
-  .lottieBox {
-    width: 100%;
-    height: 100%;
-  }
-} */
 
 @media screen and (max-width: 1268px) {
   .content {
@@ -112,16 +99,15 @@
     text-align: center;
   }
 
-  .lottieBox {
+  .imgContainer {
     width: 100%;
-    height: 350px;
+    height: 300px;
   }
 }
 
 @media screen and (max-width: 568px) {
   .content {
     margin-top: 5rem;
-    margin-bottom: 10rem;
   }
 
   .top {

@@ -34,8 +34,8 @@
 
 .span {
   color: inherit;
-  font-family: var(--PerfectlyNinetiesItalic);
-  font-weight: 500;
+  /* font-family: var(--PerfectlyNinetiesItalic); */
+  /* font-weight: 500; */
   color: var(--tan);
 }
 

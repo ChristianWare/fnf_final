@@ -1,7 +1,38 @@
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./AboutUsSection.module.css";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
-// import Button from "@/components/shared/Button/Button";
+import Check from "@/components/icons/Check/Check";
+
+const data = [
+  {
+    id: 1,
+    feature: "Salons and Wellness",
+  },
+  {
+    id: 2,
+    feature: "Luxury Transport",
+  },
+  {
+    id: 3,
+    feature: "Vacation-Rental",
+  },
+  {
+    id: 4,
+    feature: "Equipment Rentals",
+  },
+  {
+    id: 5,
+    feature: "Medical & Clinic",
+  },
+  {
+    id: 6,
+    feature: "Multi-Location Chains",
+  },
+  {
+    id: 7,
+    feature: "Membership & Recurring Services",
+  },
+];
 
 export default function AboutUsSection() {
   return (
@@ -9,7 +40,7 @@ export default function AboutUsSection() {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.sectionHeadingContainer}>
-            <SectionIntro title='About Us' dotColor='blueDot' />
+            <SectionIntro title='About Fonts & Footers' />
           </div>
           <h2 className={styles.heading}>
             Fonts & Footers exists for{" "}
@@ -22,9 +53,24 @@ export default function AboutUsSection() {
               no third-party licence fees, ever.
             </span>
           </h2>
-          {/* <div className={styles.btnContanierii}>
-            <Button href='/about' btnType='blue' text='More About Us' />
-          </div> */}
+          <div className={styles.bottom}>
+            <h3 className={styles.headingii}>Industries we work with:</h3>{" "}
+            <div className={styles.mapDataBox}>
+              {data.map((x) => (
+                <div className={styles.card} key={x.id}>
+                  <p className={styles.feature}>{x.feature}</p>
+                </div>
+              ))}
+            </div>
+            <div className={styles.mapDataBoxii}>
+              {data.map((x) => (
+                <div className={styles.cardii} key={x.id}>
+                  <Check className={styles.icon} />
+                  <p className={styles.featureii}>{x.feature}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </LayoutWrapper>
     </section>

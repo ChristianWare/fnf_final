@@ -29,19 +29,129 @@
 
 .span {
   color: inherit;
-  font-family: var(--PerfectlyNinetiesItalic);
-  font-weight: 500;
   color: var(--blue);
 }
 
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mapDataBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 1rem 1.5rem;
+  background-color: var(--yellow);
+}
+
+.card:nth-child(1) {
+  background-color: var(--blue);
+}
+
+.card:nth-child(3) {
+  background-color: var(--purple);
+}
+
+.card:nth-child(4) {
+  background-color: var(--green);
+}
+
+.card:nth-child(5) {
+  background-color: var(--pink);
+}
+
+.card:nth-child(6) {
+  background-color: var(--text);
+}
+
+.card:nth-child(7) {
+  background-color: var(--tan);
+  border: 1px solid var(--black);
+}
+
+.card:nth-child(6) .feature {
+  color: var(--tan);
+}
+
+.mapDataBoxii {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2rem;
+  display: none;
+}
+
+.cardii {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.cardii:nth-child(1) .icon {
+  background-color: var(--blue);
+  border-radius: 50%;
+}
+
+.cardii:nth-child(2) .icon {
+  background-color: var(--yellow);
+  border-radius: 50%;
+}
+
+.cardii:nth-child(3) .icon {
+  background-color: var(--purple);
+  border-radius: 50%;
+}
+
+.cardii:nth-child(4) .icon {
+  background-color: var(--green);
+  border-radius: 50%;
+}
+
+.cardii:nth-child(5) .icon {
+  background-color: var(--pink);
+  border-radius: 50%;
+}
+
+.cardii:nth-child(6) .icon {
+  background-color: var(--text);
+  border-radius: 50%;
+}
+
+.card:nth-child(7) .icon {
+  background-color: var(--tan);
+  border-radius: 50%;
+  border: 1px solid var(--black);
+}
+
+.cardii:nth-child(6) .feature {
+  color: var(--tan);
+}
+
 @media screen and (max-width: 1268px) {
-  .heading {
+  .bottom {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 1068px) {
-  .heading {
+  .bottom {
     width: 100%;
   }
 }
@@ -50,4 +160,37 @@
   .container {
     padding: 7rem 0rem;
   }
+
+  .heading {
+    text-indent: 0em;
+  }
+
+  .bottom {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .headingii {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .card {
+    width: fit-content;
+  }
+
+  .mapDataBox {
+    display: none;
+  }
+
+  .mapDataBoxii {
+    display: grid;
+    width: 100%;
+  }
+
+  /* .card:nth-child(7) {
+    grid-column: 1 / -1;
+    width: 100%;
+    justify-content: center;
+  } */
 }

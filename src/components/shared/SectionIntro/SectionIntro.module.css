@@ -1,163 +1,40 @@
-.top {
+/* src/components/SectionIntroii/SectionIntroii.module.css */
+
+.container {
+  border: 1px solid var(--text);
+  padding: 1rem 2rem;
+  border-radius: 50px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 2rem;
-  height: fit-content;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-.circle {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  z-index: 1;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--black);
-}
-
-.circle::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 2px solid var(--black);
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-.blackii {
-  color: var(--blackii);
-}
-
-@keyframes pulse {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(2);
-    opacity: 0;
-  }
-}
-
-.span {
-  text-align: center;
-  font-size: 1.6rem;
+.text {
   font-family: var(--JetBrainsMonoRegular);
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  user-select: none;
+  color: var(--gray);
+  font-size: 1.4rem;
+  text-align: center;
 }
 
-.black {
+.month {
   color: var(--black);
+  font-weight: 700;
 }
 
-.blackDot {
-  background-color: var(--black);
+.icon {
+  color: var(--black);
+  font-size: 2rem;
+  animation: spin 5s linear infinite;
+  /* ensure the rotation happens around the center */
+  transform-origin: center center;
 }
 
-.blackDot::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 2px solid var(--black);
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-.blueDot {
-  background-color: var(--blue);
-}
-
-.blueDot::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 2px solid var(--blue);
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-.pinkDot {
-  background-color: var(--pink);
-}
-
-.pinkDot::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 2px solid var(--pink);
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-.tan {
-  color: var(--tan);
-}
-
-.tanDot {
-  background-color: var(--tan);
-}
-
-.tanDot::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 2px solid var(--tan);
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-.white {
-  color: var(--white);
-}
-
-.whiteDot {
-  background-color: var(--white);
-}
-
-.whiteDot::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 2px solid var(--white);
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-.blackDotii {
-  background-color: var(--blackii);
-}
-
-.blackDotii::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 2px solid var(--blackii);
-  animation: pulse 1.5s infinite ease-in-out;
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

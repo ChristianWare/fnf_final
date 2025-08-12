@@ -1,20 +1,17 @@
 import styles from "./SectionIntro.module.css";
+import Star from "@/components/icons/Star/Star";
 
 interface Props {
   title: string;
-  color?: string;
-  dotColor?: string;
 }
 
-export default function SectionIntro({
-  title,
-  color = "",
-  dotColor = "",
-}: Props) {
+export default function SectionIntro({ title }: Props) {
   return (
-    <div className={styles.top}>
-      <div className={`${styles.circle} ${styles[dotColor]}`}></div>
-      <span className={`${styles.span} ${styles[color]}`}> {title}</span>
+    <div className={styles.container}>
+      <Star className={styles.icon} />
+      <span className={styles.text}>
+        <span className={styles.month}>{title}</span>
+      </span>
     </div>
   );
 }

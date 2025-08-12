@@ -16,7 +16,7 @@ export default function Specialize() {
           <div className={styles.left}>
             <div className={styles.sectionHeadingContainer}>
               <SectionIntro
-                title='What we specialize in'
+                title='A quick look at what we do best'
                 // color='white'
                 // dotColor='pinkDot'
               />
