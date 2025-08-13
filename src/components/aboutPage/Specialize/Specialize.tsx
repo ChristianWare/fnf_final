@@ -1,7 +1,6 @@
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./Specialize.module.css";
 import { specialties } from "@/lib/data";
-import Corner from "@/components/shared/Corner/Corner";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import Image from "next/image";
 import Img1 from "../../../../public/images/specialize.png";
@@ -10,23 +9,23 @@ export default function Specialize() {
   return (
     <LayoutWrapper>
       <section className={styles.container}>
-        <div className={styles.cornerContainer}>
-          <Corner backgroundColor='white' />
-        </div>
-
         <div className={styles.content}>
           <div className={styles.left}>
             <div className={styles.sectionHeadingContainer}>
               <SectionIntro
-                title='How it works'
+                title="What's it like to work with us?"
                 // color='white'
                 // dotColor='pinkDot'
               />
             </div>
             <h2 className={styles.heading}>
-              Whether you run a one-chair salon, manage a fleet of luxury cars,
+              {/* Whether you run a one-chair salon, manage a fleet of luxury cars,
               or oversee a portfolio of vacation rentals, we build booking
-              platforms tailored to your exact service model and growth stage.
+              platforms tailored to your exact service model and growth stage. */}
+              We put transparency and openness at the heart of all our
+              processes. Our clients get full access to detailed reports, which
+              allows them to track every step of the work and understand how
+              projects are progressing.
             </h2>
             <div className={styles.imgContainer}>
               <Image

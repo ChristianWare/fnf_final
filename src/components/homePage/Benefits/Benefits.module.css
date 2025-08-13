@@ -3,8 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
-  padding: 20rem 0rem;
+  /* gap: 2rem; */
 }
 
 .sectionHeadingContainer {
@@ -16,9 +15,15 @@
   width: 100%;
 }
 
+.heading {
+  text-align: center;
+  margin-top: 2rem;
+  /* color: var(--blue); */
+}
+
 .content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   margin-top: 5rem;
 }
@@ -29,20 +34,59 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 10rem;
-  padding: 3rem;
-  clip-path: var(--clip-path-1);
-}
-
-.cardTop {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 2rem;
+  padding: 3rem;
 }
 
-.blue {
+.imgContainer {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+.imgContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: aliceblue; */
+  background-color: var(--pink);
+  opacity: 0.3;
+  border-radius: 15px;
+  -webkit-mask-image: url(/icons/blob.svg);
+  mask-image: url(/icons/blob.svg);
+  -webkit-mask-position: 50% center;
+  mask-position: 50% center;
+  -webkit-mask-size: auto 100%;
+  mask-size: auto 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  animation: rotate 10s linear infinite;
+}
+
+.card:nth-child(1) .imgContainer::before {
+  background-color: var(--green);
+  opacity: 0.1;
+}
+
+.card:nth-child(2) .imgContainer::before {
+  background-color: var(--yellow);
+  opacity: 0.1;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.img {
+  object-fit: contain;
+}
+
+/* .blue {
   background-color: var(--blue);
 }
 .yellow {
@@ -53,13 +97,14 @@
 }
 .green {
   background-color: var(--green);
-}
+} */
 
 .title {
-  font-family: var(--PerfectlyNinetiesItalic);
-  font-weight: 500;
   text-align: center;
   font-size: 3.2rem;
+  font-family: var(--PPNeueMontrealMediumThick);
+  /* color: var(--blue); */
+  /* font-weight: 500; */
 }
 
 .desc {
@@ -80,21 +125,27 @@
 }
 
 @media screen and (max-width: 768px) {
-  .card {
-    gap: 5rem;
-  }
-}
-
-@media screen and (max-width: 568px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
   }
 
   .card {
-    align-self: flex-start;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 90px;
+    gap: 5rem;
+  }
+
+  .desc {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .imgContainer {
+    width: 200px;
+    height: 200px;
+  }
+
+  .desc {
+    width: 100%;
   }
 }
