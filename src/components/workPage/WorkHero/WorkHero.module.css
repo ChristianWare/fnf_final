@@ -1,12 +1,10 @@
 .container {
   border-radius: 25px;
-  margin: 1rem;
   position: relative;
-  /* padding: 20rem 0rem; */
+  padding: 10rem 0rem;
 }
 
 .content {
-  background-color: var(--black);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,20 +16,24 @@
   margin-bottom: 2rem;
 }
 
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.img {
+  object-fit: contain;
+}
+
 .heading {
-  color: var(--tan);
   text-align: center;
 }
 
-.span {
-  color: var(--blue);
-  font-family: inherit;
-}
-
 .copy {
-  color: var(--textii);
   width: 450px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  color: var(--textii);
   text-align: center;
 }
 

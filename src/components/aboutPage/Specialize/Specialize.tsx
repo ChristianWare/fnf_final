@@ -6,7 +6,6 @@ import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import Image from "next/image";
 import Img1 from "../../../../public/images/specialize.png";
 
-
 export default function Specialize() {
   return (
     <LayoutWrapper>
@@ -19,7 +18,7 @@ export default function Specialize() {
           <div className={styles.left}>
             <div className={styles.sectionHeadingContainer}>
               <SectionIntro
-                title='A quick look at what we do best'
+                title='How it works'
                 // color='white'
                 // dotColor='pinkDot'
               />

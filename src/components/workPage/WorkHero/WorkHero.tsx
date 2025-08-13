@@ -1,19 +1,19 @@
-// import Nav from "@/components/shared/Nav/Nav";
 import ProjectSection from "@/components/homePage/ProjectSection/ProjectSection";
 import styles from "./WorkHero.module.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
+import Image from "next/image";
+import Img1 from '../../../../public/images/work.png'
 
 export default function WorkHero() {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.content}>
-          <SectionIntro
-            title='Featured Projects'
-            dotColor='blueDot'
-            color='white'
-          />
+          <div className={styles.imgContainer}>
+            <Image src={Img1} fill alt='' title='' className={styles.img} />
+          </div>
+          <SectionIntro title='Featured Projects' />
           <h2 className={styles.heading}>
             <span className={styles.span}>Our Work</span> <br /> speaks for
             itself
@@ -22,7 +22,7 @@ export default function WorkHero() {
             Explore our portfolio of successful booking projects across various
             industries and business models.
           </p>
-        <ProjectSection />
+          <ProjectSection />
         </div>
       </LayoutWrapper>
     </section>

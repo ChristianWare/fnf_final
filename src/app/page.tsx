@@ -1,5 +1,5 @@
 // import Features from "@/components/aboutPage/Features/Features";
-import OurTeam from "@/components/aboutPage/OurTeam/OurTeam";
+// import OurTeam from "@/components/aboutPage/OurTeam/OurTeam";
 import Specialize from "@/components/aboutPage/Specialize/Specialize";
 import AboutUsSection from "@/components/homePage/AboutUsSection/AboutUsSection";
 // import Benefits from "@/components/homePage/Benefits/Benefits";
@@ -23,10 +23,10 @@ export default function Home() {
       {/* <Benefits /> */}
       <ProblemSection />
       <Solution />
+      <WorkHero />
+      {/* <OurTeam /> */}
       <Specialize />
       <HorizontalServices />
-      <WorkHero />
-      <OurTeam />
       <How />
       {/* <ServicesSection /> */}
       <Faq />
