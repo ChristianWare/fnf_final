@@ -10,7 +10,7 @@ import ProblemSection from "@/components/homePage/ProblemSection/ProblemSection"
 // import ProjectSection from "@/components/homePage/ProjectSection/ProjectSection";
 // import ServicesSection from "@/components/homePage/ServicesSection/ServicesSection";
 import Solution from "@/components/homePage/Solution/Solution";
-import HorizontalServices from "@/components/servicesPage/HorizontalServices/HorizontalServices";
+// import HorizontalServices from "@/components/servicesPage/HorizontalServices/HorizontalServices";
 import Faq from "@/components/shared/Faq/Faq";
 import WorkHero from "@/components/workPage/WorkHero/WorkHero";
 
@@ -26,7 +26,7 @@ export default function Home() {
       <WorkHero />
       {/* <OurTeam /> */}
       <Specialize />
-      <HorizontalServices />
+      {/* <HorizontalServices /> */}
       <How />
       {/* <ServicesSection /> */}
       <Faq />
