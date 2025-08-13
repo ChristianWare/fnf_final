@@ -1,8 +1,8 @@
 import styles from "./Solution.module.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
-// import Image from "next/image";
-// import SolutionImage from "../../../../public/images/solution.png";
+import Image from "next/image";
+import SolutionImage from "../../../../public/images/happy.png";
 
 const data = [
   {
@@ -46,17 +46,17 @@ export default function Solution() {
             <div className={styles.sectionHeadingContainer}>
               <SectionIntro
                 title='Our Solutions'
-                dotColor='whiteDot'
+                borderColor='borderColorWhite'
                 color='white'
               />
             </div>
             <h2 className={styles.heading}>
               Work with <span className={styles.span}>Fonts & Footers</span> and
               we&lsquo;ll provide these{" "}
-              <span className={styles.span}> solutions</span> for your ecommerce
-              store:
+              <span className={styles.span}> solutions</span> for your booking
+              website:
             </h2>
-            {/* <div className={styles.imgContainer}>
+            <div className={styles.imgContainer}>
               <Image
                 src={SolutionImage}
                 fill
@@ -64,7 +64,7 @@ export default function Solution() {
                 title=''
                 className={styles.img}
               />
-            </div> */}
+            </div>
           </div>
           <div className={styles.right}>
             {data.map((item) => (

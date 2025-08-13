@@ -3,7 +3,6 @@
   /* border-radius: 25px; */
   position: relative;
   padding: 20rem 0rem;
-
 }
 
 .cornerContainer {
@@ -188,7 +187,7 @@
     width: 100%;
   }
 
-    .imgContainer {
+  .imgContainer {
     height: 300px;
   }
 

@@ -170,11 +170,16 @@
 
 @media screen and (max-width: 568px) {
   .container {
-    padding: 5rem 3rem;
+    padding: 4rem 5rem;
   }
 
-  .leftCopy {
-    width: 100%;text-align: left;
+  .left {
+    align-items: flex-start;
+  }
+
+  .heading, .leftCopy {
+    width: 100%;
+    text-align: left;
   }
 
   .imgContainer {

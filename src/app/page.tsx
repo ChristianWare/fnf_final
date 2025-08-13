@@ -19,11 +19,11 @@ export default function Home() {
     <main>
       <Hero />
       <AboutUsSection />
-      <Specialize />
       {/* <Features /> */}
       {/* <Benefits /> */}
       <ProblemSection />
       <Solution />
+      <Specialize />
       <HorizontalServices />
       <WorkHero />
       <OurTeam />

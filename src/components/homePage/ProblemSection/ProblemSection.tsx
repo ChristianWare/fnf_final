@@ -44,13 +44,13 @@ export default function ProblemSection() {
             <h2 className={styles.heading}>
               {/* Are you <span className={styles.span}>tired</span> of chasing DMs
               or <span className={styles.span}>losing money</span> to no-shows? */}
-              Stop losing bookings to  DMs and dead forms.
+              Stop losing bookings to DMs and dead forms.
             </h2>
             <p className={styles.leftCopy}>
               If your calendar isn’t full, it’s not your services—it’s the
               friction. Fonts & Footers removes it with clear offers, one-screen
               booking, automated reminders, and payment on file so no-shows
-              disappear. Notice our solutions:
+              disappear.
             </p>
             <div className={styles.dataMapBox}>
               {data.map((x, index) => (
