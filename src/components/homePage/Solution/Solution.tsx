@@ -2,7 +2,7 @@ import styles from "./Solution.module.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import Image from "next/image";
-import SolutionImage from "../../../../public/images/happy.png";
+import SolutionImage from "../../../../public/images/happyii.png";
 
 const data = [
   {
@@ -46,8 +46,8 @@ export default function Solution() {
             <div className={styles.sectionHeadingContainer}>
               <SectionIntro
                 title='Our Solutions'
-                borderColor='borderColorWhite'
-                color='white'
+                borderColor='borderColorBlue'
+                color='blue'
               />
             </div>
             <h2 className={styles.heading}>

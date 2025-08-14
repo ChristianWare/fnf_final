@@ -1,7 +1,7 @@
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./ProblemSection.module.css";
 import Image from "next/image";
-import Img1 from "../../../../public/images/sadii.png";
+import Img1 from "../../../../public/images/happy.png";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import Check from "@/components/icons/Check/Check";
 
@@ -34,6 +34,18 @@ export default function ProblemSection() {
       <section className={styles.container}>
         <div className={styles.bottom}>
           <div className={styles.left}>
+            <div className={styles.imgContainer}>
+              <Image
+                src={Img1}
+                alt='Hero image'
+                className={styles.img}
+                fill
+                priority
+                quality={100}
+              />{" "}
+            </div>
+          </div>
+          <div className={styles.right}>
             <div className={styles.sectionHeadingContainer}>
               <SectionIntro
                 title='Common Issues'
@@ -62,18 +74,6 @@ export default function ProblemSection() {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-          <div className={styles.right}>
-            <div className={styles.imgContainer}>
-              <Image
-                src={Img1}
-                alt='Hero image'
-                className={styles.img}
-                fill
-                priority
-                quality={100}
-              />{" "}
             </div>
           </div>
         </div>

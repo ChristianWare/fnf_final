@@ -1,5 +1,5 @@
 .container {
-padding-top: 20rem;
+  padding-top: 20rem;
 }
 
 .heading {
@@ -30,13 +30,16 @@ padding-top: 20rem;
 
 .right {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 2rem;
 }
 
 .card {
   border-radius: 25px;
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
   padding: 3rem;
+  padding-top: 15rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -311,7 +314,7 @@ padding-top: 20rem;
 @media screen and (max-width: 768px) {
   .index,
   .serviceNameHeading,
-  .headline,
+  /* .headline, */
   .btnContainer {
     width: 100%;
   }
@@ -371,6 +374,10 @@ padding-top: 20rem;
 }
 
 @media screen and (max-width: 568px) {
+  .content {
+    gap: 7rem;
+  }
+  
   .right {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -379,6 +386,7 @@ padding-top: 20rem;
     gap: 2rem;
   }
 
+  .headline,
   .title {
     width: 100%;
   }

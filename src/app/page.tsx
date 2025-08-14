@@ -20,10 +20,9 @@ export default function Home() {
     <main>
       <Hero />
       <AboutUsSection />
-      {/* <Features /> */}
-      <ProblemSection />
-      <Solution />
       <WorkHero />
+      {/* <Features /> */}
+      <Solution />
       <Benefits />
       <Stats />
       {/* <OurTeam /> */}
@@ -32,6 +31,7 @@ export default function Home() {
       {/* <How /> */}
       {/* <ServicesSection /> */}
       <Faq />
+      <ProblemSection />
       <ContactUsSection />
     </main>
   );

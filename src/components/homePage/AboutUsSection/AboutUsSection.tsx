@@ -2,6 +2,7 @@ import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./AboutUsSection.module.css";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import Check from "@/components/icons/Check/Check";
+import Button from "@/components/shared/Button/Button";
 
 const data = [
   {
@@ -40,8 +41,9 @@ export default function AboutUsSection() {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.sectionHeadingContainer}>
-            <SectionIntro title='About Fonts & Footers' 
-            // color="blue" borderColor="borderColorBlue" 
+            <SectionIntro
+              title='About Fonts & Footers'
+              // color="blue" borderColor="borderColorBlue"
             />
           </div>
           <h2 className={styles.heading}>
@@ -80,6 +82,14 @@ export default function AboutUsSection() {
                   <p className={styles.featureii}>{x.feature}</p>
                 </div>
               ))}
+            </div>
+            <div className={styles.btnContainer}>
+              <Button
+                href='/about'
+                btnType='black'
+                text='More about us'
+                arrow
+              />
             </div>
           </div>
         </div>

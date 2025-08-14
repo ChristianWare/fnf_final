@@ -75,6 +75,17 @@
   border: 1px solid var(--black);
 }
 
+.black {
+  background-color: var(--black);
+  color: var(--tan);
+  border: 1px solid var(--black);
+}
+
+.black:hover {
+  background-color: transparent;
+  color: var(--black);
+}
+
 .arrow {
   transform: rotate(90deg);
   font-size: 1.4rem;

@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--tan);
+  /* background-color: var(--tan); */
   /* margin: 1rem; */
   border-radius: 25px;
   padding: 3rem;
@@ -26,8 +26,8 @@
 .bottom {
   /* margin-top: 4rem; */
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
 }
 
 .card {
@@ -97,6 +97,12 @@
   margin-top: 7rem;
 }
 
+@media screen and (max-width: 1268px) {
+  .bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (max-width: 1068px) {
   .bottom {
     grid-template-columns: repeat(1, 1fr);
@@ -116,10 +122,9 @@
 @media screen and (max-width: 568px) {
   .container {
     padding: 1rem;
-    margin-top: 5rem
-    ;
+    margin-top: 5rem;
   }
-  
+
   .bottom {
     grid-template-columns: repeat(1, 1fr);
   }

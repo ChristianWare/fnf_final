@@ -17,10 +17,11 @@
 }
 
 .text {
-  font-family: var(--JetBrainsMonoRegular);
-  color: var(--black);
-  font-size: 1.4rem;
+  font-family: var(--PerfectlyNinetiesItalic);
+  font-weight: 500;  color: var(--black);
+  font-size: 1.6rem;
   text-align: center;
+  letter-spacing: .5px;
 }
 
 .month {
@@ -32,7 +33,6 @@
   color: var(--black);
   font-size: 2rem;
   animation: spin 5s linear infinite;
-  /* ensure the rotation happens around the center */
   transform-origin: center center;
 }
 

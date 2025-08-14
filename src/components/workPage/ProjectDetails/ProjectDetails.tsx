@@ -61,7 +61,7 @@ export default function ProjectDetails({ project }: Props) {
         <Corner backgroundColor='backgroundColorTan' />
       </div> */}
       <div className={styles.top}>
-        <h2 className={styles.title}>{project.title}</h2>
+        <h3 className={styles.title}>{project.title}</h3>
       </div>
       <div className={styles.content}>
         <div className={styles.introSection}>
@@ -117,7 +117,7 @@ export default function ProjectDetails({ project }: Props) {
       <div className={styles.btnContainer}>
         <Button
           href={project.href}
-          btnType='blue'
+          btnType='black'
           text='Visit Website'
           target='_blank'
           arrow

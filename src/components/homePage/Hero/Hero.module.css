@@ -10,7 +10,6 @@
   inset: 0;
   background-color: var(--black);
   border-radius: 25px;
-  /* clip-path: var(--clip-path-1); */
   z-index: 0;
 }
 
@@ -46,8 +45,6 @@
 
 .span {
   color: var(--blue);
-  /* font-family: var(--PerfectlyNinetiesItalic); */
-  /* font-weight: 500; */
 }
 
 .copy {
@@ -74,6 +71,34 @@
   position: relative;
   width: 100%;
   height: 450px;
+}
+
+.imgContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: aliceblue; */
+  background-color: var(--yellow);
+  opacity: 0.2;
+  border-radius: 15px;
+  -webkit-mask-image: url(/icons/blob.svg);
+  mask-image: url(/icons/blob.svg);
+  -webkit-mask-position: 50% center;
+  mask-position: 50% center;
+  -webkit-mask-size: auto 100%;
+  mask-size: auto 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .img {
@@ -131,6 +156,11 @@
 
   .imgContainer {
     height: 300px;
+  }
+
+  .imgContainer::before {
+    width: 100%;
+    height: 80%;
   }
 }
 
