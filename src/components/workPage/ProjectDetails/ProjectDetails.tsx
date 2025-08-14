@@ -117,7 +117,7 @@ export default function ProjectDetails({ project }: Props) {
       <div className={styles.btnContainer}>
         <Button
           href={project.href}
-          btnType='black'
+          btnType='blackii'
           text='Visit Website'
           target='_blank'
           arrow

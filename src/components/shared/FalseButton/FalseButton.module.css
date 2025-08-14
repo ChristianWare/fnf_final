@@ -38,15 +38,30 @@
   background-color: var(--white);
   color: var(--black);
   border: 1px solid var(--white);
+  border-top: 1px solid var(--tan);
+  border-left: 1px solid var(--tan);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgb(255, 255, 255);
+  box-shadow:
+    rgba(255, 255, 255, 0.4) 5px 5px,
+    rgba(255, 255, 255, 0.3) 10px 10px,
+    rgba(254, 255, 255, 0.2) 15px 15px;
 }
-/* 
+
 .white:hover {
-  background-color: var(--gray);
-} */
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+  border: 1px solid var(--white);
+
+  box-shadow: none;
+}
 
 .blue {
   background-color: var(--blue);
   color: var(--white);
+  border: 1px solid var(--blue);
 }
 
 .blue:hover {
@@ -68,8 +83,7 @@
   border: 1px solid var(--black);
 }
 
-.noBackgroundWhiteText:hover,
-.white:hover {
+.noBackgroundWhiteText:hover {
   border-top: 1px solid var(--tan);
   border-left: 1px solid var(--tan);
   border-bottom: 1px solid rgb(255, 255, 255);

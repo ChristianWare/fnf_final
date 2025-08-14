@@ -13,6 +13,7 @@ import Solution from "@/components/homePage/Solution/Solution";
 import Stats from "@/components/homePage/Stats/Stats";
 import HorizontalServices from "@/components/servicesPage/HorizontalServices/HorizontalServices";
 import Faq from "@/components/shared/Faq/Faq";
+import FinalCTA from "@/components/shared/FinalCTA/FinalCTA";
 import WorkHero from "@/components/workPage/WorkHero/WorkHero";
 
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
       <Faq />
       <ProblemSection />
       <ContactUsSection />
+      <FinalCTA />
     </main>
   );
 }
