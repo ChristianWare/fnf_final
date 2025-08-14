@@ -110,6 +110,7 @@
   .navbar {
     align-items: center;
     justify-content: flex-end;
+    padding-bottom: 3rem;
   }
 
   .navItems {
@@ -125,7 +126,7 @@
     padding: 2rem;
     padding-top: 7rem;
     background: var(--blue);
-    border-radius: 25px;
+    border-radius: 10px;
     transition: right 0.3s ease-in;
     z-index: 1000;
   }
@@ -158,10 +159,23 @@
   }
 
   @media screen and (max-width: 568px) {
+    .header {
+      border-radius: 10px;
+    }
+
+    .navbar {
+      padding-bottom: 5rem;
+    }
+
     .logoContainer {
       left: -1px;
       top: -1px;
       transform: translateX(0%);
+    }
+
+    .hamburger {
+      position: relative;
+      top: 10px;
     }
   }
 
