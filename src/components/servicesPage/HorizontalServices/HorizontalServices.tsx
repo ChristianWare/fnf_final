@@ -100,7 +100,7 @@ export default function HorizontalServices() {
                   <div className={styles.btnContainer}>
                     <Button
                       href='/contact'
-                      btnType='blue'
+                      btnType='blueii'
                       text='Free strategy call'
                       target='_blank'
                       arrow

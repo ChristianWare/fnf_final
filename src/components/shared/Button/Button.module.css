@@ -80,6 +80,24 @@
   box-shadow: none;
 }
 
+.blueii {
+  background-color: var(--blue);
+  color: var(--white);
+  border: 1px solid var(--blue);
+  
+}
+
+.blueii:hover {
+ border-top: 1px solid var(--blue);
+  border-left: 1px solid var(--blue);
+  border-bottom: 1px solid rgb(78, 148, 236);
+  border-right: 1px solid rgb(78, 148, 236);
+  box-shadow:
+    rgba(78, 148, 236, 0.4) 5px 5px,
+    rgba(78, 148, 236, 0.3) 10px 10px,
+    rgba(78, 148, 236, 0.2) 15px 15px;
+}
+
 .noBackgroundWhiteText {
   background-color: transparent;
   color: var(--white);

@@ -1,6 +1,5 @@
 import styles from "./Solution.module.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
-// import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import Image from "next/image";
 import SolutionImage from "../../../../public/images/happyii.png";
 
@@ -43,13 +42,6 @@ export default function Solution() {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-            {/* <div className={styles.sectionHeadingContainer}>
-              <SectionIntro
-                title='Our Solutions'
-                borderColor='borderColorBlue'
-                color='blue'
-              />
-            </div> */}
             <h2 className={styles.heading}>
               Work with <span className={styles.span}>Fonts & Footers</span> and
               we&lsquo;ll provide these{" "}
