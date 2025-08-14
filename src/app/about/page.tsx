@@ -1,4 +1,5 @@
 import AboutPageIntro from "@/components/aboutPage/AboutPageIntro/AboutPageIntro";
+import AboutPostHero from "@/components/aboutPage/AboutPostHero/AboutPostHero";
 import Features from "@/components/aboutPage/Features/Features";
 import OurTeam from "@/components/aboutPage/OurTeam/OurTeam";
 // import Peace from "@/components/aboutPage/Peace/Peace";
@@ -8,8 +9,9 @@ export default function AboutPage() {
   return (
     <main>
       <AboutPageIntro />
-      <Features />
       <OurTeam />
+      <AboutPostHero />
+      <Features />
       {/* <Peace /> */}
       {/* <ReviewSection /> */}
     </main>

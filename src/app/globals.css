@@ -68,6 +68,8 @@ h1 {
   font-size: 6rem;
   line-height: 1.1;
   letter-spacing: -0.5px;
+      font-family: var(--PPNeueMontrealMediumThick);
+
 }
 
 h2 {
@@ -152,11 +154,6 @@ button {
   color: var(--black);
 }
 
-@media screen and (max-width: 1368px) {
-  h1 {
-    font-family: var(--PPNeueMontrealMediumThick);
-  }
-}
 
 @media screen and (max-width: 968px) {
   html {

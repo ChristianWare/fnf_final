@@ -162,10 +162,11 @@
     .header {
       border-radius: 10px;
     }
-
+/* 
     .navbar {
+
       padding-bottom: 5rem;
-    }
+    } */
 
     .logoContainer {
       left: -1px;
@@ -175,7 +176,7 @@
 
     .hamburger {
       position: relative;
-      top: 10px;
+      /* top: 10px; */
     }
   }
 
