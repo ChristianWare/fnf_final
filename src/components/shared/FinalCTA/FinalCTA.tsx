@@ -10,7 +10,7 @@ export default function FinalCTA() {
     <div className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <SectionIntro title='FONTS & FOOTERS' color='tan' dotColor='tanDot' />
+          <SectionIntro title='FONTS & FOOTERS' color='tan' />
 
           <h2 className={styles.heading}>
             Ready to stop chasing DMs <br /> and start filling your calendar?

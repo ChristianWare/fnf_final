@@ -73,7 +73,7 @@ export default function EveryPlan() {
         <div className={styles.content}>
           <div className={styles.top}>
             <div className={styles.sectionHeadingContainer}>
-              <SectionIntro title="What's included" dotColor='blueDot' />
+              <SectionIntro title="What's included"  />
             </div>
             <h2 className={styles.heading}>
               <span className={styles.span}>Every Fonts & Footers build</span> —

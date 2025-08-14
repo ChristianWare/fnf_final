@@ -2,8 +2,8 @@
 
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./AboutPageIntro.module.css";
-import animationData from "../../../../public/lottie/aboutiii.json";
-import Lottie from "lottie-react";
+// import animationData from "../../../../public/lottie/aboutiii.json";
+// import Lottie from "lottie-react";
 import Nav from "@/components/shared/Nav/Nav";
 
 const services = [
@@ -12,7 +12,6 @@ const services = [
   { id: 3, name: "Multi-Location Booking" },
   { id: 4, name: "Rental Fleet & Inventory Booking" },
 ];
-
 
 export default function AboutPageIntro() {
   return (
@@ -43,9 +42,9 @@ export default function AboutPageIntro() {
             </ul>
           </div>
           <div className={styles.right}>
-            <div className={styles.lottieBox}>
+            {/* <div className={styles.lottieBox}>
               <Lottie animationData={animationData} className={styles.lottie} />
-            </div>
+            </div> */}
           </div>
         </div>
       </LayoutWrapper>

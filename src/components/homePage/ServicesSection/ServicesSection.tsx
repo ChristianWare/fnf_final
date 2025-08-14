@@ -12,7 +12,7 @@ export default function ServicesSection() {
           <div className={styles.content}>
             <div className={styles.top}>
               <div className={styles.sectionHeadingContainer}>
-                <SectionIntro title='Services' dotColor='blueDot' />
+                <SectionIntro title='Services'  />
               </div>
             </div>
             <div className={styles.bottom}>

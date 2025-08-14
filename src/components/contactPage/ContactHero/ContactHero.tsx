@@ -3,8 +3,8 @@
 import Nav from "@/components/shared/Nav/Nav";
 import styles from "./ContactHero.module.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
-import Lottie from "lottie-react";
-import animationData from "../../../../public/lottie/email.json";
+// import Lottie from "lottie-react";
+// import animationData from "../../../../public/lottie/email.json";
 
 export default function ContactHero() {
   return (
@@ -26,9 +26,9 @@ export default function ContactHero() {
             </p>
           </div>
           <div className={styles.right}>
-            <div className={styles.lottieBox}>
+            {/* <div className={styles.lottieBox}>
               <Lottie animationData={animationData} className={styles.lottie} />
-            </div>
+            </div> */}
           </div>
         </div>
       </LayoutWrapper>

@@ -13,7 +13,6 @@ export default function How() {
             <div className={styles.sectionHeadingContainer}>
               <SectionIntro
                 title='How we work'
-                dotColor='whiteDot'
                 color='white'
               />
             </div>

@@ -10,7 +10,7 @@ export default function WorkProcess() {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.sectionHeadingContainer}>
-            <SectionIntro title='The work Process' dotColor='blueDot' />
+            <SectionIntro title='The work Process'  />
           </div>
           {/* <h2 className={styles.heading}>
             We begin with a <span className={styles.span}>discovery call</span>{" "}

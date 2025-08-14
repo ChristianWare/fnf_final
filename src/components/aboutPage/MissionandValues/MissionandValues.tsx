@@ -8,7 +8,7 @@ export default function MissionandValues() {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.sectionHeadingContainer}>
-            <SectionIntro title='Mission and Values' dotColor='blueDot' />
+            <SectionIntro title='Mission and Values'  />
           </div>
           <h2 className={styles.heading}>
             <span className={styles.span}>Our mission</span> is to give
