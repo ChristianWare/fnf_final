@@ -42,6 +42,7 @@
   position: relative;
   width: 250px;
   height: 250px;
+  margin-bottom: 1rem;
 }
 
 .imgContainer::before {
@@ -101,7 +102,7 @@
 
 .title {
   text-align: center;
-  font-size: 3.2rem;
+  /* font-size: 3.2rem; */
   font-family: var(--PPNeueMontrealMediumThick);
   /* color: var(--blue); */
   /* font-weight: 500; */
@@ -130,9 +131,9 @@
     grid-gap: 2rem;
   }
 
-  .card {
+  /* .card {
     gap: 5rem;
-  }
+  } */
 
   .desc {
     width: 60%;
