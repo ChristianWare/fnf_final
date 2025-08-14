@@ -106,6 +106,7 @@
   justify-content: center;
   gap: 2rem;
   background-color: aliceblue;
+  border: 1px solid var(--gray);
   border-radius: 15px;
   clip-path: url("/icons/starii.svg");
 }

@@ -113,7 +113,7 @@ export default function HorizontalServices() {
           <div className={styles.btnContainerii}>
             <Button
               href='/contact'
-              btnType='blackOutline'
+              btnType='black'
               text='See All Plans'
               arrow
             />
