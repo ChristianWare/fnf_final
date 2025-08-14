@@ -1,17 +1,8 @@
 .container {
   position: relative;
-  padding: 20rem 0rem;
-  padding-top: 0rem;
+
 }
 
-.cornerContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-  pointer-events: auto;
-}
 
 .heading {
   color: var(--black);
