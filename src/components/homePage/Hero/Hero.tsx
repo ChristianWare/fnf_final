@@ -4,7 +4,7 @@
 import styles from "./Hero.module.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import Button from "@/components/shared/Button/Button";
-import Nav from "@/components/shared/Nav/Nav";
+// import Nav from "@/components/shared/Nav/Nav";
 import FalseButton from "@/components/shared/FalseButton/FalseButton";
 import Modal from "@/components/shared/Modal/Modal";
 import ContactForm from "@/components/shared/ContactForm/ContactForm";
@@ -18,9 +18,9 @@ export default function Hero() {
 
   return (
     <section className={styles.container}>
-      <div className={styles.navContainer}>
+      {/* <div className={styles.navContainer}>
         <Nav />
-      </div>
+      </div> */}
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>

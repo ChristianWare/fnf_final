@@ -16,6 +16,14 @@
   border: 1px solid var(--blue);
 }
 
+.borderColorBlue {
+  border: 1px solid var(--blue);
+}
+
+.borderColorYellow {
+  border: 1px solid var(--yellow);
+}
+
 .text {
   font-family: var(--PerfectlyNinetiesItalic);
   font-weight: 500;  color: var(--black);
@@ -42,6 +50,10 @@
 
 .blue {
   color: var(--blue);
+}
+
+.yellow {
+  color: var(--yellow);
 }
 
 @keyframes spin {

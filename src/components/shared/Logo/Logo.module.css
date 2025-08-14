@@ -15,6 +15,8 @@
   padding-bottom: 1.8rem;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  /* border: 1px solid var(--gray); */
+  border-top: none;
   position: relative;
   z-index: 1;
   display: flex;
@@ -32,6 +34,7 @@
   top: 0px;
   right: -40px;
   border-top-left-radius: 15px;
+  /* border-top: 1px solid var(--gray); */
   box-shadow: -1em -1rem var(--tan);
 }
 
@@ -44,6 +47,7 @@
   left: 0px;
   background-color: transparent;
   border-top-left-radius: 15px;
+  /* border-top: 1px solid var(--gray); */
   box-shadow: -1em -1rem var(--tan);
 }
 
@@ -75,7 +79,7 @@
   background-color: transparent;
   transform: rotate(90deg);
   border-top-left-radius: 15px;
-  box-shadow: -1em -1rem var(--white);
+  box-shadow: -1em -1rem var(--tan);
 }
 
 .large {
