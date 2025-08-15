@@ -30,7 +30,7 @@ export default function ApproachTestimonialsIntro() {
             </div>
           </div>
           <div className={styles.right}>
-            <SectionIntro title='Testimonials' />
+            <SectionIntro title='Services' />
             <h2 className={styles.heading}>What our clients say</h2>
             <p className={styles.copy}>
               It&lsquo;s not our first time helping brands like yours. In fact,
