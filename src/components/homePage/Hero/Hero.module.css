@@ -2,6 +2,7 @@
   position: relative;
   overflow: visible;
   margin: 1rem;
+  /* margin-top: 10rem; */
 }
 
 .container::before {
@@ -40,13 +41,13 @@
 }
 
 .heading {
-  color: var(--white);
+  color: var(--tan);
 }
 
 .span {
   color: var(--blue);
   font-family: var(--PerfectlyNinetiesItalic);
-    /* font-weight: 500; */
+  /* font-weight: 500; */
 }
 
 .copy {
@@ -151,8 +152,10 @@
   }
 
   .btnContainer {
-    flex-wrap: wrap;
-    gap: 0rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4rem;
+    width: 60%;
   }
 
   .imgContainer {
@@ -168,5 +171,9 @@
 @media screen and (max-width: 380px) {
   .span {
     white-space: inherit;
+  }
+
+  .btnContainer {
+    width: 90%;
   }
 }

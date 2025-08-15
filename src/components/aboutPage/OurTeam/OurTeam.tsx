@@ -12,7 +12,7 @@ export default function OurTeam() {
         <div className={styles.content}>
           <div className={styles.top}>
             <div className={styles.sectionHeadingContainer}>
-              <SectionIntro title='Intro' />
+              <SectionIntro title='Chris, Founder of Fonts & Footers' />
             </div>
             <h2 className={styles.heading}>
               {/* At its core, <span className={styles.span}>Fonts & Footers</span>{" "}

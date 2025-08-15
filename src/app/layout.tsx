@@ -3,10 +3,10 @@ import { Inter, Bebas_Neue } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/shared/Footer/Footer";
-// import FinalCTA from "@/components/shared/FinalCTA/FinalCTA";
+import FinalCTA from "@/components/shared/FinalCTA/FinalCTA";
 import { auth } from "../../auth";
 import { SessionProvider } from "next-auth/react";
-import Nav from "@/components/shared/Nav/Nav";
+// import Nav from "@/components/shared/Nav/Nav";
 
 const inter = Inter({
   variable: "--inter",
@@ -76,9 +76,9 @@ export default async function RootLayout({
           className={`${inter.variable} ${PPNeueMontrealMedium.variable} ${PPNeueMontrealMediumThick.variable} ${bebasNeue.variable} ${JetBrainsMonoRegular.variable}
             ${PerfectlyNinetiesItalic.variable}`}
         >
-          <Nav />
+          {/* <Nav /> */}
           {children}
-          {/* <FinalCTA /> */}
+          <FinalCTA />
           <Footer />
         </body>
       </html>

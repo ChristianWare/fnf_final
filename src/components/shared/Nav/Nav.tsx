@@ -60,10 +60,7 @@ export default function Nav({ color = "", hamburgerColor = "" }: Props) {
     <header className={styles.header}>
       <nav className={styles.navbar}>
         <div className={styles.logoContainer}>
-          <Logo
-            // backgroundColor='backgroundColorWhite'
-            direction='center'
-          />
+          <Logo backgroundColor='backgroundColorWhite' direction='center' />
         </div>
 
         <div

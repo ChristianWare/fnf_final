@@ -1,28 +1,7 @@
 .header {
-  position: fixed; /* make it stay on screen */
-  top: 1rem;
-  left: 1rem;
-  right: 1rem;
-  z-index: 10000; /* ensure it's above other content */
-  background-color: var(--black);
-  border-radius: 15px;
-}
-
-.header:before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: -1rem;
-  right: 0;
-  bottom: 0;
-  background-color: var(--tan);
-  border-radius: 15px;
-  z-index: -1;
-  width: 101vw;
-  height: 2rem;
-  margin: 0 auto;
-  /* left: 200px; */
-  /* transform: translateX(-50%); */
+  position: relative;
+  width: 100%;
+  z-index: 1;
 }
 
 .navbar {
@@ -110,7 +89,6 @@
   .navbar {
     align-items: center;
     justify-content: flex-end;
-    padding-bottom: 3rem;
   }
 
   .navItems {
@@ -126,7 +104,7 @@
     padding: 2rem;
     padding-top: 7rem;
     background: var(--blue);
-    border-radius: 10px;
+    border-radius: 15px;
     transition: right 0.3s ease-in;
     z-index: 1000;
   }
@@ -159,24 +137,10 @@
   }
 
   @media screen and (max-width: 568px) {
-    .header {
-      border-radius: 10px;
-    }
-/* 
-    .navbar {
-
-      padding-bottom: 5rem;
-    } */
-
     .logoContainer {
       left: -1px;
       top: -1px;
       transform: translateX(0%);
-    }
-
-    .hamburger {
-      position: relative;
-      /* top: 10px; */
     }
   }
 

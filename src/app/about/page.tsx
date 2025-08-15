@@ -1,7 +1,7 @@
 import AboutPageIntro from "@/components/aboutPage/AboutPageIntro/AboutPageIntro";
-import AboutPostHero from "@/components/aboutPage/AboutPostHero/AboutPostHero";
 import Features from "@/components/aboutPage/Features/Features";
 import OurTeam from "@/components/aboutPage/OurTeam/OurTeam";
+import ServicesSection from "@/components/homePage/ServicesSection/ServicesSection";
 // import Peace from "@/components/aboutPage/Peace/Peace";
 // import ReviewSection from "@/components/aboutPage/ReviewSection/ReviewSection";
 
@@ -10,8 +10,8 @@ export default function AboutPage() {
     <main>
       <AboutPageIntro />
       <OurTeam />
-      <AboutPostHero />
       <Features />
+      <ServicesSection />
       {/* <Peace /> */}
       {/* <ReviewSection /> */}
     </main>

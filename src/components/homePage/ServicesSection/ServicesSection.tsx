@@ -2,7 +2,8 @@ import styles from "./ServicesSection.module.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import { pricingData } from "@/lib/data";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
-import Button from "@/components/shared/Button/Button";
+import Image from "next/image";
+import Happy from "../../../../public/images/fast.png";
 
 export default function ServicesSection() {
   return (
@@ -12,37 +13,25 @@ export default function ServicesSection() {
           <div className={styles.content}>
             <div className={styles.top}>
               <div className={styles.sectionHeadingContainer}>
-                <SectionIntro title='Services'  />
+                <SectionIntro title='Values' />
               </div>
             </div>
             <div className={styles.bottom}>
               {pricingData.slice(0, 4).map((x) => {
-                const slug = x.service.toLowerCase().replace(/\s+/g, "-");
                 return (
                   <div className={styles.card} key={x.id}>
                     <h3 className={styles.title}>{x.service}</h3>
-                    <span className={styles.headline}>{x.headline}</span>
-                    <ul className={styles.ServicesContainer}>
-                      {x.servicesInclude.map((y) => (
-                        <li className={styles.item} key={y.id}>
-                          {y.serviceName}
-                        </li>
-                      ))}
-                    </ul>
-                    <div className={styles.btnContainer}>
-                      <Button
-                        href={`/services#${slug}`}
-                        btnType='white'
-                        text='More Details'
-                        arrow
+                    <div className={styles.imgContainer}>
+                      <Image
+                        src={Happy}
+                        alt='Happy illustration'
+                        fill
+                        className={styles.img}
                       />
                     </div>
                   </div>
                 );
               })}
-            </div>
-            <div className={styles.btnContainerii}>
-              <Button href='/services' btnType='blue' text='See all Services' />
             </div>
           </div>
         </div>
