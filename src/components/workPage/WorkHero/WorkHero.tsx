@@ -3,7 +3,8 @@ import styles from "./WorkHero.module.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import Image from "next/image";
-import Img1 from '../../../../public/images/work.png'
+import Img1 from "../../../../public/images/work.png";
+import Button from "@/components/shared/Button/Button";
 
 export default function WorkHero() {
   return (
@@ -23,6 +24,9 @@ export default function WorkHero() {
             industries and business models.
           </p>
           <ProjectSection />
+        </div>
+        <div className={styles.btnContainer}>
+          <Button btnType='blue' text='View All Case Studies' href='/' arrow />
         </div>
       </LayoutWrapper>
     </section>
