@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--black);
+  background-color: var(--tan);
   border-radius: 25px;
   margin: 1rem;
   position: relative;
@@ -10,7 +10,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
+  gap: 3rem;
+  margin-top: 10rem;
 }
 
 .navContainer {
@@ -23,8 +24,22 @@
 }
 
 .heading {
-  color: var(--tan);
   text-align: center;
+  width: 80%;
+  hyphens: none;
+}
+
+.copy {
+  font-size: 1.8rem;
+  max-width: 475px;
+  color: var(--text);
+  text-align: center;
+}
+
+.span {
+  color: var(--blue);
+  font-family: var(--PerfectlyNinetiesItalic);
+  margin-left: 0.5rem;
 }
 
 .imgContainer {
@@ -49,6 +64,10 @@
 @media screen and (max-width: 568px) {
   .heading {
     width: 100%;
-    text-align: left;
+  }
+
+  .btnContainer {
+    display: grid;
+    width: 80%;
   }
 }

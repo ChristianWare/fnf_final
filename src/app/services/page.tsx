@@ -1,7 +1,9 @@
+import ServicesHero from "@/components/servicesPage/ServicesHero/ServicesHero";
+
 export default function ServicesPage() {
   return (
     <main>
-      <h1>Services Page</h1>
+      <ServicesHero />
     </main>
   );
 }
