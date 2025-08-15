@@ -1,5 +1,5 @@
 .container {
-  padding-top: 5rem;
+ padding: 5rem 0rem;
 }
 
 .heading {
@@ -11,7 +11,7 @@
   font-size: 1.8rem;
   color: var(--textii);
   text-align: center;
-  width: 50%;
+  width: 40%;
 }
 
 .content {
@@ -320,9 +320,7 @@
     width: 100%;
   }
 
-  .copy {
-    width: 100%;
-  }
+
 
   .addonSectionTop {
     margin-bottom: 1rem;
@@ -389,11 +387,15 @@
 
   .headline,
   .title {
-    width: 100%;
+    width: 95%;
   }
 
   .btnContainer {
     display: grid;
     width: 100%;
+  }
+
+  .copy {
+    width: 90%;
   }
 }

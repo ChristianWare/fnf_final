@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 5rem;
+   padding: 5rem 0rem;
+
 }
 
 .sectionHeadingContainer {
@@ -147,6 +148,6 @@
   }
 
   .desc {
-    width: 100%;
+    width: 90%;
   }
 }

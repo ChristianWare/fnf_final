@@ -2,6 +2,7 @@
 // import OurTeam from "@/components/aboutPage/OurTeam/OurTeam";
 // import Specialize from "@/components/aboutPage/Specialize/Specialize";
 import AboutUsSection from "@/components/homePage/AboutUsSection/AboutUsSection";
+import ApproachTestimonialsIntro from "@/components/homePage/ApproachTestimonialsIntro/ApproachTestimonialsIntro";
 import Benefits from "@/components/homePage/Benefits/Benefits";
 // import ContactUsSection from "@/components/homePage/ContactUsSection/ContactUsSection";
 import Hero from "@/components/homePage/Hero/Hero";
@@ -29,6 +30,7 @@ export default function Home() {
       {/* <OurTeam /> */}
       {/* <Specialize /> */}
       <HorizontalServices />
+      <ApproachTestimonialsIntro />
       {/* <How /> */}
       {/* <ServicesSection /> */}
       {/* <Faq /> */}
