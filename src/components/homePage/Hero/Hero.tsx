@@ -1,19 +1,19 @@
-"use client";
+// "use client";
 
 import styles from "./Hero.module.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import Button from "@/components/shared/Button/Button";
 import Nav from "@/components/shared/Nav/Nav";
-import FalseButton from "@/components/shared/FalseButton/FalseButton";
-import Modal from "@/components/shared/Modal/Modal";
-import ContactForm from "@/components/shared/ContactForm/ContactForm";
-import { useState } from "react";
+// import FalseButton from "@/components/shared/FalseButton/FalseButton";
+// import Modal from "@/components/shared/Modal/Modal";
+// import ContactForm from "@/components/shared/ContactForm/ContactForm";
+// import { useState } from "react";
 import SectionIntroii from "@/components/shared/SectionIntroii/SectionIntroii";
 import Image from "next/image";
 import Img1 from "../../../../public/images/newhero.png";
 
 export default function Hero() {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
   return (
     <section className={styles.container}>
@@ -36,18 +36,19 @@ export default function Hero() {
               reviews—done.
             </p>
             <div className={styles.btnContainer}>
-              <FalseButton
-                btnType='white'
-                text='Request free booking audit'
-                onClick={() => setOpen(true)}
-              />
               <Button
+                btnType='white'
+                text='Book your discovery Call'
+                href='/'
+                arrow
+              />
+              {/* <Button
                 href='/contact'
                 btnType='noBackgroundWhiteText'
                 text='Free strategy call'
                 target='_blank'
                 arrow
-              />
+              /> */}
             </div>
           </div>
           <div className={styles.right}>
@@ -64,9 +65,9 @@ export default function Hero() {
           </div>
         </div>
       </LayoutWrapper>
-      <Modal isOpen={open} onClose={() => setOpen(false)}>
+      {/* <Modal isOpen={open} onClose={() => setOpen(false)}>
         <ContactForm />
-      </Modal>
+      </Modal> */}
     </section>
   );
 }
