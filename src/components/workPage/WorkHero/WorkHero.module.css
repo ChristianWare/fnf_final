@@ -41,7 +41,7 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 968px) {
   .heading,
   .copy {
     text-align: center;

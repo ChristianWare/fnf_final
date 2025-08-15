@@ -110,18 +110,16 @@ export default function Features() {
     <LayoutWrapper>
       <section className={styles.container} id='features'>
         <div className={styles.top}>
-          <h2 className={styles.heading}>
-            Why <span className={styles.span}> Us?</span>
-          </h2>
-          {/* <span className={styles.span}>
+          <h2 className={styles.heading}>Features of our booking websites</h2>
+          <span className={styles.span}>
             Everything you need to fill calendars and cut no-shows
-          </span> */}
-          {/* <p className={styles.copy}>
+          </span>
+          <p className={styles.copy}>
             Fonts&nbsp;&amp;&nbsp;Footers delivers a fully custom booking
             solution—handling scheduling, deposits, reminders, and real-time
             calendar sync—so you can focus on service, not back-and-forth
             messages.
-          </p> */}
+          </p>
         </div>
 
         <div className={styles.parent}>
