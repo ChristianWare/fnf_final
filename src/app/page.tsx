@@ -19,6 +19,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+
       <AboutUsSection />
       <WorkHero />
       {/* <Features /> */}
@@ -33,7 +34,6 @@ export default function Home() {
       <Faq />
       <ProblemSection />
       <ContactUsSection />
-      
     </main>
   );
 }

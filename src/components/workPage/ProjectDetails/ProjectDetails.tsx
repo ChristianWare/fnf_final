@@ -116,10 +116,10 @@ export default function ProjectDetails({ project }: Props) {
       {project.video && <VideoSection video={project.video} />}
       <div className={styles.btnContainer}>
         <Button
-          href={project.href}
+          // href={project.href}
+          href='/'
           btnType='blackii'
-          text='Visit Website'
-          target='_blank'
+          text='View Case Study'
           arrow
         />
       </div>
