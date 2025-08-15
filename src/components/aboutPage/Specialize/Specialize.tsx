@@ -13,19 +13,19 @@ export default function Specialize() {
           <div className={styles.left}>
             <div className={styles.sectionHeadingContainer}>
               <SectionIntro
-                title="What's it like to work with us?"
+                title='Our Specialties'
                 // color='white'
                 // dotColor='pinkDot'
               />
             </div>
             <h2 className={styles.heading}>
-              {/* Whether you run a one-chair salon, manage a fleet of luxury cars,
+              Whether you run a one-chair salon, manage a fleet of luxury cars,
               or oversee a portfolio of vacation rentals, we build booking
-              platforms tailored to your exact service model and growth stage. */}
-              We put transparency and openness at the heart of all our
+              platforms tailored to your exact service model and growth stage.
+              {/* We put transparency and openness at the heart of all our
               processes. Our clients get full access to detailed reports, which
               allows them to track every step of the work and understand how
-              projects are progressing.
+              projects are progressing. */}
             </h2>
             <div className={styles.imgContainer}>
               <Image

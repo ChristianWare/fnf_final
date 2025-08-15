@@ -10,9 +10,20 @@ export default function OurTeam() {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.content}>
-          <div className={styles.top}>
+          <div className={styles.left}>
+            <div className={styles.circleContainer}>
+              <div className={styles.pulsingCircles}></div>
+              <div className={styles.imgContainer}>
+                <Image src={ChrisImg} alt='' fill className={styles.img} />
+              </div>
+            </div>
+          </div>
+          <div className={styles.right}>
             <div className={styles.sectionHeadingContainer}>
-              <SectionIntro title='Chris, Founder of Fonts & Footers' />
+              <SectionIntro
+                title='Chris, Founder of Fonts & Footers'
+                // color='white'
+              />
             </div>
             <h2 className={styles.heading}>
               {/* At its core, <span className={styles.span}>Fonts & Footers</span>{" "}
@@ -36,14 +47,6 @@ export default function OurTeam() {
                 text='Find me on linkedIn'
                 arrow
               />
-            </div>
-          </div>
-          <div className={styles.bottom}>
-            <div className={styles.circleContainer}>
-              <div className={styles.pulsingCircles}></div>
-              <div className={styles.imgContainer}>
-                <Image src={ChrisImg} alt='' fill className={styles.img} />
-              </div>
             </div>
           </div>
         </div>

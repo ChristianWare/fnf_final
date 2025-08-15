@@ -1,7 +1,7 @@
 .container {
-  background-color: var(--black);
+  background-color: var(--tan);
   /* border: 1px solid var(--gray); */
-  border-radius: 15px;
+  border-radius: 25px;
   margin: 1rem;
   position: relative;
 }
@@ -27,7 +27,7 @@
 .heading {
   text-align: center;
   width: 60%;
-  color: var(--tan);
+  /* color: var(--tan); */
 }
 
 .span {

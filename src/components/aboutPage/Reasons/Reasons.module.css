@@ -1,0 +1,56 @@
+.container {
+  padding: 10rem 0rem;
+}
+
+.content {
+  background-color: var(--black);
+  border-radius: 25px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  border-bottom: 1px solid var(--textii);
+  padding: 2rem 0rem;
+}
+
+.title {
+  color: var(--textii);
+  font-size: 4rem;
+  width: 90%;
+  font-family: var(--PerfectlyNinetiesItalic);
+}
+
+.copy {
+  color: var(--tan);
+  margin-left: 7rem;
+}
+
+@media screen and (max-width: 1068px) {
+  .card {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 4rem 0rem;
+  }
+
+  .copy {
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    width: 100%;
+    padding-top: 0rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .title {
+    font-size: 3rem;
+  }
+}

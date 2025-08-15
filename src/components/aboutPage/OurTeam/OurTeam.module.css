@@ -1,38 +1,29 @@
 .container {
-  padding-top: 10rem;
+  padding: 20rem 0rem;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 15rem;
+  /* background-color: var(--black); */
+  /* border-radius: 25px; */
+  /* padding: 15rem 4rem; */
+  /* overflow: hidden; */
 }
 
-.top {
+.left {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
-}
-
-.heading {
-  text-align: center;
-  width: 80%;
-  font-size: 3rem;
-}
-
-.span {
-  color: var(--blue);
-  font-family: inherit;
+  position: relative;
 }
 
 .circleContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 15rem;
+  /* margin-top: 15rem; */
 }
 
 .pulsingCircles {
@@ -87,6 +78,30 @@
   border-radius: 50%;
 }
 
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.heading {
+  /* text-align: right; */
+  /* width: 80%; */
+  font-size: 3rem;
+  /* color: var(--tan); */
+}
+
+.span {
+  color: var(--blue);
+  font-family: inherit;
+}
+
+.btnContainer {
+  margin-top: 3rem;
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -99,10 +114,6 @@
 }
 
 @media screen and (max-width: 1268px) {
-  .heading {
-    width: 80%;
-  }
-
   .bottom,
   .circleContainer {
     display: flex;
@@ -114,19 +125,26 @@
 }
 
 @media screen and (max-width: 1068px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .heading {
     width: 100%;
+    text-align: center;
+  }
+
+  .right {
+    align-items: center;
+    justify-content: center;
   }
 }
 
 @media screen and (max-width: 568px) {
-  .container {
-    padding: 7rem 0rem;
-  }
-
   .content {
     align-items: flex-start;
     justify-content: flex-start;
+    grid-gap: 10rem;
   }
 
   .heading {

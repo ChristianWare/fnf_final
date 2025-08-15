@@ -491,7 +491,6 @@ export const pricingData = [
   },
 ] as const;
 
-
 export const reviews = [
   {
     id: 1,
@@ -499,7 +498,7 @@ export const reviews = [
       "Fonts & Footers rebuilt our California-style furniture store from the ground up. Page-load times dropped from six seconds to under one, our bounce rate fell 32 %, and revenue doubled the very next quarter. Truly transformative work.",
     reviewer: "Alicia G.",
     company: "Coastal Oak Furnishings",
-    person: Lady, 
+    person: Lady,
   },
   {
     id: 2,
@@ -596,7 +595,6 @@ export const specialties = [
     desc: "→ Platforms that bundle recurring bookings with subscription billing—perfect for personal-training packages, co-working desks, or wellness clubs.",
   },
 ] as const;
-
 
 export const questions = [
   {
@@ -719,5 +717,139 @@ export const questions = [
     question: "Will you provide training and documentation after launch?",
     answer:
       "Yes. We include a comprehensive onboarding session—live video training for you and your team—plus clear written documentation covering store management, order fulfillment, and marketing tasks so you can run your business with confidence.",
+  },
+] as const;
+
+export const qualities = [
+  {
+    id: 1,
+    title: "Creators of",
+    details: [
+      { id: 1.1, detail: "Brand identities built for service businesses" },
+      { id: 1.2, detail: "Direct-booking websites (own your calendar & data)" },
+      {
+        id: 1.3,
+        detail: "One-screen booking flows (service → pro → time → pay)",
+      },
+      { id: 1.4, detail: "Service pages that sell, not just tell" },
+      {
+        id: 1.5,
+        detail:
+          "Policy frameworks (deposits, cancellations, no-show) that reduce friction",
+      },
+      {
+        id: 1.6,
+        detail: "Memberships, packages, gift cards, and upsell paths",
+      },
+      { id: 1.7, detail: "SMS + email reminder journeys that cut no-shows" },
+      { id: 1.8, detail: "Launch campaigns and booking funnels for ads & SEO" },
+      { id: 1.9, detail: "Analytics dashboards and simple team training" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Experts at",
+    details: [
+      { id: 2.1, detail: "Next.js & headless CMS (Sanity, Contentful)" },
+      { id: 2.2, detail: "Stripe & Square (deposits, holds, subscriptions)" },
+      { id: 2.3, detail: "Google/Apple/Outlook calendar sync" },
+      { id: 2.4, detail: "Twilio SMS, email providers, and webhooks" },
+      { id: 2.5, detail: "Zapier & custom API integrations" },
+      {
+        id: 2.6,
+        detail:
+          "Multi-location availability, staff assignment, and inventory/room logic",
+      },
+      {
+        id: 2.7,
+        detail: "Re-platforming & migrations from legacy booking tools",
+      },
+      {
+        id: 2.8,
+        detail:
+          "Accessibility-minded UX and performance budgets (Core Web Vitals)",
+      },
+      {
+        id: 2.9,
+        detail: "Data ownership, consent, and lightweight CRM workflows",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Believers in",
+    details: [
+      {
+        id: 3.1,
+        detail: "Conversion rate optimization as a habit, not a one-off",
+      },
+      {
+        id: 3.2,
+        detail: "Reducing no-shows with deposits + clear policy language",
+      },
+      { id: 3.3, detail: "Site speed as a revenue lever (not a nice-to-have)" },
+      {
+        id: 3.4,
+        detail: "Understanding customer behavior before adding features",
+      },
+      {
+        id: 3.5,
+        detail: "Iterative testing: tighten copy, trim steps, test again",
+      },
+      { id: 3.6, detail: "Your business priorities over our preferences" },
+      {
+        id: 3.7,
+        detail: "Clear positioning that says who you’re for—and who you’re not",
+      },
+      { id: 3.8, detail: "Ship, measure, improve" },
+    ],
+  },
+  {
+    id: 4,
+    title: "Adherent to",
+    details: [
+      {
+        id: 4.1,
+        detail:
+          "Analytics & heatmapping (events that mirror real business goals)",
+      },
+      {
+        id: 4.2,
+        detail:
+          "Best practices for booking UX (mobile-first, one screen, minimal fields)",
+      },
+      { id: 4.3, detail: "Accessibility standards (WCAG-minded design & QA)" },
+      { id: 4.4, detail: "Customer research & call listening to shape flows" },
+      {
+        id: 4.5,
+        detail:
+          "Industry benchmarks across salons, grooming, transport, clinics, rentals",
+      },
+      {
+        id: 4.6,
+        detail: "Your goals, roadmap, and operating realities—always",
+      },
+    ],
+  },
+] as const;
+
+export const reasons = [
+  {
+    id: 75,
+    title: "We supercharge service experiences",
+    description:
+      "Since the earliest online booking tools, we’ve believed direct booking is how local businesses build real relationships. Whether you take appointments online, by phone, or in person, your website should be the simplest, fastest path to a confirmed booking—owned by you, not a marketplace. We design and build that path: one screen, zero confusion, payment on file, policies upfront, reminders automated—so customers feel confident and you stay in control.",
+  },
+  {
+    id: 76,
+    title: "We’ve built booking systems for the kinds of businesses you know",
+    description:
+      "Before Fonts & Footers was a studio, it was a repeatable system tested in real shops—salons and wellness studios, pet groomers, chauffeurs and private transport, clinics, vacation-rental direct booking, equipment rentals, and multi-location brands. We’ve lived the intake complexity, the pricing matrices, the “can we reschedule?” texts, and the Monday morning no-show reports. That experience is why our builds launch fast, convert reliably, and slot into your day-to-day without drama.",
+  },
+  {
+    id: 77,
+    title: "We pride ourselves on true partnership",
+    description:
+      "What sets us apart is how we work with owners and teams over the long term. We move in lock-step with your operations, integrate with the tools you already rely on, and keep scopes crystal clear. Our proposals are crafted to get you to MVP quickly—and our retainers are built to keep improving conversion, reducing no-shows, and opening new revenue (memberships, packages, gift cards) as you grow. You get: one point of contact, weekly progress, and a booking site that pays for itself.",
   },
 ] as const;
