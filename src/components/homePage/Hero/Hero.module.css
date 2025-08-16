@@ -147,10 +147,6 @@
     width: 100%;
   }
 
-  .lottieBox {
-    height: 200px;
-  }
-
   .btnContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -162,10 +158,6 @@
     height: 300px;
   }
 
-  .imgContainer::before {
-    width: 100%;
-    height: 80%;
-  }
 }
 
 @media screen and (max-width: 380px) {

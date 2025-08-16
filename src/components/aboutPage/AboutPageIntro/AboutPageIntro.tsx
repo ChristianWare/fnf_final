@@ -15,23 +15,27 @@ export default function AboutPageIntro() {
       </div>
       <LayoutWrapper>
         <div className={styles.content}>
-          <SectionIntro
-            title='About'
-            // color='yellow'
-            // borderColor='borderColorYellow'
-          />
-          <h1 className={styles.heading}>
-            We build the booking site you wish you had{" "}
-            <span className={styles.span}> last year.</span>
-          </h1>
-          {/* <p className={styles.copy}>
+          <div className={styles.left}>
+            <SectionIntro
+              title='About'
+              // color='yellow'
+              // borderColor='borderColorYellow'
+            />
+            <h1 className={styles.heading}>
+              We build the booking site you wish you had{" "}
+              <span className={styles.span}> last year.</span>
+            </h1>
+            <p className={styles.copy}>
             Fonts & Footers is a booking-platform studio. We turn clunky DM
             scheduling and marketplace fees into one-tap reservations, automated
             deposits, and real-time calendar sync—built with Next.js, Prisma,
             and Stripe.
-          </p> */}
-          <div className={styles.imgContainer}>
-            <Image src={Img1} alt='Thinking' fill className={styles.img} />
+            </p>
+          </div>
+          <div className={styles.right}>
+            <div className={styles.imgContainer}>
+              <Image src={Img1} alt='Thinking' fill className={styles.img} />
+            </div>
           </div>
         </div>
       </LayoutWrapper>
