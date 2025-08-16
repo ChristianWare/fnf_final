@@ -8,21 +8,17 @@
   letter-spacing: -1px;
   color: var(--black);
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   background-color: var(--tan);
   padding: 1.6rem 3rem;
   padding-bottom: 1.8rem;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  /* border: 1px solid var(--gray); */
   border-top: none;
   position: relative;
   z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
 }
 
 .logo:after {
@@ -144,16 +140,15 @@
   box-shadow: -1em -1rem var(--black);
 }
 
-.imgContainer {
-  position: relative;
-  width: 142px;
-  height: 25px;
-  position: relative;
-  /* top: -4px; */
-}
+/* .imgContainer {
+  width: 20px;
+  height: 20px;
+} */
 
 .img {
-  object-fit: cover;
+  object-fit: contain;
+  width: 30px;
+  height: 30px;
 }
 
 .titleContainer {
