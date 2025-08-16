@@ -42,13 +42,6 @@ export default function Hero() {
                 href='/'
                 arrow
               />
-              {/* <Button
-                href='/contact'
-                btnType='noBackgroundWhiteText'
-                text='Free strategy call'
-                target='_blank'
-                arrow
-              /> */}
             </div>
           </div>
           <div className={styles.right}>

@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 import LayoutWrapper from "../LayoutWrapper";
 import SectionIntro from "../SectionIntro/SectionIntro";
 import Image from "next/image";
-import Happy from "../../../../public/images/smile.png";
+import Happy from "../../../../public/images/smileii.png";
 
 export default function FinalCTA() {
   return (
@@ -13,6 +13,7 @@ export default function FinalCTA() {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
+              <SectionIntro title='FONTS & FOOTERS' color='tan' />
             <div className={styles.imgContainer}>
               <Image
                 src={Happy}
@@ -23,7 +24,6 @@ export default function FinalCTA() {
             </div>
           </div>
           <div className={styles.right}>
-            <SectionIntro title='FONTS & FOOTERS' color='tan' />
             <h2 className={styles.heading}>Ready to fill your calendar?</h2>
             <p className={styles.copy}>
               Let&apos;s get started with a quick chat to discuss your needs and
