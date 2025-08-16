@@ -2,9 +2,10 @@
 import ServicesSection from "@/components/homePage/ServicesSection/ServicesSection";
 import Solution from "@/components/homePage/Solution/Solution";
 import EveryPlan from "@/components/servicesPage/EveryPlan/EveryPlan";
-import HorizontalServices from "@/components/servicesPage/HorizontalServices/HorizontalServices";
+// import HorizontalServices from "@/components/servicesPage/HorizontalServices/HorizontalServices";
 // import AddOns from "@/components/servicesPage/AddOns/AddOns";
 import Offering from "@/components/servicesPage/Offering/Offering";
+import ServiceDetails from "@/components/servicesPage/ServiceDetails/ServiceDetails";
 import ServicesHero from "@/components/servicesPage/ServicesHero/ServicesHero";
 import Faq from "@/components/shared/Faq/Faq";
 
@@ -16,7 +17,8 @@ export default function ServicesPage() {
       <ServicesSection />
       {/* <Specialize /> */}
       <Solution />
-      <HorizontalServices />
+      <ServiceDetails />
+      {/* <HorizontalServices /> */}
       <EveryPlan />
       {/* <AddOns /> */}
       <Faq />
