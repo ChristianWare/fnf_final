@@ -1,6 +1,6 @@
 // import Specialize from "@/components/aboutPage/Specialize/Specialize";
 import ServicesSection from "@/components/homePage/ServicesSection/ServicesSection";
-import Solution from "@/components/homePage/Solution/Solution";
+// import Solution from "@/components/homePage/Solution/Solution";
 import EveryPlan from "@/components/servicesPage/EveryPlan/EveryPlan";
 // import HorizontalServices from "@/components/servicesPage/HorizontalServices/HorizontalServices";
 // import AddOns from "@/components/servicesPage/AddOns/AddOns";
@@ -16,7 +16,7 @@ export default function ServicesPage() {
       <Offering />
       <ServicesSection />
       {/* <Specialize /> */}
-      <Solution />
+      {/* <Solution /> */}
       <ServiceDetails />
       {/* <HorizontalServices /> */}
       <EveryPlan />
