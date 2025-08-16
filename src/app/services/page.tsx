@@ -1,3 +1,4 @@
+import ServicesSection from "@/components/homePage/ServicesSection/ServicesSection";
 import Offering from "@/components/servicesPage/Offering/Offering";
 import ServicesHero from "@/components/servicesPage/ServicesHero/ServicesHero";
 
@@ -6,6 +7,7 @@ export default function ServicesPage() {
     <main>
       <ServicesHero />
       <Offering />
+      <ServicesSection />
     </main>
   );
 }

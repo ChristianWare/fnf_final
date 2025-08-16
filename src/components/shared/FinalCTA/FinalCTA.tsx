@@ -13,7 +13,7 @@ export default function FinalCTA() {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-              <SectionIntro title='FONTS & FOOTERS' color='tan' />
+              <SectionIntro title='Fonts & Footers' color='tan' />
             <div className={styles.imgContainer}>
               <Image
                 src={Happy}
