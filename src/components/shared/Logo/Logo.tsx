@@ -1,7 +1,6 @@
 import styles from "./Logo.module.css";
 import Link from "next/link";
-// import Image from "next/image";
-// import Img1 from "../../../../public/images/logoiii.png";
+import Calendar from "@/components/icons/Calendar/Calendar";
 
 interface Props {
   size?: string;
@@ -31,7 +30,9 @@ const Logo = ({
           priority={true}
         />
       </div> */}
-      <div className={styles.titleContainer}>Fonts & Footers</div>
+      <div className={styles.titleContainer}>
+        <Calendar className={styles.icon} /> Fonts & Footers
+      </div>
     </Link>
   );
 };
