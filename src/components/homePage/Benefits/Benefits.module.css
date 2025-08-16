@@ -3,8 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-   padding: 5rem 0rem;
-
+  padding: 5rem 0rem;
 }
 
 .sectionHeadingContainer {
@@ -39,6 +38,10 @@
   padding: 3rem;
 }
 
+/* .card:nth-child(1) {
+  background-color: var(--yellow);
+} */
+
 .imgContainer {
   position: relative;
   width: 250px;
@@ -70,7 +73,7 @@
 
 .card:nth-child(1) .imgContainer::before {
   background-color: var(--green);
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 .card:nth-child(2) .imgContainer::before {

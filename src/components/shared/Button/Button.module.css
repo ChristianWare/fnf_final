@@ -28,7 +28,7 @@
 }
 
 .img {
-  border: 1px solid var(--white);
+  border: 1px solid var(--black);
   padding: 3px;
   border-radius: 50%;
   object-fit: cover;
@@ -60,11 +60,11 @@
 .blue {
   background-color: var(--blue);
   color: var(--white);
-  border: 1px solid var(--blue);
-  border-top: 1px solid var(--blue);
-  border-left: 1px solid var(--blue);
+  border: 1px solid var(--black);
+  border-top: 1px solid var(--black);
+  /* border-left: 1px solid var(--black);
   border-bottom: 1px solid rgb(78, 148, 236);
-  border-right: 1px solid rgb(78, 148, 236);
+  border-right: 1px solid rgb(78, 148, 236); */
   box-shadow:
     rgba(78, 148, 236, 0.4) 5px 5px,
     rgba(78, 148, 236, 0.3) 10px 10px,
@@ -84,11 +84,10 @@
   background-color: var(--blue);
   color: var(--white);
   border: 1px solid var(--blue);
-  
 }
 
 .blueii:hover {
- border-top: 1px solid var(--blue);
+  border-top: 1px solid var(--blue);
   border-left: 1px solid var(--blue);
   border-bottom: 1px solid rgb(78, 148, 236);
   border-right: 1px solid rgb(78, 148, 236);
@@ -116,10 +115,12 @@
 }
 
 .noBackgroundBlueText {
-  color: var(--white);
-  background-color: var(--blue);
+  color: var(--black);
+  background-color: var(--yellow);
   padding: 0.5rem 0.8rem;
   padding-right: 1.4rem;
+  border: 1px solid var(--black);
+  
 }
 
 .noBackgroundBlackText {

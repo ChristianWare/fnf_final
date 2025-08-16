@@ -1,7 +1,9 @@
+import WorkHero from "@/components/workPage/WorkHero/WorkHero";
+
 export default function WorkPage() {
   return (
     <main>
-      <h1>Work Page</h1>
+      <WorkHero />
     </main>
   );
 }

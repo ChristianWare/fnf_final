@@ -1,7 +1,9 @@
+import ContactHero from "@/components/contactPage/ContactHero/ContactHero";
+
 export default function ContactPage() {
   return (
     <main>
-      <h1>Contact Page</h1>
+      <ContactHero />
     </main>
   );
 }
