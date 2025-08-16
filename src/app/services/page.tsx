@@ -6,7 +6,7 @@ import HorizontalServices from "@/components/servicesPage/HorizontalServices/Hor
 // import AddOns from "@/components/servicesPage/AddOns/AddOns";
 import Offering from "@/components/servicesPage/Offering/Offering";
 import ServicesHero from "@/components/servicesPage/ServicesHero/ServicesHero";
-// import Faq from "@/components/shared/Faq/Faq";
+import Faq from "@/components/shared/Faq/Faq";
 
 export default function ServicesPage() {
   return (
@@ -19,7 +19,7 @@ export default function ServicesPage() {
       <HorizontalServices />
       <EveryPlan />
       {/* <AddOns /> */}
-      {/* <Faq /> */}
+      <Faq />
     </main>
   );
 }
