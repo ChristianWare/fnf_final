@@ -1,5 +1,5 @@
 .container {
-  padding: 5rem 0rem;
+  padding: 5rem 10rem;
 }
 
 .content {
@@ -109,9 +109,11 @@
 }
 
 @media screen and (max-width: 1268px) {
-  .content {
-    width: 90%;
-  }
+  .container {
+  padding: 5rem 0rem;
+}
+
+  
 }
 
 @media screen and (max-width: 1068px) {

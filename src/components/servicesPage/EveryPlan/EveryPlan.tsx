@@ -1,6 +1,6 @@
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./EveryPlan.module.css";
-import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
+// import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import Phone from "@/components/icons/Phone/Phone";
 import Analytics from "@/components/icons/Analytics/Analytics";
 import Seo from "@/components/icons/Seo/Seo";
@@ -72,9 +72,9 @@ export default function EveryPlan() {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
-            <div className={styles.sectionHeadingContainer}>
+            {/* <div className={styles.sectionHeadingContainer}>
               <SectionIntro title="What's included"  />
-            </div>
+            </div> */}
             <h2 className={styles.heading}>
               <span className={styles.span}>Every Fonts & Footers build</span> —
               be it a salon scheduler, a luxury-car reservation system, or a

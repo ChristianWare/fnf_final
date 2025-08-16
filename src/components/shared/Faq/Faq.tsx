@@ -23,7 +23,7 @@ export default function Faq() {
       <LayoutWrapper>
         <div className={styles.top}>
           <div className={styles.sectionHeadingContainer}>
-            <SectionIntro title='FAQ' />
+            <SectionIntro title='Common Questions' />
           </div>
           <h2 className={styles.heading}>
             <span className={styles.span}>Questions?</span> Answers.
