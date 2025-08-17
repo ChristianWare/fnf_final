@@ -1,6 +1,8 @@
 import Nav from "@/components/shared/Nav/Nav";
 import styles from "./WorkPageIntro.module.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
+import Image from "next/image";
+import Img1 from "../../../../public/images/workii.png";
 
 export default function WorkPageIntro() {
   return (
@@ -22,9 +24,16 @@ export default function WorkPageIntro() {
             </p>
           </div>
           <div className={styles.right}>
-            {/* <div className={styles.lottieBox}>
-              <Lottie animationData={animationData} className={styles.lottie} />
-            </div> */}
+            <div className={styles.imgContainer}>
+              <Image
+                src={Img1}
+                alt='Hero image'
+                className={styles.img}
+                fill
+                priority
+                quality={100}
+              />{" "}
+            </div>
           </div>
         </div>
       </LayoutWrapper>
