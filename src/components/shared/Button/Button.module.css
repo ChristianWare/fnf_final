@@ -37,11 +37,8 @@
 .white {
   background-color: var(--white);
   color: var(--black);
-  border: 1px solid var(--white);
-  border-top: 1px solid var(--tan);
-  border-left: 1px solid var(--tan);
-  border-bottom: 1px solid rgb(255, 255, 255);
-  border-right: 1px solid rgb(255, 255, 255);
+  border: 1px solid var(--black);
+
   box-shadow:
     rgba(255, 255, 255, 0.4) 5px 5px,
     rgba(255, 255, 255, 0.3) 10px 10px,
@@ -120,7 +117,6 @@
   padding: 0.5rem 0.8rem;
   padding-right: 1.4rem;
   border: 1px solid var(--black);
-  
 }
 
 .noBackgroundBlackText {
@@ -137,11 +133,8 @@
 .black {
   background-color: var(--black);
   color: var(--tan);
-  border: 1px solid var(--black);
-  border-top: 1px solid var(--black);
-  border-left: 1px solid var(--black);
-  border-bottom: 1px solid rgb(0, 0, 0);
-  border-right: 1px solid rgb(0, 0, 0);
+  border: 1px solid var(--white);
+
   box-shadow:
     rgba(0, 0, 0, 0.4) 5px 5px,
     rgba(0, 0, 0, 0.3) 10px 10px,
