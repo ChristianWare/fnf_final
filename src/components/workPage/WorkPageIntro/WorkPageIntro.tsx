@@ -2,7 +2,8 @@ import Nav from "@/components/shared/Nav/Nav";
 import styles from "./WorkPageIntro.module.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import Image from "next/image";
-import Img1 from "../../../../public/images/workii.png";
+import Img1 from "../../../../public/images/workwoman.png";
+import Img2 from "../../../../public/images/workman.png";
 
 export default function WorkPageIntro() {
   return (
@@ -13,6 +14,18 @@ export default function WorkPageIntro() {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
+            <div className={styles.imgContainer}>
+              <Image
+                src={Img1}
+                alt='Hero image'
+                className={styles.img}
+                fill
+                priority
+                quality={100}
+              />{" "}
+            </div>
+          </div>
+          <div className={styles.middle}>
             <h1 className={styles.heading}>
               Our work <br />{" "}
               <span className={styles.span}>speaks for itself</span>
@@ -26,7 +39,7 @@ export default function WorkPageIntro() {
           <div className={styles.right}>
             <div className={styles.imgContainer}>
               <Image
-                src={Img1}
+                src={Img2}
                 alt='Hero image'
                 className={styles.img}
                 fill

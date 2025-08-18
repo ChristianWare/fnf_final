@@ -3,6 +3,7 @@ import AboutPageIntro from "@/components/aboutPage/AboutPageIntro/AboutPageIntro
 import OurTeam from "@/components/aboutPage/OurTeam/OurTeam";
 import Reasons from "@/components/aboutPage/Reasons/Reasons";
 import Specialize from "@/components/aboutPage/Specialize/Specialize";
+import ProblemSection from "@/components/homePage/ProblemSection/ProblemSection";
 import Stats from "@/components/homePage/Stats/Stats";
 // import Solution from "@/components/homePage/Solution/Solution";
 // import ServicesSection from "@/components/homePage/ServicesSection/ServicesSection";
@@ -17,6 +18,7 @@ export default function AboutPage() {
       <Stats />
       <Specialize />
       <Reasons />
+      <ProblemSection />
       {/* <Solution /> */}
       {/* <Features /> */}
       {/* <ServicesSection /> */}
