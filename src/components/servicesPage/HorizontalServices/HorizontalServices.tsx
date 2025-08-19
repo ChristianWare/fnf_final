@@ -44,8 +44,8 @@ export default function HorizontalServices() {
                   <div className={styles.btnContainer}>
                     <Button
                       href={`/services/#${x.service.toLowerCase().replace(/\s+/g, "-")}`}
-                      btnType='blueii'
-                      text='Free strategy call'
+                      btnType='blackii'
+                      text='More Details'
                       arrow
                     />
                   </div>
@@ -56,7 +56,7 @@ export default function HorizontalServices() {
           <div className={styles.btnContainerii}>
             <Button
               href='/services'
-              btnType='black'
+              btnType='blue'
               text='See all plans and services'
               arrow
             />
