@@ -27,16 +27,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:  center;
+  justify-content: center;
   gap: 3rem;
 }
 
 .heading {
-  color: var(--white);
+  color: var(--tan);
+  text-align: center;
 }
 
 .span {
   color: var(--blue);
+  font-family: var(--PerfectlyNinetiesItalic);
 }
 
 .copy {
@@ -46,44 +48,6 @@
   text-align: center;
 }
 
-.servicesContainer {
-  list-style: none;
-}
-
-.service {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.6rem;
-  border-bottom: 1px solid var(--white);
-  color: var(--lightBlue);
-  font-weight: 600;
-  padding: 1rem 0rem;
-  width: 100%;
-}
-
-.service:nth-child(1) {
-  border-top: 1px solid var(--white);
-}
-
-.blackDot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--lightBlue);
-  display: block;
-  margin-left: auto;
-}
-
-.lottieBox {
-  width: 100%;
-  height: 400px;
-}
-
-.lottie {
-  height: 100%;
-  width: 100%;
-}
 
 .imgContainer {
   position: relative;
@@ -143,8 +107,8 @@
     justify-content: flex-start;
   }
 
-  .lottieBox {
-    height: 300px;
+  .imgContainer {
+    height: 250px;
   }
 }
 
