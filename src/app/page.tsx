@@ -22,11 +22,11 @@ export default function Home() {
       <Hero />
 
       <AboutUsSection />
+      <Benefits />
+      <Stats />
       <WorkHero />
       <Features />
       {/* <Solution /> */}
-      <Benefits />
-      <Stats />
       {/* <OurTeam /> */}
       {/* <Specialize /> */}
       <HorizontalServices />

@@ -4,7 +4,7 @@
 
 .content {
   display: grid;
-  grid-template-columns: 2fr 4fr;
+  grid-template-columns: 1fr;
   grid-gap: 3rem;
 }
 
@@ -14,10 +14,10 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2rem;
-  align-self: flex-start;
+  /* align-self: flex-start;
   position: -webkit-sticky;
   position: sticky;
-  top: 90px;
+  top: 90px; */
 }
 
 .heading {
@@ -27,13 +27,13 @@
 .copy {
   font-size: 1.8rem;
   color: var(--textii);
-  width: 80%;
+  width: 40%;
 }
 
 .right {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 2rem;
+  grid-gap: 10rem;
 }
 
 .card {
@@ -78,13 +78,51 @@
 }
 
 .cardTop {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 5rem;
+}
+
+.cardTopLeft {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 3rem;
+}
+
+.serviceNameHeading,
+.price {
+  color: var(--black);
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: var(--PPNeueMontrealMediumThick);
   width: 100%;
-  margin-bottom: 2rem;
+}
+
+.price {
+  font-size: 4rem;
+  font-family: var(--PerfectlyNinetiesItalic);
+  letter-spacing: 1px;
+}
+
+.cardTopRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.descii {
+  font-family: var(--PPNeueMontrealMediumThick);
+  font-size: 2rem;
+}
+
+.headline {
+  font-family: var(--inter);
+  color: var(--black);
+  font-size: 1.6rem;
 }
 
 .serviceName {
@@ -97,34 +135,6 @@
 .icon {
   color: var(--black);
   display: none;
-}
-
-.serviceNameHeading {
-  color: var(--black);
-  font-size: 3rem;
-  font-weight: 400;
-  font-family: var(--PPNeueMontrealMediumThick);
-  width: 100%;
-  text-align: center;
-}
-
-.price {
-  text-align: center;
-  width: 100%;
-  font-size: 4rem;
-  font-weight: 400;
-  font-family: var(--PPNeueMontrealMediumThick);
-}
-
-.headline {
-  text-align: center;
-  font-family: var(--inter);
-  color: var(--black);
-  font-weight: 500;
-  font-size: 1.4rem;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .servicesCard {
@@ -206,6 +216,9 @@
 
 .addonSectionTop {
   margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .addonsHeading {
@@ -306,9 +319,12 @@
     width: 80%;
   }
 
+  .cardTop {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3rem;
+  }
+
   .index,
-  .serviceNameHeading,
-  .headline,
   .btnContainer {
     width: 80%;
     text-align: center;

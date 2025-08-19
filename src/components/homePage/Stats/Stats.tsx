@@ -67,7 +67,7 @@ export default function Stats() {
                   href='/contact'
                   btnType='blue'
                   text='Free strategy call'
-                  target='_blank'
+                  // target='_blank'
                   arrow
                 />{" "}
               </div>

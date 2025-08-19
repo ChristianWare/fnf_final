@@ -37,72 +37,15 @@ export default function HorizontalServices() {
                       <div key={y.serviceName} className={styles.box}>
                         <Check className={styles.icon} />
                         <h4 className={styles.serviceName}>{y.serviceName}</h4>
-                        {/* <p
-                          className={styles.descriptionMobile}
-                          key={y.description}
-                        >
-                          {y.description}
-                        </p> */}
                       </div>
                     ))}
                   </div>
-                  {/* <div className={styles.servicesCardBottom}>
-                    {x.servicesInclude.map((z) => (
-                      <p className={styles.description} key={z.description}>
-                        {z.description}
-                      </p>
-                    ))}
-                  </div> */}
-                  {/* <div className={styles.addonSection}>
-                  <div className={styles.addonSectionTop}>
-                    <h3 className={styles.addonsHeading}>
-                      Expansion blocks and price add-ons
-                    </h3>
-                  </div>
-                  <div className={styles.addonSectionBottom}>
-                    <div className={styles.addonSectionTableHeadings}>
-                      <h4 className={styles.title}>Expansion Block</h4>
-                      <h4 className={styles.title}>When it Triggers</h4>
-                      <h4 className={styles.title}>Add-on fee (USD)</h4>
-                    </div>
-                    <div className={styles.mapData}>
-                      {x.addonSectionData.map((x) => (
-                        <div
-                          key={x.id}
-                          className={styles.addonSectionBottomContainer}
-                        >
-                          {" "}
-                          <div>
-                            <h4 className={styles.titleMobile}>
-                              Expansion Block:
-                            </h4>
-                            <h5 className={styles.titleii}>
-                              {x.expansionblock}
-                            </h5>
-                          </div>
-                          <div>
-                            <h4 className={styles.titleMobile}>
-                              When it Triggers:
-                            </h4>
-                            <p className={styles.info}>{x.details}</p>
-                          </div>
-                          <div>
-                            <h4 className={styles.titleMobile}>
-                              Add-on fee (USD):
-                            </h4>
-                            <p className={styles.info}>{x.price}</p>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div> */}
+
                   <div className={styles.btnContainer}>
                     <Button
-                      href='/contact'
+                      href={`/services/#${x.service.toLowerCase().replace(/\s+/g, "-")}`}
                       btnType='blueii'
                       text='Free strategy call'
-                      target='_blank'
                       arrow
                     />
                   </div>
@@ -112,9 +55,9 @@ export default function HorizontalServices() {
           </div>
           <div className={styles.btnContainerii}>
             <Button
-              href='/contact'
+              href='/services'
               btnType='black'
-              text='See All Plans'
+              text='See all plans and services'
               arrow
             />
           </div>

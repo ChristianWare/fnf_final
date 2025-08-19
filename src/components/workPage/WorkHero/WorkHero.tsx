@@ -26,7 +26,7 @@ export default function WorkHero() {
           <ProjectSection />
         </div>
         <div className={styles.btnContainer}>
-          <Button btnType='blue' text='View All Case Studies' href='/' arrow />
+          <Button btnType='blue' text='View All Case Studies' href='/work' arrow />
         </div>
       </LayoutWrapper>
     </section>

@@ -26,9 +26,14 @@ export default function ServiceDetails() {
                 id={x.service.toLowerCase().replace(/\s+/g, "-")}
               >
                 <div className={styles.cardTop}>
-                  <h3 className={styles.serviceNameHeading}>{x.service}</h3>
-                  <h3 className={styles.price}>{x.price}</h3>
-                  <span className={styles.headline}>{x.desc}</span>
+                  <div className={styles.cardTopLeft}>
+                    <h3 className={styles.serviceNameHeading}>{x.service}</h3>
+                    <h3 className={styles.price}>{x.price}</h3>
+                  </div>
+                  <div className={styles.cardTopRight}>
+                    <h4 className={styles.descii}>{x.descii}</h4>
+                    <p className={styles.headline}>{x.desc}</p>
+                  </div>
                 </div>
                 <div className={styles.servicesCard}>
                   <div className={styles.servicesCardTop}>
@@ -66,9 +71,7 @@ export default function ServiceDetails() {
                   </div>
                   <div className={styles.addonSection}>
                     <div className={styles.addonSectionTop}>
-                      <h3 className={styles.addonsHeading}>
-                        Expansion blocks and price add-ons
-                      </h3>
+                      <SectionIntro title='Expansion blocks and price add-ons' />
                     </div>
                     <div className={styles.addonSectionBottom}>
                       <div className={styles.addonSectionTableHeadings}>
