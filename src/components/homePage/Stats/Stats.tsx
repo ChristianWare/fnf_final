@@ -8,33 +8,33 @@ import Button from "@/components/shared/Button/Button";
 const data = [
   {
     id: 1,
-    title: "Total Users",
+    title: "One-screen booking (service → pro → time → pay)",
   },
   {
     id: 2,
-    title: "Active Users Active Users",
+    title: "Deposit checkout + SMS/email reminders to cut no-shows",
   },
   {
     id: 3,
-    title: "Inactive Users Inactive Users",
+    title: "Multi-location & staff availability that stays in sync",
   },
 ];
 
 const data2 = [
   {
     id: 4,
-    title: "$30K +",
-    desc: "Lorem ipsum dolor",
+    title: "≤ 60 sec",
+    desc: "Average time to complete a booking",
   },
   {
     id: 5,
-    title: "104K",
-    desc: "Lorem ipsum dolor",
+    title: "3–5 weeks",
+    desc: "Typical launch timeline from kickoff",
   },
   {
     id: 6,
-    title: "90%",
-    desc: "Lorem ipsum dolor",
+    title: "20–40% fewer",
+    desc: "No-shows with deposits + reminders",
   },
 ];
 
@@ -46,13 +46,14 @@ export default function Stats() {
           <div className={styles.top}>
             <div className={styles.topLeft}>
               <h2 className={styles.heading}>
-                Banking that builds <br />
-                Your credit
+                Direct booking that fills <br />
+                your calendar
               </h2>
               <p className={styles.copy}>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-                molestias autem voluptatibus? Sint itaque, distinctio minima
-                aspernatur molestias ut quas.
+                Fonts &amp; Footers builds fast, branded booking sites that turn
+                visitors into paid appointments. Clear policies, deposits on
+                file, and automated reminders remove friction—so you keep the
+                relationship, the data, and the margin.
               </p>
               <div className={styles.mapDataBox}>
                 {data.map((item) => (
@@ -66,17 +67,16 @@ export default function Stats() {
                 <Button
                   href='/contact'
                   btnType='blue'
-                  text='Free strategy call'
-                  // target='_blank'
+                  text='Book a 20-min demo'
                   arrow
-                />{" "}
+                />
               </div>
             </div>
             <div className={styles.topRight}>
               <div className={styles.imgContainer}>
                 <Image
                   src={Img1}
-                  alt='Hero image'
+                  alt='Booking performance highlights'
                   className={styles.img}
                   fill
                   priority

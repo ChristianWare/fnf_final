@@ -13,19 +13,17 @@ export default function ApproachTestimonialsIntro() {
           </div>
           <div className={styles.topRight}>
             <div className={styles.subheading}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
-              odit perspiciatis ex vero, unde consequatur adipisci dolore qui
-              architecto reprehenderit dolorem voluptates, asperiores deserunt,
-              nulla voluptas pariatur dolores. Nostrum dolore qui error repellat
-              excepturi. Itaque ipsam similique eius praesentium vero quisquam
-              veniam delectus, nulla officia consequuntur perferendis, deserunt
-              obcaecati sit?
+              We build direct-booking websites for service businesses—fast,
+              branded, and conversion-first. One-screen flows (service → pro →
+              time → pay), deposit checkout, and automated SMS/email reminders
+              make scheduling effortless and cut no-shows. Launch in 3–5 weeks
+              with a single point of contact.
             </div>
             <p className={styles.subHeadingCopy}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-              eveniet veniam officia labore, doloremque doloribus earum? Ipsum,
-              eos! Ex iusto iste eligendi voluptatum ipsa culpa unde enim vero,
-              tempore nobis ut quo omnis, ab tempora!{" "}
+              Our playbook is simple: discover goals, map the fastest path to a
+              confirmed booking, write clear policy copy, and remove every extra
+              field. Then we build, QA, and optimize for 30 days. You keep the
+              relationship and the data—so your calendar and margins grow.
             </p>
           </div>
         </div>
@@ -36,7 +34,7 @@ export default function ApproachTestimonialsIntro() {
             <Arrow className={styles.arrow} />
           </div>
           <div className={styles.right}>
-            <SectionIntro title='Services' />
+            <SectionIntro title='Testimonials' />
             <h4 className={styles.headingii}>What our clients say</h4>
             <Arrow className={styles.arrow} />
           </div>
