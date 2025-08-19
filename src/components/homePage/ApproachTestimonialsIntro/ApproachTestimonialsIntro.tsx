@@ -1,50 +1,44 @@
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./ApproachTestimonialsIntro.module.css";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
-import Button from "@/components/shared/Button/Button";
+import Arrow from "@/components/icons/Arrow/Arrow";
 
 export default function ApproachTestimonialsIntro() {
   return (
     <div className={styles.container}>
       <LayoutWrapper>
+        <div className={styles.top}>
+          <div className={styles.topLeft}>
+            <h2 className={styles.heading}>Approach &amp; Testimonials</h2>
+          </div>
+          <div className={styles.topRight}>
+            <div className={styles.subheading}>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
+              odit perspiciatis ex vero, unde consequatur adipisci dolore qui
+              architecto reprehenderit dolorem voluptates, asperiores deserunt,
+              nulla voluptas pariatur dolores. Nostrum dolore qui error repellat
+              excepturi. Itaque ipsam similique eius praesentium vero quisquam
+              veniam delectus, nulla officia consequuntur perferendis, deserunt
+              obcaecati sit?
+            </div>
+            <p className={styles.subHeadingCopy}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+              eveniet veniam officia labore, doloremque doloribus earum? Ipsum,
+              eos! Ex iusto iste eligendi voluptatum ipsa culpa unde enim vero,
+              tempore nobis ut quo omnis, ab tempora!{" "}
+            </p>
+          </div>
+        </div>
         <div className={styles.content}>
           <div className={styles.left}>
-            <SectionIntro
-              title='Approach'
-              color='white'
-              borderColor='borderColorWhite'
-            />
-            <h2 className={styles.heading}>What sets us apart</h2>
-            <p className={styles.copy}>
-              Innovative brands are always evolving; so are we. Learn how
-              we&lsquo;ve unlocked more than $500 million in sales for our
-              clients.
-            </p>
-            <div className={styles.btnContainer}>
-              <Button
-                btnType='white'
-                text='Uncover our process'
-                href='/'
-                arrow
-              />
-            </div>
+            <SectionIntro title='Approach' />
+            <h4 className={styles.headingii}>What sets us apart</h4>
+            <Arrow className={styles.arrow} />
           </div>
           <div className={styles.right}>
             <SectionIntro title='Services' />
-            <h2 className={styles.heading}>What our clients say</h2>
-            <p className={styles.copy}>
-              It&lsquo;s not our first time helping brands like yours. In fact,
-              companies thrive when they partner with Pact – but don&lsquo;t
-              take our word for it.
-            </p>
-            <div className={styles.btnContainer}>
-              <Button
-                btnType='black'
-                text='Read our testimonials'
-                href='/'
-                arrow
-              />
-            </div>
+            <h4 className={styles.headingii}>What our clients say</h4>
+            <Arrow className={styles.arrow} />
           </div>
         </div>
       </LayoutWrapper>

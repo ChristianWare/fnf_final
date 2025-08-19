@@ -1,12 +1,40 @@
 .container {
   padding: 10rem 0rem;
+}
 
+.top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+.heading {
+  font-size: 4rem;
+}
+
+.topRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.subheading {
+  font-family: var(--PPNeueMontrealMediumThick);
+  font-size: 2rem;
+}
+
+.subHeadingCopy {
+  font-size: 1.8rem;
+  color: var(--text);
 }
 
 .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5rem;
+  grid-gap: 2rem;
 }
 
 .left,
@@ -15,25 +43,37 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 20rem;
   border-radius: 25px;
-  padding: 4rem;
+  padding: 3rem;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--black);
+  color: var(--tan);
+  font-size: 5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  transform: rotate(90deg);
 }
 
 .left {
-  background-color: var(--blue);
+  background-color: var(--yellow);
+  border: 1px solid var(--gray);
 }
 
 .right {
-  background-color: var(--yellow);
+  background-color: var(--tan);
+  border: 1px solid var(--gray);
 }
 
-.heading {
-  font-size: 6rem;
-}
-
-.left .heading {
-  color: var(--white);
+.headingii {
+  font-size: 3rem;
+  font-family: var(--PPNeueMontrealMediumThick);
 }
 
 .copy {
@@ -43,7 +83,7 @@
 }
 
 .left .copy {
-  color: var(--tan);
+  color: var(--black);
 }
 
 .btnContainer {
@@ -52,6 +92,12 @@
 
 @media screen and (max-width: 1068px) {
   .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top {
     grid-template-columns: 1fr;
   }
 }
@@ -67,22 +113,23 @@
   .right {
     align-items: center;
     justify-content: center;
-    /* padding: 3rem;
-    padding-bottom: 4rem; */
+    gap: 7rem;
   }
 
-  .heading,
+  .headingii,
   .copy {
     text-align: center;
   }
 
-  .heading {
+  .headingii {
     line-height: 1;
-    margin-bottom: 1rem;
-    font-size: 4rem;
   }
 
   .copy {
     width: 100%;
+  }
+
+  .arrow {
+    position: static;
   }
 }
