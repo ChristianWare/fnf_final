@@ -1,9 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState } from "react";
+import { useState, KeyboardEvent } from "react";
 import styles from "./Circle.module.css";
-import Modal from "@/components/shared/Modal/Modal";
 import Analytics from "@/components/icons/Calendar/Calendar";
 import Clock from "@/components/icons/Listing/Listing";
 import CloudPrez from "@/components/icons/Integration/Integration";
@@ -39,14 +38,15 @@ const data = [
 ];
 
 export default function Circle() {
-  const [selected, setSelected] = useState<(typeof data)[0] | null>(null);
+  const [selectedId, setSelectedId] = useState<number>(data[0].id);
 
-  const openModal = (item: (typeof data)[0]) => {
-    setSelected(item);
-  };
+  const selected = data.find((d) => d.id === selectedId)!;
 
-  const closeModal = () => {
-    setSelected(null);
+  const handleKey = (e: KeyboardEvent<HTMLDivElement>, id: number) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      setSelectedId(id);
+    }
   };
 
   return (
@@ -62,6 +62,7 @@ export default function Circle() {
           </div>
           <h2 className={styles.heading}>How we work</h2>
         </div>
+
         <div className={styles.content}>
           <div className={styles.left}>
             <div className={styles.outerCircle}>
@@ -69,16 +70,12 @@ export default function Circle() {
                 className={styles.curveText}
                 viewBox='0 0 500 500'
                 preserveAspectRatio='xMidYMid meet'
+                aria-hidden='true'
               >
                 <defs>
                   <path
                     id='circlePath'
-                    d='
-                M250,250
-                m-225,0
-                a225,225 0 1,1 450,0
-                a225,225 0 1,1 -450,0
-              '
+                    d='M250,250 m-225,0 a225,225 0 1,1 450,0 a225,225 0 1,1 -450,0'
                   />
                 </defs>
                 <text
@@ -97,45 +94,43 @@ export default function Circle() {
                 </text>
               </svg>
 
-              <div className={styles.innerCircle}>
-                {data.map((item, index) => (
-                  <div
-                    key={item.id}
-                    className={(styles as any)[`quad${index + 1}`]}
-                    onClick={() => openModal(item)}
-                  >
-                    0{item.id}
-                    {/* {item.icon} */}
-                  </div>
-                ))}
+              <div className={styles.innerCircle} role='list'>
+                {data.map((item, index) => {
+                  const cls = (styles as any)[`quad${index + 1}`];
+                  const isActive = item.id === selectedId;
+                  return (
+                    <div
+                      key={item.id}
+                      role='button'
+                      tabIndex={0}
+                      aria-pressed={isActive}
+                      aria-label={`${item.feature}`}
+                      className={`${cls} ${isActive ? styles.activeQuad : ""}`}
+                      onClick={() => setSelectedId(item.id)}
+                      onKeyDown={(e) => handleKey(e, item.id)}
+                    >
+                      {item.icon}
+                    </div>
+                  );
+                })}
               </div>
-
-              {/* <div className={styles.centerCircle} /> */}
             </div>
           </div>
+
           <div className={styles.right}>
-            <p className={styles.copy}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-              voluptatum optio animi repudiandae ipsa corporis placeat rerum et
-              deserunt ea. Beatae odio eius iure voluptates laborum voluptatem
-              temporibus ut adipisci consectetur placeat, aliquam quidem
-              veritatis quos magnam sint dolore cupiditate eaque blanditiis
-              exercitationem facilis quia corporis? Consequuntur, omnis. In,
-              non!
-            </p>
+            <div className={styles.featureWrap} key={`feature-${selected.id}`}>
+              <h3 className={styles.featureTitle}>{selected.feature}</h3>
+            </div>
+            <div className={styles.copyWrap}>
+              <p
+                className={`${styles.copy} ${styles.fadeIn}`}
+                key={selected.id}
+              >
+                {selected.desc}
+              </p>
+            </div>
           </div>
         </div>
-
-        {selected && (
-          <Modal isOpen={true} onClose={closeModal}>
-            <div className={styles.modalContent}>
-              <span className={styles.index}>{selected.id}</span>
-              <span className={styles.index}>{selected.icon}</span>
-              <h2 className={styles.modalHeading}>{selected.feature}</h2>
-              <p className={styles.modalCopy}>{selected.desc}</p>
-            </div>
-          </Modal>
-        )}
       </section>
     </LayoutWrapper>
   );

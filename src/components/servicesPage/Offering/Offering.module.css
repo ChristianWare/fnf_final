@@ -1,5 +1,6 @@
 .container {
-  padding: 10rem;
+  padding: 20rem 0rem;
+  /* padding-top: 0rem; */
 }
 
 .content {
@@ -56,7 +57,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1068px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
   }

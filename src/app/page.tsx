@@ -1,6 +1,5 @@
 import Features from "@/components/aboutPage/Features/Features";
 import AboutUsSection from "@/components/homePage/AboutUsSection/AboutUsSection";
-import ApproachTestimonialsIntro from "@/components/homePage/ApproachTestimonialsIntro/ApproachTestimonialsIntro";
 import Benefits from "@/components/homePage/Benefits/Benefits";
 import Hero from "@/components/homePage/Hero/Hero";
 import ProblemSection from "@/components/homePage/ProblemSection/ProblemSection";
@@ -12,6 +11,7 @@ import ContactHero from "@/components/contactPage/ContactHero/ContactHero";
 import Faq from "@/components/shared/Faq/Faq";
 import OurTeam from "@/components/aboutPage/OurTeam/OurTeam";
 import Circle from "@/components/homePage/Circle/Circle";
+import Offering from "@/components/servicesPage/Offering/Offering";
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
       <AboutUsSection />
       <WorkPageIntro />
       <Benefits />
-      <ApproachTestimonialsIntro />
+      <Offering />
       <Features />
       <Circle />
       <Stats />
