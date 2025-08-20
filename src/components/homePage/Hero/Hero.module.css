@@ -1,6 +1,6 @@
 .container {
   position: relative;
-  overflow: visible;
+  overflow: hidden;
   margin: 1rem;
   background-color: var(--tan);
 }
@@ -70,42 +70,74 @@
   width: 100%;
 }
 
-.imgContainer {
-  position: relative;
-  width: 100%;
-  height: 450px;
+.circleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 15rem; */
 }
 
-/* .imgContainer::before {
+.pulsingCircles {
+  position: absolute;
+  width: 304px;
+  height: 304px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.pulsingCircles::before,
+.pulsingCircles::after,
+.pulsingCircles div {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  border-radius: 50%;
   width: 100%;
   height: 100%;
-  background-color: var(--yellow);
-  opacity: 0.2;
-  border-radius: 15px;
-  -webkit-mask-image: url(/icons/blob.svg);
-  mask-image: url(/icons/blob.svg);
-  -webkit-mask-position: 50% center;
-  mask-position: 50% center;
-  -webkit-mask-size: auto 100%;
-  mask-size: auto 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  animation: rotate 10s linear infinite;
+  border: 2px solid var(--blue);
+  top: -4px;
+  left: -4px;
+  transform: scale(1);
+  animation: pulse 2s infinite ease-in-out;
 }
 
-@keyframes rotate {
-  100% {
-    transform: rotate(360deg);
-  }
-} */
+.pulsingCircles::before {
+  animation-delay: 0s;
+}
+
+.pulsingCircles::after {
+  animation-delay: 0.5s;
+  border: 3px solid var(--blue);
+}
+
+.pulsingCircles div {
+  animation-delay: 1s;
+  border: 4px solid var(--blue);
+}
+
+.imgContainer {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  /* background-color: var(--tan); */
+  border-radius: 50%;
+  z-index: 2;
+}
 
 .img {
-  object-fit: contain;
-  border-radius: 15px;
+  padding: 4rem;
+  object-fit: cover;
+  /* border-radius: 50%; */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 1268px) {
@@ -127,14 +159,14 @@
   }
 
   .imgContainer {
-    width: 100%;
+    width: 300px;
     height: 300px;
   }
 }
 
 @media screen and (max-width: 568px) {
   .content {
-    margin-top: 5rem;
+    margin-top: 6rem;
   }
 
   .top {
@@ -151,12 +183,20 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 4rem;
-    width: 60%;
+    width: 80%;
   }
 
   .imgContainer {
-    height: 300px;
+    height: 275px;
+    width: 275px;
   }
+
+  .pulsingCircles::before,
+.pulsingCircles::after,
+.pulsingCircles div {
+  animation: none;
+  display: none;
+}
 }
 
 @media screen and (max-width: 380px) {

@@ -24,7 +24,7 @@ const Logo = ({
     >
       <Image src={Img1} alt='' title='' className={styles.img} />
       {/* <Calendar className={styles.icon} /> */}
-      Fonts & Footers
+      <span className={styles.text}>Fonts & Footers</span>
     </Link>
   );
 };

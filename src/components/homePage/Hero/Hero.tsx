@@ -45,7 +45,7 @@ export default function Hero() {
             </div>
           </div>
           <div className={styles.right}>
-            <div className={styles.imgContainer}>
+            {/* <div className={styles.imgContainer}>
               <Image
                 src={Img1}
                 alt='Hero image'
@@ -54,6 +54,12 @@ export default function Hero() {
                 priority
                 quality={100}
               />{" "}
+            </div> */}
+            <div className={styles.circleContainer}>
+              <div className={styles.pulsingCircles} />
+              <div className={styles.imgContainer}>
+                <Image src={Img1} alt='' fill className={styles.img} />
+              </div>
             </div>
           </div>
         </div>
