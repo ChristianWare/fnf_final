@@ -27,7 +27,6 @@
 }
 
 .left {
-  /* max-width: 400px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,4 +216,20 @@
   font-family: var(--PPNeueMontrealMediumThick);
   font-size: 2rem;
   color: var(--tan);
+}
+
+@media screen and (max-width: 1068px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    max-width: 500px;
+  }
+
+  .outerCircle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 }
