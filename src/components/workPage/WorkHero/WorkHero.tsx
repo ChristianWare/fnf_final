@@ -1,10 +1,7 @@
 import ProjectSection from "@/components/homePage/ProjectSection/ProjectSection";
 import styles from "./WorkHero.module.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
-import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
-import Image from "next/image";
-import Img1 from "../../../../public/images/work.png";
-import Button from "@/components/shared/Button/Button";
+
 
 export default function WorkHero() {
   return (
