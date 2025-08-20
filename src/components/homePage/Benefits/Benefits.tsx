@@ -4,26 +4,41 @@ import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import Fast from "../../../../public/images/fast.png";
 import Pricing from "../../../../public/images/pricing.png";
 import Everything from "../../../../public/images/everything.png";
+import Person from "../../../../public/images/person.png";
+import Goal from "../../../../public/images/goal.png";
+import Updates from "../../../../public/images/updates.png";
 import Image from "next/image";
 
 const data = [
   {
     id: 1,
     title: "Fast and Reliable Delivery",
-    desc: "We move at the speed of creativity — and caffeine. Your deadlines won't even see us coming.",
     src: Fast,
   },
   {
     id: 2,
     title: "Clear, No-Surprise Pricing",
-    desc: "No hidden fees, no sneaky charges — just clear, honest pricing and work that makes you wonder.",
     src: Pricing,
   },
   {
     id: 3,
     title: "Everything, Under One Roof",
-    desc: "Design? Branding? Websites? TikTok dances? (Okay, maybe not that last one... yet.)",
     src: Everything,
+  },
+  {
+    id: 4,
+    title: "Fixed Milestone for Progress",
+    src: Goal,
+  },
+  {
+    id: 5,
+    title: "Daily/Weekly Updates",
+    src: Updates,
+  },
+  {
+    id: 6,
+    title: "Single Point of Contact",
+    src: Person,
   },
 ];
 
@@ -51,7 +66,6 @@ export default function Benefits() {
                 />
               </div>
               <h3 className={styles.title}>{x.title}</h3>
-              {/* <p className={styles.desc}>{x.desc}</p> */}
             </div>
           ))}
         </div>

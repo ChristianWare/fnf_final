@@ -1,5 +1,4 @@
 .container {
-  
   padding: 5rem 0rem;
   width: 100%;
 }
@@ -21,7 +20,8 @@
 .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 5rem;
+  grid-row-gap: 10rem;
   margin-top: 5rem;
 }
 
@@ -32,12 +32,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  padding: 3rem;
+  /* padding: 3rem; */
 }
-
-/* .card:nth-child(1) {
-  background-color: var(--yellow);
-} */
 
 .imgContainer {
   position: relative;
@@ -53,7 +49,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: aliceblue; */
   background-color: var(--pink);
   opacity: 0.3;
   border-radius: 15px;
@@ -69,12 +64,27 @@
 }
 
 .card:nth-child(1) .imgContainer::before {
-  background-color: var(--green);
+  background-color: var(--blue);
   opacity: 0.3;
 }
 
 .card:nth-child(2) .imgContainer::before {
+  background-color: chartreuse;
+  opacity: 0.1;
+}
+
+.card:nth-child(4) .imgContainer::before {
+  background-color: var(--green);
+  opacity: 0.1;
+}
+
+.card:nth-child(5) .imgContainer::before {
   background-color: var(--yellow);
+  opacity: 0.1;
+}
+
+.card:nth-child(6) .imgContainer::before {
+  background-color: var(--blueii);
   opacity: 0.1;
 }
 
@@ -88,35 +98,13 @@
   object-fit: contain;
 }
 
-/* .blue {
-  background-color: var(--blue);
-}
-.yellow {
-  background-color: var(--yellow);
-}
-.purple {
-  background-color: var(--purple);
-}
-.green {
-  background-color: var(--green);
-} */
-
 .title {
   text-align: center;
-  /* font-size: 3.2rem; */
   font-family: var(--PPNeueMontrealMediumThick);
-  /* color: var(--blue); */
-  /* font-weight: 500; */
-}
-
-.desc {
-  font-size: 1.4rem;
-  text-align: center;
 }
 
 .icon {
   font-size: 10rem;
-  /* transform: rotate(45deg); */
   color: var(--blackii);
 }
 
@@ -127,27 +115,15 @@
 }
 
 @media screen and (max-width: 768px) {
-  .content {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2rem;
-  }
-
-  /* .card {
-    gap: 5rem;
-  } */
-
-  .desc {
-    width: 60%;
+  .imgContainer {
+    width: 190px;
+    height: 190px;
   }
 }
 
 @media screen and (max-width: 568px) {
   .imgContainer {
-    width: 200px;
-    height: 200px;
-  }
-
-  .desc {
-    width: 90%;
+    width: 120px;
+    height: 120px;
   }
 }

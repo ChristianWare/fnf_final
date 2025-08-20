@@ -1,11 +1,10 @@
 .container {
-  background-color: var(--black);
+  background-color: var(--yellow);
   border-radius: 25px;
   position: relative;
   padding: 5rem 5rem;
   padding-bottom: 2rem;
-   margin: 20rem 0rem;
-
+  margin: 20rem 0rem;
 }
 
 .bottom {
@@ -23,7 +22,7 @@
 }
 
 .heading {
-  color: var(--tan);
+  /* color: var(--tan); */
   width: 70%;
 }
 
@@ -33,10 +32,8 @@
 }
 
 .leftCopy {
-  color: var(--tan);
   width: 80%;
   font-size: 1.8rem;
-  color: var(--textii);
 }
 
 .imgContainer {
@@ -53,7 +50,6 @@
 
 .left {
   display: flex;
-
   align-items: center;
   justify-content: center;
   gap: 2rem;
@@ -84,15 +80,14 @@
 
 .title {
   margin-bottom: 1rem;
-  color: var(--tan);
   font-weight: 700 !important;
   font-family: var(--inter);
   font-size: 1.4rem;
 }
-
+/* 
 .description {
   color: var(--gray);
-}
+} */
 
 .iconBox {
   display: flex;
@@ -101,7 +96,7 @@
 }
 
 .icon {
-  color: var(--blue);
+  color: var(--black);
   font-size: 6rem;
 }
 

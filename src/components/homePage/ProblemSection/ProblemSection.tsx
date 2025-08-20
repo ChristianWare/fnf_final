@@ -49,8 +49,8 @@ export default function ProblemSection() {
             <div className={styles.sectionHeadingContainer}>
               <SectionIntro
                 title='Final Results'
-                color='blue'
-                borderColor='borderColorBlue'
+                color='black'
+                borderColor='borderColorBlack'
               />
             </div>
             <h2 className={styles.heading}>

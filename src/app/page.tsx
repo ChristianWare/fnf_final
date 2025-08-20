@@ -16,7 +16,9 @@ import Stats from "@/components/homePage/Stats/Stats";
 import ServicesHero from "@/components/servicesPage/ServicesHero/ServicesHero";
 import WorkPageIntro from "@/components/workPage/WorkPageIntro/WorkPageIntro";
 import Specialize from "@/components/aboutPage/Specialize/Specialize";
-import ServicesSection from "@/components/homePage/ServicesSection/ServicesSection";
+import ContactHero from "@/components/contactPage/ContactHero/ContactHero";
+// import ContactUsSection from "@/components/homePage/ContactUsSection/ContactUsSection";
+import Faq from "@/components/shared/Faq/Faq";
 
 export default function Home() {
   return (
@@ -30,14 +32,15 @@ export default function Home() {
       {/* <Solution /> */}
       {/* <OurTeam /> */}
       <ServicesHero />
-      <ServicesSection />
       {/* <HorizontalServices /> */}
       {/* <How /> */}
-      {/* <ServicesSection /> */}
-      {/* <Faq /> */}
+  
+
       <Stats />
       <Specialize />
       <ProblemSection />
+      <Faq />
+      <ContactHero />
       {/* <ContactUsSection /> */}
     </main>
   );
