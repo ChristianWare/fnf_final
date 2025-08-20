@@ -20,7 +20,7 @@ export default function ContactHero() {
             </h2>
             <p className={styles.copy}>
               Have a question, need a quote, or just curious whether a custom
-              booking platform is right for you? Drop a line below—no strings
+              booking platform is right for you? Drop a line — no strings
               attached. We reply within one business day.
             </p>
             <div className={styles.imgContainer}>

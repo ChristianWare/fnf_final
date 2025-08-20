@@ -32,17 +32,17 @@
 }
 
 .copy {
-  color: var(--textii);
+  color: var(--black);
   max-width: 500px;
-  font-size: 1.6rem;
+  font-family: var(--PPNeueMontrealMediumThick);
+  font-size: 2rem;
 }
 
 .imgContainer {
   position: relative;
   width: 100%;
   height: 350px;
-  margin-top: 5rem
-  ;
+  margin-top: 5rem;
 }
 
 .img {

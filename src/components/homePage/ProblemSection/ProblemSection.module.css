@@ -33,7 +33,8 @@
 
 .leftCopy {
   width: 80%;
-  font-size: 1.8rem;
+  font-family: var(--PPNeueMontrealMediumThick);
+  font-size: 2rem;
 }
 
 .imgContainer {
