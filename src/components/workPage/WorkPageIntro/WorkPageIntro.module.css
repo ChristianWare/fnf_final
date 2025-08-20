@@ -4,7 +4,7 @@
   margin: 1rem;
   position: relative;
   /* margin: 20rem 10rem; */
-  /* padding-top: 3rem; */
+  padding: 10rem 0rem;
 }
 
 .content {
@@ -138,6 +138,11 @@
 }
 
 @media screen and (max-width: 568px) {
+  .container {
+    padding: 5rem 0rem;
+    padding-bottom: 0rem;
+  }
+
   .top {
     align-items: flex-start;
     justify-content: flex-start;
@@ -147,7 +152,7 @@
     height: 200px;
   }
 
-  .right  {
+  .right {
     display: none;
   }
 }

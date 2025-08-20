@@ -1,5 +1,4 @@
 // import OurTeam from "@/components/aboutPage/OurTeam/OurTeam";
-// import Specialize from "@/components/aboutPage/Specialize/Specialize";
 // import ContactUsSection from "@/components/homePage/ContactUsSection/ContactUsSection";
 // import How from "@/components/homePage/How/How";
 // import Solution from "@/components/homePage/Solution/Solution";
@@ -15,8 +14,9 @@ import ProblemSection from "@/components/homePage/ProblemSection/ProblemSection"
 import Stats from "@/components/homePage/Stats/Stats";
 // import HorizontalServices from "@/components/servicesPage/HorizontalServices/HorizontalServices";
 import ServicesHero from "@/components/servicesPage/ServicesHero/ServicesHero";
-// import WorkHero from "@/components/workPage/WorkHero/WorkHero";
 import WorkPageIntro from "@/components/workPage/WorkPageIntro/WorkPageIntro";
+import Specialize from "@/components/aboutPage/Specialize/Specialize";
+import ServicesSection from "@/components/homePage/ServicesSection/ServicesSection";
 
 export default function Home() {
   return (
@@ -26,18 +26,17 @@ export default function Home() {
       <Benefits />
       <ApproachTestimonialsIntro />
       <WorkPageIntro />
-
-      {/* <WorkHero /> */}
       <Features />
       {/* <Solution /> */}
       {/* <OurTeam /> */}
-      {/* <Specialize /> */}
       <ServicesHero />
+      <ServicesSection />
       {/* <HorizontalServices /> */}
       {/* <How /> */}
       {/* <ServicesSection /> */}
       {/* <Faq /> */}
       <Stats />
+      <Specialize />
       <ProblemSection />
       {/* <ContactUsSection /> */}
     </main>
