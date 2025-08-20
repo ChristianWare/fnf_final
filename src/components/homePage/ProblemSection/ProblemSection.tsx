@@ -1,7 +1,7 @@
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./ProblemSection.module.css";
 import Image from "next/image";
-import Img1 from "../../../../public/images/happy.png";
+import Img1 from "../../../../public/images/happyiii.png";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import Check from "@/components/icons/Check/Check";
 

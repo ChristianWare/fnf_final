@@ -93,14 +93,12 @@
 
 .question {
   font-size: 2rem;
-  font-family: var(--SuisseIntlMedium);
+  font-family: var(--PPNeueMontrealMediumThick);
   text-transform: none;
-  /* width: 90%; */
 }
 
 .answer {
   margin-top: 2rem;
-  /* width: 90%; */
   color: var(--text);
 }
 
