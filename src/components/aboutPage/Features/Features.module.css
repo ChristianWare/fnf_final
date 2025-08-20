@@ -1,7 +1,6 @@
 .container {
   padding: 3rem;
-  /* padding-top: 15rem; */
-  padding-bottom: 10rem;
+  padding: 20rem 0rem;
   border-radius: 25px;
   z-index: 2;
 }
@@ -27,6 +26,8 @@
   margin-bottom: 3rem;
   color: var(--text);
   text-align: right;
+  font-family: var(--PPNeueMontrealMediumThick);
+  font-size: 2rem;
 }
 
 .dataContainer {
@@ -45,12 +46,12 @@
   padding-top: 3rem;
   border-radius: 10px;
   background-color: var(--tan);
-  border: 1px solid var(--gray);
+  border: 1px solid var(--text);
   transition: 0.2s all ease-in;
 }
 
 .content:hover {
-  background-color: var(--blue);
+  background-color: var(--text);
 }
 
 .content:nth-child(1),
@@ -64,7 +65,7 @@
 }
 
 .content:hover .title {
-  color: var(--white);
+  color: var(--tan);
 }
 
 .title,
@@ -72,7 +73,7 @@
   text-align: center;
   font-size: 1.6rem;
   text-transform: none;
-  color: var(--blue);
+  color: var(--text);
   transition: 0.2s all ease-in;
 }
 
@@ -88,7 +89,7 @@
 }
 
 .icon {
-  color: var(--blue);
+  color: var(--text);
   font-size: 5rem;
   transition: 0.2s all ease-in;
 }

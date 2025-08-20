@@ -51,7 +51,7 @@ export default function Benefits() {
                 />
               </div>
               <h3 className={styles.title}>{x.title}</h3>
-              <p className={styles.desc}>{x.desc}</p>
+              {/* <p className={styles.desc}>{x.desc}</p> */}
             </div>
           ))}
         </div>

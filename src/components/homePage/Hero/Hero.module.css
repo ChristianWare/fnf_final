@@ -2,7 +2,7 @@
   position: relative;
   overflow: visible;
   margin: 1rem;
-  /* margin-top: 10rem; */
+  background-color: var(--tan);
 }
 
 .container::before {
@@ -157,7 +157,6 @@
   .imgContainer {
     height: 300px;
   }
-
 }
 
 @media screen and (max-width: 380px) {

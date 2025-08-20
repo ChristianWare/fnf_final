@@ -1,16 +1,13 @@
-import Nav from "@/components/shared/Nav/Nav";
 import styles from "./WorkPageIntro.module.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import Image from "next/image";
 import Img1 from "../../../../public/images/workwoman.png";
 import Img2 from "../../../../public/images/workman.png";
+import ProjectSection from "@/components/homePage/ProjectSection/ProjectSection";
 
 export default function WorkPageIntro() {
   return (
     <section className={styles.container}>
-      <div className={styles.navContainer}>
-        <Nav color='black' hamburgerColor='hamburgerBlack' />
-      </div>
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
@@ -26,10 +23,10 @@ export default function WorkPageIntro() {
             </div>
           </div>
           <div className={styles.middle}>
-            <h1 className={styles.heading}>
+            <h2 className={styles.heading}>
               Our work <br />{" "}
               <span className={styles.span}>speaks for itself</span>
-            </h1>
+            </h2>
             <p className={styles.copy}>
               Have a question, need a quote, or just curious whether a custom
               booking platform is right for you? Drop a line below—no strings
@@ -49,6 +46,7 @@ export default function WorkPageIntro() {
             </div>
           </div>
         </div>
+        <ProjectSection />
       </LayoutWrapper>
     </section>
   );

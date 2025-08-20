@@ -1,8 +1,8 @@
 .container {
   position: relative;
   z-index: 2;
-  background-color: var(--tan);
-  border: 1px solid var(--gray);
+  /* background-color: var(--tan); */
+  border: 1px solid var(--black);
   border-radius: 20px;
   border-top-left-radius: 500px;
   border-top-right-radius: 500px;
@@ -45,7 +45,7 @@
 }
 
 .heading {
-  color: var(--text)
+  color: var(--black)
 }
 
 .introSection {

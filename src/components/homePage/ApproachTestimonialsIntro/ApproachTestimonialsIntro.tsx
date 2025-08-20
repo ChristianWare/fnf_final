@@ -1,7 +1,7 @@
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./ApproachTestimonialsIntro.module.css";
-import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
-import Arrow from "@/components/icons/Arrow/Arrow";
+// import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
+// import Arrow from "@/components/icons/Arrow/Arrow";
 
 export default function ApproachTestimonialsIntro() {
   return (
@@ -9,7 +9,7 @@ export default function ApproachTestimonialsIntro() {
       <LayoutWrapper>
         <div className={styles.top}>
           <div className={styles.topLeft}>
-            <h2 className={styles.heading}>Approach &amp; Testimonials</h2>
+            {/* <h2 className={styles.heading}>Approach &amp; Testimonials</h2> */}
           </div>
           <div className={styles.topRight}>
             <div className={styles.subheading}>
@@ -27,7 +27,7 @@ export default function ApproachTestimonialsIntro() {
             </p>
           </div>
         </div>
-        <div className={styles.content}>
+        {/* <div className={styles.content}>
           <div className={styles.left}>
             <SectionIntro title='Approach' />
             <h4 className={styles.headingii}>What sets us apart</h4>
@@ -38,7 +38,7 @@ export default function ApproachTestimonialsIntro() {
             <h4 className={styles.headingii}>What our clients say</h4>
             <Arrow className={styles.arrow} />
           </div>
-        </div>
+        </div> */}
       </LayoutWrapper>
     </div>
   );

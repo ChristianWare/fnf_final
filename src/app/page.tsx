@@ -13,8 +13,10 @@ import Benefits from "@/components/homePage/Benefits/Benefits";
 import Hero from "@/components/homePage/Hero/Hero";
 import ProblemSection from "@/components/homePage/ProblemSection/ProblemSection";
 import Stats from "@/components/homePage/Stats/Stats";
-import HorizontalServices from "@/components/servicesPage/HorizontalServices/HorizontalServices";
-import WorkHero from "@/components/workPage/WorkHero/WorkHero";
+// import HorizontalServices from "@/components/servicesPage/HorizontalServices/HorizontalServices";
+import ServicesHero from "@/components/servicesPage/ServicesHero/ServicesHero";
+// import WorkHero from "@/components/workPage/WorkHero/WorkHero";
+import WorkPageIntro from "@/components/workPage/WorkPageIntro/WorkPageIntro";
 
 export default function Home() {
   return (
@@ -22,17 +24,20 @@ export default function Home() {
       <Hero />
       <AboutUsSection />
       <Benefits />
-      <Stats />
-      <WorkHero />
+      <ApproachTestimonialsIntro />
+      <WorkPageIntro />
+
+      {/* <WorkHero /> */}
       <Features />
       {/* <Solution /> */}
       {/* <OurTeam /> */}
       {/* <Specialize /> */}
-      <HorizontalServices />
-      <ApproachTestimonialsIntro />
+      <ServicesHero />
+      {/* <HorizontalServices /> */}
       {/* <How /> */}
       {/* <ServicesSection /> */}
       {/* <Faq /> */}
+      <Stats />
       <ProblemSection />
       {/* <ContactUsSection /> */}
     </main>

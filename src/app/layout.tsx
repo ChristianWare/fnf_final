@@ -6,7 +6,7 @@ import Footer from "@/components/shared/Footer/Footer";
 import FinalCTA from "@/components/shared/FinalCTA/FinalCTA";
 import { auth } from "../../auth";
 import { SessionProvider } from "next-auth/react";
-// import Nav from "@/components/shared/Nav/Nav";
+import styles from './Layout.module.css'
 
 const inter = Inter({
   variable: "--inter",
@@ -76,8 +76,7 @@ export default async function RootLayout({
           className={`${inter.variable} ${PPNeueMontrealMedium.variable} ${PPNeueMontrealMediumThick.variable} ${bebasNeue.variable} ${JetBrainsMonoRegular.variable}
             ${PerfectlyNinetiesItalic.variable}`}
         >
-          {/* <Nav /> */}
-          {children}
+          <div className={styles.container}>{children}</div>
           <FinalCTA />
           <Footer />
         </body>

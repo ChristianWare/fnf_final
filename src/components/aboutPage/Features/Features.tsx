@@ -10,6 +10,7 @@ import Edit from "@/components/icons/Edit/Edit";
 import Clock from "@/components/icons/Clock/Clock";
 import Listing from "@/components/icons/Listing/Listing";
 import Payment from "@/components/icons/Payment/Payment";
+import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 // import ReviewSection from "../ReviewSection/ReviewSection";
 
 const ecommerceFeatures = [
@@ -110,10 +111,13 @@ export default function Features() {
     <LayoutWrapper>
       <section className={styles.container} id='features'>
         <div className={styles.top}>
+          <div className={styles.sectionHeadingContainer}>
+            <SectionIntro title='Features' />
+          </div>
           <h2 className={styles.heading}>Features of our booking websites</h2>
-          <span className={styles.span}>
+          {/* <span className={styles.span}>
             Everything you need to fill calendars and cut no-shows
-          </span>
+          </span> */}
           <p className={styles.copy}>
             Fonts&nbsp;&amp;&nbsp;Footers delivers a fully custom booking
             solution—handling scheduling, deposits, reminders, and real-time
