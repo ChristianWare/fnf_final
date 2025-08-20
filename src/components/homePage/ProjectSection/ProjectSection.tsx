@@ -9,7 +9,7 @@ export default function ProjectSection() {
         <div className={styles.content}>
          
           <div className={styles.bottom}>
-            {projects.slice(0, 3).map((project) => (
+            {projects.map((project) => (
               <ProjectDetails key={project.id} project={project} />
             ))}
           </div>

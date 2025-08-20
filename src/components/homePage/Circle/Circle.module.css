@@ -1,8 +1,38 @@
 .container {
   width: 100%;
-  max-width: 400px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 5rem 10rem;
+  background-color: var(--black);
+  border-radius: 25px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  text-align: center;
+  color: var(--tan);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  margin-top: 5rem;
+}
+
+.left {
+  /* max-width: 400px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  padding-top: 0rem;
 }
 
 .outerCircle {
@@ -10,7 +40,7 @@
   width: 100%;
   height: 0;
   padding-bottom: 100%;
-  border: 2px solid var(--gray);
+  border: 2px solid var(--tan);
   border-radius: 50%;
   border-bottom-right-radius: 10px;
   margin: 0 auto;
@@ -27,7 +57,7 @@
 }
 
 .curveText textPath {
-  fill: var(--black);
+  fill: var(--yellow);
 }
 
 .outerCircle:after {
@@ -65,7 +95,7 @@
     transform: translate(-50%, -50%) scale(1);
   }
   50% {
-    background-color: var(--yellow);
+    background-color: var(--blue);
     transform: translate(-50%, -50%) scale(1.08);
   }
 } */
@@ -103,8 +133,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--tan);
-  color: var(--blackii);
+  background-color: var(--blue);
+  color: var(--tan);
   font-size: clamp(1rem, 4vw, 2rem);
   cursor: pointer;
   overflow: hidden;
@@ -116,28 +146,33 @@
 .quad2:hover,
 .quad3:hover,
 .quad4:hover {
-  background-color: var(--yellow);
+  background-color: var(--blue);
 }
 
 .quad1 {
-  border: 2px solid var(--gray);
+  border: 2px solid var(--yellow);
   border-top-left-radius: 100%;
+  background-color: var(--yellow);
+  color: var(--black);
 }
 
 .quad2 {
-  border: 2px solid var(--gray);
+  border: 2px solid var(--tan);
   border-top-right-radius: 100%;
+  background-color: transparent;
 }
 
 .quad3 {
-  border: 2px solid var(--gray);
   border-bottom-left-radius: 100%;
+  border: 2px solid var(--tan);
+  background-color: transparent;
 }
 
 .quad4 {
-  border: 2px solid var(--gray);
   border-top-left-radius: 100%;
   border-bottom-right-radius: 10px;
+  border: 2px solid var(--tan);
+  background-color: transparent;
 }
 
 .option {
@@ -146,7 +181,7 @@
 
 .icon {
   font-size: 3rem;
-  color: var(--blackii);
+  color: var(--black);
 }
 
 .quad2 .option {
@@ -170,4 +205,16 @@
   font-size: 2rem;
   letter-spacing: 0px;
   color: var(--black);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy {
+  font-family: var(--PPNeueMontrealMediumThick);
+  font-size: 2rem;
+  color: var(--tan);
 }

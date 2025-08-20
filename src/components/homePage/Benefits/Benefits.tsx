@@ -11,9 +11,24 @@ import Image from "next/image";
 
 const data = [
   {
+    id: 1.1,
+    title: "",
+    src: "",
+  },
+  {
+    id: 1.2,
+    title: "",
+    src: "",
+  },
+  {
     id: 1,
     title: "Fast and Reliable Delivery",
     src: Fast,
+  },
+  {
+    id: 1.3,
+    title: "",
+    src: "",
   },
   {
     id: 2,
@@ -56,15 +71,17 @@ export default function Benefits() {
         <div className={styles.content}>
           {data.map((x) => (
             <div className={styles.card} key={x.id}>
-              <div className={styles.imgContainer}>
-                <Image
-                  src={x.src}
-                  alt={x.title}
-                  title={x.title}
-                  fill
-                  className={styles.img}
-                />
-              </div>
+              {x.src && (
+                <div className={styles.imgContainer}>
+                  <Image
+                    src={x.src}
+                    alt={x.title}
+                    title={x.title}
+                    fill
+                    className={styles.img}
+                  />
+                </div>
+              )}
               <h3 className={styles.title}>{x.title}</h3>
             </div>
           ))}

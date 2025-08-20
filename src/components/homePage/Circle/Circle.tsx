@@ -1,4 +1,3 @@
-
 "use client";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -9,6 +8,8 @@ import Analytics from "@/components/icons/Calendar/Calendar";
 import Clock from "@/components/icons/Listing/Listing";
 import CloudPrez from "@/components/icons/Integration/Integration";
 import Multiple from "@/components/icons/Analytics/Analytics";
+import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
+import LayoutWrapper from "@/components/shared/LayoutWrapper";
 
 const data = [
   {
@@ -37,7 +38,6 @@ const data = [
   },
 ];
 
-
 export default function Circle() {
   const [selected, setSelected] = useState<(typeof data)[0] | null>(null);
 
@@ -50,66 +50,93 @@ export default function Circle() {
   };
 
   return (
-    <section className={styles.container}>
-      <div className={styles.outerCircle}>
-        <svg
-          className={styles.curveText}
-          viewBox='0 0 500 500'
-          preserveAspectRatio='xMidYMid meet'
-        >
-          <defs>
-            <path
-              id='circlePath'
-              d='
+    <LayoutWrapper>
+      <section className={styles.container}>
+        <div className={styles.top}>
+          <div className={styles.sectionHeadingContainer}>
+            <SectionIntro
+              title='Our Process'
+              color='white'
+              borderColor='borderColorWhite'
+            />
+          </div>
+          <h2 className={styles.heading}>How we work</h2>
+        </div>
+        <div className={styles.content}>
+          <div className={styles.left}>
+            <div className={styles.outerCircle}>
+              <svg
+                className={styles.curveText}
+                viewBox='0 0 500 500'
+                preserveAspectRatio='xMidYMid meet'
+              >
+                <defs>
+                  <path
+                    id='circlePath'
+                    d='
                 M250,250
                 m-225,0
                 a225,225 0 1,1 450,0
                 a225,225 0 1,1 -450,0
               '
-            />
-          </defs>
-          <text
-            fontFamily='var(--SuisseIntlCondensed)'
-            fontSize='24'
-            fill='var(--blackii)'
-          >
-            <textPath
-              href='#circlePath'
-              startOffset='25%'
-              textAnchor='middle'
-              dy='-8'
-            >
-              Select an Option
-            </textPath>
-          </text>
-        </svg>
+                  />
+                </defs>
+                <text
+                  fontFamily='var(--SuisseIntlCondensed)'
+                  fontSize='24'
+                  fill='var(--yellow)'
+                >
+                  <textPath
+                    href='#circlePath'
+                    startOffset='25%'
+                    textAnchor='middle'
+                    dy='-8'
+                  >
+                    Select an Option
+                  </textPath>
+                </text>
+              </svg>
 
-        <div className={styles.innerCircle}>
-          {data.map((item, index) => (
-            <div
-              key={item.id}
-              className={(styles as any)[`quad${index + 1}`]}
-              onClick={() => openModal(item)}
-            >
-              0{item.id}
-              {/* {item.icon} */}
+              <div className={styles.innerCircle}>
+                {data.map((item, index) => (
+                  <div
+                    key={item.id}
+                    className={(styles as any)[`quad${index + 1}`]}
+                    onClick={() => openModal(item)}
+                  >
+                    0{item.id}
+                    {/* {item.icon} */}
+                  </div>
+                ))}
+              </div>
+
+              {/* <div className={styles.centerCircle} /> */}
             </div>
-          ))}
+          </div>
+          <div className={styles.right}>
+            <p className={styles.copy}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+              voluptatum optio animi repudiandae ipsa corporis placeat rerum et
+              deserunt ea. Beatae odio eius iure voluptates laborum voluptatem
+              temporibus ut adipisci consectetur placeat, aliquam quidem
+              veritatis quos magnam sint dolore cupiditate eaque blanditiis
+              exercitationem facilis quia corporis? Consequuntur, omnis. In,
+              non!
+            </p>
+          </div>
         </div>
 
-        {/* <div className={styles.centerCircle} /> */}
-      </div>
-
-      {selected && (
-        <Modal isOpen={true} onClose={closeModal}>
-          <div className={styles.modalContent}>
-            <span className={styles.index}>{selected.id}</span>
-            <span className={styles.index}>{selected.icon}</span>
-            <h2 className={styles.modalHeading}>{selected.feature}</h2>
-            <p className={styles.modalCopy}>{selected.desc}</p>
-          </div>
-        </Modal>
-      )}
-    </section>
+        {selected && (
+          <Modal isOpen={true} onClose={closeModal}>
+            <div className={styles.modalContent}>
+              <span className={styles.index}>{selected.id}</span>
+              <span className={styles.index}>{selected.icon}</span>
+              <h2 className={styles.modalHeading}>{selected.feature}</h2>
+              <p className={styles.modalCopy}>{selected.desc}</p>
+            </div>
+          </Modal>
+        )}
+      </section>
+    </LayoutWrapper>
   );
 }

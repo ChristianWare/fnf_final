@@ -1,6 +1,7 @@
 .container {
   padding: 3rem;
   padding: 20rem 0rem;
+  padding-top: 0rem;
   border-radius: 25px;
   z-index: 2;
 }
@@ -46,7 +47,7 @@
   padding-top: 3rem;
   border-radius: 10px;
   background-color: var(--tan);
-  border: 1px solid var(--text);
+  border: 1px solid var(--textii);
   transition: 0.2s all ease-in;
 }
 

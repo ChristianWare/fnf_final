@@ -1,9 +1,10 @@
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./OurTeam.module.css";
-import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
+// import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import Image from "next/image";
 import ChrisImg from "../../../../public/images/chris.png";
-import Button from "@/components/shared/Button/Button";
+import { founderPoints } from "@/lib/data";
+import Check from "@/components/icons/Check/Check";
 
 export default function OurTeam() {
   return (
@@ -12,42 +13,59 @@ export default function OurTeam() {
         <div className={styles.content}>
           <div className={styles.left}>
             <div className={styles.circleContainer}>
-              <div className={styles.pulsingCircles}></div>
+              <div className={styles.pulsingCircles} />
               <div className={styles.imgContainer}>
                 <Image src={ChrisImg} alt='' fill className={styles.img} />
               </div>
             </div>
           </div>
           <div className={styles.right}>
-            <div className={styles.sectionHeadingContainer}>
+            <h2 className={styles.heading}>
+              Founder-led, partner-minded—focused on your bookings
+            </h2>
+            <p className={styles.copy}>
+              When you’re growing, you don’t need another pretty website. You
+              need a partner who cares about filled calendars, fewer no-shows,
+              and clear next steps. I’m Chris, founder of Fonts & Footers. We’re
+              a new studio with a sharp niche: direct-booking websites that move
+              visitors to paid appointments—fast.
+              <br />
+              <br />
+              I’ve shaped our approach through early client work and hands-on
+              pilots across salons, pet grooming, transport, clinics, rentals,
+              and multi-location teams. The goal is simple: remove friction,
+              protect margins, and make the “book now” path so obvious it wins
+              by default.
+            </p>
+            <span className={styles.whyThisMatters}>
+              Why this matters for your business:
+            </span>
+            <ul className={styles.founderPointsList}>
+              {founderPoints.map((point) => (
+                <li key={point.id} className={styles.founderPoint}>
+                  <Check className={styles.icon} /> {point.text}
+                </li>
+              ))}
+            </ul>
+            <div className={styles.signatureBox}>
+              <p className={styles.signature}>Cheers, Chris</p>
+              <p className={styles.title}>Founder - Fonts & Footers</p>
+            </div>
+            {/* <div className={styles.sectionHeadingContainer}>
               <SectionIntro
                 title='Chris, Founder of Fonts & Footers'
-                // color='white'
+                color='blue'
+                borderColor='borderColorBlue'
               />
-            </div>
-            <h2 className={styles.heading}>
-              {/* At its core, <span className={styles.span}>Fonts & Footers</span>{" "}
-              is just me <span className={styles.span}> — Chris — </span>your
-              dedicated full-stack developer and founder. With over eight years
-              of hands-on experience crafting high-performance e-commerce stores
-              and booking platforms, I work as an{" "}
-              <span className={styles.span}>extension of your team</span> to
-              deliver clean, conversion-focused sites. */}
-              Fonts & Footers is a specialist studio focused on one thing:
-              turning visitors into{" "}
-              <span className={styles.span}> booked appointments.</span> I’m
-              Chris, founder. After years building for salons, clinics, rentals,
-              and transport, we’ve honed a repeatable system that launches
-              quickly and converts reliably.
-            </h2>
-            <div className={styles.btnContainer}>
+            </div> */}
+            {/* <div className={styles.btnContainer}>
               <Button
                 href='/'
                 btnType='blue'
                 text='Find me on linkedIn'
                 arrow
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </LayoutWrapper>

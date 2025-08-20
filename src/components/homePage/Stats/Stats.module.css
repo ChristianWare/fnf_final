@@ -20,9 +20,9 @@
 }
 
 .copy {
-  color: var(--textii);
-  font-size: 1.8rem;
-  width: 80%;
+  color: var(--text);
+  font-family: var(--PPNeueMontrealMediumThick);
+  font-size: 2rem;
 }
 
 .mapDataBox {

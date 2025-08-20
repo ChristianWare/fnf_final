@@ -86,7 +86,7 @@
 
 .card:nth-child(7) {
   background-color: var(--tan);
-  border: 1px solid var(--gray);
+  border: 1px solid var(--black);
 }
 
 .blackDot {

@@ -87,10 +87,7 @@
 }
 
 .heading {
-  /* text-align: right; */
-  /* width: 80%; */
-  font-size: 3rem;
-  /* color: var(--tan); */
+  width: 80%;
 }
 
 .span {
@@ -98,8 +95,55 @@
   font-family: inherit;
 }
 
-.btnContainer {
-  margin-top: 3rem;
+.copy {
+  font-size: 1.8rem;
+  color: var(--text);
+  /* font-family: var(--JetBrainsMonoRegular); */
+}
+
+.whyThisMatters {
+  font-family: var(--PPNeueMontrealMediumThick);
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.founderPointsList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.founderPoint {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  font-size: 1.8rem;
+  color: var(--text);
+}
+
+.icon {
+  color: var(--blue);
+}
+
+.signature {
+  font-family: var(--PerfectlyNinetiesItalic);
+  font-size: 2rem;
+  color: var(--text);
+}
+
+.title {
+  font-size: 2rem;
+  font-family: var(--PPNeueMontrealMediumThick);
+  color: var(--text);
+}
+
+.sectionHeadingContainer {
+  margin-top: 2rem;
 }
 
 @keyframes pulse {

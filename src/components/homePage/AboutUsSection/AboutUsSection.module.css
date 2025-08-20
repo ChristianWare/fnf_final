@@ -45,7 +45,8 @@
   color: var(--textii);
   text-align: center;
   width: 40%;
-  font-size: 1.8rem;
+  font-family: var(--PPNeueMontrealMediumThick);
+  font-size: 2rem;
 }
 
 .span {
@@ -201,7 +202,8 @@
     padding: 7rem 0rem;
   }
 
-  .heading, .copy {
+  .heading,
+  .copy {
     text-indent: 0em;
     width: 100%;
     text-align: left;
