@@ -186,6 +186,10 @@
     width: 80%;
   }
 
+  .right {
+    display: none;
+  }
+
   .imgContainer {
     height: 275px;
     width: 275px;
