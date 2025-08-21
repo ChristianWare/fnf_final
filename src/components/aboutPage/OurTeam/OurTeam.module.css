@@ -1,15 +1,11 @@
 .container {
-  padding: 20rem 0rem;
+  padding: 5rem 0rem;
 }
 
 .content {
   display: grid;
   grid-template-columns: 2fr 4fr;
   grid-gap: 15rem;
-  /* background-color: var(--black); */
-  /* border-radius: 25px; */
-  /* padding: 15rem 4rem; */
-  /* overflow: hidden; */
 }
 
 .left {
@@ -23,7 +19,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-top: 15rem; */
 }
 
 .pulsingCircles {
@@ -101,10 +96,17 @@
   /* font-family: var(--JetBrainsMonoRegular); */
 }
 
+.box {
+  background-color: var(--black);
+  padding: 3rem;
+  border-radius: 15px;
+}
+
 .whyThisMatters {
   font-family: var(--PPNeueMontrealMediumThick);
   font-size: 2rem;
   margin-top: 2rem;
+  color: var(--tan);
 }
 
 .founderPointsList {
@@ -123,11 +125,11 @@
   justify-content: flex-start;
   gap: 2rem;
   font-size: 1.8rem;
-  color: var(--text);
+  color: var(--textii);
 }
 
 .icon {
-  color: var(--blue);
+  color: var(--tan);
 }
 
 .signature {
@@ -176,11 +178,6 @@
   .heading {
     width: 100%;
     text-align: center;
-  }
-
-  .right {
-    align-items: center;
-    justify-content: center;
   }
 }
 

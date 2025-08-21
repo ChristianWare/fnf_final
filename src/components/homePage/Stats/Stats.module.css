@@ -1,5 +1,5 @@
 .container {
-  padding: 20rem 0rem;
+  padding: 5rem 0rem;
 }
 
 .top {
@@ -173,6 +173,10 @@
 }
 
 @media screen and (max-width: 568px) {
+  .top {
+    width: 100%;
+  }
+  
   .imgContainer {
     height: 300px;
   }

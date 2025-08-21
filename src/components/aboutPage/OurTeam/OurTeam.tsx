@@ -37,16 +37,18 @@ export default function OurTeam() {
               protect margins, and make the “book now” path so obvious it wins
               by default.
             </p>
-            <span className={styles.whyThisMatters}>
-              Why this matters for your business:
-            </span>
-            <ul className={styles.founderPointsList}>
-              {founderPoints.map((point) => (
-                <li key={point.id} className={styles.founderPoint}>
-                  <Check className={styles.icon} /> {point.text}
-                </li>
-              ))}
-            </ul>
+            <div className={styles.box}>
+              <span className={styles.whyThisMatters}>
+                Why this matters for your business:
+              </span>
+              <ul className={styles.founderPointsList}>
+                {founderPoints.map((point) => (
+                  <li key={point.id} className={styles.founderPoint}>
+                    <Check className={styles.icon} /> {point.text}
+                  </li>
+                ))}
+              </ul>
+            </div>
             <div className={styles.signatureBox}>
               <p className={styles.signature}>Cheers, Chris</p>
               <p className={styles.title}>Founder - Fonts & Footers</p>

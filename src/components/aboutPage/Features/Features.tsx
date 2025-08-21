@@ -114,7 +114,11 @@ export default function Features() {
           <div className={styles.sectionHeadingContainer}>
             <SectionIntro title='Features' />
           </div>
-          <h2 className={styles.heading}>Features of our booking websites</h2>
+          <h2 className={styles.heading}>
+            {" "}
+            <span className={styles.span}>Features</span> of our booking
+            websites
+          </h2>
           {/* <span className={styles.span}>
             Everything you need to fill calendars and cut no-shows
           </span> */}
