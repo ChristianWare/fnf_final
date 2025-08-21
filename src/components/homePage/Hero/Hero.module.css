@@ -55,6 +55,10 @@
   font-size: 1.6rem;
 }
 
+.imgContainerii {
+  display: none;
+}
+
 .btnContainer {
   display: flex;
   align-items: center;
@@ -113,7 +117,7 @@
   border: 4px solid var(--blue);
 }
 
-.imgContainer {
+.imgContainer, .imgContainerii {
   position: relative;
   width: 450px;
   height: 450px;
@@ -200,6 +204,19 @@
   animation: none;
   display: none;
 }
+
+.imgContainerii {
+    display: block;
+    width: 100%;
+    height: 200px;
+  }
+
+  .img {
+    object-fit: contain;
+    padding: 0rem;
+  }
+
+
 }
 
 @media screen and (max-width: 380px) {

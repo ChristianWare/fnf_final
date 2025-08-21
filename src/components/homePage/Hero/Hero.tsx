@@ -35,6 +35,9 @@ export default function Hero() {
               visitors into confirmed appointments. Payments, reminders,
               reviews—done.
             </p>
+            <div className={styles.imgContainerii}>
+              <Image src={Img1} alt='' fill className={styles.img} />
+            </div>
             <div className={styles.btnContainer}>
               <Button
                 btnType='white'
