@@ -33,13 +33,21 @@
   justify-content: space-between;
   gap: 2rem;
   padding: 3rem;
-  border: 1px solid var(--textii);
+  border: 1px solid var(--lightGray);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(15, 12, 12, 0.1),
+    #f1f1f1 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 10px 10px;
 }
 
 .imgContainer {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 1rem;
 }
 
@@ -93,6 +101,7 @@
 .card:nth-child(2),
 .card:nth-child(4) {
   border: none;
+  /* background-image: none; */
 }
 
 @keyframes rotate {

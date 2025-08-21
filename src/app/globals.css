@@ -13,6 +13,7 @@
   --white: #fffefa;
   --tan: #f0efeb;
   --gray: #d3d1ce;
+  --lightGray: rgba(15, 12, 12, 0.1);
 }
 
 * {
@@ -68,8 +69,7 @@ h1 {
   font-size: 6rem;
   line-height: 1.1;
   letter-spacing: -0.5px;
-      font-family: var(--PPNeueMontrealMediumThick);
-
+  font-family: var(--PPNeueMontrealMediumThick);
 }
 
 h2 {
@@ -153,7 +153,6 @@ button {
   background: var(--yellow);
   color: var(--black);
 }
-
 
 @media screen and (max-width: 968px) {
   html {
