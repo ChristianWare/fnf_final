@@ -83,6 +83,8 @@
 
 .heading {
   width: 80%;
+  font-family: var(--PerfectlyNinetiesItalic);
+  color: var(--blue);
 }
 
 .span {
@@ -92,7 +94,9 @@
 
 .copy {
   font-size: 1.8rem;
-  color: var(--text);
+  color: var(--black);
+  font-family: var(--PPNeueMontrealMediumThick);
+  font-size: 2rem;
   /* font-family: var(--JetBrainsMonoRegular); */
 }
 

@@ -5,6 +5,7 @@ import Image from "next/image";
 import ChrisImg from "../../../../public/images/chris.png";
 import { founderPoints } from "@/lib/data";
 import Check from "@/components/icons/Check/Check";
+import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 
 export default function OurTeam() {
   return (
@@ -50,8 +51,15 @@ export default function OurTeam() {
               </ul>
             </div>
             <div className={styles.signatureBox}>
-              <p className={styles.signature}>Cheers, Chris</p>
-              <p className={styles.title}>Founder - Fonts & Footers</p>
+              {/* <p className={styles.signature}>
+                Sincerely, Chris
+              </p>
+              <p className={styles.title}>Founder - Fonts & Footers</p> */}
+              <SectionIntro
+                title='Chris - Founder of Fonts & Footers'
+                color='blue'
+                borderColor='borderColorBlue'
+              />
             </div>
             {/* <div className={styles.sectionHeadingContainer}>
               <SectionIntro

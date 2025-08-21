@@ -60,6 +60,7 @@
 
 .content:hover {
   background-color: var(--text);
+  background-image: none;
 }
 
 .content:nth-child(1),

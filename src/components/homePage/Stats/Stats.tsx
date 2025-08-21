@@ -3,7 +3,6 @@ import styles from "./Stats.module.css";
 import Image from "next/image";
 import Img1 from "../../../../public/images/stats.png";
 import Check from "@/components/icons/Check/Check";
-import Button from "@/components/shared/Button/Button";
 
 const data = [
   {
@@ -63,14 +62,14 @@ export default function Stats() {
                   </div>
                 ))}
               </div>
-              <div className={styles.btnContainer}>
+              {/* <div className={styles.btnContainer}>
                 <Button
                   href='/contact'
                   btnType='blue'
                   text='Book a 20-min demo'
                   arrow
                 />
-              </div>
+              </div> */}
             </div>
             <div className={styles.topRight}>
               <div className={styles.imgContainer}>
