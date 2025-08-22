@@ -48,7 +48,7 @@ export default function ProblemSection() {
           <div className={styles.right}>
             <div className={styles.sectionHeadingContainer}>
               <SectionIntro
-                title='Final Results'
+                title='Guarantee'
                 color='black'
                 borderColor='borderColorBlack'
               />
@@ -56,13 +56,16 @@ export default function ProblemSection() {
             <h2 className={styles.heading}>
               {/* Are you <span className={styles.span}>tired</span> of chasing DMs
               or <span className={styles.span}>losing money</span> to no-shows? */}
-              Stop losing bookings to DMs and dead forms.
+              {/* Stop losing bookings to DMs and dead forms. */}
+              Booked, Not Busywork—Guarantee
             </h2>
             <p className={styles.leftCopy}>
-              If your calendar isn’t full, it’s not your services—it’s the
+              {/* If your calendar isn’t full, it’s not your services—it’s the
               friction. Fonts & Footers removes it with clear offers, one-screen
               booking, automated reminders, and payment on file so no-shows
-              disappear.
+              disappear. */}
+              If your site doesn’t take real bookings within 14 days of launch,
+              I’ll fix the conversion blockers at no additional cost.
             </p>
             <div className={styles.dataMapBox}>
               {data.map((x, index) => (

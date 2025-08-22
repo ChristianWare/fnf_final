@@ -2,6 +2,12 @@
   padding: 10rem 0rem;
 }
 
+.heading {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
 .content {
   background-color: var(--black);
   border-radius: 25px;
@@ -20,14 +26,14 @@
   padding: 2rem 0rem;
 }
 
-.card:nth-child(3) {
+.card:last-child {
   border-bottom: none;
   padding-bottom: 0rem;
 }
 
 .title {
-  color: var(--textii);
-  font-size: 4rem;
+  color: var(--yellow);
+  font-size: 2rem;
   width: 90%;
   font-family: var(--PerfectlyNinetiesItalic);
 }

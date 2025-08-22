@@ -82,14 +82,12 @@
 }
 
 .heading {
-  width: 80%;
-  font-family: var(--PerfectlyNinetiesItalic);
-  color: var(--blue);
+  color: var(--black);
 }
 
 .span {
+  font-family: var(--PerfectlyNinetiesItalic);
   color: var(--blue);
-  font-family: inherit;
 }
 
 .copy {

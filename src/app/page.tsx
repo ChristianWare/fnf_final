@@ -13,6 +13,8 @@ import OurTeam from "@/components/aboutPage/OurTeam/OurTeam";
 import Circle from "@/components/homePage/Circle/Circle";
 // import Offering from "@/components/servicesPage/Offering/Offering";
 import Benefitsii from "@/components/homePage/Benefitsii/Benefitsii";
+import FinalCTA from "@/components/shared/FinalCTA/FinalCTA";
+import Reasons from "@/components/aboutPage/Reasons/Reasons";
 
 export default function Home() {
   return (
@@ -20,17 +22,18 @@ export default function Home() {
       <Hero />
       <AboutUsSection />
       <WorkPageIntro />
-      {/* <Benefits /> */}
+      <Specialize />
       <Benefitsii />
       {/* <Offering /> */}
       <Features />
-      <Circle />
       <Stats />
-      <Specialize />
-      <ProblemSection />
-      <OurTeam />
+      <Circle />
       <ServicesHero />
+      <Reasons />
+      <ProblemSection />
       <Faq />
+      <OurTeam />
+      <FinalCTA />
       <ContactHero />
     </main>
   );

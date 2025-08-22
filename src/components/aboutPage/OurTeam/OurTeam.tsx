@@ -3,8 +3,8 @@ import styles from "./OurTeam.module.css";
 // import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import Image from "next/image";
 import ChrisImg from "../../../../public/images/chris.png";
-import { founderPoints } from "@/lib/data";
-import Check from "@/components/icons/Check/Check";
+// import { founderPoints } from "@/lib/data";
+// import Check from "@/components/icons/Check/Check";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 
 export default function OurTeam() {
@@ -22,23 +22,19 @@ export default function OurTeam() {
           </div>
           <div className={styles.right}>
             <h2 className={styles.heading}>
-              Founder-led, partner-minded—focused on your bookings
+              Founder-led, partner-minded — <br />
+              <span className={styles.span}> focused on your bookings</span>
             </h2>
             <p className={styles.copy}>
               When you’re growing, you don’t need another pretty website. You
               need a partner who cares about filled calendars, fewer no-shows,
-              and clear next steps. I’m Chris, founder of Fonts & Footers. We’re
-              a new studio with a sharp niche: direct-booking websites that move
-              visitors to paid appointments—fast.
-              <br />
-              <br />
-              I’ve shaped our approach through early client work and hands-on
-              pilots across salons, pet grooming, transport, clinics, rentals,
-              and multi-location teams. The goal is simple: remove friction,
-              protect margins, and make the “book now” path so obvious it wins
-              by default.
+              and clear next steps. I’m Chris, founder of Fonts & Footers. Our
+              niche is sharp: direct-booking websites that move visitors to paid
+              appointments—fast. We track what matters—completion rate, show
+              rate, prepaid %, rebooking, membership mix, and LTV/CAC—so you
+              keep the relationship and the margin.
             </p>
-            <div className={styles.box}>
+            {/* <div className={styles.box}>
               <span className={styles.whyThisMatters}>
                 Why this matters for your business:
               </span>
@@ -49,7 +45,7 @@ export default function OurTeam() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
             <div className={styles.signatureBox}>
               {/* <p className={styles.signature}>
                 Sincerely, Chris

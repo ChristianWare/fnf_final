@@ -26,7 +26,7 @@ export default function Faq() {
             <SectionIntro title='Common Questions' />
           </div>
           <h2 className={styles.heading}>
-            <span className={styles.span}>Questions?</span> Answers.
+            <span className={styles.span}>Questions?</span> <br /> Answers.
           </h2>
         </div>
         <div className={styles.bottom}>

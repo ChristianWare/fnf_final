@@ -33,7 +33,7 @@ export default function Hero() {
               <span className={styles.span}> that actually book .</span>
             </h1>
             <p className={styles.copy}>
-              Ready to master direct booking and crush your revenue goals? I
+              Ready to master direct booking and crush your revenue goals? We
               build branded, conversion-first sites with one-screen checkout,
               deposits, and reminder automations.
             </p>

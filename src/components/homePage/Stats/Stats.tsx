@@ -7,11 +7,11 @@ import Check from "@/components/icons/Check/Check";
 const data = [
   {
     id: 1,
-    title: "One-screen booking (service → pro → time → pay)",
+    title: "One-screen booking, done in under 60 seconds",
   },
   {
     id: 2,
-    title: "Deposit checkout + SMS/email reminders to cut no-shows",
+    title: "Deposit checkout + reminders to cut no-shows",
   },
   {
     id: 3,
@@ -49,10 +49,10 @@ export default function Stats() {
                 your calendar
               </h2>
               <p className={styles.copy}>
-                Fonts &amp; Footers builds fast, branded booking sites that turn
-                visitors into paid appointments. Clear policies, deposits on
-                file, and automated reminders remove friction—so you keep the
-                relationship, the data, and the margin.
+                Fast, branded booking experiences turn visitors into paid
+                appointments. Clear policies, deposits on file, and automated
+                reminders remove friction—so you keep the relationship, the
+                data, and the margin.
               </p>
               <div className={styles.mapDataBox}>
                 {data.map((item) => (

@@ -845,22 +845,29 @@ export const qualities = [
 
 export const reasons = [
   {
-    id: 75,
-    title: "We supercharge service experiences",
-    description:
-      "Since the earliest online booking tools, we’ve believed direct booking is how local businesses build real relationships. Whether you take appointments online, by phone, or in person, your website should be the simplest, fastest path to a confirmed booking—owned by you, not a marketplace. We design and build that path: one screen, zero confusion, payment on file, policies upfront, reminders automated—so customers feel confident and you stay in control.",
+    id: 1,
+    title: "Pricing Playbook",
+    description: "Deposit levels & scarcity prompts.",
   },
   {
-    id: 76,
-    title: "We’ve built booking systems for the kinds of businesses you know",
-    description:
-      "Before Fonts & Footers was a studio, it was a repeatable system tested in real shops—salons and wellness studios, pet groomers, chauffeurs and private transport, clinics, vacation-rental direct booking, equipment rentals, and multi-location brands. We’ve lived the intake complexity, the pricing matrices, the “can we reschedule?” texts, and the Monday morning no-show reports. That experience is why our builds launch fast, convert reliably, and slot into your day-to-day without drama.",
+    id: 2,
+    title: "Policy Pack",
+    description: "No-show, cancellation, reschedule templates.",
   },
   {
-    id: 77,
-    title: "We pride ourselves on true partnership",
-    description:
-      "What sets us apart is how we work with owners and teams over the long term. We move in lock-step with your operations, integrate with the tools you already rely on, and keep scopes crystal clear. Our proposals are crafted to get you to MVP quickly—and our retainers are built to keep improving conversion, reducing no-shows, and opening new revenue (memberships, packages, gift cards) as you grow. You get: one point of contact, weekly progress, and a booking site that pays for itself.",
+    id: 3,
+    title: "Retention Scripts",
+    description: "Re-book, review request, and win-back messages.",
+  },
+  {
+    id: 4,
+    title: "Analytics Starter",
+    description: "Prebuilt dashboards for conversion and show rate.",
+  },
+  {
+    id: 5,
+    title: "Owner’s Walkthrough",
+    description: "15-minute video for your team.",
   },
 ] as const;
 
