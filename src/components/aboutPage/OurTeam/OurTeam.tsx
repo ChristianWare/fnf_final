@@ -53,8 +53,7 @@ export default function OurTeam() {
               <p className={styles.title}>Founder - Fonts & Footers</p> */}
               <SectionIntro
                 title='Chris - Founder of Fonts & Footers'
-                color='blue'
-                borderColor='borderColorBlue'
+              
               />
             </div>
             {/* <div className={styles.sectionHeadingContainer}>
