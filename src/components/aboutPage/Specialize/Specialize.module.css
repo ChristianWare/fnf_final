@@ -1,3 +1,11 @@
+:root {
+  --stickyTop: 20vh;
+  --cardGap: 1rem;
+  --cardMinH: clamp(300px, 20vh, 480px);
+  --cardStep: 28vh;
+  --fadeDur: 340ms;
+}
+
 .container {
   position: relative;
   padding: 5rem 0rem;
@@ -10,11 +18,10 @@
 }
 
 .left {
-  padding: 2rem 0rem;
   align-self: flex-start;
   position: -webkit-sticky;
   position: sticky;
-  top: 90px;
+  top: var(--stickyTop);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -27,7 +34,8 @@
   font-size: 3rem;
 }
 
-.imgContainer {
+.imgContainer,
+.imgContainerii {
   position: relative;
   width: 100%;
   height: 300px;
@@ -35,53 +43,72 @@
   margin-top: 5rem;
 }
 
-.img {
+.imgContainerii {
+  display: none;
+}
+
+.imageStack {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imgLayer {
+  position: absolute !important;
+  inset: 0;
   object-fit: contain;
+  opacity: 0;
+  transition: opacity var(--fadeDur) ease;
+  will-change: opacity;
+}
+.visible {
+  opacity: 1;
 }
 
 .right {
-  padding-top: 2rem;
+  height: 100%;
+  display: grid;
 }
-
 .mapDataBox {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-gap: var(--cardGap);
 }
 
 .card {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  position: relative;
-  background-color: var(--yellow);
-  border-radius: 15px;
-  align-self: flex-start;
+  grid-template-columns: 1fr;
   position: -webkit-sticky;
   position: sticky;
-  top: 90px;
+  top: var(--stickyTop);
   border: 1px solid var(--lightGray);
+  border-radius: 15px;
+  background-color: var(--yellow);
+  min-height: var(--cardMinH);
+  margin-bottom: var(--cardStep);
+  transform-origin: center top;
+  transition:
+    opacity var(--fadeDur) ease,
+    transform var(--fadeDur) ease,
+    box-shadow var(--fadeDur) ease;
+  transform-origin: center top;
 }
 
 .card:nth-child(1) {
   background-color: var(--blue);
 }
-
 .card:nth-child(3) {
   background-color: var(--purple);
 }
-
 .card:nth-child(4) {
   background-color: var(--green);
 }
-
 .card:nth-child(5) {
   background-color: var(--pink);
 }
-
 .card:nth-child(6) {
   background-color: var(--text);
 }
-
 .card:nth-child(7) {
   background-color: var(--tan);
   border: 1px solid var(--black);
@@ -98,23 +125,20 @@
   top: 20px;
   right: 20px;
 }
-
 .card:nth-child(6) .blackDot {
   background-color: var(--tan);
 }
 
 .cardLeft {
-  border-right: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
   padding: 2rem;
 }
-
 .id {
   font-size: 2.4rem;
   line-height: 1.1;
   font-family: var(--inter);
   font-weight: 700;
 }
-
 .feature {
   font-family: var(--inter);
   font-weight: 700;
@@ -124,8 +148,6 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
   gap: 5rem;
 }
 
@@ -141,18 +163,17 @@
   color: var(--tan);
 }
 
-.projectsBox {
-  margin-top: 10rem;
+.isInactive {
+  box-shadow: none;
 }
 
-@media screen and (max-width: 1268px) {
+@media screen and (max-width: 1068px) {
   .container {
-    padding: 3rem;
-    padding-top: 7rem;
+    padding: 0rem;
   }
 
   .content {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     gap: 3rem;
   }
 
@@ -160,45 +181,80 @@
     position: static;
   }
 
-  /* .imgContainer {
-    height: 350px;
-  } */
+  .imgContainer {
+    display: none;
+  }
+
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cardLeft {
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+
+  .imgContainerii {
+    display: block;
+    height: 170px;
+    margin-top: 0rem;
+    /* display: none; */
+  }
+
+  .imgSingle {
+    object-fit: contain;
+  }
 }
 
 @media screen and (max-width: 568px) {
+ :root {
+  --stickyTop: 15vh;
+
+}
+ 
   .container {
     padding: 0rem;
     padding-top: 9rem;
   }
 
-  .imgContainer {
-    height: 350px;
+  .card {
+    min-height: auto;
   }
 
+  .imgContainerii {
+    height: 100px;
+    /* display: none; */
+  }
   .heading {
     width: 100%;
     font-size: 2.7rem;
   }
-
-
-  .imgContainer {
-    height: 200px;
-  }
-
   .card {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    gap: 0rem;
+
   }
 
   .cardLeft {
     border-right: none;
+    gap: 0rem;
   }
-
   .id {
     display: block;
     margin-bottom: 1rem;
   }
-
   .desc {
     width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .imgLayer,
+  .card {
+    transition: none !important;
   }
 }

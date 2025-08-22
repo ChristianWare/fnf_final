@@ -1,6 +1,6 @@
 .container {
   border: 1px solid var(--text);
-  padding: 1rem 2rem;
+  padding: .8rem 2rem;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -25,11 +25,11 @@
 }
 
 .text {
-  font-family: var(--PerfectlyNinetiesItalic);
+    font-family: var(--JetBrainsMonoRegular);
   font-weight: 500;  color: var(--black);
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   text-align: center;
-  letter-spacing: .5px;
+  letter-spacing: -.5px;
 }
 
 .month {

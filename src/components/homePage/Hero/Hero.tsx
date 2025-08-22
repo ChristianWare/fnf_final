@@ -30,7 +30,7 @@ export default function Hero() {
               <span className={styles.span}> booking websites </span> <br />
               that fill calendars */}
               Direct Booking Websites <br />{" "}
-              <span className={styles.span}> that actually book .</span>
+              <span className={styles.span}> that actually book.</span>
             </h1>
             <p className={styles.copy}>
               Ready to master direct booking and crush your revenue goals? We
