@@ -64,7 +64,11 @@
   gap: 2rem;
   padding-bottom: 2rem;
   margin-bottom: 3rem;
-  border-bottom: 1px solid var(--blackii);
+  border-bottom: 1px solid var(--black);
+}
+
+.card:last-child {
+  border-bottom: none;
 }
 
 .iconTitleContainer {

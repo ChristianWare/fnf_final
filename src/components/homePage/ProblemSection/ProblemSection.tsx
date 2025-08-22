@@ -2,7 +2,6 @@ import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./ProblemSection.module.css";
 import Image from "next/image";
 import Img1 from "../../../../public/images/happyiii.png";
-import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 import Check from "@/components/icons/Check/Check";
 
 const data = [
@@ -46,13 +45,6 @@ export default function ProblemSection() {
             </div>
           </div>
           <div className={styles.right}>
-            <div className={styles.sectionHeadingContainer}>
-              <SectionIntro
-                title='Guarantee'
-                color='black'
-                borderColor='borderColorBlack'
-              />
-            </div>
             <h2 className={styles.heading}>
               {/* Are you <span className={styles.span}>tired</span> of chasing DMs
               or <span className={styles.span}>losing money</span> to no-shows? */}

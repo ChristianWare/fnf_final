@@ -115,7 +115,7 @@
 }
 
 .bottomTitle {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -174,7 +174,11 @@
   }
 
   .imgContainer {
-    height: 300px;
+    height: 200px;
+  }
+
+  .imgContainer::before {
+    background-color: transparent;
   }
 
   .copy {
@@ -183,14 +187,10 @@
 
   .bottom {
     grid-template-columns: repeat(1, 1fr);
+    margin-top: 2rem;
   }
 
-  .bottomTitle {
-    font-size: 5rem;
-  }
-
-  .btnContainer {
-    display: grid;
-    width: 100%;
+  .card:nth-child(1) {
+   border-top: none;
   }
 }
