@@ -3,6 +3,7 @@
   overflow: hidden;
   margin: 1rem;
   background-color: var(--tan);
+  padding-bottom: 1rem;
 }
 
 .container::before {
@@ -51,8 +52,9 @@
 
 .copy {
   color: var(--textii);
-  max-width: 500px;
-  font-size: 1.6rem;
+  max-width: 600px;
+  font-family: var(--PPNeueMontrealMediumThick);
+  font-size: 2rem;
 }
 
 .imgContainerii {
@@ -117,7 +119,8 @@
   border: 4px solid var(--blue);
 }
 
-.imgContainer, .imgContainerii {
+.imgContainer,
+.imgContainerii {
   position: relative;
   width: 450px;
   height: 450px;
@@ -199,13 +202,13 @@
   }
 
   .pulsingCircles::before,
-.pulsingCircles::after,
-.pulsingCircles div {
-  animation: none;
-  display: none;
-}
+  .pulsingCircles::after,
+  .pulsingCircles div {
+    animation: none;
+    display: none;
+  }
 
-.imgContainerii {
+  .imgContainerii {
     display: block;
     width: 100%;
     height: 200px;
@@ -215,8 +218,6 @@
     object-fit: contain;
     padding: 0rem;
   }
-
-
 }
 
 @media screen and (max-width: 380px) {

@@ -5,25 +5,23 @@ import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 const data = [
   {
     id: 1,
-    title: "Fast and Reliable Delivery of Services",
-    Description: "We ensure your projects are delivered on time, every time.",
+    title: "Fast, reliable delivery",
+    Description: "Deadlines met, launches smooth.",
   },
   {
     id: 2,
-    title: "Clear, No-Surprise Competetive Pricing",
-    Description: "Our pricing model is transparent and straightforward.",
+    title: "Clear, no-surprise pricing",
+    Description: "Flat, transparent scope.",
   },
   {
     id: 3,
-    title: "Everything Under One Roof",
-    Description:
-      "We provide a comprehensive suite of services to meet all your needs.",
+    title: "Everything under one roof",
+    Description: "Strategy, UX, build, and integrations.",
   },
   {
     id: 4,
-    title: "Fixed Milestone for Progress",
-    Description:
-      "We establish clear milestones to track progress and ensure accountability.",
+    title: "Fixed milestones",
+    Description: "Weekly checkpoints with visible progress.",
   },
 ];
 

@@ -50,8 +50,13 @@ export default function AboutUsSection() {
               <span className={styles.span}>
                 turning visitors into booked appointments.
               </span>{" "}
-              We bring fresh ideas and a proven approach to building custom
+              {/* We bring fresh ideas and a proven approach to building custom
               booking platforms for salons, clinics, rentals, and transport —{" "}
+              <span className={styles.span}>
+                designed to launch quickly and convert reliably.
+              </span> */}
+              We replace clunky DMs and marketplace fees with one-tap
+              reservations, deposits on file, and real-time calendar sync —{" "}
               <span className={styles.span}>
                 designed to launch quickly and convert reliably.
               </span>

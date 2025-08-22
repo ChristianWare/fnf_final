@@ -11,6 +11,7 @@ import Nav from "@/components/shared/Nav/Nav";
 import SectionIntroii from "@/components/shared/SectionIntroii/SectionIntroii";
 import Image from "next/image";
 import Img1 from "../../../../public/images/newhero.png";
+import ScrollHorizontalText from "../ScrollHorizontalText/ScrollHorizontalText";
 
 export default function Hero() {
   // const [open, setOpen] = useState(false);
@@ -25,15 +26,16 @@ export default function Hero() {
           <div className={styles.left}>
             <SectionIntroii />
             <h1 className={styles.heading}>
-              We build <br />{" "}
+              {/* We build <br />{" "}
               <span className={styles.span}> booking websites </span> <br />
-              that fill calendars
-              {/* , not inboxes. */}
+              that fill calendars */}
+              Direct Booking Websites <br />{" "}
+              <span className={styles.span}> that actually book .</span>
             </h1>
             <p className={styles.copy}>
-              We design and build fast, branded booking sites that convert
-              visitors into confirmed appointments. Payments, reminders,
-              reviews—done.
+              Ready to master direct booking and crush your revenue goals? I
+              build branded, conversion-first sites with one-screen checkout,
+              deposits, and reminder automations.
             </p>
             <div className={styles.imgContainerii}>
               <Image src={Img1} alt='' fill className={styles.img} />
@@ -41,7 +43,7 @@ export default function Hero() {
             <div className={styles.btnContainer}>
               <Button
                 btnType='white'
-                text='Book your discovery Call'
+                text='Book your discovery call'
                 href='/'
                 arrow
               />
@@ -67,9 +69,9 @@ export default function Hero() {
           </div>
         </div>
       </LayoutWrapper>
-      {/* <Modal isOpen={open} onClose={() => setOpen(false)}>
-        <ContactForm />
-      </Modal> */}
+      <div className={styles.scrollTextContainer}>
+        <ScrollHorizontalText text='Built for salons, studios, consultants, and short-term rentals' />
+      </div>
     </section>
   );
 }
