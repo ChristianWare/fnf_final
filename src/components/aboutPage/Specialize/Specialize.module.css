@@ -1,11 +1,3 @@
-:root {
-  --stickyTop: 20vh;
-  --cardGap: 1rem;
-  --cardMinH: clamp(300px, 20vh, 480px);
-  --cardStep: 28vh;
-  --fadeDur: 340ms;
-}
-
 .container {
   position: relative;
   padding: 5rem 0rem;
