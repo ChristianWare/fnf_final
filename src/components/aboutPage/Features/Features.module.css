@@ -20,7 +20,6 @@
   font-family: var(--PerfectlyNinetiesItalic);
 }
 
-
 .copy {
   width: 40%;
   margin-bottom: 3rem;
@@ -46,7 +45,7 @@
   padding-top: 3rem;
   border-radius: 10px;
   background-color: var(--tan);
-  border: 1px solid var(--lightGray);
+  border: 1px solid var(--textii);
   background-image: repeating-linear-gradient(
     -45deg,
     rgba(15, 12, 12, 0.1),
