@@ -194,6 +194,10 @@ button {
 }
 
 @media screen and (max-width: 568px) {
+  :root {
+    --stickyTop: 15vh;
+  }
+
   html {
     font-size: 50%;
   }

@@ -203,10 +203,7 @@
 }
 
 @media screen and (max-width: 568px) {
- :root {
-  --stickyTop: 15vh;
 
-}
  
   .container {
     padding: 0rem;
