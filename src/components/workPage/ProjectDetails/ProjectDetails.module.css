@@ -3,7 +3,7 @@
   z-index: 2;
   /* background-color: var(--tan); */
   /* border: 1px solid var(--textii); */
-  border: 1px solid var(--gray);
+  border: 2px solid var(--textii);
   background-image: repeating-linear-gradient(
     -45deg,
     rgba(15, 12, 12, 0.1),
@@ -55,6 +55,7 @@
 
 .heading {
   color: var(--black);
+  font-weight: 500;
 }
 
 .introSection {
@@ -129,9 +130,7 @@
   font-family: var(--inter);
   text-align: center;
   width: 90%;
-  font-weight: 400;
-  /* width: 70%; */
-  /* color: var(--text); */
+  font-weight: 500;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2;

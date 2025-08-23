@@ -1,5 +1,5 @@
 .container {
-  padding: 10rem 0rem;
+  padding-top: 5rem;
 }
 
 .content {
@@ -32,8 +32,8 @@
 
 .right {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 10rem;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
 }
 
 .card {
@@ -79,7 +79,8 @@
 
 .cardTop {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 3rem;
   margin-bottom: 5rem;
 }
 
@@ -101,9 +102,11 @@
 }
 
 .price {
+   width: 100%;
   font-size: 4rem;
-  font-family: var(--PerfectlyNinetiesItalic);
-  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: var(--inter);
+  letter-spacing: -1px;
 }
 
 .cardTopRight {
@@ -286,7 +289,7 @@
 }
 
 @media screen and (max-width: 1268px) {
-  .content {
+  .content, .right {
     grid-template-columns: repeat(1, 1fr);
   }
 

@@ -1,6 +1,5 @@
 import Features from "@/components/aboutPage/Features/Features";
 import AboutUsSection from "@/components/homePage/AboutUsSection/AboutUsSection";
-// import Benefits from "@/components/homePage/Benefits/Benefits";
 import Hero from "@/components/homePage/Hero/Hero";
 import ProblemSection from "@/components/homePage/ProblemSection/ProblemSection";
 import Stats from "@/components/homePage/Stats/Stats";
@@ -11,7 +10,6 @@ import ContactHero from "@/components/contactPage/ContactHero/ContactHero";
 import Faq from "@/components/shared/Faq/Faq";
 import OurTeam from "@/components/aboutPage/OurTeam/OurTeam";
 import Circle from "@/components/homePage/Circle/Circle";
-// import Offering from "@/components/servicesPage/Offering/Offering";
 import Benefitsii from "@/components/homePage/Benefitsii/Benefitsii";
 import FinalCTA from "@/components/shared/FinalCTA/FinalCTA";
 import Reasons from "@/components/aboutPage/Reasons/Reasons";
@@ -24,7 +22,6 @@ export default function Home() {
       <WorkPageIntro />
       <Specialize />
       <Benefitsii />
-      {/* <Offering /> */}
       <Features />
       <Stats />
       <Circle />

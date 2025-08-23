@@ -2,7 +2,8 @@ import Button from "@/components/shared/Button/Button";
 import styles from "./ServicesHero.module.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
-import HorizontalServices from "../HorizontalServices/HorizontalServices";
+// import HorizontalServices from "../HorizontalServices/HorizontalServices";
+import ServiceDetails from "../ServiceDetails/ServiceDetails";
 
 export default function ServicesHero() {
   return (
@@ -27,7 +28,8 @@ export default function ServicesHero() {
             />
           </div>
         </div>
-        <HorizontalServices />
+        {/* <HorizontalServices /> */}
+        <ServiceDetails />
       </LayoutWrapper>
     </section>
   );

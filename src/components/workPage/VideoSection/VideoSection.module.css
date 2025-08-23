@@ -35,3 +35,14 @@
   object-fit: cover;
   user-select: none;
 }
+
+
+@media screen and (max-width: 568px) {
+  .video {
+    height: 250px;
+  }
+
+  .imgContainer {
+    height: 250px;
+  }
+}

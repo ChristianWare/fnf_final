@@ -10,9 +10,9 @@ import Img1 from "../../../../public/images/specialize.png";
 import Img2 from "../../../../public/images/everything.png";
 import Img3 from "../../../../public/images/fast.png";
 import Img4 from "../../../../public/images/goal.png";
-import Img5 from "../../../../public/images/happy.png";
-import Img6 from "../../../../public/images/problem.png";
-import Img7 from "../../../../public/images/puzzle.png";
+import Img5 from "../../../../public/images/contactusiv.png";
+import Img6 from "../../../../public/images/person.png";
+import Img7 from "../../../../public/images/work.png";
 
 type Specialty = {
   id: number;

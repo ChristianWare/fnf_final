@@ -25,6 +25,7 @@
   font-size: 2rem;
   text-align: center;
   width: 50%;
+  color: var(--text)
 }
 
 .bottom {
@@ -49,7 +50,6 @@
   text-wrap: balance;
 }
 
-/* Grid */
 .bottom {
   margin-top: 6rem;
 }

@@ -9,56 +9,87 @@
 }
 
 .content {
-  background-color: var(--black);
-  border-radius: 25px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 60%;
+  margin: 0 auto;
   padding: 4rem;
   padding-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  position: relative;
 }
 
 .card {
+  background-color: var(--tan);
+  border: 2px solid var(--textii);
+  border-radius: 15px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  place-items: center;
   grid-gap: 3rem;
-  border-bottom: 1px solid var(--textii);
-  padding: 2rem 0rem;
+  padding: 2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20vh;
+  margin-bottom: 15vh;
+  transform-origin: center top;
+  transition:
+    opacity 320ms ease,
+    transform 320ms ease,
+    box-shadow 320ms ease;
+        background-image: repeating-linear-gradient(-45deg, #0f0c0c1a, #f1f1f1 1px, #0000 0 50%);
+    background-size: 10px 10px;
 }
 
-.card:last-child {
-  border-bottom: none;
-  padding-bottom: 0rem;
+.isInactive {
+  box-shadow: none;
 }
 
 .title {
-  color: var(--yellow);
-  font-size: 2rem;
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: 500;
   width: 90%;
   font-family: var(--PerfectlyNinetiesItalic);
+  text-align: center;
 }
 
 .copy {
-  color: var(--tan);
-  margin-left: 7rem;
+  color: var(--text);
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: var(--inter);
+  letter-spacing: -0.3px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1068px) {
-  .card {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 4rem 0rem;
+  .content {
+    width: 100%;
+    padding-top: 0rem;
   }
 
-  .copy {
-    margin-left: 0rem;
+  .card {
+    top: 18vh; 
+    margin-bottom: 16vh;
   }
 }
 
 @media screen and (max-width: 768px) {
   .content {
     width: 100%;
-    padding-top: 0rem;
+    padding: 0rem;
+  }
+
+  .card {
+    top: 16vh;
+    margin-bottom: 20vh;
   }
 }
 
-
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none !important;
+  }
+}

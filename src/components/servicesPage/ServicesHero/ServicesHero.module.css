@@ -34,10 +34,11 @@
 }
 
 .copy {
-  font-size: 1.8rem;
   max-width: 475px;
-  color: var(--text);
   text-align: center;
+  color: var(--text);
+  font-family: var(--PPNeueMontrealMediumThick);
+  font-size: 2rem;
 }
 
 .span {

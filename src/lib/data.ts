@@ -257,7 +257,7 @@ export const pricingData = [
     headline: "One-person calendar, zero double-bookings",
     desc: "Perfect for solo stylists, consultants, and single-property hosts who need a simple booking flow with card-on-file payments. Go live in two weeks.",
     descii:
-      "This plan is designed for independent professionals who want to eliminate the headache of back-and-forth scheduling and double-bookings. Whether you’re a solo stylist, a massage therapist, a personal trainer, or even a single vacation rental host, the Solo Starter Booking system gives you a professional booking calendar that syncs seamlessly with client expectations. With automated reminders, deposit collection, and easy rescheduling tools, you’ll reduce no-shows and protect your income. It’s the fastest way to move from manual messages to a reliable, branded booking experience—without the overhead of managing extra staff or locations.",
+      "Built for independent pros who want to stop back-and-forth scheduling and double-bookings. A branded calendar with deposits, automated reminders, and easy rescheduling reduces no-shows and protects your income. Move from DMs to a reliable, professional booking experience—without the overhead of staff or multiple locations.",
     price: "$2,900", // unchanged
     servicesInclude: [
       {
@@ -303,7 +303,7 @@ export const pricingData = [
     headline: "Up to 15 stylists, trainers, or practitioners—one dashboard",
     desc: "Built for salons, fitness studios, and clinics where clients choose a staff member and pay a deposit. Launch timeline: four weeks.",
     descii:
-      "This package is built for businesses with a growing team—up to 15 practitioners, stylists, or trainers—who need a shared booking hub. Each team member gets their own color-coded schedule, while admins maintain control of payments, deposits, and permissions. Clients can pick their preferred staff member during checkout, while your front desk manages bookings without touching sensitive financial data. Ideal for salons, gyms, wellness clinics, and co-working therapy practices, this system helps you increase bookings per staff member and upsell services directly in the checkout flow. With Google/365 sync, your team’s availability stays accurate across personal and professional calendars.",
+      "For growing teams—up to 15 stylists, trainers, or practitioners—who need a shared booking hub. Staff get color-coded schedules while admins control deposits and permissions; clients choose their provider at checkout and the front desk manages bookings without touching financial data. Upsells at checkout and Google/365 sync lift revenue and keep availability accurate.",
     price: "$5,500",
     servicesInclude: [
       {
@@ -352,57 +352,11 @@ export const pricingData = [
   },
   {
     id: 3,
-    service: "Multi-Location Booking",
-    headline: "One backend, many branches or villas",
-    desc: "Ideal for spa chains, franchise gyms, or vacation-rental portfolios with 2-10 locations. Launch timeline: six weeks.",
-    descii:
-      "Perfect for businesses managing multiple branches or properties, this solution centralizes all your locations under one backend. Guests start by choosing a location—whether it’s a spa branch, gym outlet, or villa rental—then move smoothly into the booking flow. Each location can operate with its own pricing, tax, and currency setup, giving you the flexibility to cater to local markets. Meanwhile, head office enjoys a central dashboard that tracks utilization and revenue across every branch. Features like yield-management dynamic pricing mean you can adjust rates in real time to maximize occupancy. Best for franchises, chains, and growing operators who need to scale their booking operations while keeping oversight.",
-    price: "$7,900",
-    servicesInclude: [
-      {
-        id: 3.1,
-        serviceName: "Location switcher",
-        description: "Guests pick branch or property before choosing services.",
-      },
-      {
-        id: 3.2,
-        serviceName: "Per-location pricing",
-        description: "Each branch sets its own fees, tax, and currency.",
-      },
-      {
-        id: 3.3,
-        serviceName: "Central admin",
-        description: "HQ dashboard shows combined utilisation and revenue.",
-      },
-      {
-        id: 3.4,
-        serviceName: "Dynamic pricing",
-        description:
-          "Yield-management rules raise or lower prices automatically.",
-      },
-    ],
-    addonSectionData: [
-      {
-        id: 3.01,
-        expansionblock: "Location Tier",
-        details: "Each extra branch or property beyond the first 10",
-        price: "$800",
-      },
-      {
-        id: 3.02,
-        expansionblock: "Accounting API",
-        details: "Sync payouts to Xero or QuickBooks",
-        price: "$1,800",
-      },
-    ],
-  },
-  {
-    id: 4,
     service: "Rental Fleet & Inventory Booking",
     headline: "Real-time stock, deposits, and damage-hold authorisations",
     desc: "For car-hire companies, equipment rental shops, or kayak fleets that rent assets by time or day. Launch timeline: five weeks.",
     descii:
-      "Tailored for businesses that rent physical assets—cars, boats, tools, or equipment—this package introduces real-time inventory management and payment security features. Each rental unit is tracked with availability, maintenance blocks, and blackout dates so you never overbook. Stripe’s pre-authorized security deposit (damage-hold) ensures protection without tying up your cashflow, while QR-code check-in/out makes handovers quick and accurate. Automated late-return fees keep customers accountable, and scaling options allow you to expand your fleet without manual overhead. Best suited for car hire businesses, construction equipment rental shops, and adventure outfitters who want their booking system to work as hard as their assets do.",
+      "Built for car hire, equipment shops, and adventure outfitters renting physical assets. Real-time inventory with maintenance/blackout controls prevents overbooking, while Stripe damage-hold pre-authorizations and QR check-in/out streamline handovers and protect revenue. Automated late-return fees and scalable options grow with your fleet.",
     price: "$6,900",
     servicesInclude: [
       {
@@ -451,12 +405,58 @@ export const pricingData = [
     ],
   },
   {
+    id: 4,
+    service: "Multi-Location Booking",
+    headline: "One backend, many branches or villas",
+    desc: "Ideal for spa chains, franchise gyms, or vacation-rental portfolios with 2-10 locations. Launch timeline: six weeks.",
+    descii:
+      "Centralize multiple branches or properties under one backend. Guests pick a location first, while each branch keeps its own pricing, tax, and currency, and HQ tracks utilization and revenue in a single dashboard. Dynamic pricing rules help maximize occupancy as you scale.",
+    price: "$7,900",
+    servicesInclude: [
+      {
+        id: 3.1,
+        serviceName: "Location switcher",
+        description: "Guests pick branch or property before choosing services.",
+      },
+      {
+        id: 3.2,
+        serviceName: "Per-location pricing",
+        description: "Each branch sets its own fees, tax, and currency.",
+      },
+      {
+        id: 3.3,
+        serviceName: "Central admin",
+        description: "HQ dashboard shows combined utilisation and revenue.",
+      },
+      {
+        id: 3.4,
+        serviceName: "Dynamic pricing",
+        description:
+          "Yield-management rules raise or lower prices automatically.",
+      },
+    ],
+    addonSectionData: [
+      {
+        id: 3.01,
+        expansionblock: "Location Tier",
+        details: "Each extra branch or property beyond the first 10",
+        price: "$800",
+      },
+      {
+        id: 3.02,
+        expansionblock: "Accounting API",
+        details: "Sync payouts to Xero or QuickBooks",
+        price: "$1,800",
+      },
+    ],
+  },
+  {
     id: 5,
     service: "Custom Enterprise Booking",
     headline: "Bespoke architecture for unique booking models",
     desc: "For enterprise chains or complex use-cases—think 50+ locations, hybrid rentals, or regulated medical workflows—where off-the-shelf logic won’t cut it. Timeline and cost are scoped after a technical discovery sprint.",
     descii:
-      "This plan is built for organizations with highly specific, large-scale, or regulated booking needs. It begins with a two-week discovery sprint where we analyze your workflows, compliance requirements, and system architecture. From there, we design a bespoke solution that may include HIPAA-compliant medical intake forms, multi-tenant role hierarchies, enterprise SLA hosting, or integrations into complex ERP/CRM ecosystems. With enterprise monitoring and 24/7 support, you’ll get guaranteed uptime and priority response times. Best for hospital networks, multinational rental groups, or enterprise franchises where a one-size-fits-all approach won’t work. Pricing is tailored after scoping, ensuring you only pay for what your business truly needs.",
+      "For large or regulated operations that need bespoke logic. We begin with a discovery sprint, then design custom architecture—HIPAA-ready intake, multi-tenant roles, enterprise hosting/SLAs, and deep ERP/CRM integrations. Includes monitoring and priority support; pricing is tailored to your scope.",
     price: "$Custom Quote",
     servicesInclude: [
       {
@@ -500,6 +500,7 @@ export const pricingData = [
     ],
   },
 ] as const;
+
 
 export const reviews = [
   {

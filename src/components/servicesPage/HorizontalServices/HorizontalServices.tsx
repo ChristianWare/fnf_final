@@ -1,24 +1,12 @@
-// import LayoutWrapper from "@/components/shared/LayoutWrapper";
 import styles from "./HorizontalServices.module.css";
 import { pricingData } from "@/lib/data";
-import Check from "@/components/icons/Check/Check";
 import Button from "@/components/shared/Button/Button";
-// import SectionIntro from "@/components/shared/SectionIntro/SectionIntro";
 
 export default function HorizontalServices() {
   return (
     <section className={styles.container}>
-      {/* <LayoutWrapper> */}
       <div className={styles.content}>
-        <div className={styles.left}>
-          {/* <SectionIntro title='Pricing Plans' />
-            <h2 className={styles.heading}>Packages</h2>
-            <p className={styles.copy}>
-              Transparent pricing for any stage of your business. We offer
-              flexible packages tailored to your needs. No hidden fees. No long
-              term contracts.
-            </p> */}
-        </div>
+        <div className={styles.left}></div>
         <div className={styles.right}>
           {pricingData.slice(0, 3).map((x) => (
             <div
@@ -35,7 +23,7 @@ export default function HorizontalServices() {
                 <div className={styles.servicesCardTop}>
                   {x.servicesInclude.map((y) => (
                     <div key={y.serviceName} className={styles.box}>
-                      <Check className={styles.icon} />
+                      {/* <Check className={styles.icon} /> */}
                       <h4 className={styles.serviceName}>{y.serviceName}</h4>
                     </div>
                   ))}
@@ -53,16 +41,7 @@ export default function HorizontalServices() {
             </div>
           ))}
         </div>
-        {/* <div className={styles.btnContainerii}>
-            <Button
-              href='/services'
-              btnType='blue'
-              text='See all plans and services'
-              arrow
-            />
-          </div> */}
       </div>
-      {/* </LayoutWrapper> */}
     </section>
   );
 }

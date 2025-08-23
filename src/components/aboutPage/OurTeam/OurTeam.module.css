@@ -91,11 +91,9 @@
 }
 
 .copy {
-  font-size: 1.8rem;
-  color: var(--black);
+  color: var(--text);
   font-family: var(--PPNeueMontrealMediumThick);
   font-size: 2rem;
-  /* font-family: var(--JetBrainsMonoRegular); */
 }
 
 .box {

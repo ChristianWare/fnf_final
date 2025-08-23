@@ -1,6 +1,6 @@
 .container {
   border: 1px solid var(--text);
-  padding: .8rem 2rem;
+  padding: 0.8rem 2rem;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -24,12 +24,17 @@
   border: 1px solid var(--yellow);
 }
 
+.borderColorBlack {
+  border: 1px solid var(--black);
+}
+
 .text {
-    font-family: var(--JetBrainsMonoRegular);
-  font-weight: 500;  color: var(--black);
+  font-family: var(--JetBrainsMonoRegular);
+  font-weight: 500;
+  color: var(--black);
   font-size: 1.2rem;
   text-align: center;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
 }
 
 .month {
@@ -54,6 +59,10 @@
 
 .yellow {
   color: var(--yellow);
+}
+
+.yellow {
+  color: var(--black);
 }
 
 @keyframes spin {

@@ -45,7 +45,7 @@
   padding-top: 3rem;
   border-radius: 10px;
   background-color: var(--tan);
-  border: 1px solid var(--textii);
+  border: 2px solid var(--textii);
   background-image: repeating-linear-gradient(
     -45deg,
     rgba(15, 12, 12, 0.1),
@@ -57,10 +57,10 @@
   transition: 0.2s all ease-in;
 }
 
-.content:hover {
+/* .content:hover {
   background-color: var(--text);
   background-image: none;
-}
+} */
 
 .content:nth-child(1),
 .content:nth-child(2),
@@ -72,9 +72,9 @@
   background-color: transparent;
 }
 
-.content:hover .title {
+/* .content:hover .title {
   color: var(--tan);
-}
+} */
 
 .title,
 .titleMobile {
@@ -102,9 +102,9 @@
   transition: 0.2s all ease-in;
 }
 
-.content:hover .icon {
+/* .content:hover .icon {
   color: var(--white);
-}
+} */
 
 .imgContainer {
   position: relative;

@@ -88,10 +88,13 @@
 .box {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1rem;
   border-bottom: 1px solid var(--black);
-  padding-bottom: 0.5rem;
+  padding: 2rem 0rem;
+  position: relative;
+  width: 100%;
+  
 }
 
 .box:last-child {
@@ -100,6 +103,9 @@
 
 .icon {
   color: var(--black);
+
+  width: 2rem;
+  height: 2rem;
 }
 
 .serviceNameHeading {
@@ -115,9 +121,9 @@
   text-align: center;
   width: 100%;
   font-size: 4rem;
-  font-weight: 400;
-  font-family: var(--PPNeueMontrealMediumThick);
-  /* color: var(--blue); */
+  font-weight: 700;
+  font-family: var(--inter);
+  letter-spacing: -1px;
 }
 
 .headline {
@@ -140,10 +146,7 @@
 
 .servicesCardTop {
   display: grid;
-  /* grid-template-columns: repeat(4, 1fr); */
-  grid-gap: 3rem;
-  /* border-bottom: 1px solid var(--blackii); */
-  /* padding-bottom: 2rem; */
+  /* grid-gap: 2rem; */
   width: 100%;
 }
 
@@ -157,17 +160,6 @@
   justify-content: flex-start;
   position: relative;
 }
-
-/* .serviceName::after {
-  position: absolute;
-  content: "";
-  left: 0px;
-  bottom: -2.6rem;
-  width: 1rem;
-  height: 1rem;
-  background-color: var(--black);
-  border-radius: 50%;
-} */
 
 .servicesCardBottom {
   display: grid;
@@ -249,12 +241,7 @@
 .btnContainer {
   display: grid;
   width: 100%;
-}
-
-.btnContainerii {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 3rem;
 }
 
 @media screen and (max-width: 1268px) {
