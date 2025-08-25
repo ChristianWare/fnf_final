@@ -62,7 +62,7 @@ h5,
 h6,
 span {
   color: var(--black);
-  font-family: var(--urbanist);
+  font-family: var(--PPNeueMontrealMediumThick);
 }
 
 span {
@@ -79,7 +79,7 @@ h2 {
   font-size: 4.2rem;
   line-height: 1.2;
   letter-spacing: -0.5px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h3,

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Bebas_Neue, Urbanist } from "next/font/google";
+import { Inter, Bebas_Neue } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/shared/Footer/Footer";
@@ -9,12 +9,6 @@ import styles from "./Layout.module.css";
 
 const inter = Inter({
   variable: "--inter",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
-});
-
-const urbanist = Urbanist({
-  variable: "--urbanist",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
@@ -79,7 +73,7 @@ export default async function RootLayout({
       <html lang='en'>
         <body
           className={`${inter.variable} ${PPNeueMontrealMedium.variable} ${PPNeueMontrealMediumThick.variable} ${bebasNeue.variable} ${JetBrainsMonoRegular.variable}
-            ${PerfectlyNinetiesItalic.variable} ${urbanist.variable}`}
+            ${PerfectlyNinetiesItalic.variable}`}
         >
           <div className={styles.container}>
             {children}
