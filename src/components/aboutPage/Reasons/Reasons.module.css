@@ -56,8 +56,8 @@
 
 .copy {
   color: var(--text);
-  font-size: 1.6rem;
-  font-weight: 500;
+  font-size: 1.4rem;
+  font-weight: 700;
   font-family: var(--inter);
   letter-spacing: -0.3px;
   text-align: center;

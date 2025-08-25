@@ -124,8 +124,8 @@
 
 .headline {
   font-family: var(--inter);
-  color: var(--black);
-  font-size: 1.6rem;
+  /* color: var(--black); */
+  font-size: 1.4rem;
 }
 
 .serviceName {
