@@ -62,7 +62,7 @@ h5,
 h6,
 span {
   color: var(--black);
-  font-family: var(--PPNeueMontrealMedium);
+  font-family: var(--PPNeueMontrealMediumThick);
 }
 
 span {
@@ -73,7 +73,6 @@ h1 {
   font-size: 6rem;
   line-height: 1.1;
   letter-spacing: -0.5px;
-  font-family: var(--PPNeueMontrealMediumThick);
 }
 
 h2 {
@@ -81,7 +80,6 @@ h2 {
   line-height: 1.2;
   letter-spacing: -0.5px;
   font-weight: 500;
-  font-family: var(--PPNeueMontrealMediumThick);
 }
 
 h3,
@@ -205,17 +203,6 @@ button {
   h1 {
     font-size: 10vw;
     /* line-height: 1.2; */
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  span {
-    color: var(--black);
-    font-family: var(--PPNeueMontrealMediumThick);
   }
 
   input,

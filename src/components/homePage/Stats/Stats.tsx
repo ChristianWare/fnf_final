@@ -45,8 +45,8 @@ export default function Stats() {
           <div className={styles.top}>
             <div className={styles.topLeft}>
               <h2 className={styles.heading}>
-                Direct booking that fills <br />
-                your calendar
+                Direct booking that <br />
+                <span className={styles.span}>fills your calendar</span>
               </h2>
               <p className={styles.copy}>
                 Fast, branded booking experiences turn visitors into paid

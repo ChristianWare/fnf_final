@@ -252,8 +252,9 @@
 }
 
 .copy {
-  font-family: var(--PPNeueMontrealMediumThick);
-  font-size: 2rem;
+  font-family: var(--inter);
+  font-weight: 400;
+  font-size: 1.6rem;
   color: var(--tan);
   margin: 0;
 }
@@ -344,5 +345,4 @@
   .icon {
     font-size: 2.5rem;
   }
-
 }

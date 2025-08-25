@@ -34,16 +34,18 @@
 }
 
 .copy {
-  max-width: 475px;
+  max-width: 550px;
   text-align: center;
   color: var(--text);
-  font-family: var(--PPNeueMontrealMediumThick);
+  font-family: var(--inter);
+  font-weight: 500;
   font-size: 2rem;
 }
 
 .span {
   color: var(--blue);
   font-family: var(--PerfectlyNinetiesItalic);
+  font-weight: 700;
   margin-left: 0.5rem;
 }
 

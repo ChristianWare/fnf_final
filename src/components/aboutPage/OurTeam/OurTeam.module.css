@@ -88,11 +88,13 @@
 .span {
   font-family: var(--PerfectlyNinetiesItalic);
   color: var(--blue);
+  font-weight: 700;
 }
 
 .copy {
   color: var(--text);
-  font-family: var(--PPNeueMontrealMediumThick);
+  font-family: var(--inter);
+  font-weight: 600;
   font-size: 2rem;
 }
 

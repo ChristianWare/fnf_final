@@ -18,9 +18,12 @@
 .span {
   color: var(--blue);
   font-family: var(--PerfectlyNinetiesItalic);
+  font-weight: 700;
 }
 
 .copy {
+  font-family: var(--inter);
+  font-weight: 500;
   font-family: var(--PPNeueMontrealMediumThick);
   font-size: 2rem;
   text-align: center;
@@ -98,9 +101,9 @@
 
 .title {
   line-height: 1.15;
-  font-size: clamp(2rem, 1.4vw + 0.6rem, 1.25rem);
+  font-size: clamp(1.8rem, 1.4vw + 0.6rem, 1.25rem);
   text-wrap: balance;
-  font-family: var(--PPNeueMontrealMediumThick);
+  font-family: var(--inter);
   color: var(--text);
 }
 

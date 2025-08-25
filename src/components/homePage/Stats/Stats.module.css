@@ -11,6 +11,12 @@
   margin-right: auto;
 }
 
+.span {
+  color: var(--blue);
+  font-family: var(--PerfectlyNinetiesItalic);
+  font-weight: 700;
+}
+
 .topLeft {
   display: flex;
   flex-direction: column;
@@ -21,7 +27,8 @@
 
 .copy {
   color: var(--text);
-  font-family: var(--PPNeueMontrealMediumThick);
+  font-family: var(--inter);
+  font-weight: 500;
   font-size: 2rem;
 }
 
@@ -48,7 +55,7 @@
 .mapDataTitle {
   font-family: var(--inter);
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--black);
 }
 
@@ -129,7 +136,7 @@
   }
 
   .mapDataItem {
-    border-bottom: 1px solid var(--text);
+    border-bottom: 1px solid var(--black);
     width: 100%;
     padding-bottom: 1rem;
   }
@@ -151,6 +158,12 @@
 @media screen and (max-width: 568px) {
   .top {
     width: 100%;
+    gap: 2rem;
+  }
+  
+  .heading {
+    width: 100%;
+    text-align: center;
   }
 
   .imgContainer {
@@ -167,10 +180,11 @@
 
   .bottom {
     grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
     margin-top: 2rem;
   }
 
-  .card:nth-child(1) {
+  .card {
     border-top: none;
   }
 }
