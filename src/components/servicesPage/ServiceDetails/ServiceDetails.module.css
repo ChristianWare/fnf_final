@@ -211,6 +211,8 @@
 
 .descriptionMobile {
   display: none;
+  font-size: 1.4rem;
+  padding-top: 1rem;
 }
 
 .addonSection {
