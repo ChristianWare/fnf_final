@@ -53,7 +53,8 @@
 .copy {
   color: var(--textii);
   max-width: 600px;
-  font-family: var(--PPNeueMontrealMediumThick);
+  font-family: var(--inter);
+  font-weight: 600;
   font-size: 2rem;
 }
 

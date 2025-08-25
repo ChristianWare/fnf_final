@@ -25,7 +25,7 @@
 }
 
 .text {
-  color: var(--tan);
+  color: var(--yellow);
   font-size: 1.4rem;
   display: flex;
   align-items: center;
