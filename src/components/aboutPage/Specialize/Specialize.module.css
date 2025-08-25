@@ -194,7 +194,6 @@
     display: block;
     height: 170px;
     margin-top: 0rem;
-    /* display: none; */
   }
 
   .imgSingle {
@@ -203,8 +202,6 @@
 }
 
 @media screen and (max-width: 568px) {
-
- 
   .container {
     padding: 0rem;
     padding-top: 9rem;
@@ -214,9 +211,13 @@
     min-height: auto;
   }
 
+  .cardRight {
+    align-items: center;
+    justify-content: center;
+  }
+
   .imgContainerii {
     height: 100px;
-    /* display: none; */
   }
   .heading {
     width: 100%;
@@ -225,7 +226,6 @@
   .card {
     grid-template-columns: 1fr;
     gap: 0rem;
-
   }
 
   .cardLeft {
@@ -236,8 +236,10 @@
     display: block;
     margin-bottom: 1rem;
   }
+  .feature,
   .desc {
     width: 100%;
+    text-align: center;
   }
 }
 

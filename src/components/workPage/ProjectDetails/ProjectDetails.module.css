@@ -49,8 +49,8 @@
   /* color: var(--blue); */
   font-size: 2.7rem;
   letter-spacing: 0px;
-  font-family: var(--PerfectlyNinetiesItalic);
-  font-weight: 500;
+  /* font-family: var(--PerfectlyNinetiesItalic); */
+  /* font-weight: 500; */
 }
 
 .heading {
