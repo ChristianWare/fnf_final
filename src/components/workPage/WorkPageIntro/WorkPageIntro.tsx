@@ -1,15 +1,15 @@
 import styles from "./WorkPageIntro.module.css";
 import LayoutWrapper from "@/components/shared/LayoutWrapper";
-import Image from "next/image";
-import Img1 from "../../../../public/images/workwoman.png";
-import Img2 from "../../../../public/images/workman.png";
+// import Image from "next/image";
+// import Img1 from "../../../../public/images/workwoman.png";
+// import Img2 from "../../../../public/images/workman.png";
 import ProjectSection from "@/components/homePage/ProjectSection/ProjectSection";
 
 export default function WorkPageIntro() {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <div className={styles.content}>
+        {/* <div className={styles.content}>
           <div className={styles.left}>
             <div className={styles.imgContainer}>
               <Image
@@ -27,11 +27,7 @@ export default function WorkPageIntro() {
               Our work <br />{" "}
               <span className={styles.span}>speaks for itself</span>
             </h2>
-            {/* <p className={styles.copy}>
-              Have a question, need a quote, or just curious whether a custom
-              booking platform is right for you? Drop a line below—no strings
-              attached. We reply within one business day.
-            </p> */}
+           
           </div>
           <div className={styles.right}>
             <div className={styles.imgContainer}>
@@ -45,7 +41,7 @@ export default function WorkPageIntro() {
               />{" "}
             </div>
           </div>
-        </div>
+        </div> */}
         <ProjectSection />
       </LayoutWrapper>
     </section>

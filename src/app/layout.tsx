@@ -43,6 +43,12 @@ const PerfectlyNinetiesItalic = localFont({
   display: "swap",
 });
 
+const Merriweather = localFont({
+  src: "../../public/fonts/Merriweather.ttf",
+  variable: "--Merriweather",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: {
     default: "Fonts & Footers | Custom Booking Websites",
@@ -73,11 +79,11 @@ export default async function RootLayout({
       <html lang='en'>
         <body
           className={`${inter.variable} ${PPNeueMontrealMedium.variable} ${PPNeueMontrealMediumThick.variable} ${bebasNeue.variable} ${JetBrainsMonoRegular.variable}
-            ${PerfectlyNinetiesItalic.variable}`}
+            ${PerfectlyNinetiesItalic.variable} ${Merriweather.variable}`}
         >
           <div className={styles.container}>
             {children}
-            
+
             <Footer />
           </div>
         </body>
